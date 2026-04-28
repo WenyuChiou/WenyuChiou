@@ -2,17 +2,17 @@
 
 PhD candidate at **Lehigh University** (CEE / Center for Catastrophe Modeling and Resilience), part of the **[Complex Adaptive Water Systems (CAWS)](https://ethanyang28.wixsite.com/yceyang)** lab under Prof. Y.C. Ethan Yang.
 
-I build **AI agent systems that interact with real environments** — not chatbot benchmarks. My research puts LLM agents inside a coupled ABM × catastrophe simulator, where their decisions affect floods that affect real households (Passaic River Basin, 2011–2023). The reason I care: in a language-only sandbox, an agent's reasoning and its actions can diverge without consequence. In a consequential environment, that gap becomes **measurable** — and **fixable**.
+I build **AI agent systems that interact with real environments** — not chatbot benchmarks. My research puts LLM agents inside a coupled Agent-based model (ABM) × catastrophe flood modelomg CAT), where their decisions affect floods that affect real households (Passaic River Basin, 2011–2023). The reason I care: in a language-only sandbox, an agent's reasoning and its actions can diverge without consequence. In a consequential environment, that gap becomes **measurable** — and **fixable**.
 
 In parallel, I ship the agent infrastructure I use day-to-day as open-source Claude Code marketplaces — **~25 composable skills across 4 plugins**, with CI, tests, and releases. Built dogfood-first: my research workflow uses them, then they ship.
 
-📍 Bethlehem, PA · 🎓 PhD 2024–2027 · 🌐 [wenyuchiou.github.io](https://wenyuchiou.github.io/) · ✉️ [your-lehigh-email] · 💼 [LinkedIn](https://www.linkedin.com/in/wenyu-chiou)
+📍 Bethlehem, PA · 🎓 PhD 2024–2027 · 🌐 [wenyuchiou.github.io](https://wenyuchiou.github.io/) · ✉️ wec324@lehigh.edu · 💼 [LinkedIn](https://www.linkedin.com/in/wenyu-chiou)
 
 #### Research
 
 | | |
 |---|---|
-| 🌊 [**FLOODABM**](https://github.com/WenyuChiou/FLOODABM) | ABM × catastrophe simulator — household flood adaptation in the Passaic River Basin (NJ, 2011–2023) |
+| 🌊 [**FLOODABM**](https://github.com/WenyuChiou/FLOODABM) | ABM × CAT — household flood adaptation in the Passaic River Basin (NJ, 2011–2023) |
 | 🤖 [**WAGF**](https://github.com/WenyuChiou/WAGF) | **Water Agent Governance Framework** — LLM agents as bounded-rational decision-makers; addresses the *logic-action gap* (when agent reasoning and action diverge), an alignment-adjacent failure mode in environment-coupled agents |
 
 #### AI agent infrastructure — Claude Code marketplaces
@@ -26,7 +26,7 @@ In parallel, I ship the agent infrastructure I use day-to-day as open-source Cla
 
 #### Research focus
 
-`LLM Agents` · `Agent-Based Modeling` · `Multi-Agent Systems` · `Catastrophe Modeling` · `Decision under Risk` · `Bayesian Inference` · `Hydrology`
+`LLM Agents` · `Agent-Based Modeling` · `Multi-Agent Systems` · `Catastrophe Modeling` · `Decision-Making Process` · `Flood Risk Management` · `Human-Environment Interaction`
 
 #### Where to find me
 
