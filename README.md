@@ -30,11 +30,8 @@ In parallel, I ship the agent infrastructure I use day-to-day as open-source Cla
 
 #### Where to find me
 
-- 🌐 Personal site: **[wenyuchiou.github.io](https://wenyuchiou.github.io/)** (EN / 繁中)
-- ✉️ Email: **[your-lehigh-email]**
 - 🏛️ Lab: [Complex Adaptive Water Systems (CAWS)](https://ethanyang28.wixsite.com/yceyang) at Lehigh
 - 🏛️ Center: [Catastrophe Modeling & Resilience](https://catmodeling.lehigh.edu/)
-- 💼 LinkedIn: [linkedin.com/in/wenyu-chiou](https://www.linkedin.com/in/wenyu-chiou)
 - 📚 ORCID: [0009-0005-8006-1288](https://orcid.org/0009-0005-8006-1288)
 
 <sub>Looking for Summer 2027 Applied Scientist / ML Engineer internships in agent systems · 歡迎來信討論</sub>
