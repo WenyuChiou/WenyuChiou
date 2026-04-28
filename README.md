@@ -19,7 +19,6 @@ I build **AI agent systems that interact with real environments** — not chatbo
 |---|---|
 | 🧰 [**ai-research-skills**](https://github.com/WenyuChiou/ai-research-skills) | 5 plugins · 14 research skills · install in one command |
 | 🤝 [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | 5 skills for multi-agent orchestration — task splitter, output reconciler, debate, shared memory, acceptance gate |
-| 📊 [**multi-analyst-desk**](https://github.com/WenyuChiou/multi-analyst-desk) | 4 AI specialists + chief strategist for ETF options — pre/intra/post-market reports, bilingual |
 | 📚 [**zotero-skills**](https://github.com/WenyuChiou/zotero-skills) | Programmatic Zotero CRUD — search, add, classify, annotate, organize literature |
 | 🔧 [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) · [**gemini-delegate-skill**](https://github.com/WenyuChiou/gemini-delegate-skill) | Single-agent delegation skills used by the marketplaces above |
 
