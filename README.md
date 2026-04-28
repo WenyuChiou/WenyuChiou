@@ -1,14 +1,10 @@
-<div align="center">
-<img width="1200" alt="Wenyu Chiou — PhD candidate at Lehigh, modeling decision under risk" src="https://wenyuchiou.github.io/assets/cover.jpg" />
-</div>
-
 ### Hi, I'm Wenyu 👋
 
 PhD candidate at **Lehigh University** (Civil & Environmental Engineering, Center for Catastrophe Modeling and Resilience), part of the **[Complex Adaptive Water Systems (CAWS)](https://ethanyang28.wixsite.com/yceyang)** lab under Prof. Y.C. Ethan Yang.
 
 I model how households respond to flooding using agent-based models (ABM) coupled with catastrophe flood models (CAT), with LLM agents standing in as bounded-rational decision-makers.
 
-I also build **Claude Code skills and plugins** for AI workflow optimization including task splitting, output reconciliation, multi-agent orchestration, and tooling that makes research-with-AI reproducible day-to-day.
+I also build **Claude Code skills and plugins** for AI workflow optimization — task splitting, output reconciliation, multi-agent orchestration, and tooling that makes research-with-AI reproducible day-to-day.
 
 📍 Bethlehem, PA · 🎓 PhD 2024–2027 (expected) · 🌐 [wenyuchiou.github.io](https://wenyuchiou.github.io/)
 
@@ -36,7 +32,7 @@ I also build **Claude Code skills and plugins** for AI workflow optimization inc
 
 - 🌐 Portfolio (EN / 繁中): [wenyuchiou.github.io](https://wenyuchiou.github.io/)
 - 🏛️ Lab: [Complex Adaptive Water Systems (CAWS)](https://ethanyang28.wixsite.com/yceyang)
-- 🏛️ Center: [Catastrophe Modeling & Resilience](https://catastrophe.lehigh.edu/)
+- 🏛️ Center: [Catastrophe Modeling & Resilience](https://catmodeling.lehigh.edu/)
 - 💼 LinkedIn: [linkedin.com/in/wenyu-chiou](https://www.linkedin.com/in/wenyu-chiou)
 - 📚 ORCID: [0009-0005-8006-1288](https://orcid.org/0009-0005-8006-1288)
 
