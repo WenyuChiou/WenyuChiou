@@ -6,7 +6,7 @@
 
 PhD candidate at **Lehigh University** (Civil & Environmental Engineering, Center for Catastrophe Modeling and Resilience).
 
-I model how households respond to flood risk and how cities adapt around them — using agent-based models coupled with catastrophe simulators, with LLM agents standing in as bounded-rational decision-makers.
+I model how households respond to flooding using agent-based models (ABM) coupled with catastrophe flood model (CAT), with LLM agents standing in as bounded-rational decision-makers.
 
 📍 Bethlehem, PA · 🎓 PhD 2024–2027 (expected) · 🌐 [wenyuchiou.github.io](https://wenyuchiou.github.io/)
 
