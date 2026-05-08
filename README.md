@@ -13,6 +13,12 @@ I build **AI agent systems that interact with real environments** — not chatbo
 | 🌊 [**FLOODABM**](https://github.com/WenyuChiou/FLOODABM) | Agent-based model coupled with a catastrophe flood modeling — household flood adaptation in the Passaic River Basin (NJ, 2011–2023) |
 | 🤖 [**WAGF**](https://github.com/WenyuChiou/WAGF) | **Governance layer for LLM agents in consequential simulations** — 6-stage validation (physical / behavioral / financial / social) catches hallucination, logical drift, and unsafe state mutation. 3 ref impls, multi-LLM ablation, paper in progress. |
 
+#### Learning materials
+
+| | |
+|---|---|
+| 🗺️ [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | 7-stage structured learning roadmap for agentic AI · bilingual (zh-TW canonical / zh-CN / English) · 145+ curated projects · from LLM basics to multi-agent production |
+
 #### AI tooling — open-source Claude Code skills & plugins
 
 | | |
