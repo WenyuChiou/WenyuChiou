@@ -2,7 +2,7 @@
 
 PhD candidate at **Lehigh University** (Civil and Environmental Engineering / Center for Catastrophe Modeling and Resilience), part of the **[Complex Adaptive Water Systems (CAWS)](https://ethanyang28.wixsite.com/yceyang)** lab under Prof. Y.C. Ethan Yang.
 
-I build **AI agent systems that interact with real environments** — not chatbot benchmarks. My PhD research embeds LLM agents in flood-adaptation simulations using real household data (Passaic River Basin, NJ, 2011–2023). My broader AI interests: **multi-agent collaboration**, **agents under risk and uncertainty**, and **AI tooling for research workflows**. I ship the infrastructure I use day-to-day as open-source Claude Code skills.
+I build **LLM-based agent systems that interact with real environments **. My PhD research embeds LLM agents in flood-adaptation simulations using real household data (Passaic River Basin, NJ, 2011–2023). My broader AI interests: **multi-agent collaboration**, **agents under risk and uncertainty**, and **AI tooling for research workflows**. I ship the infrastructure I use day-to-day as open-source Claude Code skills.
 
 🇹🇼 From Taiwan · 📍 Bethlehem, PA · 🎓 PhD 2024–2027
 
