@@ -41,4 +41,4 @@ I build **LLM-based agent systems that interact with real environments **. My Ph
 - 💼 LinkedIn: [linkedin.com/in/wenyu-chiou](https://www.linkedin.com/in/wenyu-chiou)
 - 📚 ORCID: [0009-0005-8006-1288](https://orcid.org/0009-0005-8006-1288)
 
-<sub>Looking for Summer 2027 Intermship (AI agent/ AI-related) · 歡迎來信討論</sub>
+<sub>Looking for Summer 2027 Intermship (AI Researcher/ Engineer) · 歡迎來信討論</sub>
