@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/human-nature-llm-loop.svg" width="100%" alt="human-nature x LLM loop"></p>
+
 ### Hi, I'm Wenyu 👋
 
 PhD candidate at **Lehigh University** (Civil and Environmental Engineering / Center for Catastrophe Modeling and Resilience), part of the **[Complex Adaptive Water Systems (CAWS)](https://ethanyang28.wixsite.com/yceyang)** lab under Prof. Y.C. Ethan Yang.
