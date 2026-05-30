@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 300" width="960" height="300" font-family="-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" role="img" aria-label="Real-world behaviour grounds an AI agent that interacts with a flood environment">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#131c2e"/>
+    </linearGradient>
+    <linearGradient id="gFound" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2110"/><stop offset="1" stop-color="#15110a"/>
+    </linearGradient>
+    <linearGradient id="gAgent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f343a"/><stop offset="1" stop-color="#0b1f2b"/>
+    </linearGradient>
+    <linearGradient id="gEnv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#102a49"/><stop offset="1" stop-color="#0b1b30"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.30"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b6b86"/>
+    </marker>
+    <clipPath id="envclip"><rect x="734" y="196" width="196" height="46"/></clipPath>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="300" rx="20" fill="url(#bg)"/>
+
+  <text x="480" y="40" text-anchor="middle" fill="#e6edf3" font-size="22" font-weight="700">How people respond to floods &#8212; simulated by AI agents</text>
+  <text x="480" y="62" text-anchor="middle" fill="#8b98a9" font-size="13">real behaviour grounds the agent &#8194;&#183;&#8194; the agent and the environment react to each other</text>
+
+  <ellipse cx="504" cy="190" rx="170" ry="120" fill="url(#glow)"/>
+
+  <!-- one-way: Behaviour -> Agent -->
+  <path id="g1" d="M246,188 C300,188 342,185 388,183" fill="none" stroke="#3b4860" stroke-width="2.5" marker-end="url(#ah)"/>
+  <g transform="translate(317,165)"><rect x="-58" y="-12" width="116" height="19" rx="9.5" fill="#1a1608" stroke="#f59e0b" stroke-opacity="0.5"/><text x="0" y="2" text-anchor="middle" fill="#fbbf24" font-size="10.5">shapes the agent (one-way)</text></g>
+  <circle r="4.5" fill="#f59e0b"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath xlink:href="#g1"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="2.6s" repeatCount="indefinite"/></circle>
+
+  <!-- bidirectional: Agent <-> Environment -->
+  <path id="aAct" d="M618,152 C662,152 694,160 730,167" fill="none" stroke="#3b4860" stroke-width="2.5" marker-end="url(#ah)"/>
+  <g transform="translate(675,138)"><rect x="-34" y="-12" width="68" height="18" rx="9" fill="#0b1f2b" stroke="#2dd4bf" stroke-opacity="0.5"/><text x="0" y="1.5" text-anchor="middle" fill="#5eead4" font-size="10.5">decision</text></g>
+  <circle r="4.5" fill="#14b8a6"><animateMotion dur="2.1s" repeatCount="indefinite"><mpath xlink:href="#aAct"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="2.1s" repeatCount="indefinite"/></circle>
+
+  <path id="aOut" d="M730,213 C694,223 662,225 618,221" fill="none" stroke="#3b4860" stroke-width="2.5" marker-end="url(#ah)"/>
+  <g transform="translate(674,242)"><rect x="-50" y="-12" width="100" height="18" rx="9" fill="#0b1b30" stroke="#3b82f6" stroke-opacity="0.5"/><text x="0" y="1.5" text-anchor="middle" fill="#93c5fd" font-size="10.5">what happens next</text></g>
+  <circle r="4.5" fill="#3b82f6"><animateMotion dur="2.6s" begin="0.6s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath xlink:href="#aOut"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="2.6s" begin="0.6s" repeatCount="indefinite"/></circle>
+
+  <!-- ===== Foundation card ===== -->
+  <g>
+    <rect x="46" y="128" width="200" height="116" rx="16" fill="url(#gFound)" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.8"/>
+    <rect x="60" y="128" width="172" height="4" rx="2" fill="#f59e0b" fill-opacity="0.8"/>
+    <g transform="translate(66,150)">
+      <circle cx="0" cy="6" r="14" fill="#f59e0b" fill-opacity="0.14"/>
+      <rect x="-7" y="6" width="3.4" height="6" rx="1" fill="#fbbf24"/>
+      <rect x="-2" y="1" width="3.4" height="11" rx="1" fill="#fbbf24"/>
+      <rect x="3" y="3.5" width="3.4" height="8.5" rx="1" fill="#fbbf24"/>
+    </g>
+    <text x="150" y="151" text-anchor="middle" fill="#fde68a" font-size="14.5" font-weight="700">Real-world Behaviour</text>
+    <text x="150" y="173" text-anchor="middle" fill="#cbd5e1" font-size="11.5">from household surveys</text>
+    <text x="150" y="190" text-anchor="middle" fill="#9fb0c3" font-size="10">+ models of how people choose (SEM)</text>
+    <g transform="translate(150,217)"><rect x="-66" y="-11" width="132" height="18" rx="9" fill="#f59e0b" fill-opacity="0.10"/><text x="0" y="2.5" text-anchor="middle" fill="#fcd34d" font-size="10">feeds in one-way &#183; grounds agent</text></g>
+  </g>
+
+  <!-- ===== Agent card (hero) ===== -->
+  <g>
+    <rect x="392" y="96" width="224" height="184" rx="18" fill="url(#gAgent)" stroke="#2dd4bf" stroke-width="1.7"/>
+    <rect x="408" y="96" width="192" height="4" rx="2" fill="#2dd4bf" fill-opacity="0.85"/>
+    <g transform="translate(412,108)">
+      <circle cx="11" cy="9" r="15" fill="#2dd4bf" fill-opacity="0.13"/>
+      <line x1="11" y1="-2" x2="11" y2="2" stroke="#2dd4bf" stroke-width="1.4"/>
+      <circle cx="11" cy="-3.4" r="2" fill="#5eead4"><animate attributeName="opacity" values="1;0.25;1" dur="1.1s" repeatCount="indefinite"/></circle>
+      <rect x="2" y="2" width="18" height="14" rx="3.5" fill="#0f766e" stroke="#2dd4bf" stroke-width="1.2"/>
+      <circle cx="8" cy="9" r="1.8" fill="#5eead4"><animate attributeName="r" values="1.8;1.8;0.3;1.8" keyTimes="0;0.9;0.95;1" dur="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="14" cy="9" r="1.8" fill="#5eead4"><animate attributeName="r" values="1.8;1.8;0.3;1.8" keyTimes="0;0.9;0.95;1" dur="3.2s" repeatCount="indefinite"/></circle>
+      <rect x="7.5" y="12.5" width="7" height="1.5" rx="0.7" fill="#2dd4bf"/>
+    </g>
+    <text x="512" y="120" text-anchor="middle" fill="#5eead4" font-size="14.5" font-weight="700">AI Agent (governed)</text>
+    <text x="504" y="135" text-anchor="middle" fill="#8b98a9" font-size="10.5">stands in for a real household</text>
+    <g>
+      <rect x="408" y="144" width="192" height="20" rx="7" fill="#0e3b3b" stroke="#2dd4bf" stroke-opacity="0.45"><animate attributeName="fill" values="#0e3b3b;#2dd4bf;#0e3b3b" keyTimes="0;0.2;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect>
+      <text x="504" y="158" text-anchor="middle" fill="#ecfeff" font-size="11" font-weight="600">1 &#183; See the situation &amp; risk</text>
+    </g>
+    <g>
+      <rect x="408" y="169" width="192" height="20" rx="7" fill="#0e3b3b" stroke="#2dd4bf" stroke-opacity="0.45"><animate attributeName="fill" values="#0e3b3b;#2dd4bf;#0e3b3b" keyTimes="0;0.2;1" dur="3.2s" begin="0.7s" repeatCount="indefinite"/></rect>
+      <text x="504" y="183" text-anchor="middle" fill="#ecfeff" font-size="11" font-weight="600">2 &#183; Think it through (LLM)</text>
+    </g>
+    <g>
+      <rect x="408" y="194" width="192" height="20" rx="7" fill="#0e3b3b" stroke="#f59e0b" stroke-opacity="0.55"><animate attributeName="fill" values="#0e3b3b;#f59e0b;#0e3b3b" keyTimes="0;0.2;1" dur="3.2s" begin="1.4s" repeatCount="indefinite"/></rect>
+      <text x="504" y="208" text-anchor="middle" fill="#fff7ed" font-size="11" font-weight="600">3 &#183; Check the choice is realistic</text>
+    </g>
+    <g>
+      <rect x="408" y="219" width="192" height="20" rx="7" fill="#0e3b3b" stroke="#2dd4bf" stroke-opacity="0.45"><animate attributeName="fill" values="#0e3b3b;#2dd4bf;#0e3b3b" keyTimes="0;0.2;1" dur="3.2s" begin="2.1s" repeatCount="indefinite"/></rect>
+      <text x="504" y="233" text-anchor="middle" fill="#ecfeff" font-size="11" font-weight="600">4 &#183; Decide &amp; act (kept on record)</text>
+    </g>
+    <text x="504" y="255" text-anchor="middle" fill="#8b98a9" font-size="9.5">&#8635; redo if the choice isn't realistic</text>
+  </g>
+
+  <!-- ===== Environment card ===== -->
+  <g>
+    <rect x="732" y="128" width="200" height="116" rx="16" fill="url(#gEnv)" stroke="#60a5fa" stroke-width="1.5"/>
+    <rect x="746" y="128" width="172" height="4" rx="2" fill="#60a5fa" fill-opacity="0.85"/>
+    <g transform="translate(752,150)">
+      <circle cx="0" cy="6" r="14" fill="#60a5fa" fill-opacity="0.14"/>
+      <path d="M0,-2 C5,4 6,8 0,12 C-6,8 -5,4 0,-2 Z" fill="#60a5fa"/>
+    </g>
+    <text x="836" y="151" text-anchor="middle" fill="#bfdbfe" font-size="14.5" font-weight="700">Environment</text>
+    <text x="836" y="172" text-anchor="middle" fill="#cbd5e1" font-size="11.5">flood &amp; damage model</text>
+    <g clip-path="url(#envclip)">
+      <path fill="url(#water)" fill-opacity="0.5" d="M734,210 q24,-10 48,0 t48,0 t48,0 t48,0 t48,0 v34 h-288 z"><animateTransform attributeName="transform" type="translate" from="0 0" to="-96 0" dur="2.2s" repeatCount="indefinite"/></path>
+      <path fill="url(#water)" fill-opacity="0.85" d="M734,217 q24,-8 48,0 t48,0 t48,0 t48,0 t48,0 v27 h-288 z"><animateTransform attributeName="transform" type="translate" from="0 0" to="-96 0" dur="3.1s" repeatCount="indefinite"/></path>
+    </g>
+    <text x="836" y="236" text-anchor="middle" fill="#dbeafe" font-size="10.5" font-weight="600">flooding &#183; damage</text>
+  </g>
+</svg>
