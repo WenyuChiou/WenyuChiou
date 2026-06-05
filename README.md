@@ -13,7 +13,7 @@ I built an **LLM-driven agent framework coupled with environments **. My PhD res
 | | |
 |---|---|
 | 🌊 [**FLOODABM**](https://github.com/WenyuChiou/FLOODABM) | Agent-based model coupled with a catastrophe flood modeling — household flood adaptation in the Passaic River Basin (NJ, 2011–2023) |
-| 🤖 [**WAGF**](https://github.com/WenyuChiou/WAGF) | **Governance layer for LLM agents in consequential simulations** — 6-stage validation (physical / behavioral / financial / social) catches hallucination, logical drift, and unsafe state mutation. 3 ref impls, multi-LLM ablation, paper in progress. |
+
 
 #### Learning materials
 
