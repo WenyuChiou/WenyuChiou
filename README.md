@@ -80,6 +80,7 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
   <img src="https://img.shields.io/badge/Claude%20Code-0d1117?style=flat-square&logo=anthropic" alt="Claude Code"/>
   <img src="https://img.shields.io/badge/MCP-0d1117?style=flat-square&logo=modelcontextprotocol" alt="MCP"/>
   <img src="https://img.shields.io/badge/LangGraph%20%2F%20Agents-0d1117?style=flat-square&logo=langchain" alt="Agents"/>
+  <img src="https://img.shields.io/badge/Ollama-0d1117?style=flat-square&logo=ollama" alt="Ollama"/>
 </p>
 
 ## 📬 Where to find me
