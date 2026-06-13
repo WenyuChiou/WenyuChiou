@@ -68,7 +68,7 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 
 | | |
 |---|---|
-| 🗺️ [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | ⭐ 2.5k+ · 7-stage agentic-AI roadmap · trilingual (繁中 canonical / 简中 / EN) · 240+ curated resources, from LLM basics to multi-agent production |
+| 🗺️ [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | ⭐ 2.7k+ · 7-stage agentic-AI roadmap · trilingual (繁中 canonical / 简中 / EN) · 240+ curated resources, from LLM basics to multi-agent production |
 
 ## 🛠️ Stack
 
