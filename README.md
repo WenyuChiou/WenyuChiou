@@ -77,7 +77,6 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
   <img src="https://img.shields.io/badge/R-0d1117?style=flat-square&logo=r" alt="R"/>
   <img src="https://img.shields.io/badge/MATLAB-0d1117?style=flat-square&logoColor=e16737" alt="MATLAB"/>
   <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/LaTeX-0d1117?style=flat-square&logo=latex" alt="LaTeX"/>
   <img src="https://img.shields.io/badge/ArcGIS%20Pro-0d1117?style=flat-square&logo=arcgis" alt="ArcGIS Pro"/>
   <img src="https://img.shields.io/badge/Ollama-0d1117?style=flat-square&logo=ollama" alt="Ollama"/>
   <img src="https://img.shields.io/badge/Claude%20Code-0d1117?style=flat-square&logo=anthropic" alt="Claude Code"/>
