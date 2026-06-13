@@ -49,7 +49,7 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 ## 📄 Publications & Preprints
 
 <!-- PUBS:START — newest first; format: - **[Title](link)** — venue, year -->
-- 🚧 *(placeholder — drop your first entry here when it's out)*
+- **Leveraging Large Language Models for Agent-Based Simulation of Human-Water System Interactions** — *Water Resources Research* (in press, 2026). DOI: `10.1029/2025WR042111`
 <!-- PUBS:END -->
 
 ## 🧰 AI Tooling — open-source Claude Code skills & plugins
