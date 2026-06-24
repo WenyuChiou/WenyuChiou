@@ -122,7 +122,7 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 <br/><br/>
 
 <img src="https://github-readme-stats.vercel.app/api?username=WenyuChiou&show_icons=true&hide_border=false&border_color=e2e8f0&bg_color=ffffff&title_color=0d9488&icon_color=f59e0b&text_color=334155&ring_color=0d9488&cache_seconds=86400" height="165" alt="GitHub stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WenyuChiou&layout=compact&hide_border=false&border_color=e2e8f0&bg_color=ffffff&title_color=0d9488&text_color=334155&langs_count=8&cache_seconds=86400" height="165" alt="Top languages"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WenyuChiou&layout=compact&hide_border=false&border_color=e2e8f0&bg_color=ffffff&title_color=0d9488&text_color=334155&langs_count=8&hide=jupyter%20notebook,html,css,batchfile&cache_seconds=86400" height="165" alt="Top languages"/>
 
 <br/><br/>
 
