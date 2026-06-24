@@ -17,8 +17,8 @@ jobs:
       - name: Generate trophy.svg
         uses: soulteary/github-profile-trophy-action@cabefc1ce203b1ce4c03dae3335aa794aefbbb80 # v1.0.0
         with:
-          # All trophy params live in the options query string (theme tuned to the light/amber palette):
-          options: 'username=${{ github.repository_owner }}&theme=flat&no-bg=true&no-frame=true&column=7&margin-w=12&margin-h=12'
+          # Solid light card background (no `no-bg`) so the label text stays readable on GitHub's dark theme too.
+          options: 'username=${{ github.repository_owner }}&theme=flat&column=7&margin-w=12&margin-h=12'
           path: assets/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           version: v1.0.0
