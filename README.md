@@ -63,7 +63,7 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 <img src="https://img.shields.io/badge/PUBLICATIONS-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Publications"/>
 
 <!-- PUBS:START — newest first; format: - **[Title](link)** — venue, year -->
-- **Leveraging Large Language Models for Agent-Based Simulation of Human-Water System Interactions** — *Water Resources Research* (in press, 2026) · DOI [`10.1029/2025WR042111`](https://doi.org/10.1029/2025WR042111)
+- **Leveraging Large Language Models for Agent-Based Simulation of Human-Water System Interactions** — *Water Resources Research*, **62**(6), e2025WR042111 (2026) · DOI [`10.1029/2025WR042111`](https://doi.org/10.1029/2025WR042111)
 <!-- PUBS:END -->
 
 &nbsp;
