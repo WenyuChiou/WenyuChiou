@@ -1,0 +1,32 @@
+name: GitHub-Profile-3D-Contrib
+
+on:
+  schedule:
+    - cron: "0 6 * * *"     # daily ~02:00 US Eastern
+  workflow_dispatch:         # lets you trigger the first run manually
+  push:
+    branches:
+      - preview/profile-redesign   # TEMP: generate assets on the preview branch (strip before main)
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name  github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          # README only references the green (light) variant; commit just that one
+          # (the action generates ~12 themes — staging all would bloat main's history).
+          git add profile-3d-contrib/profile-green.svg
+          git commit -m "chore: refresh 3D contribution graph" || exit 0
+          git push

@@ -1,0 +1,32 @@
+name: Update profile trophy
+
+on:
+  schedule:
+    - cron: "0 6 * * *"     # daily ~02:00 US Eastern
+  workflow_dispatch:         # lets you trigger the first run manually
+  push:
+    branches:
+      - preview/profile-redesign   # TEMP: generate assets on the preview branch (strip before main)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate trophy.svg
+        uses: soulteary/github-profile-trophy-action@v1.0.0
+        with:
+          # All trophy params live in the options query string (theme tuned to the amber/dark palette):
+          options: 'username=${{ github.repository_owner }}&theme=flat&no-bg=true&no-frame=true&column=7&margin-w=12&margin-h=12'
+          path: assets/trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: v1.0.0
+      - name: Commit trophy.svg
+        run: |
+          git config user.name  github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add assets/trophy.svg
+          git commit -m "chore: refresh profile trophy" || exit 0
+          git push
