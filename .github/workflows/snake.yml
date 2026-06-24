@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - main
-      - preview/profile-redesign   # TEMP: generate assets on the preview branch (strip before main)
 
 permissions:
   contents: write

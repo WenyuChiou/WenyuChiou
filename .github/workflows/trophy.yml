@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "15 6 * * *"    # daily ~02:15 US Eastern (staggered from the 3D job to avoid a push race)
   workflow_dispatch:         # lets you trigger the first run manually
-  push:
-    branches:
-      - preview/profile-redesign   # TEMP: generate assets on the preview branch (strip before main)
 
 jobs:
   build:
