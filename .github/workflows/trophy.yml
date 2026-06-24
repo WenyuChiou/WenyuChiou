@@ -2,7 +2,7 @@ name: Update profile trophy
 
 on:
   schedule:
-    - cron: "0 6 * * *"     # daily ~02:00 US Eastern
+    - cron: "15 6 * * *"    # daily ~02:15 US Eastern (staggered from the 3D job to avoid a push race)
   workflow_dispatch:         # lets you trigger the first run manually
   push:
     branches:
@@ -29,4 +29,5 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add assets/trophy.svg
           git commit -m "chore: refresh profile trophy" || exit 0
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
           git push

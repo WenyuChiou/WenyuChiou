@@ -29,4 +29,5 @@ jobs:
           # (the action generates ~12 themes — staging all would bloat main's history).
           git add profile-3d-contrib/profile-green.svg
           git commit -m "chore: refresh 3D contribution graph" || exit 0
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
           git push
