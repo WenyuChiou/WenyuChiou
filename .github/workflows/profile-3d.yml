@@ -2,7 +2,7 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: "0 6 * * *"     # daily ~02:00 US Eastern
+    - cron: "0 6 * * *"     # daily ~02:00 US Eastern (EDT; 01:00 during EST)
   workflow_dispatch:         # lets you trigger the first run manually
 
 permissions:
@@ -14,8 +14,8 @@ jobs:
     name: generate-github-profile-3d-contrib
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
@@ -23,9 +23,15 @@ jobs:
         run: |
           git config user.name  github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          # Validate before committing — never ship a blank/broken SVG silently.
+          test -s profile-3d-contrib/profile-green.svg && grep -q '<svg' profile-3d-contrib/profile-green.svg || { echo "invalid SVG"; exit 1; }
           # README only references the green (light) variant; commit just that one
           # (the action generates ~12 themes — staging all would bloat main's history).
           git add profile-3d-contrib/profile-green.svg
           git commit -m "chore: refresh 3D contribution graph" || exit 0
-          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
-          git push
+          # Push with rebase + bounded retry (resolves the concurrent-push race; fails loud if persistent).
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push; then exit 0; fi
+            echo "push attempt $attempt failed; retrying in $((attempt * 5))s"; sleep $((attempt * 5))
+          done
+          echo "ERROR: failed to push after 3 attempts"; exit 1

@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
       - name: Generate trophy.svg
-        uses: soulteary/github-profile-trophy-action@v1.0.0
+        uses: soulteary/github-profile-trophy-action@cabefc1ce203b1ce4c03dae3335aa794aefbbb80 # v1.0.0
         with:
-          # All trophy params live in the options query string (theme tuned to the amber/dark palette):
+          # All trophy params live in the options query string (theme tuned to the light/amber palette):
           options: 'username=${{ github.repository_owner }}&theme=flat&no-bg=true&no-frame=true&column=7&margin-w=12&margin-h=12'
           path: assets/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -26,7 +26,13 @@ jobs:
         run: |
           git config user.name  github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          # Validate before committing — never ship a blank/broken SVG silently.
+          test -s assets/trophy.svg && grep -q '<svg' assets/trophy.svg || { echo "invalid SVG"; exit 1; }
           git add assets/trophy.svg
           git commit -m "chore: refresh profile trophy" || exit 0
-          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
-          git push
+          # Push with rebase + bounded retry (resolves the concurrent-push race; fails loud if persistent).
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push; then exit 0; fi
+            echo "push attempt $attempt failed; retrying in $((attempt * 5))s"; sleep $((attempt * 5))
+          done
+          echo "ERROR: failed to push after 3 attempts"; exit 1

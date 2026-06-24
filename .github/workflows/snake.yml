@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Generate contribution-grid snake SVGs
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
           github_user_name: ${{ github.repository_owner }}
           # Amber snake (#f59e0b) to match the profile palette.
@@ -29,8 +29,14 @@ jobs:
             dist/github-snake.svg?color_snake=#f59e0b&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#f59e0b
 
+      - name: Validate generated SVGs
+        run: |
+          for f in dist/*.svg; do
+            test -s "$f" && grep -q '<svg' "$f" || { echo "invalid SVG: $f"; exit 1; }
+          done
+
       - name: Push SVGs to the output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
         with:
           target_branch: output
           build_dir: dist
