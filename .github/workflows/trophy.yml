@@ -5,11 +5,13 @@ on:
     - cron: "15 6 * * *"    # daily ~02:15 US Eastern (staggered from the 3D job to avoid a push race)
   workflow_dispatch:         # lets you trigger the first run manually
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - name: Generate trophy.svg
