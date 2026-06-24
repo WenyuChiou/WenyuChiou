@@ -24,8 +24,8 @@
             height="109"
             stroke="#e1e4e8"
             fill="#FFF"
-            stroke-opacity="0"
-            fill-opacity="0"
+            stroke-opacity="1"
+            fill-opacity="1"
           />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
@@ -143,8 +143,8 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
             height="109"
             stroke="#e1e4e8"
             fill="#FFF"
-            stroke-opacity="0"
-            fill-opacity="0"
+            stroke-opacity="1"
+            fill-opacity="1"
           />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
@@ -209,7 +209,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
         width: 0px;
       }
       to {
-        width: 78.32px;
+        width: 78.48px;
       }
     }
     #Commits-rank-progress{
@@ -253,8 +253,8 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
             height="109"
             stroke="#e1e4e8"
             fill="#FFF"
-            stroke-opacity="0"
-            fill-opacity="0"
+            stroke-opacity="1"
+            fill-opacity="1"
           />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
@@ -372,8 +372,8 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
             height="109"
             stroke="#e1e4e8"
             fill="#FFF"
-            stroke-opacity="0"
-            fill-opacity="0"
+            stroke-opacity="1"
+            fill-opacity="1"
           />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
@@ -491,8 +491,8 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
             height="109"
             stroke="#e1e4e8"
             fill="#FFF"
-            stroke-opacity="0"
-            fill-opacity="0"
+            stroke-opacity="1"
+            fill-opacity="1"
           />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
@@ -592,8 +592,8 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
             height="109"
             stroke="#e1e4e8"
             fill="#FFF"
-            stroke-opacity="0"
-            fill-opacity="0"
+            stroke-opacity="1"
+            fill-opacity="1"
           />
           
   
@@ -672,8 +672,8 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
             height="109"
             stroke="#e1e4e8"
             fill="#FFF"
-            stroke-opacity="0"
-            fill-opacity="0"
+            stroke-opacity="1"
+            fill-opacity="1"
           />
           
   
@@ -752,8 +752,8 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
             height="109"
             stroke="#e1e4e8"
             fill="#FFF"
-            stroke-opacity="0"
-            fill-opacity="0"
+            stroke-opacity="1"
+            fill-opacity="1"
           />
           
   
