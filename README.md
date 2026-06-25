@@ -27,6 +27,7 @@
 <!-- HIGHLIGHTS:START — live, third-party-verified signals (auto-update) -->
 <p align="center">
   <a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
+  <a href="https://github.com/WenyuChiou"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/WenyuChiou/WenyuChiou/main/stats/commits.json&style=flat-square&labelColor=0d1117&logo=git&logoColor=white" alt="all-time public commits"/></a>
   <a href="https://doi.org/10.1029/2025WR042111"><img src="https://img.shields.io/badge/Water%20Resources%20Research%202026-10.1029%2F2025WR042111-2dd4bf?style=flat-square&labelColor=0d1117" alt="WRR 2026 paper DOI"/></a>
 </p>
 <!-- HIGHLIGHTS:END -->
