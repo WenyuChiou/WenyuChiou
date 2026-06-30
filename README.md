@@ -126,7 +126,7 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 
 <img src="https://img.shields.io/badge/ELSEWHERE-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Elsewhere"/>
 
-- **Lab** — [Complex Adaptive Water Systems (CAWS)](https://ethanyang28.wixsite.com/yceyang) · **Center** — [Catastrophe Modeling & Resilience](https://catmodeling.lehigh.edu/)
+- **Lab** — [Complex Adaptive Water Systems (CAWS)](https://ethanyang28.wixsite.com/yceyang) · [Center for Catastrophe Modeling and Resilience](https://catmodeling.lehigh.edu/)
 
 <div align="center">
 
