@@ -13,7 +13,7 @@
 
 <!-- TAGLINE:START — animated; edit the lines= segments (separated by ;) -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=0d9488&center=true&vCenter=true&width=640&height=42&lines=Governed+LLM+agents+for+flood-risk+%26+water+systems;Coupling+AI+agents+with+catastrophe+models;Open+to+Summer+2027+AI+research+internships" alt="Governed LLM agents for flood-risk and water systems · Coupling AI agents with catastrophe models · Open to Summer 2027 AI research internships" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=0d9488&center=true&vCenter=true&width=640&height=42&lines=Governed+LLM+agents+for+flood-risk+%26+water+systems;Coupling+AI+agents+with+catastrophe+models" alt="Governed LLM agents for flood-risk and water systems · Coupling AI agents with catastrophe models" />
 </p>
 <!-- TAGLINE:END -->
 
