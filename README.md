@@ -27,7 +27,6 @@
 <!-- HIGHLIGHTS:START — live, third-party-verified signals (auto-update) -->
 <p align="center">
   <a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
-  <a href="https://github.com/WenyuChiou"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/WenyuChiou/WenyuChiou/main/stats/commits.json&style=flat-square&labelColor=0d1117&logo=git&logoColor=white" alt="all-time public commits"/></a>
 </p>
 <!-- HIGHLIGHTS:END -->
 
