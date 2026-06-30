@@ -17,14 +17,11 @@
 </p>
 <!-- TAGLINE:END -->
 
+<!-- HIGHLIGHTS:START — contact links + live star count (third-party-verified, auto-updates) -->
 <p align="center">
   <a href="https://wenyuchiou.github.io/"><img src="https://img.shields.io/badge/Website-wenyuchiou.github.io-2dd4bf?style=flat-square&logo=githubpages&logoColor=white&labelColor=0d1117" alt="Website"/></a>
   <a href="https://www.linkedin.com/in/wenyu-chiou"><img src="https://img.shields.io/badge/LinkedIn-wenyu--chiou-0a66c2?style=flat-square&labelColor=0d1117" alt="LinkedIn"/></a>
   <a href="mailto:wec324@lehigh.edu"><img src="https://img.shields.io/badge/Email-wec324%40lehigh.edu-f59e0b?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
-</p>
-
-<!-- HIGHLIGHTS:START — live, third-party-verified signals (auto-update) -->
-<p align="center">
   <a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
 </p>
 <!-- HIGHLIGHTS:END -->
