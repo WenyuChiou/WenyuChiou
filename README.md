@@ -20,7 +20,6 @@
 <p align="center">
   <a href="https://wenyuchiou.github.io/"><img src="https://img.shields.io/badge/Website-wenyuchiou.github.io-2dd4bf?style=flat-square&logo=githubpages&logoColor=white&labelColor=0d1117" alt="Website"/></a>
   <a href="https://www.linkedin.com/in/wenyu-chiou"><img src="https://img.shields.io/badge/LinkedIn-wenyu--chiou-0a66c2?style=flat-square&labelColor=0d1117" alt="LinkedIn"/></a>
-  <a href="https://orcid.org/0009-0005-8006-1288"><img src="https://img.shields.io/badge/ORCID-0009--0005--8006--1288-a6ce39?style=flat-square&logo=orcid&logoColor=white&labelColor=0d1117" alt="ORCID"/></a>
   <a href="mailto:wec324@lehigh.edu"><img src="https://img.shields.io/badge/Email-wec324%40lehigh.edu-f59e0b?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
 </p>
 
@@ -130,9 +129,7 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 
 <img src="https://img.shields.io/badge/ELSEWHERE-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Elsewhere"/>
 
-- **Personal site** (EN / 繁中) — [wenyuchiou.github.io](https://wenyuchiou.github.io/)
 - **Lab** — [Complex Adaptive Water Systems (CAWS)](https://ethanyang28.wixsite.com/yceyang) · **Center** — [Catastrophe Modeling & Resilience](https://catmodeling.lehigh.edu/)
-- **Contact** — wec324@lehigh.edu · [LinkedIn](https://www.linkedin.com/in/wenyu-chiou) · [ORCID](https://orcid.org/0009-0005-8006-1288)
 
 <div align="center">
 
