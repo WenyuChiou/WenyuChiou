@@ -81,7 +81,7 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 
 | | |
 |---|---|
-| [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | [![stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=%E2%AD%90&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/awesome-agentic-ai-zh) 7-stage agentic-AI roadmap · trilingual (繁中 canonical / 简中 / EN) · 240+ curated resources, from LLM basics to multi-agent production |
+| [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | [![stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=%E2%AD%90&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/awesome-agentic-ai-zh) [![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-f59e0b?style=flat-square&logo=buymeacoffee&logoColor=white&labelColor=0d1117)](https://buymeacoffee.com/wenyuchiou) 7-stage agentic-AI roadmap · trilingual (繁中 canonical / 简中 / EN) · 240+ curated resources, from LLM basics to multi-agent production |
 
 &nbsp;
 
