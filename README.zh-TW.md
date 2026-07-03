@@ -83,7 +83,7 @@
 
 | | |
 |---|---|
-| [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | [![stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=%E2%AD%90&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/awesome-agentic-ai-zh) [![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-f59e0b?style=flat-square&logo=buymeacoffee&logoColor=white&labelColor=0d1117)](https://buymeacoffee.com/wenyuchiou) 7 階段 agentic-AI 學習地圖 · 三語（繁中為主 / 简中 / EN）· 240+ 精選資源，從 LLM 基礎到多代理 production |
+| [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | [![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-f59e0b?style=flat-square&logo=buymeacoffee&logoColor=white&labelColor=0d1117)](https://buymeacoffee.com/wenyuchiou) 7 階段 agentic-AI 學習地圖 · 三語（繁中為主 / 简中 / EN）· 240+ 精選資源，從 LLM 基礎到多代理 production |
 
 &nbsp;
 
