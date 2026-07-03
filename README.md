@@ -5,6 +5,8 @@
      Edit content inside the tables / anchors; keep the badge headers as-is.
      ============================================================ -->
 
+<p align="center"><sub><b>English</b> · <a href="README.zh-TW.md">繁體中文</a></sub></p>
+
 <div align="center">
   <a href="https://wenyuchiou.github.io/">
     <img src="assets/research-loop.svg" alt="Governed LLM agents × human–environment systems: real household behaviour grounds the agent; the agent perceives, reasons, is verified by a harness, and acts; agents interact socially; and the agent co-evolves with a living water environment." width="100%"/>
@@ -127,6 +129,12 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 <img src="https://img.shields.io/badge/ELSEWHERE-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Elsewhere"/>
 
 - **Lab** — [Complex Adaptive Water Systems (CAWS)](https://ethanyang28.wixsite.com/yceyang) · [Center for Catastrophe Modeling and Resilience](https://catmodeling.lehigh.edu/)
+
+&nbsp;
+
+<img src="https://img.shields.io/badge/ADVISORY-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Advisory"/>
+
+Currently available for **advisory work** — **prompt review / audit** and **AI agent workflow consulting**. As a full-time PhD student my availability is limited, but teams or companies working in these areas are welcome to reach out: 📧 [wenyuchiou12@gmail.com](mailto:wenyuchiou12@gmail.com)
 
 <div align="center">
 
