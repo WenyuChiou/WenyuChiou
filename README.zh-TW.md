@@ -73,9 +73,25 @@
 | [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | 多代理協作編排——任務拆分、輸出整合、辯論、共享記憶、驗收關卡 |
 | [**zotero-skills**](https://github.com/WenyuChiou/zotero-skills) | 程式化操作 Zotero——搜尋、新增、分類、註解、整理文獻 |
 | [**research-hub**](https://github.com/WenyuChiou/research-hub) | 可被 AI 操作的研究工作區，串接 Zotero、Obsidian、NotebookLM——CLI、MCP、REST、儀表板 |
-| [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) · [**gemini-delegate-skill**](https://github.com/WenyuChiou/gemini-delegate-skill) | 上述 marketplace 使用的單代理委派 skill |
+| [**academic-writing-skills**](https://github.com/WenyuChiou/academic-writing-skills) | 嚴謹的學術論文撰寫、修訂與投稿——領域無關，依各論文／期刊覆寫規則 |
+| [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | 上述 marketplace 使用的單代理委派 skill |
 <!-- TOOLING:START — 在此行上方新增工具表格列 -->
 <!-- TOOLING:END -->
+
+&nbsp;
+
+<img src="https://img.shields.io/badge/%E9%96%8B%E6%BA%90%E8%B2%A2%E7%8D%BB-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="開源貢獻"/>
+
+向我日常使用的開源專案送出、且已合併（merged）的 pull request：
+
+| | |
+|---|---|
+| [**ZhuLinsen/daily_stock_analysis**](https://github.com/ZhuLinsen/daily_stock_analysis) | 新增台股支援——市場偵測與路由、三大法人資料抓取，以及 TWD 幣別／股利修正 · [已合併 PR](https://github.com/ZhuLinsen/daily_stock_analysis/pulls?q=is%3Apr+author%3AWenyuChiou+is%3Amerged) |
+| [**langchain-ai/openwiki**](https://github.com/langchain-ai/openwiki) | 在 `chmod` 無作用的 Windows 上，收緊 `~/.openwiki` 的檔案權限 · [#367](https://github.com/langchain-ai/openwiki/pull/367) |
+| [**BuilderIO/agent-native**](https://github.com/BuilderIO/agent-native) | 讓 CLI 在 `codex-cli` engine 下改走 Codex runner，而非直接崩潰 · [#1362](https://github.com/BuilderIO/agent-native/pull/1362) |
+| [**Nanako0129/coralline**](https://github.com/Nanako0129/coralline) | 修正 auto-layout 過度換行——以顯示欄寬（而非位元組）計算 · [#10](https://github.com/Nanako0129/coralline/pull/10) |
+<!-- OSS:START — 每列對應一個已合併（GitHub 顯示紫色 Merged 標記）的 PR；只用事實動詞，不放星數 -->
+<!-- OSS:END -->
 
 &nbsp;
 

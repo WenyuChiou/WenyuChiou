@@ -73,9 +73,25 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 | [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | Multi-agent orchestration — task splitter, output reconciler, debate, shared memory, acceptance gate |
 | [**zotero-skills**](https://github.com/WenyuChiou/zotero-skills) | Programmatic Zotero CRUD — search, add, classify, annotate, organize literature |
 | [**research-hub**](https://github.com/WenyuChiou/research-hub) | AI-operable research workspace for Zotero, Obsidian, and NotebookLM — CLI, MCP, REST, dashboard |
-| [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) · [**gemini-delegate-skill**](https://github.com/WenyuChiou/gemini-delegate-skill) | Single-agent delegation skills used by the marketplaces above |
+| [**academic-writing-skills**](https://github.com/WenyuChiou/academic-writing-skills) | Rigorous academic paper writing, revision, and submission — field-agnostic with per-paper journal overrides |
+| [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | Single-agent delegation skill used by the marketplaces above |
 <!-- TOOLING:START — add new tools as table rows above this line -->
 <!-- TOOLING:END -->
+
+&nbsp;
+
+<img src="https://img.shields.io/badge/OPEN%20SOURCE-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Open-source contributions — merged pull requests to projects I use"/>
+
+A few merged pull requests to open-source projects I use:
+
+| | |
+|---|---|
+| [**ZhuLinsen/daily_stock_analysis**](https://github.com/ZhuLinsen/daily_stock_analysis) | Added Taiwan (台股) market support — market detection & routing, an institutional-flow (三大法人) data fetcher, and TWD currency / dividend fixes · [merged PRs](https://github.com/ZhuLinsen/daily_stock_analysis/pulls?q=is%3Apr+author%3AWenyuChiou+is%3Amerged) |
+| [**langchain-ai/openwiki**](https://github.com/langchain-ai/openwiki) | Restricted `~/.openwiki` permissions on Windows, where `chmod` is a no-op · [#367](https://github.com/langchain-ai/openwiki/pull/367) |
+| [**BuilderIO/agent-native**](https://github.com/BuilderIO/agent-native) | Routed `AGENT_ENGINE=codex-cli` to the Codex runner instead of crashing · [#1362](https://github.com/BuilderIO/agent-native/pull/1362) |
+| [**Nanako0129/coralline**](https://github.com/Nanako0129/coralline) | Fixed auto-layout over-wrapping — measure display columns, not bytes · [#10](https://github.com/Nanako0129/coralline/pull/10) |
+<!-- OSS:START — one row per MERGED PR (GitHub stamps the purple "Merged" badge); factual verbs only, no star counts -->
+<!-- OSS:END -->
 
 &nbsp;
 
