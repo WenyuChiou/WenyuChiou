@@ -35,6 +35,15 @@
   <img src="https://img.shields.io/badge/%E9%96%8B%E6%94%BE-2027%20%E6%9A%91%E6%9C%9F%20AI%20%E5%AF%A6%E7%BF%92-f59e0b?style=flat-square&labelColor=0d1117" alt="開放 2027 暑期 AI 實習"/>
 </p>
 
+<p align="center">
+  <a href="https://github.com/WenyuChiou/ai-profile">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./dist/badge-dark.svg"/>
+      <img src="./dist/badge-light.svg" alt="由明示 Git provenance 驗證的 AI 協作比例"/>
+    </picture>
+  </a>
+</p>
+
 &nbsp;
 
 <img src="https://img.shields.io/badge/%E9%97%9C%E6%96%BC-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="關於"/>
@@ -77,6 +86,27 @@
 | [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | 上述 marketplace 使用的單代理委派 skill |
 <!-- TOOLING:START — 在此行上方新增工具表格列 -->
 <!-- TOOLING:END -->
+
+&nbsp;
+
+<img src="https://img.shields.io/badge/AI%20%E5%8D%94%E4%BD%9C-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI 協作"/>
+
+以下是從選定 public repositories 取得、以明示 Git provenance 為依據的
+AI 協作活動，由 [**ai-profile**](https://github.com/WenyuChiou/ai-profile)
+在本機產生。Unknown commit 保持 unknown；若同一個 commit 包含多個 AI
+actor，各 provider 的總數可能重疊。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
+  <img src="./dist/summary-light.svg" alt="選定 public repositories 的 AI 協作摘要" width="100%"/>
+</picture>
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/heatmap-dark.svg"/>
+  <img src="./dist/heatmap-light.svg" alt="Commit 活動與 AI 協作 heatmap" width="100%"/>
+</picture>
 
 &nbsp;
 

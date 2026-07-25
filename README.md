@@ -35,6 +35,15 @@
   <img src="https://img.shields.io/badge/Open%20to-Summer%202027%20AI%20internship-f59e0b?style=flat-square&labelColor=0d1117" alt="Open to Summer 2027 AI internship"/>
 </p>
 
+<p align="center">
+  <a href="https://github.com/WenyuChiou/ai-profile">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./dist/badge-dark.svg"/>
+      <img src="./dist/badge-light.svg" alt="AI-assisted share verified from explicit Git provenance"/>
+    </picture>
+  </a>
+</p>
+
 &nbsp;
 
 <img src="https://img.shields.io/badge/ABOUT-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="About"/>
@@ -77,6 +86,27 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 | [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | Single-agent delegation skill used by the marketplaces above |
 <!-- TOOLING:START — add new tools as table rows above this line -->
 <!-- TOOLING:END -->
+
+&nbsp;
+
+<img src="https://img.shields.io/badge/AI%20COLLABORATION-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI Collaboration"/>
+
+Evidence-backed AI collaboration activity from selected public repositories,
+generated locally with [**ai-profile**](https://github.com/WenyuChiou/ai-profile).
+Unknown commits stay unknown; provider totals can overlap when one commit
+includes multiple AI actors.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
+  <img src="./dist/summary-light.svg" alt="AI collaboration summary from selected public repositories" width="100%"/>
+</picture>
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/heatmap-dark.svg"/>
+  <img src="./dist/heatmap-light.svg" alt="Commit activity and AI collaboration heatmap" width="100%"/>
+</picture>
 
 &nbsp;
 

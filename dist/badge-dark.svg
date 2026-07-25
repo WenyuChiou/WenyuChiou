@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="191" height="24" viewBox="0 0 191 24" role="img" aria-labelledby="aiprofileBadgeTitle aiprofileBadgeDesc">
+<title id="aiprofileBadgeTitle">AI-assisted: 76% · verified by git</title>
+<desc id="aiprofileBadgeDesc">952 of 1256 commits AI-assisted, from explicit git provenance.</desc>
+<clipPath id="aiprofileBadgeClip"><rect width="191" height="24" rx="4"/></clipPath>
+<g clip-path="url(#aiprofileBadgeClip)">
+<rect x="0" y="0" width="74" height="24" fill="#161b22"/>
+<rect x="74" y="0" width="117" height="24" fill="#4493f8"/>
+</g>
+<rect x="0.5" y="0.5" width="190" height="23" rx="4" fill="none" stroke="#3d444d" stroke-width="1"/>
+<text x="37" y="16" font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0f6fc" text-anchor="middle">AI-assisted</text>
+<text x="132" y="16" font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#0d1117" text-anchor="middle">76% · verified by git</text>
+</svg>
