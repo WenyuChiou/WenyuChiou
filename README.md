@@ -101,6 +101,8 @@ units.
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./dist/badge-dark.svg"/>
+    <source media="(max-width: 600px)" srcset="./dist/badge-light.svg"/>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
     <img src="./dist/summary-light.svg" alt="AI collaboration summary from selected public repositories" width="100%"/>
   </picture>
