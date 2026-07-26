@@ -35,6 +35,15 @@
   <img src="https://img.shields.io/badge/Open%20to-Summer%202027%20AI%20internship-f59e0b?style=flat-square&labelColor=0d1117" alt="Open to Summer 2027 AI internship"/>
 </p>
 
+<p align="center">
+  <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./dist/badge-dark.svg"/>
+      <img src="./dist/badge-light.svg" alt="AI-assisted share verified from explicit Git provenance"/>
+    </picture>
+  </a>
+</p>
+
 &nbsp;
 
 <img src="https://img.shields.io/badge/ABOUT-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="About"/>
@@ -75,8 +84,41 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 | [**research-hub**](https://github.com/WenyuChiou/research-hub) | AI-operable research workspace for Zotero, Obsidian, and NotebookLM — CLI, MCP, REST, dashboard |
 | [**academic-writing-skills**](https://github.com/WenyuChiou/academic-writing-skills) | Rigorous academic paper writing, revision, and submission — field-agnostic with per-paper journal overrides |
 | [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | Single-agent delegation skill used by the marketplaces above |
+| [**ai-profile**](https://github.com/WenyuChiou/ai-profile) | Local-first AI collaboration analytics — explicit Git provenance in, privacy-safe cards and an interactive provider dashboard out |
 <!-- TOOLING:START — add new tools as table rows above this line -->
 <!-- TOOLING:END -->
+
+&nbsp;
+
+<img src="https://img.shields.io/badge/AI%20COLLABORATION-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI Collaboration"/>
+
+Evidence-backed AI collaboration activity from selected public repositories,
+generated locally with [**ai-profile**](https://github.com/WenyuChiou/ai-profile).
+Unknown commits stay unknown; provider totals can overlap when one commit
+includes multiple AI actors. Unlike a generic contribution counter, it keeps
+unique AI-attributed commits, actor presences, and active days as separate
+units.
+
+<a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./dist/badge-dark.svg"/>
+    <source media="(max-width: 600px)" srcset="./dist/badge-light.svg"/>
+    <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
+    <img src="./dist/summary-light.svg" alt="AI collaboration summary from selected public repositories" width="100%"/>
+  </picture>
+</a>
+
+<p align="center">
+  <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">Explore the interactive AI collaboration dashboard →</a></strong><br/>
+  <sub>Filter All AI, Claude, or OpenAI · switch light/dark themes · inspect the published daily record</sub>
+</p>
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/heatmap-dark.svg"/>
+  <img src="./dist/heatmap-light.svg" alt="Commit activity and AI collaboration heatmap" width="100%"/>
+</picture>
 
 &nbsp;
 
