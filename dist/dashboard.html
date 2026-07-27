@@ -12,27 +12,30 @@
   <style>
     :root {
       color-scheme: light;
-      --canvas: #f6f8fa;
-      --surface: #ffffff;
+      --canvas: #f6f9fc;
+      --surface: #fbfdff;
       --surface-raised: #ffffff;
-      --surface-subtle: #f6f8fa;
-      --border: #d0d7de;
-      --border-strong: #afb8c1;
-      --text: #1f2328;
-      --muted: #636c76;
-      --faint: #8c959f;
+      --surface-subtle: #eef7ff;
+      --surface-blue: #ddf4ff;
+      --surface-yellow: #fff8c5;
+      --border: #c7d7e8;
+      --border-strong: #8ea8c1;
+      --text: #24292f;
+      --muted: #57606a;
+      --faint: #6e7781;
       --accent: #0969da;
       --accent-strong: #0550ae;
       --accent-soft: #ddf4ff;
       --success: #1a7f37;
       --warning: #9a6700;
-      --shadow: 0 10px 28px rgba(31, 35, 40, 0.08);
-      --grid-empty: #eaeef2;
+      --warning-strong: #7d4e00;
+      --shadow: 0 16px 40px rgba(42, 76, 102, 0.10);
+      --grid-empty: #e7f0f8;
       --calendar-active-border: #57606a;
       --focus: #0969da;
       --display: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
         "DejaVu Sans Condensed", "Liberation Sans Narrow", "Trebuchet MS", sans-serif;
-      --body: "Trebuchet MS", Corbel, "Avenir Next", Avenir, Ubuntu,
+      --body: Candara, Corbel, "Avenir Next", Avenir, Ubuntu,
         "DejaVu Sans", sans-serif;
       --mono: "Cascadia Mono", "SFMono-Regular", "Ubuntu Mono",
         "DejaVu Sans Mono", Consolas, monospace;
@@ -53,47 +56,53 @@
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
         color-scheme: dark;
-        --canvas: #010409;
-        --surface: #0d1117;
-        --surface-raised: #161b22;
-        --surface-subtle: #161b22;
-        --border: #30363d;
-        --border-strong: #484f58;
+        --canvas: #0b1118;
+        --surface: #111923;
+        --surface-raised: #18212c;
+        --surface-subtle: #162330;
+        --surface-blue: #172b3d;
+        --surface-yellow: #302b1c;
+        --border: #34485c;
+        --border-strong: #58728a;
         --text: #f0f6fc;
-        --muted: #8b949e;
-        --faint: #6e7681;
-        --accent: #58a6ff;
-        --accent-strong: #79c0ff;
-        --accent-soft: #0c2d6b;
+        --muted: #a3b3c2;
+        --faint: #8ea0b2;
+        --accent: #79c0ff;
+        --accent-strong: #a5d6ff;
+        --accent-soft: #173a5e;
         --success: #3fb950;
-        --warning: #d29922;
-        --shadow: 0 12px 34px rgba(0, 0, 0, 0.30);
-        --grid-empty: #21262d;
-        --calendar-active-border: #8c959f;
-        --focus: #58a6ff;
+        --warning: #eac54f;
+        --warning-strong: #fae17d;
+        --shadow: 0 18px 44px rgba(0, 0, 0, 0.32);
+        --grid-empty: #22303d;
+        --calendar-active-border: #a5d6ff;
+        --focus: #79c0ff;
       }
     }
 
     :root[data-theme="dark"] {
       color-scheme: dark;
-      --canvas: #010409;
-      --surface: #0d1117;
-      --surface-raised: #161b22;
-      --surface-subtle: #161b22;
-      --border: #30363d;
-      --border-strong: #484f58;
+      --canvas: #0b1118;
+      --surface: #111923;
+      --surface-raised: #18212c;
+      --surface-subtle: #162330;
+      --surface-blue: #172b3d;
+      --surface-yellow: #302b1c;
+      --border: #34485c;
+      --border-strong: #58728a;
       --text: #f0f6fc;
-      --muted: #8b949e;
-      --faint: #6e7681;
-      --accent: #58a6ff;
-      --accent-strong: #79c0ff;
-      --accent-soft: #0c2d6b;
+      --muted: #a3b3c2;
+      --faint: #8ea0b2;
+      --accent: #79c0ff;
+      --accent-strong: #a5d6ff;
+      --accent-soft: #173a5e;
       --success: #3fb950;
-      --warning: #d29922;
-      --shadow: 0 12px 34px rgba(0, 0, 0, 0.30);
-      --grid-empty: #21262d;
-      --calendar-active-border: #8c959f;
-      --focus: #58a6ff;
+      --warning: #eac54f;
+      --warning-strong: #fae17d;
+      --shadow: 0 18px 44px rgba(0, 0, 0, 0.32);
+      --grid-empty: #22303d;
+      --calendar-active-border: #a5d6ff;
+      --focus: #79c0ff;
     }
 
     * {
@@ -126,11 +135,18 @@
           color-mix(in srgb, var(--border) 22%, transparent) 1px,
           transparent 1px
         );
-      background-size: 2rem 2rem;
+      background-size: 2.5rem 2.5rem;
     }
 
     button {
       font: inherit;
+    }
+
+    .theme-toggle,
+    .filter,
+    .provider-row {
+      appearance: none;
+      -webkit-appearance: none;
     }
 
     button:focus-visible,
@@ -140,20 +156,20 @@
     }
 
     .shell {
-      width: min(100% - 2rem, 74rem);
+      width: min(100% - 2rem, 76rem);
       min-width: 0;
       margin: 0 auto;
-      padding: clamp(1.5rem, 5vw, 4.5rem) 0 4rem;
+      padding: clamp(2rem, 6vw, 5rem) 0 5rem;
     }
 
     .masthead {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
-      gap: var(--space-8);
+      gap: var(--space-12);
       align-items: start;
-      margin-bottom: var(--space-10);
-      padding-top: var(--space-4);
-      border-top: 0.25rem solid var(--text);
+      margin-bottom: var(--space-12);
+      padding-top: var(--space-5);
+      border-top: 1px solid var(--border-strong);
     }
 
     .masthead > *,
@@ -167,7 +183,7 @@
       margin: 0 0 var(--space-3);
       color: var(--accent-strong);
       font-family: var(--mono);
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
       font-weight: 700;
       letter-spacing: 0.12em;
       line-height: 1.4;
@@ -178,11 +194,11 @@
       max-width: 17ch;
       margin: 0;
       font-family: var(--display);
-      font-size: clamp(2.65rem, 6.4vw, 5.35rem);
+      font-size: clamp(2.6rem, 5.8vw, 4.85rem);
       font-stretch: condensed;
       font-weight: 680;
       letter-spacing: -0.035em;
-      line-height: 0.92;
+      line-height: 0.98;
       text-wrap: balance;
     }
 
@@ -190,8 +206,8 @@
       max-width: 44rem;
       margin: var(--space-5) 0 0;
       color: var(--muted);
-      font-size: clamp(0.98rem, 1.8vw, 1.12rem);
-      line-height: 1.65;
+      font-size: clamp(1rem, 1.8vw, 1.125rem);
+      line-height: 1.68;
     }
 
     .utility {
@@ -202,15 +218,15 @@
     }
 
     .theme-toggle {
-      min-height: 2.5rem;
+      min-height: 2.75rem;
       padding: 0 var(--space-4);
       border: 1px solid var(--border);
-      border-radius: 999px;
-      background: var(--surface);
+      border-radius: var(--radius-md);
+      background: var(--surface-blue);
       color: var(--text);
       cursor: pointer;
       font-family: var(--mono);
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
       font-weight: 650;
       letter-spacing: 0.03em;
     }
@@ -225,7 +241,7 @@
       padding-left: var(--space-4);
       border-left: 1px solid var(--border);
       font-family: var(--mono);
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
       line-height: 1.5;
       text-align: right;
     }
@@ -238,12 +254,12 @@
       gap: var(--space-4);
       align-items: center;
       justify-content: space-between;
-      margin-bottom: var(--space-6);
-      padding: var(--space-3);
+      margin-bottom: var(--space-8);
+      padding: var(--space-4);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      background: color-mix(in srgb, var(--surface) 97%, transparent);
-      box-shadow: 0 4px 12px rgba(31, 35, 40, 0.05);
+      background: color-mix(in srgb, var(--surface-blue) 76%, var(--surface));
+      box-shadow: 0 8px 24px rgba(42, 76, 102, 0.08);
       backdrop-filter: blur(0.5rem);
     }
 
@@ -252,7 +268,7 @@
       padding-left: var(--space-2);
       color: var(--muted);
       font-family: var(--mono);
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -268,14 +284,14 @@
 
     .filter {
       flex: 0 0 auto;
-      min-height: 2.4rem;
+      min-height: 2.75rem;
       padding: 0 var(--space-4);
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
       background: var(--surface);
       color: var(--muted);
       cursor: pointer;
-      font-size: 0.82rem;
+      font-size: 0.875rem;
       font-weight: 650;
       transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
     }
@@ -307,23 +323,29 @@
     .hero-grid {
       display: grid;
       grid-template-columns: minmax(0, 1.7fr) minmax(17rem, 0.75fr);
-      gap: var(--space-4);
-      margin-bottom: var(--space-4);
+      gap: var(--space-6);
+      margin-bottom: var(--space-6);
     }
 
     .panel {
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       background: var(--surface);
-      box-shadow: var(--shadow);
     }
 
     .hero-panel {
       position: relative;
-      min-height: 23rem;
+      min-height: 22rem;
       overflow: hidden;
-      padding: clamp(1.5rem, 4vw, 3rem);
+      padding: clamp(2rem, 4vw, 3rem);
       border-top: 0.25rem solid var(--active-accent, var(--accent));
+      background:
+        linear-gradient(
+          125deg,
+          color-mix(in srgb, var(--surface-blue) 76%, var(--surface)),
+          var(--surface) 58%,
+          color-mix(in srgb, var(--surface-yellow) 48%, var(--surface))
+        );
     }
 
     .hero-panel::after {
@@ -333,19 +355,19 @@
       width: 11rem;
       height: 8rem;
       border-right: 1px solid
-        color-mix(in srgb, var(--active-accent, var(--accent)) 35%, transparent);
+        color-mix(in srgb, var(--warning) 40%, transparent);
       border-bottom: 1px solid
-        color-mix(in srgb, var(--active-accent, var(--accent)) 35%, transparent);
+        color-mix(in srgb, var(--warning) 40%, transparent);
       background:
         repeating-linear-gradient(
           90deg,
-          color-mix(in srgb, var(--active-accent, var(--accent)) 18%, transparent)
+          color-mix(in srgb, var(--warning) 16%, transparent)
             0 1px,
           transparent 1px 1rem
         ),
         repeating-linear-gradient(
           0deg,
-          color-mix(in srgb, var(--active-accent, var(--accent)) 14%, transparent)
+          color-mix(in srgb, var(--warning) 12%, transparent)
             0 1px,
           transparent 1px 1rem
         );
@@ -358,7 +380,7 @@
       z-index: 1;
       margin: 0;
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: 1rem;
       font-weight: 650;
       letter-spacing: 0.01em;
     }
@@ -369,11 +391,11 @@
       margin: var(--space-4) 0 0;
       color: var(--active-accent, var(--accent));
       font-family: var(--display);
-      font-size: clamp(4.8rem, 13vw, 8.8rem);
+      font-size: clamp(4.5rem, 11vw, 7.6rem);
       font-stretch: condensed;
       font-weight: 720;
       letter-spacing: -0.055em;
-      line-height: 0.84;
+      line-height: 0.9;
     }
 
     .hero-context {
@@ -382,8 +404,8 @@
       max-width: 34rem;
       margin: var(--space-6) 0 0;
       color: var(--muted);
-      font-size: 0.94rem;
-      line-height: 1.55;
+      font-size: 1rem;
+      line-height: 1.62;
     }
 
     .share-track {
@@ -414,7 +436,7 @@
       margin-top: var(--space-2);
       color: var(--faint);
       font-family: var(--mono);
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
     }
 
     .ledger {
@@ -430,6 +452,14 @@
       min-height: 7rem;
       padding: var(--space-5) var(--space-6);
       border-bottom: 1px solid var(--border);
+    }
+
+    .ledger-item:first-child {
+      background: color-mix(in srgb, var(--surface-blue) 44%, var(--surface));
+    }
+
+    .ledger-item:last-child {
+      background: color-mix(in srgb, var(--surface-yellow) 58%, var(--surface));
     }
 
     .ledger-item:last-child {
@@ -449,14 +479,14 @@
     .ledger-label {
       margin: var(--space-2) 0 0;
       color: var(--muted);
-      font-size: 0.8rem;
-      line-height: 1.4;
+      font-size: 0.875rem;
+      line-height: 1.5;
     }
 
     .dashboard-grid {
       display: grid;
       grid-template-columns: minmax(0, 1.55fr) minmax(19rem, 0.8fr);
-      gap: var(--space-4);
+      gap: var(--space-6);
       align-items: start;
     }
 
@@ -464,11 +494,12 @@
     .providers-panel,
     .evidence-panel,
     .notes-panel {
-      padding: clamp(1.25rem, 3vw, 2rem);
+      padding: clamp(1.5rem, 3vw, 2.25rem);
     }
 
     .activity-panel {
       min-width: 0;
+      background: color-mix(in srgb, var(--surface-blue) 24%, var(--surface));
     }
 
     .panel-heading {
@@ -482,18 +513,18 @@
     .panel-title {
       margin: 0;
       font-family: var(--display);
-      font-size: clamp(1.55rem, 3vw, 2.15rem);
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
       font-stretch: condensed;
       font-weight: 680;
       letter-spacing: -0.015em;
-      line-height: 1;
+      line-height: 1.08;
     }
 
     .panel-meta {
       margin: 0;
       color: var(--muted);
       font-family: var(--mono);
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
       line-height: 1.5;
       text-align: right;
     }
@@ -563,7 +594,7 @@
       justify-content: space-between;
       margin-top: var(--space-4);
       color: var(--muted);
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
       line-height: 1.45;
     }
 
@@ -587,16 +618,21 @@
 
     .provider-list {
       display: grid;
-      gap: var(--space-4);
+      gap: var(--space-3);
+    }
+
+    .providers-panel .panel-title {
+      font-size: clamp(1.55rem, 2.5vw, 2rem);
     }
 
     .provider-row {
       display: grid;
       gap: var(--space-2);
       width: 100%;
-      padding: 0 0 0 var(--space-3);
-      border: 0;
-      border-left: 0.25rem solid transparent;
+      min-height: 4rem;
+      padding: var(--space-3);
+      border: 1px solid transparent;
+      border-radius: var(--radius-md);
       background: transparent;
       color: inherit;
       cursor: pointer;
@@ -604,7 +640,12 @@
     }
 
     .provider-row[aria-current="true"] {
-      border-left-color: var(--provider-accent);
+      border-color: var(--provider-accent);
+      background: color-mix(in srgb, var(--provider-accent) 10%, var(--surface));
+    }
+
+    .provider-row:hover {
+      background: color-mix(in srgb, var(--provider-accent) 6%, var(--surface));
     }
 
     .provider-row-head {
@@ -619,7 +660,7 @@
       gap: var(--space-2);
       align-items: center;
       color: var(--text);
-      font-size: 0.88rem;
+      font-size: 0.9375rem;
       font-weight: 700;
     }
 
@@ -632,7 +673,7 @@
 
     .provider-count {
       font-family: var(--mono);
-      font-size: 0.78rem;
+      font-size: 0.875rem;
       font-weight: 700;
     }
 
@@ -652,8 +693,8 @@
     .provider-detail {
       color: var(--muted);
       font-family: var(--mono);
-      font-size: 0.75rem;
-      line-height: 1.45;
+      font-size: 0.8125rem;
+      line-height: 1.5;
     }
 
     .evidence-track {
@@ -671,6 +712,7 @@
       grid-template-columns: minmax(15rem, 0.62fr) minmax(0, 1.38fr);
       gap: var(--space-4) var(--space-8);
       align-items: center;
+      background: color-mix(in srgb, var(--surface-yellow) 36%, var(--surface));
     }
 
     .evidence-panel .panel-heading {
@@ -704,7 +746,7 @@
       align-items: center;
       min-width: 0;
       color: var(--muted);
-      font-size: 0.76rem;
+      font-size: 0.8125rem;
     }
 
     .evidence-swatch {
@@ -725,14 +767,14 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: var(--space-8);
       margin-top: var(--space-4);
-      border-top: 0.25rem solid var(--text);
+      border-top: 0.1875rem solid var(--accent-strong);
       box-shadow: none;
     }
 
     .note-title {
       margin: 0 0 var(--space-2);
       font-family: var(--mono);
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
       font-weight: 750;
       letter-spacing: 0.06em;
       text-transform: uppercase;
@@ -741,8 +783,8 @@
     .note-copy {
       margin: 0;
       color: var(--muted);
-      font-size: 0.78rem;
-      line-height: 1.62;
+      font-size: 0.875rem;
+      line-height: 1.68;
     }
 
     .tooltip {
@@ -756,7 +798,7 @@
       background: var(--surface-raised);
       box-shadow: var(--shadow);
       color: var(--text);
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
       line-height: 1.5;
       pointer-events: none;
       transform: translate(-50%, calc(-100% - 0.75rem));
@@ -782,6 +824,12 @@
       clip: rect(0, 0, 0, 0);
       white-space: nowrap;
       border: 0;
+    }
+
+    @media (min-width: 38.01rem) {
+      .provider-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 54rem) {
@@ -843,6 +891,7 @@
 
       .masthead {
         gap: var(--space-5);
+        margin-bottom: var(--space-8);
       }
 
       .title {
@@ -886,6 +935,10 @@
         min-height: 20rem;
       }
 
+      .hero-panel::after {
+        display: none;
+      }
+
       .ledger {
         grid-template-columns: 1fr;
       }
@@ -907,6 +960,26 @@
       .evidence-grid,
       .notes-panel {
         grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 22rem) {
+      .filters {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (pointer: coarse) {
+      .calendar {
+        grid-template-rows: repeat(7, 1rem);
+        grid-auto-columns: 1rem;
+        gap: 0.5rem;
+      }
+
+      .day-cell,
+      .day-spacer {
+        width: 1rem;
+        height: 1rem;
       }
     }
 
@@ -996,16 +1069,18 @@
         <p class="sr-only" id="activitySummary"></p>
         <div class="legend">
           <span>
-            Color intensity = selected attributed-commit volume; empty = no selected activity.
+            Fixed bins: 1 / 2-4 / 5-7 / 8+ selected commits.
+            Newest activity is shown; scroll for earlier days.
           </span>
           <span class="legend-scale"
-                aria-label="Selected attributed-commit volume from none to high">
+                aria-label="Selected attributed-commit volume: none, 1, 2 to 4, 5 to 7, 8 or more">
             none
             <span class="legend-cell"></span>
             <span class="legend-cell" data-level="1"></span>
             <span class="legend-cell" data-level="2"></span>
             <span class="legend-cell" data-level="3"></span>
-            high
+            <span class="legend-cell" data-level="4"></span>
+            8+
           </span>
         </div>
       </article>
@@ -1057,7 +1132,7 @@
   </main>
 
   <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
-  <script type="application/json" id="profileData">{"daily":[{"ai_commits":0,"counts":[],"date":"2025-10-06","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-07","total_commits":4},{"ai_commits":0,"counts":[],"date":"2025-10-09","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-12","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-23","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-24","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-30","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-02","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-05","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-09","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-14","total_commits":2},{"ai_commits":0,"counts":[],"date":"2025-12-31","total_commits":11},{"ai_commits":0,"counts":[],"date":"2026-04-05","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-10","total_commits":4},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":6,"provider":"openai"}],"date":"2026-04-11","total_commits":17},{"ai_commits":49,"counts":[{"attributed_commits":49,"provider":"anthropic"}],"date":"2026-04-12","total_commits":56},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-04-13","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-14","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-15","total_commits":2},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-16","total_commits":12},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-04-17","total_commits":21},{"ai_commits":26,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":9,"provider":"openai"}],"date":"2026-04-18","total_commits":29},{"ai_commits":12,"counts":[{"attributed_commits":11,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-04-19","total_commits":25},{"ai_commits":0,"counts":[],"date":"2026-04-20","total_commits":15},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-04-21","total_commits":11},{"ai_commits":0,"counts":[],"date":"2026-04-22","total_commits":1},{"ai_commits":8,"counts":[{"attributed_commits":8,"provider":"anthropic"}],"date":"2026-04-23","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-24","total_commits":2},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-04-25","total_commits":34},{"ai_commits":44,"counts":[{"attributed_commits":44,"provider":"anthropic"}],"date":"2026-04-26","total_commits":53},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-04-27","total_commits":17},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-04-28","total_commits":26},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-29","total_commits":5},{"ai_commits":0,"counts":[],"date":"2026-04-30","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-02","total_commits":6},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-03","total_commits":13},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-05-04","total_commits":15},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-05-05","total_commits":5},{"ai_commits":32,"counts":[{"attributed_commits":32,"provider":"anthropic"}],"date":"2026-05-06","total_commits":33},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-05-07","total_commits":10},{"ai_commits":14,"counts":[{"attributed_commits":14,"provider":"anthropic"}],"date":"2026-05-08","total_commits":17},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-09","total_commits":40},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-10","total_commits":26},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"}],"date":"2026-05-11","total_commits":10},{"ai_commits":40,"counts":[{"attributed_commits":40,"provider":"anthropic"}],"date":"2026-05-12","total_commits":69},{"ai_commits":120,"counts":[{"attributed_commits":120,"provider":"anthropic"}],"date":"2026-05-13","total_commits":138},{"ai_commits":61,"counts":[{"attributed_commits":61,"provider":"anthropic"},{"attributed_commits":5,"provider":"openai"}],"date":"2026-05-14","total_commits":73},{"ai_commits":51,"counts":[{"attributed_commits":51,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-05-15","total_commits":52},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-05-16","total_commits":29},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-05-17","total_commits":23},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-18","total_commits":19},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-19","total_commits":17},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-20","total_commits":34},{"ai_commits":21,"counts":[{"attributed_commits":21,"provider":"anthropic"}],"date":"2026-05-21","total_commits":21},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-22","total_commits":29},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-23","total_commits":24},{"ai_commits":0,"counts":[],"date":"2026-05-24","total_commits":7},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-25","total_commits":17},{"ai_commits":19,"counts":[{"attributed_commits":19,"provider":"anthropic"}],"date":"2026-05-26","total_commits":19},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-27","total_commits":3},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-05-28","total_commits":3},{"ai_commits":18,"counts":[{"attributed_commits":18,"provider":"anthropic"}],"date":"2026-05-29","total_commits":18},{"ai_commits":23,"counts":[{"attributed_commits":23,"provider":"anthropic"}],"date":"2026-05-30","total_commits":28},{"ai_commits":25,"counts":[{"attributed_commits":25,"provider":"anthropic"}],"date":"2026-05-31","total_commits":25},{"ai_commits":13,"counts":[{"attributed_commits":13,"provider":"anthropic"}],"date":"2026-06-01","total_commits":13},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-02","total_commits":4},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-03","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-04","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-05","total_commits":2},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-06-06","total_commits":5},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-07","total_commits":4},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-08","total_commits":1},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-09","total_commits":3},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-10","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-11","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-06-12","total_commits":5},{"ai_commits":15,"counts":[{"attributed_commits":15,"provider":"anthropic"}],"date":"2026-06-13","total_commits":17},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-14","total_commits":4},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-15","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-21","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-06-22","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-06-23","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-24","total_commits":10},{"ai_commits":0,"counts":[],"date":"2026-06-25","total_commits":6},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-29","total_commits":2},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-06-30","total_commits":17},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-01","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-02","total_commits":6},{"ai_commits":0,"counts":[],"date":"2026-07-03","total_commits":6},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-04","total_commits":7},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-05","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-07-06","total_commits":8},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-07","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-07-08","total_commits":20},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-07-09","total_commits":20},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-10","total_commits":20},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-11","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-12","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-07-13","total_commits":16},{"ai_commits":20,"counts":[{"attributed_commits":20,"provider":"anthropic"}],"date":"2026-07-14","total_commits":32},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-15","total_commits":17},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-16","total_commits":12},{"ai_commits":11,"counts":[{"attributed_commits":11,"provider":"anthropic"}],"date":"2026-07-17","total_commits":19},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-18","total_commits":5},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-20","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-07-21","total_commits":9},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-22","total_commits":10},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"},{"attributed_commits":3,"provider":"openai"}],"date":"2026-07-23","total_commits":12},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"openai"}],"date":"2026-07-25","total_commits":8},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"openai"}],"date":"2026-07-26","total_commits":56},{"ai_commits":0,"counts":[],"date":"2026-07-27","total_commits":1}],"evidence_records":{"declared":1149,"imported":0,"inferred":0,"total_records":1705,"unknown":556,"verified":0},"generated_on":"2026-07-26","period":{"from":null,"label":"All time","to":null},"privacy":{"anonymous_aggregate_commits":0,"explicitly_publishable_commits":1686,"includes_anonymous_aggregate":false},"provider_count":2,"providers":[{"active_days":87,"actor_presences":1098,"attributed_commits":1098,"display_name":"Claude","provider":"anthropic"},{"active_days":10,"actor_presences":51,"attributed_commits":51,"display_name":"OpenAI","provider":"openai"}],"schema_version":"0.2.0","totals":{"active_ai_days":89,"ai_actor_presences":1149,"ai_attributed_commits":1130,"commits_scanned":1686,"human_declared_commits":0,"unknown_commits":556}}</script>
+  <script type="application/json" id="profileData">{"daily":[{"ai_commits":0,"counts":[],"date":"2025-10-06","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-07","total_commits":4},{"ai_commits":0,"counts":[],"date":"2025-10-09","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-12","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-23","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-24","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-30","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-02","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-05","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-09","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-14","total_commits":2},{"ai_commits":0,"counts":[],"date":"2025-12-31","total_commits":11},{"ai_commits":0,"counts":[],"date":"2026-04-05","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-10","total_commits":4},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":6,"provider":"openai"}],"date":"2026-04-11","total_commits":17},{"ai_commits":49,"counts":[{"attributed_commits":49,"provider":"anthropic"}],"date":"2026-04-12","total_commits":56},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-04-13","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-14","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-15","total_commits":2},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-16","total_commits":12},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-04-17","total_commits":21},{"ai_commits":26,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":9,"provider":"openai"}],"date":"2026-04-18","total_commits":29},{"ai_commits":12,"counts":[{"attributed_commits":11,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-04-19","total_commits":25},{"ai_commits":0,"counts":[],"date":"2026-04-20","total_commits":15},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-04-21","total_commits":11},{"ai_commits":0,"counts":[],"date":"2026-04-22","total_commits":1},{"ai_commits":8,"counts":[{"attributed_commits":8,"provider":"anthropic"}],"date":"2026-04-23","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-24","total_commits":2},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-04-25","total_commits":34},{"ai_commits":44,"counts":[{"attributed_commits":44,"provider":"anthropic"}],"date":"2026-04-26","total_commits":53},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-04-27","total_commits":17},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-04-28","total_commits":26},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-29","total_commits":5},{"ai_commits":0,"counts":[],"date":"2026-04-30","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-02","total_commits":6},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-03","total_commits":13},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-05-04","total_commits":15},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-05-05","total_commits":5},{"ai_commits":32,"counts":[{"attributed_commits":32,"provider":"anthropic"}],"date":"2026-05-06","total_commits":33},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-05-07","total_commits":10},{"ai_commits":14,"counts":[{"attributed_commits":14,"provider":"anthropic"}],"date":"2026-05-08","total_commits":17},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-09","total_commits":40},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-10","total_commits":26},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"}],"date":"2026-05-11","total_commits":10},{"ai_commits":40,"counts":[{"attributed_commits":40,"provider":"anthropic"}],"date":"2026-05-12","total_commits":69},{"ai_commits":120,"counts":[{"attributed_commits":120,"provider":"anthropic"}],"date":"2026-05-13","total_commits":138},{"ai_commits":61,"counts":[{"attributed_commits":61,"provider":"anthropic"},{"attributed_commits":5,"provider":"openai"}],"date":"2026-05-14","total_commits":73},{"ai_commits":51,"counts":[{"attributed_commits":51,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-05-15","total_commits":52},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-05-16","total_commits":29},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-05-17","total_commits":23},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-18","total_commits":19},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-19","total_commits":17},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-20","total_commits":34},{"ai_commits":21,"counts":[{"attributed_commits":21,"provider":"anthropic"}],"date":"2026-05-21","total_commits":21},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-22","total_commits":29},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-23","total_commits":24},{"ai_commits":0,"counts":[],"date":"2026-05-24","total_commits":7},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-25","total_commits":17},{"ai_commits":19,"counts":[{"attributed_commits":19,"provider":"anthropic"}],"date":"2026-05-26","total_commits":19},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-27","total_commits":3},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-05-28","total_commits":3},{"ai_commits":18,"counts":[{"attributed_commits":18,"provider":"anthropic"}],"date":"2026-05-29","total_commits":18},{"ai_commits":23,"counts":[{"attributed_commits":23,"provider":"anthropic"}],"date":"2026-05-30","total_commits":28},{"ai_commits":25,"counts":[{"attributed_commits":25,"provider":"anthropic"}],"date":"2026-05-31","total_commits":25},{"ai_commits":13,"counts":[{"attributed_commits":13,"provider":"anthropic"}],"date":"2026-06-01","total_commits":13},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-02","total_commits":4},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-03","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-04","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-05","total_commits":2},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-06-06","total_commits":5},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-07","total_commits":4},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-08","total_commits":1},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-09","total_commits":3},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-10","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-11","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-06-12","total_commits":5},{"ai_commits":15,"counts":[{"attributed_commits":15,"provider":"anthropic"}],"date":"2026-06-13","total_commits":17},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-14","total_commits":4},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-15","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-21","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-06-22","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-06-23","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-24","total_commits":10},{"ai_commits":0,"counts":[],"date":"2026-06-25","total_commits":6},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-29","total_commits":2},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-06-30","total_commits":17},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-01","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-02","total_commits":6},{"ai_commits":0,"counts":[],"date":"2026-07-03","total_commits":6},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-04","total_commits":7},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-05","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-07-06","total_commits":8},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-07","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-07-08","total_commits":20},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-07-09","total_commits":20},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-10","total_commits":20},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-11","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-12","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-07-13","total_commits":16},{"ai_commits":20,"counts":[{"attributed_commits":20,"provider":"anthropic"}],"date":"2026-07-14","total_commits":32},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-15","total_commits":17},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-16","total_commits":12},{"ai_commits":11,"counts":[{"attributed_commits":11,"provider":"anthropic"}],"date":"2026-07-17","total_commits":19},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-18","total_commits":5},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-20","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-07-21","total_commits":9},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-22","total_commits":10},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"},{"attributed_commits":3,"provider":"openai"}],"date":"2026-07-23","total_commits":12},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"openai"}],"date":"2026-07-25","total_commits":8},{"ai_commits":23,"counts":[{"attributed_commits":23,"provider":"openai"}],"date":"2026-07-26","total_commits":68},{"ai_commits":0,"counts":[],"date":"2026-07-27","total_commits":4}],"evidence_records":{"declared":1155,"imported":0,"inferred":0,"total_records":1720,"unknown":565,"verified":0},"generated_on":"2026-07-27","period":{"from":null,"label":"All time","to":null},"privacy":{"anonymous_aggregate_commits":0,"explicitly_publishable_commits":1701,"includes_anonymous_aggregate":false},"provider_count":2,"providers":[{"active_days":87,"actor_presences":1098,"attributed_commits":1098,"display_name":"Claude","provider":"anthropic"},{"active_days":10,"actor_presences":57,"attributed_commits":57,"display_name":"OpenAI","provider":"openai"}],"schema_version":"0.2.0","totals":{"active_ai_days":89,"ai_actor_presences":1155,"ai_attributed_commits":1136,"commits_scanned":1701,"human_declared_commits":0,"unknown_commits":565}}</script>
   <script>
     (() => {
       "use strict";
@@ -1067,7 +1142,7 @@
       const number = new Intl.NumberFormat("en-US");
       const percent = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 });
       const providerColors = {
-        anthropic: "#bf8700",
+        anthropic: "#9a6700",
         openai: "#1a7f37",
         github_copilot: "#0969da",
         google: "#8250df",
@@ -1086,7 +1161,7 @@
         unrecognized: "#6e7781"
       };
       const fallbackColors = [
-        "#0969da", "#1a7f37", "#bf8700", "#8250df", "#cf222e", "#1f6feb"
+        "#0969da", "#1a7f37", "#9a6700", "#8250df", "#cf222e", "#1f6feb"
       ];
       const evidenceColors = {
         verified: "#1a7f37",
@@ -1097,6 +1172,7 @@
       };
       let selected = "all";
       let theme = "auto";
+      let calendarFocusIndex = null;
       let tooltipOwner = null;
       let tooltipPinned = false;
       let tooltipSuppressed = null;
@@ -1137,7 +1213,10 @@
       }
 
       function selectedAccent() {
-        return selected === "all" ? "#0969da" : colorFor(selected);
+        if (selected !== "all") return colorFor(selected);
+        return getComputedStyle(document.documentElement)
+          .getPropertyValue("--accent")
+          .trim();
       }
 
       function selectedDayCount(day) {
@@ -1232,8 +1311,17 @@
       function renderCalendar() {
         const series = fillDailySeries();
         const calendar = $("activityCalendar");
+        const scroller = document.querySelector(".calendar-scroll");
+        const previousMaxScroll = Math.max(
+          0,
+          scroller.scrollWidth - scroller.clientWidth
+        );
+        const previousScrollLeft = scroller.scrollLeft;
+        const followNewest =
+          previousMaxScroll <= 1 || previousMaxScroll - previousScrollLeft <= 2;
         calendar.replaceChildren();
         if (!series.length) {
+          calendarFocusIndex = null;
           const empty = document.createElement("div");
           empty.className = "calendar-empty";
           empty.textContent = "No publishable daily activity in this profile.";
@@ -1245,7 +1333,11 @@
         }
         calendar.className = "calendar";
         const accent = selectedAccent();
-        const maxSelected = Math.max(...series.map(selectedDayCount), 1);
+        const binOpacity = [0.42, 0.62, 0.81, 1];
+        const rovingIndex = calendarFocusIndex === null
+          ? series.length - 1
+          : Math.max(0, Math.min(series.length - 1, calendarFocusIndex));
+        if (calendarFocusIndex !== null) calendarFocusIndex = rovingIndex;
         const firstWeekday = dateAtUtc(series[0].date).getUTCDay();
         for (let index = 0; index < firstWeekday; index += 1) {
           const spacer = document.createElement("span");
@@ -1256,18 +1348,27 @@
 
         for (const [index, day] of series.entries()) {
           const selectedCount = selectedDayCount(day);
-          const volume = Math.log1p(selectedCount) / Math.log1p(maxSelected);
+          const level = selectedCount === 0
+            ? 0
+            : selectedCount === 1
+              ? 1
+              : selectedCount <= 4
+                ? 2
+                : selectedCount <= 7
+                  ? 3
+                  : 4;
           const share = day.total_commits
             ? (selectedCount / day.total_commits) * 100
             : 0;
           const cell = document.createElement("button");
           cell.type = "button";
           cell.className = "day-cell";
-          cell.tabIndex = index === 0 ? 0 : -1;
+          cell.tabIndex = index === rovingIndex ? 0 : -1;
           cell.dataset.index = String(index);
           cell.dataset.active = String(selectedCount > 0);
+          cell.dataset.level = String(level);
           if (selectedCount) {
-            cell.style.background = rgba(accent, 0.38 + 0.62 * volume);
+            cell.style.background = rgba(accent, binOpacity[level - 1]);
           }
           const label = `${day.date}: ${day.total_commits} total commits; ` +
             `${selectedCount} ${selectedName()} attributed commits; ` +
@@ -1292,6 +1393,7 @@
             if (!tooltipPinned && document.activeElement !== cell) hideTooltip();
           });
           cell.addEventListener("focus", () => {
+            calendarFocusIndex = index;
             tooltipHoverPaused = false;
             tooltipSuppressed = null;
             showTooltip(cell, day, selectedCount);
@@ -1322,7 +1424,16 @@
           "each cell uses the validated published daily aggregate.";
         const levels = document.querySelectorAll(".legend-cell[data-level]");
         levels.forEach((cell, index) => {
-          cell.style.background = rgba(accent, 0.42 + index * 0.29);
+          cell.style.background = rgba(accent, binOpacity[index]);
+        });
+        requestAnimationFrame(() => {
+          const nextMaxScroll = Math.max(
+            0,
+            scroller.scrollWidth - scroller.clientWidth
+          );
+          scroller.scrollLeft = followNewest
+            ? nextMaxScroll
+            : Math.min(previousScrollLeft, nextMaxScroll);
         });
       }
 
@@ -1333,6 +1444,7 @@
       function focusCalendarCell(index) {
         const cells = calendarCells();
         const bounded = Math.max(0, Math.min(cells.length - 1, index));
+        calendarFocusIndex = bounded;
         cells.forEach((cell, cellIndex) => {
           cell.tabIndex = cellIndex === bounded ? 0 : -1;
         });
@@ -1513,6 +1625,9 @@
         renderCalendar();
         document.querySelectorAll(".filter").forEach((button) => {
           button.setAttribute("aria-pressed", String(button.dataset.provider === selected));
+          if (button.dataset.provider === "all") {
+            button.style.setProperty("--provider-accent", selectedAccent());
+          }
         });
         document.querySelectorAll(".provider-row").forEach((button) => {
           button.setAttribute("aria-current", String(button.dataset.provider === selected));
@@ -1528,6 +1643,7 @@
 
       $("themeToggle").addEventListener("click", () => {
         setTheme(theme === "auto" ? "light" : theme === "light" ? "dark" : "auto");
+        render();
       });
 
       $("generatedMeta").textContent =

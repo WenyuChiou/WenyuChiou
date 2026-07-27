@@ -1127,32 +1127,32 @@
       "total_commits": 8
     },
     {
-      "ai_commits": 17,
+      "ai_commits": 23,
       "counts": [
         {
-          "attributed_commits": 17,
+          "attributed_commits": 23,
           "provider": "openai"
         }
       ],
       "date": "2026-07-26",
-      "total_commits": 56
+      "total_commits": 68
     },
     {
       "ai_commits": 0,
       "counts": [],
       "date": "2026-07-27",
-      "total_commits": 1
+      "total_commits": 4
     }
   ],
   "evidence_records": {
-    "declared": 1149,
+    "declared": 1155,
     "imported": 0,
     "inferred": 0,
-    "total_records": 1705,
-    "unknown": 556,
+    "total_records": 1720,
+    "unknown": 565,
     "verified": 0
   },
-  "generated_on": "2026-07-26",
+  "generated_on": "2026-07-27",
   "period": {
     "from": null,
     "label": "All time",
@@ -1160,7 +1160,7 @@
   },
   "privacy": {
     "anonymous_aggregate_commits": 0,
-    "explicitly_publishable_commits": 1686,
+    "explicitly_publishable_commits": 1701,
     "includes_anonymous_aggregate": false
   },
   "provider_count": 2,
@@ -1174,8 +1174,8 @@
     },
     {
       "active_days": 10,
-      "actor_presences": 51,
-      "attributed_commits": 51,
+      "actor_presences": 57,
+      "attributed_commits": 57,
       "display_name": "OpenAI",
       "provider": "openai"
     }
@@ -1183,10 +1183,10 @@
   "schema_version": "0.2.0",
   "totals": {
     "active_ai_days": 89,
-    "ai_actor_presences": 1149,
-    "ai_attributed_commits": 1130,
-    "commits_scanned": 1686,
+    "ai_actor_presences": 1155,
+    "ai_attributed_commits": 1136,
+    "commits_scanned": 1701,
     "human_declared_commits": 0,
-    "unknown_commits": 556
+    "unknown_commits": 565
   }
 }
