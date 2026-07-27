@@ -41,7 +41,8 @@
       <source media="(prefers-color-scheme: dark)" srcset="./dist/badge-dark.svg"/>
       <img src="./dist/badge-light.svg" alt="由明示 Git provenance 驗證的 AI 協作比例"/>
     </picture>
-  </a>
+  </a><br/>
+  <sub><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">查看我的證據型 AI 協作紀錄 →</a></sub>
 </p>
 
 &nbsp;
@@ -92,12 +93,14 @@
 
 <img src="https://img.shields.io/badge/AI%20%E5%8D%94%E4%BD%9C-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI 協作"/>
 
-以下是從選定 public repositories 取得、以明示 Git provenance 為依據的
-AI 協作活動，由 [**ai-profile**](https://github.com/WenyuChiou/ai-profile)
-在本機產生。Unknown commit 保持 unknown；若同一個 commit 包含多個 AI
-actor，各 provider 的總數可能重疊。它不同於一般 contribution counter，
-會把 unique AI-attributed commits、actor presences 與 active days
-維持為不同統計單位。
+多數 GitHub 統計回答的是**發生多少活動**。這裡回答的是
+**AI 如何參與**：出現哪些 provider、何時活躍，以及歸因由哪些明示 Git
+證據支持。
+
+這份紀錄由 [**ai-profile**](https://github.com/WenyuChiou/ai-profile)
+從選定 repositories 在本機產生；公開卡片只包含彙總資料。Unknown 維持
+unknown；同一個 commit 即使包含多個 AI actor，仍只算一個
+unique commit，但會產生多個 actor presences。
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
@@ -109,7 +112,9 @@ actor，各 provider 的總數可能重疊。它不同於一般 contribution cou
 </a>
 
 <p align="center">
-  <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">開啟互動 AI 協作 dashboard →</a></strong><br/>
+  <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">查看我的互動紀錄</a></strong>
+  &nbsp;·&nbsp;
+  <strong><a href="https://github.com/WenyuChiou/ai-profile">用 ai-profile 建立你的版本 →</a></strong><br/>
   <sub>切換 All AI、Claude 或 OpenAI · 選擇亮色／深色主題 · 查看已發布的每日紀錄</sub>
 </p>
 
