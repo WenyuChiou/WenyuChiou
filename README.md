@@ -41,7 +41,8 @@
       <source media="(prefers-color-scheme: dark)" srcset="./dist/badge-dark.svg"/>
       <img src="./dist/badge-light.svg" alt="AI-assisted share verified from explicit Git provenance"/>
     </picture>
-  </a>
+  </a><br/>
+  <sub><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">View my evidence-backed AI collaboration record →</a></sub>
 </p>
 
 &nbsp;
@@ -92,12 +93,15 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 
 <img src="https://img.shields.io/badge/AI%20COLLABORATION-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI Collaboration"/>
 
-Evidence-backed AI collaboration activity from selected public repositories,
-generated locally with [**ai-profile**](https://github.com/WenyuChiou/ai-profile).
-Unknown commits stay unknown; provider totals can overlap when one commit
-includes multiple AI actors. Unlike a generic contribution counter, it keeps
-unique AI-attributed commits, actor presences, and active days as separate
-units.
+Most GitHub statistics answer **how much activity happened**. This view
+answers **how AI participated**: which providers appeared, when they were
+active, and what explicit Git evidence supports the attribution.
+
+The record is generated locally with
+[**ai-profile**](https://github.com/WenyuChiou/ai-profile) from selected
+repositories. Public cards contain aggregate data only. Unknown stays
+unknown, and a commit with multiple AI actors remains one unique commit while
+contributing multiple actor presences.
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
@@ -109,7 +113,9 @@ units.
 </a>
 
 <p align="center">
-  <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">Explore the interactive AI collaboration dashboard →</a></strong><br/>
+  <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">Explore my interactive record</a></strong>
+  &nbsp;·&nbsp;
+  <strong><a href="https://github.com/WenyuChiou/ai-profile">Build yours with ai-profile →</a></strong><br/>
   <sub>Filter All AI, Claude, or OpenAI · switch light/dark themes · inspect the published daily record</sub>
 </p>
 
