@@ -94,8 +94,9 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 <img src="https://img.shields.io/badge/AI%20COLLABORATION-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI Collaboration"/>
 
 Most GitHub statistics answer **how much activity happened**. This view
-answers **how AI participated**: which providers appeared, when they were
-active, and what explicit Git evidence supports the attribution.
+answers **how AI participated**: how sustained the collaboration has been,
+how many providers took part, and what explicit Git evidence supports each
+attribution. It is a record of collaboration, not a skill score.
 
 The record is generated locally with
 [**ai-profile**](https://github.com/WenyuChiou/ai-profile) from selected
@@ -105,10 +106,8 @@ contributing multiple actor presences.
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./dist/badge-dark.svg"/>
-    <source media="(max-width: 600px)" srcset="./dist/badge-light.svg"/>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI collaboration summary from selected public repositories" width="100%"/>
+    <img src="./dist/summary-light.svg" alt="AI collaboration summary card: sustained day-to-day AI-assisted commits across multiple providers, with unique commits kept distinct from actor presences and unattributed commits reported honestly as unknown — every attribution backed by explicit Git evidence." width="100%"/>
   </picture>
 </a>
 
@@ -118,13 +117,6 @@ contributing multiple actor presences.
   <strong><a href="https://github.com/WenyuChiou/ai-profile">Build yours with ai-profile →</a></strong><br/>
   <sub>Filter All AI, Claude, or OpenAI · switch light/dark themes · inspect the published daily record</sub>
 </p>
-
-<br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dist/heatmap-dark.svg"/>
-  <img src="./dist/heatmap-light.svg" alt="Commit activity and AI collaboration heatmap" width="100%"/>
-</picture>
 
 &nbsp;
 
@@ -175,12 +167,6 @@ A few merged pull requests to open-source projects I use:
 <img src="https://img.shields.io/badge/GITHUB%20AT%20A%20GLANCE-f59e0b?style=for-the-badge&labelColor=0d1117" alt="GitHub at a glance"/>
 
 <div align="center">
-
-<!-- THREEDEE:START — 3D isometric contribution graph, regenerated daily by .github/workflows/profile-3d.yml -->
-<img src="./profile-3d-contrib/profile-green.svg" alt="3D isometric contribution graph" width="90%"/>
-<!-- THREEDEE:END -->
-
-<br/><br/>
 
 <!-- TROPHY:START — regenerated daily by .github/workflows/trophy.yml -->
 <img src="./assets/trophy.svg" alt="GitHub trophies" width="90%"/>

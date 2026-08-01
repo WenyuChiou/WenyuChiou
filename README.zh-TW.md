@@ -94,8 +94,8 @@
 <img src="https://img.shields.io/badge/AI%20%E5%8D%94%E4%BD%9C-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI 協作"/>
 
 多數 GitHub 統計回答的是**發生多少活動**。這裡回答的是
-**AI 如何參與**：出現哪些 provider、何時活躍，以及歸因由哪些明示 Git
-證據支持。
+**AI 如何參與**：協作持續了多久、有多少 provider 參與，以及每筆歸因由
+哪些明示 Git 證據支持。這是一份協作紀錄，不是技能評分。
 
 這份紀錄由 [**ai-profile**](https://github.com/WenyuChiou/ai-profile)
 從選定 repositories 在本機產生；公開卡片只包含彙總資料。Unknown 維持
@@ -104,10 +104,8 @@ unique commit，但會產生多個 actor presences。
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./dist/badge-dark.svg"/>
-    <source media="(max-width: 600px)" srcset="./dist/badge-light.svg"/>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="選定 public repositories 的 AI 協作摘要" width="100%"/>
+    <img src="./dist/summary-light.svg" alt="AI 協作摘要卡片：跨多個 provider 的長期日常 AI 協作 commit，unique commit 與 actor presences 分開計算，無法歸因的 commit 誠實維持 unknown——每筆歸因皆有明示 Git 證據支持。" width="100%"/>
   </picture>
 </a>
 
@@ -117,13 +115,6 @@ unique commit，但會產生多個 actor presences。
   <strong><a href="https://github.com/WenyuChiou/ai-profile">用 ai-profile 建立你的版本 →</a></strong><br/>
   <sub>切換 All AI、Claude 或 OpenAI · 選擇亮色／深色主題 · 查看已發布的每日紀錄</sub>
 </p>
-
-<br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dist/heatmap-dark.svg"/>
-  <img src="./dist/heatmap-light.svg" alt="Commit 活動與 AI 協作 heatmap" width="100%"/>
-</picture>
 
 &nbsp;
 
@@ -174,12 +165,6 @@ unique commit，但會產生多個 actor presences。
 <img src="https://img.shields.io/badge/GitHub%20%E6%A6%82%E8%A6%BD-f59e0b?style=for-the-badge&labelColor=0d1117" alt="GitHub 概覽"/>
 
 <div align="center">
-
-<!-- THREEDEE:START — 3D 等距貢獻圖，每日由 .github/workflows/profile-3d.yml 重新產生 -->
-<img src="./profile-3d-contrib/profile-green.svg" alt="3D isometric contribution graph" width="90%"/>
-<!-- THREEDEE:END -->
-
-<br/><br/>
 
 <!-- TROPHY:START — 每日由 .github/workflows/trophy.yml 重新產生 -->
 <img src="./assets/trophy.svg" alt="GitHub trophies" width="90%"/>
