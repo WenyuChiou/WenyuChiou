@@ -1,296 +1,311 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="830" height="763" viewBox="0 0 830 763" role="img" aria-labelledby="aiprofileSummaryTitle aiprofileSummaryDesc">
-<title id="aiprofileSummaryTitle">AI Collaboration Summary — All time</title>
-<desc id="aiprofileSummaryDesc">1163 AI-attributed commits, 1182 AI actor presences across 92 active AI days (author dates), 2 AI providers. Daily activity calendar 2026-05-08 to 2026-07-30, peak day summed provider-attributed count 120; provider counts may overlap. Generated 2026-07-30.</desc>
-<rect x="0.5" y="0.5" width="829" height="762" rx="8" fill="#fbfdff" stroke="#c2d3e5" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="791" viewBox="0 0 830 791" role="img" aria-labelledby="aiprofileSummaryTitle aiprofileSummaryDesc">
+<title id="aiprofileSummaryTitle">AI Collaboration Record — All time</title>
+<desc id="aiprofileSummaryDesc">1173 AI-attributed commits, 1197 AI actor presences across 94 active AI days (author dates), 2 AI providers. Collaboration terrain 2026-05-11 to 2026-08-02, peak day 138 commits; height is total commits, hue is the day's AI share; publishable repositories only. Generated 2026-08-01.</desc>
+<rect x="0.5" y="0.5" width="829" height="790" rx="8" fill="#fbfdff" stroke="#c2d3e5" stroke-width="1"/>
 <rect x="24" y="24" width="16" height="16" rx="3" fill="#fbfdff" stroke="#005cc5" stroke-width="1"/>
 <rect x="29" y="29" width="6" height="6" rx="1" fill="#005cc5"/>
-<text x="48" y="36" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="600" fill="#172033" text-anchor="start">AI Collaboration Summary</text>
+<text x="48" y="36" font-family="'IBM Plex Sans Condensed', 'Aptos Display', 'Segoe UI', 'DejaVu Sans Condensed', sans-serif" font-size="16" font-weight="600" fill="#172033" text-anchor="start">AI Collaboration Record</text>
 <text x="806" y="36" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="end">All time</text>
 <line x1="24" y1="56" x2="806" y2="56" stroke="#c2d3e5"/>
-<text x="24" y="112" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="38" font-weight="700" fill="#005cc5" text-anchor="start">1163</text>
+<text x="24" y="112" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="38" font-weight="700" fill="#005cc5" text-anchor="start">1173</text>
 <text x="24" y="140" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI-attributed commits</text>
-<text x="24" y="160" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#172033" text-anchor="start">67% of 1739 unique commits scanned</text>
+<text x="24" y="160" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#172033" text-anchor="start">67% of 1756 unique commits scanned</text>
 <rect x="24" y="172" width="360" height="7" rx="2" fill="#d9eaff"/>
-<rect x="24" y="172" width="241" height="7" rx="2" fill="#005cc5"/>
-<text x="512" y="88" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI actor presences</text>
-<text x="806" y="88" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="600" fill="#172033" text-anchor="end">1182</text>
-<text x="512" y="112" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Active AI days (author dates)</text>
-<text x="806" y="112" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="600" fill="#172033" text-anchor="end">92</text>
-<text x="512" y="136" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI providers</text>
-<text x="806" y="136" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="600" fill="#172033" text-anchor="end">2</text>
+<rect x="24" y="172" width="240" height="7" rx="2" fill="#005cc5"/>
+<text x="512" y="88" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Active AI days (author dates)</text>
+<text x="806" y="88" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">94</text>
+<text x="512" y="112" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI providers</text>
+<text x="806" y="112" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">2</text>
+<text x="512" y="136" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI actor presences</text>
+<text x="806" y="136" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">1197</text>
 <text x="512" y="160" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Unattributed commits</text>
-<text x="806" y="160" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="600" fill="#172033" text-anchor="end">576</text>
-<text x="24" y="208" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Attributed commits by provider</text>
-<text x="806" y="208" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">% of 1163 AI-attributed commits</text>
-<rect x="24" y="228" width="20" height="20" rx="4" fill="#F6E5DF"/>
-<path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z" fill="#B74C2A" transform="translate(27,231) scale(0.583333)"/>
-<text x="52" y="244" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="400" fill="#172033" text-anchor="start">Claude</text>
-<rect x="184" y="232" width="500" height="7" rx="2" fill="#d9eaff"/>
-<rect x="184" y="232" width="500" height="7" rx="2" fill="#B74C2A"/>
-<text x="806" y="244" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="14" text-anchor="end"><tspan fill="#172033" font-weight="600">1101</tspan><tspan fill="#52647a" font-weight="400"> · 95%</tspan></text>
-<rect x="24" y="256" width="20" height="20" rx="4" fill="#EBEBEB"/>
-<path d="M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 00-.856 0l-5.97 3.473zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 01.476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33L12 15.128zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303l-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 014.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 01-.476 0zm-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523zm5.899 2.83a5.947 5.947 0 005.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0010.205 0a5.947 5.947 0 00-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 004.162 1.713z" fill="#000000" transform="translate(27,259) scale(0.583333)"/>
-<text x="52" y="272" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="400" fill="#172033" text-anchor="start">OpenAI</text>
-<rect x="184" y="260" width="500" height="7" rx="2" fill="#d9eaff"/>
-<rect x="184" y="260" width="37" height="7" rx="2" fill="#000000"/>
-<text x="806" y="272" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="14" text-anchor="end"><tspan fill="#172033" font-weight="600">81</tspan><tspan fill="#52647a" font-weight="400"> · 7%</tspan></text>
-<text x="24" y="314" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Daily AI collaboration (last 84 days)</text>
-<text x="424" y="330" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="middle">Jun</text>
-<text x="496" y="330" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="middle">Jul</text>
-<polygon points="352,349 370,358 370,390 352,381" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="370,358 388,349 388,381 370,390" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="370,340 388,349 370,358 352,349" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="334,358 352,367 352,399 334,390" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="352,367 370,358 370,390 352,399" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="352,349 370,358 352,367 334,358" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="370,359 388,368 388,399 370,390" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="388,368 406,359 406,390 388,399" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="370,358 388,367 388,368 370,359" fill="#000000" fill-opacity="0.62"/>
-<polygon points="388,367 406,358 406,359 388,368" fill="#000000" fill-opacity="0.42"/>
-<polygon points="388,349 406,358 388,367 370,358" fill="#000000" fill-opacity="0.88"/>
-<polygon points="316,375 334,384 334,408 316,399" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="334,384 352,375 352,399 334,408" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="334,366 352,375 334,384 316,375" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="352,369 370,378 370,408 352,399" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="370,378 388,369 388,399 370,408" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="352,367 370,376 370,378 352,369" fill="#000000" fill-opacity="0.62"/>
-<polygon points="370,376 388,367 388,369 370,378" fill="#000000" fill-opacity="0.42"/>
-<polygon points="370,358 388,367 370,376 352,367" fill="#000000" fill-opacity="0.88"/>
-<polygon points="388,367 406,376 406,408 388,399" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="406,376 424,367 424,399 406,408" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="406,358 424,367 406,376 388,367" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="298,376 316,385 316,417 298,408" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="316,385 334,376 334,408 316,417" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="316,367 334,376 316,385 298,376" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="334,376 352,385 352,417 334,408" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="352,385 370,376 370,408 352,417" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="352,367 370,376 352,385 334,376" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="370,376 388,385 388,417 370,408" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="388,385 406,376 406,408 388,417" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="388,367 406,376 388,385 370,376" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="406,376 424,385 424,417 406,408" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="424,385 442,376 442,408 424,417" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="424,367 442,376 424,385 406,376" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="280,385 298,394 298,426 280,417" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="298,394 316,385 316,417 298,426" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="298,376 316,385 298,394 280,385" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="316,385 334,394 334,426 316,417" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="334,394 352,385 352,417 334,426" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="334,376 352,385 334,394 316,385" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="370,408 388,417 370,426 352,417" fill="#d9eaff"/>
-<polygon points="388,385 406,394 406,426 388,417" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="406,394 424,385 424,417 406,426" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="406,376 424,385 406,394 388,385" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="424,413 442,422 442,426 424,417" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="442,422 460,413 460,417 442,426" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="442,404 460,413 442,422 424,413" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="262,394 280,403 280,435 262,426" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="280,403 298,394 298,426 280,435" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="280,385 298,394 280,403 262,394" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="298,394 316,403 316,435 298,426" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="316,403 334,394 334,426 316,435" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="316,385 334,394 316,403 298,394" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="334,394 352,403 352,435 334,426" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="352,403 370,394 370,426 352,435" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="352,385 370,394 352,403 334,394" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="370,394 388,403 388,435 370,426" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="388,403 406,394 406,426 388,435" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="388,385 406,394 388,403 370,394" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="406,406 424,415 424,435 406,426" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="424,415 442,406 442,426 424,435" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="424,397 442,406 424,415 406,406" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="442,406 460,415 460,435 442,426" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="460,415 478,406 478,426 460,435" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="460,397 478,406 460,415 442,406" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="244,405 262,414 262,444 244,435" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="262,414 280,405 280,435 262,444" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="244,403 262,412 262,414 244,405" fill="#000000" fill-opacity="0.62"/>
-<polygon points="262,412 280,403 280,405 262,414" fill="#000000" fill-opacity="0.42"/>
-<polygon points="262,394 280,403 262,412 244,403" fill="#000000" fill-opacity="0.88"/>
-<polygon points="280,403 298,412 298,444 280,435" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="298,412 316,403 316,435 298,444" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="298,394 316,403 298,412 280,403" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="316,403 334,412 334,444 316,435" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="334,412 352,403 352,435 334,444" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="334,394 352,403 334,412 316,403" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="352,403 370,412 370,444 352,435" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="370,412 388,403 388,435 370,444" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="370,394 388,403 370,412 352,403" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="388,419 406,428 406,444 388,435" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="406,428 424,419 424,435 406,444" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="406,410 424,419 406,428 388,419" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="424,403 442,412 442,444 424,435" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="442,412 460,403 460,435 442,444" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="442,394 460,403 442,412 424,403" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="478,426 496,435 478,444 460,435" fill="#d9eaff"/>
-<polygon points="262,412 280,421 280,453 262,444" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="280,421 298,412 298,444 280,453" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="280,403 298,412 280,421 262,412" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="298,436 316,445 316,453 298,444" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="316,445 334,436 334,444 316,453" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="316,427 334,436 316,445 298,436" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="334,428 352,437 352,453 334,444" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="352,437 370,428 370,444 352,453" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="352,419 370,428 352,437 334,428" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="370,440 388,449 388,453 370,444" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="388,449 406,440 406,444 388,453" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="388,431 406,440 388,449 370,440" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="406,428 424,437 424,453 406,444" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="424,437 442,428 442,444 424,453" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="424,419 442,428 424,437 406,428" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="460,435 478,444 460,453 442,444" fill="#d9eaff"/>
-<polygon points="496,435 514,444 496,453 478,444" fill="#d9eaff"/>
-<polygon points="280,441 298,450 298,462 280,453" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="298,450 316,441 316,453 298,462" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="298,432 316,441 298,450 280,441" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="316,441 334,450 334,462 316,453" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="334,450 352,441 352,453 334,462" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="334,432 352,441 334,450 316,441" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="352,441 370,450 370,462 352,453" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="370,450 388,441 388,453 370,462" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="370,432 388,441 370,450 352,441" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="388,445 406,454 406,462 388,453" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="406,454 424,445 424,453 406,462" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="406,436 424,445 406,454 388,445" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="424,449 442,458 442,462 424,453" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="442,458 460,449 460,453 442,462" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="442,440 460,449 442,458 424,449" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="478,444 496,453 478,462 460,453" fill="#d9eaff"/>
-<polygon points="514,444 532,453 514,462 496,453" fill="#d9eaff"/>
-<polygon points="298,454 316,463 316,471 298,462" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="316,463 334,454 334,462 316,471" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="316,445 334,454 316,463 298,454" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="334,450 352,459 352,471 334,462" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="352,459 370,450 370,462 352,471" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="352,441 370,450 352,459 334,450" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="388,453 406,462 388,471 370,462" fill="#d9eaff"/>
-<polygon points="424,453 442,462 424,471 406,462" fill="#d9eaff"/>
-<polygon points="460,453 478,462 460,471 442,462" fill="#d9eaff"/>
-<polygon points="478,434 496,443 496,471 478,462" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="496,443 514,434 514,462 496,471" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="496,425 514,434 496,443 478,434" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="514,458 532,467 532,471 514,462" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="532,467 550,458 550,462 532,471" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="532,449 550,458 532,467 514,458" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="316,467 334,476 334,480 316,471" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="334,476 352,467 352,471 334,480" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="334,458 352,467 334,476 316,467" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="370,462 388,471 370,480 352,471" fill="#d9eaff"/>
-<polygon points="406,462 424,471 406,480 388,471" fill="#d9eaff"/>
-<polygon points="424,463 442,472 442,480 424,471" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="442,472 460,463 460,471 442,480" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="442,454 460,463 442,472 424,463" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="460,467 478,476 478,480 460,471" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="478,476 496,467 496,471 478,480" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="478,458 496,467 478,476 460,467" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="496,463 514,472 514,480 496,471" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="514,472 532,463 532,471 514,480" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="514,454 532,463 514,472 496,463" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="532,439 550,448 550,480 532,471" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="550,448 568,439 568,471 550,480" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="550,430 568,439 550,448 532,439" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="352,471 370,480 352,489 334,480" fill="#d9eaff"/>
-<polygon points="370,472 388,481 388,489 370,480" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="388,481 406,472 406,480 388,489" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="388,463 406,472 388,481 370,472" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="406,448 424,457 424,489 406,480" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="424,457 442,448 442,480 424,489" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="424,439 442,448 424,457 406,448" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="442,464 460,473 460,489 442,480" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="460,473 478,464 478,480 460,489" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="460,455 478,464 460,473 442,464" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="478,476 496,485 496,489 478,480" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="496,485 514,476 514,480 496,489" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="496,467 514,476 496,485 478,476" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="514,476 532,485 532,489 514,480" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="532,485 550,476 550,480 532,489" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="532,467 550,476 532,485 514,476" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="568,471 586,480 568,489 550,480" fill="#d9eaff"/>
-<polygon points="370,480 388,489 370,498 352,489" fill="#d9eaff"/>
-<polygon points="388,461 406,470 406,498 388,489" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="406,470 424,461 424,489 406,498" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="406,452 424,461 406,470 388,461" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="424,465 442,474 442,498 424,489" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="442,474 460,465 460,489 442,498" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="442,456 460,465 442,474 424,465" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="460,469 478,478 478,498 460,489" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="478,478 496,469 496,489 478,498" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="478,460 496,469 478,478 460,469" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="514,480 532,489 514,498 496,489" fill="#d9eaff"/>
-<polygon points="532,469 550,478 550,498 532,489" fill="#000000" fill-opacity="0.62"/>
-<polygon points="550,478 568,469 568,489 550,498" fill="#000000" fill-opacity="0.42"/>
-<polygon points="550,460 568,469 550,478 532,469" fill="#000000" fill-opacity="0.88"/>
-<polygon points="370,490 388,499 388,507 370,498" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="388,499 406,490 406,498 388,507" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="388,481 406,490 388,499 370,490" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="406,486 424,495 424,507 406,498" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="424,495 442,486 442,498 424,507" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="424,477 442,486 424,495 406,486" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="442,466 460,475 460,507 442,498" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="460,475 478,466 478,498 460,507" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="460,457 478,466 460,475 442,466" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="478,490 496,499 496,507 478,498" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="496,499 514,490 514,498 496,507" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="496,481 514,490 496,499 478,490" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="514,466 532,475 532,507 514,498" fill="#000000" fill-opacity="0.62"/>
-<polygon points="532,475 550,466 550,498 532,507" fill="#000000" fill-opacity="0.42"/>
-<polygon points="532,457 550,466 532,475 514,466" fill="#000000" fill-opacity="0.88"/>
-<polygon points="388,475 406,484 406,516 388,507" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="406,484 424,475 424,507 406,516" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="406,466 424,475 406,484 388,475" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="424,483 442,492 442,516 424,507" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="442,492 460,483 460,507 442,516" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="442,474 460,483 442,492 424,483" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="460,487 478,496 478,516 460,507" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="478,496 496,487 496,507 478,516" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="460,479 478,488 478,496 460,487" fill="#000000" fill-opacity="0.62"/>
-<polygon points="478,488 496,479 496,487 478,496" fill="#000000" fill-opacity="0.42"/>
-<polygon points="478,470 496,479 478,488 460,479" fill="#000000" fill-opacity="0.88"/>
-<polygon points="496,503 514,512 514,516 496,507" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="514,512 532,503 532,507 514,516" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="496,475 514,484 514,512 496,503" fill="#000000" fill-opacity="0.62"/>
-<polygon points="514,484 532,475 532,503 514,512" fill="#000000" fill-opacity="0.42"/>
-<polygon points="514,466 532,475 514,484 496,475" fill="#000000" fill-opacity="0.88"/>
-<polygon points="406,492 424,501 424,525 406,516" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="424,501 442,492 442,516 424,525" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="424,483 442,492 424,501 406,492" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="442,512 460,521 460,525 442,516" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="460,521 478,512 478,516 460,525" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="460,503 478,512 460,521 442,512" fill="#B74C2A" fill-opacity="0.88"/>
-<polygon points="496,507 514,516 496,525 478,516" fill="#d9eaff"/>
-<polygon points="424,501 442,510 442,534 424,525" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="442,510 460,501 460,525 442,534" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="424,493 442,502 442,510 424,501" fill="#000000" fill-opacity="0.62"/>
-<polygon points="442,502 460,493 460,501 442,510" fill="#000000" fill-opacity="0.42"/>
-<polygon points="442,484 460,493 442,502 424,493" fill="#000000" fill-opacity="0.88"/>
-<polygon points="460,517 478,526 478,534 460,525" fill="#B74C2A" fill-opacity="0.62"/>
-<polygon points="478,526 496,517 496,525 478,534" fill="#B74C2A" fill-opacity="0.42"/>
-<polygon points="460,509 478,518 478,526 460,517" fill="#000000" fill-opacity="0.62"/>
-<polygon points="478,518 496,509 496,517 478,526" fill="#000000" fill-opacity="0.42"/>
-<polygon points="478,500 496,509 478,518 460,509" fill="#000000" fill-opacity="0.88"/>
-<polygon points="442,502 460,511 460,543 442,534" fill="#000000" fill-opacity="0.62"/>
-<polygon points="460,511 478,502 478,534 460,543" fill="#000000" fill-opacity="0.42"/>
-<polygon points="460,493 478,502 460,511 442,502" fill="#000000" fill-opacity="0.88"/>
-<polygon points="30,556 36,559 30,562 24,559" fill="#52647a" fill-opacity="0.35"/>
-<text x="40" y="563" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">1</text>
-<polygon points="66,556 72,559 66,562 60,559" fill="#52647a" fill-opacity="0.55"/>
-<text x="76" y="563" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">2-4</text>
-<polygon points="114,556 120,559 114,562 108,559" fill="#52647a" fill-opacity="0.75"/>
-<text x="124" y="563" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">5-7</text>
-<polygon points="162,556 168,559 162,562 156,559" fill="#52647a"/>
-<text x="172" y="563" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">8+</text>
-<text x="806" y="563" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">publishable repos only</text>
-<rect x="24" y="587" width="782" height="104" rx="6" fill="#fff0bd"/>
-<text x="40" y="603" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Evidence (all records: 1758)</text>
-<rect x="40" y="623" width="503" height="8" rx="2" fill="#0550ae"/>
-<rect x="545" y="623" width="245" height="8" rx="2" fill="#6e7781"/>
-<rect x="40" y="644" width="8" height="8" rx="1" fill="#0550ae"/>
-<text x="52" y="651" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">declared 1182</text>
-<rect x="146" y="644" width="8" height="8" rx="1" fill="#6e7781"/>
-<text x="158" y="651" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">unknown 576</text>
-<rect x="40" y="668" width="8" height="8" rx="1" fill="#52647a"/>
-<text x="52" y="675" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">All activity explicitly publishable</text>
-<line x1="24" y1="707" x2="806" y2="707" stroke="#c2d3e5"/>
-<text x="24" y="731" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">Generated 2026-07-30 · aiprofile</text>
-<text x="24" y="747" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">One commit may include several AI actor presences (one per provider/tool).</text>
+<text x="806" y="160" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">583</text>
+<text x="24" y="218" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Collaboration terrain (last 12 weeks)</text>
+<text x="424" y="234" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="middle">Jun</text>
+<text x="496" y="234" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="middle">Jul</text>
+<text x="568" y="234" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="middle">Aug</text>
+<polygon points="352,253 370,262 370,294 352,285" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="370,262 388,253 388,285 370,294" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="370,244 388,253 370,262 352,253" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="334,262 352,271 352,303 334,294" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="352,271 370,262 370,294 352,303" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="352,253 370,262 352,271 334,262" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="370,262 388,271 388,303 370,294" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="388,271 406,262 406,294 388,303" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="388,253 406,262 388,271 370,262" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="316,271 334,280 334,312 316,303" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="334,280 352,271 352,303 334,312" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="334,262 352,271 334,280 316,271" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="352,271 370,280 370,312 352,303" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="370,280 388,271 388,303 370,312" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="370,262 388,271 370,280 352,271" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="388,271 406,280 406,312 388,303" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="406,280 424,271 424,303 406,312" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="406,262 424,271 406,280 388,271" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="298,280 316,289 316,321 298,312" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="316,289 334,280 334,312 316,321" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="316,271 334,280 316,289 298,280" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="334,280 352,289 352,321 334,312" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="352,289 370,280 370,312 352,321" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="352,271 370,280 352,289 334,280" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="370,280 388,289 388,321 370,312" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="388,289 406,280 406,312 388,321" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="388,271 406,280 388,289 370,280" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="406,280 424,289 424,321 406,312" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="424,289 442,280 442,312 424,321" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="424,271 442,280 424,289 406,280" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="280,289 298,298 298,330 280,321" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="298,298 316,289 316,321 298,330" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="298,280 316,289 298,298 280,289" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="316,289 334,298 334,330 316,321" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="334,298 352,289 352,321 334,330" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="334,280 352,289 334,298 316,289" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="352,305 370,314 370,330 352,321" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="370,314 388,305 388,321 370,330" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="370,296 388,305 370,314 352,305" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="388,305 406,314 406,330 388,321" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="406,314 424,305 424,321 406,330" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="406,296 424,305 406,314 388,305" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="424,313 442,322 442,330 424,321" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="442,322 460,313 460,321 442,330" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="442,304 460,313 442,322 424,313" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="262,298 280,307 280,339 262,330" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="280,307 298,298 298,330 280,339" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="280,289 298,298 280,307 262,298" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="298,298 316,307 316,339 298,330" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="316,307 334,298 334,330 316,339" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="316,289 334,298 316,307 298,298" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="334,314 352,323 352,339 334,330" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="352,323 370,314 370,330 352,339" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="352,305 370,314 352,323 334,314" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="370,314 388,323 388,339 370,330" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="388,323 406,314 406,330 388,339" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="388,305 406,314 388,323 370,314" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="406,314 424,323 424,339 406,330" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="424,323 442,314 442,330 424,339" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="424,305 442,314 424,323 406,314" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="442,314 460,323 460,339 442,330" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="460,323 478,314 478,330 460,339" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="460,305 478,314 460,323 442,314" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="244,307 262,316 262,348 244,339" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="262,316 280,307 280,339 262,348" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="262,298 280,307 262,316 244,307" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="280,307 298,316 298,348 280,339" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="298,316 316,307 316,339 298,348" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="298,298 316,307 298,316 280,307" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="316,307 334,316 334,348 316,339" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="334,316 352,307 352,339 334,348" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="334,298 352,307 334,316 316,307" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="352,323 370,332 370,348 352,339" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="370,332 388,323 388,339 370,348" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="370,314 388,323 370,332 352,323" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="388,323 406,332 406,348 388,339" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="406,332 424,323 424,339 406,348" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="406,314 424,323 406,332 388,323" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="442,330 460,339 442,348 424,339" fill="#d9eaff"/>
+<polygon points="460,331 478,340 478,348 460,339" fill="#52647A" fill-opacity="0.62"/>
+<polygon points="478,340 496,331 496,339 478,348" fill="#52647A" fill-opacity="0.42"/>
+<polygon points="478,322 496,331 478,340 460,331" fill="#52647A" fill-opacity="0.88"/>
+<polygon points="262,324 280,333 280,357 262,348" fill="#52647A" fill-opacity="0.62"/>
+<polygon points="280,333 298,324 298,348 280,357" fill="#52647A" fill-opacity="0.42"/>
+<polygon points="280,315 298,324 280,333 262,324" fill="#52647A" fill-opacity="0.88"/>
+<polygon points="298,316 316,325 316,357 298,348" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="316,325 334,316 334,348 316,357" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="316,307 334,316 316,325 298,316" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="334,332 352,341 352,357 334,348" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="352,341 370,332 370,348 352,357" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="352,323 370,332 352,341 334,332" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="370,324 388,333 388,357 370,348" fill="#3E628D" fill-opacity="0.62"/>
+<polygon points="388,333 406,324 406,348 388,357" fill="#3E628D" fill-opacity="0.42"/>
+<polygon points="388,315 406,324 388,333 370,324" fill="#3E628D" fill-opacity="0.88"/>
+<polygon points="424,339 442,348 424,357 406,348" fill="#d9eaff"/>
+<polygon points="442,332 460,341 460,357 442,348" fill="#52647A" fill-opacity="0.62"/>
+<polygon points="460,341 478,332 478,348 460,357" fill="#52647A" fill-opacity="0.42"/>
+<polygon points="460,323 478,332 460,341 442,332" fill="#52647A" fill-opacity="0.88"/>
+<polygon points="478,332 496,341 496,357 478,348" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="496,341 514,332 514,348 496,357" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="496,323 514,332 496,341 478,332" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="280,325 298,334 298,366 280,357" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="298,334 316,325 316,357 298,366" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="298,316 316,325 298,334 280,325" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="316,333 334,342 334,366 316,357" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="334,342 352,333 352,357 334,366" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="334,324 352,333 334,342 316,333" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="352,333 370,342 370,366 352,357" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="370,342 388,333 388,357 370,366" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="370,324 388,333 370,342 352,333" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="406,348 424,357 406,366 388,357" fill="#d9eaff"/>
+<polygon points="424,325 442,334 442,366 424,357" fill="#3E628D" fill-opacity="0.62"/>
+<polygon points="442,334 460,325 460,357 442,366" fill="#3E628D" fill-opacity="0.42"/>
+<polygon points="442,316 460,325 442,334 424,325" fill="#3E628D" fill-opacity="0.88"/>
+<polygon points="460,325 478,334 478,366 460,357" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="478,334 496,325 496,357 478,366" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="478,316 496,325 478,334 460,325" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="496,325 514,334 514,366 496,357" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="514,334 532,325 532,357 514,366" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="514,316 532,325 514,334 496,325" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="298,350 316,359 316,375 298,366" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="316,359 334,350 334,366 316,375" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="316,341 334,350 316,359 298,350" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="334,334 352,343 352,375 334,366" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="352,343 370,334 370,366 352,375" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="352,325 370,334 352,343 334,334" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="388,357 406,366 388,375 370,366" fill="#d9eaff"/>
+<polygon points="406,342 424,351 424,375 406,366" fill="#52647A" fill-opacity="0.62"/>
+<polygon points="424,351 442,342 442,366 424,375" fill="#52647A" fill-opacity="0.42"/>
+<polygon points="424,333 442,342 424,351 406,342" fill="#52647A" fill-opacity="0.88"/>
+<polygon points="442,334 460,343 460,375 442,366" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="460,343 478,334 478,366 460,375" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="460,325 478,334 460,343 442,334" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="478,334 496,343 496,375 478,366" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="496,343 514,334 514,366 496,375" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="496,325 514,334 496,343 478,334" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="514,334 532,343 532,375 514,366" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="532,343 550,334 550,366 532,375" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="532,325 550,334 532,343 514,334" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="316,359 334,368 334,384 316,375" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="334,368 352,359 352,375 334,384" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="334,350 352,359 334,368 316,359" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="370,366 388,375 370,384 352,375" fill="#d9eaff"/>
+<polygon points="406,366 424,375 406,384 388,375" fill="#d9eaff"/>
+<polygon points="424,351 442,360 442,384 424,375" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="442,360 460,351 460,375 442,384" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="442,342 460,351 442,360 424,351" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="460,343 478,352 478,384 460,375" fill="#3E628D" fill-opacity="0.62"/>
+<polygon points="478,352 496,343 496,375 478,384" fill="#3E628D" fill-opacity="0.42"/>
+<polygon points="478,334 496,343 478,352 460,343" fill="#3E628D" fill-opacity="0.88"/>
+<polygon points="496,343 514,352 514,384 496,375" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="514,352 532,343 532,375 514,384" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="514,334 532,343 514,352 496,343" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="532,351 550,360 550,384 532,375" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="550,360 568,351 568,375 550,384" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="550,342 568,351 550,360 532,351" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="334,376 352,385 352,393 334,384" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="352,385 370,376 370,384 352,393" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="352,367 370,376 352,385 334,376" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="388,375 406,384 388,393 370,384" fill="#d9eaff"/>
+<polygon points="406,360 424,369 424,393 406,384" fill="#52647A" fill-opacity="0.62"/>
+<polygon points="424,369 442,360 442,384 424,393" fill="#52647A" fill-opacity="0.42"/>
+<polygon points="424,351 442,360 424,369 406,360" fill="#52647A" fill-opacity="0.88"/>
+<polygon points="442,352 460,361 460,393 442,384" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="460,361 478,352 478,384 460,393" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="460,343 478,352 460,361 442,352" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="478,352 496,361 496,393 478,384" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="496,361 514,352 514,384 496,393" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="496,343 514,352 496,361 478,352" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="514,352 532,361 532,393 514,384" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="532,361 550,352 550,384 532,393" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="532,343 550,352 532,361 514,352" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="550,352 568,361 568,393 550,384" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="568,361 586,352 586,384 568,393" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="568,343 586,352 568,361 550,352" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="370,384 388,393 370,402 352,393" fill="#d9eaff"/>
+<polygon points="388,369 406,378 406,402 388,393" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="406,378 424,369 424,393 406,402" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="406,360 424,369 406,378 388,369" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="424,361 442,370 442,402 424,393" fill="#3E628D" fill-opacity="0.62"/>
+<polygon points="442,370 460,361 460,393 442,402" fill="#3E628D" fill-opacity="0.42"/>
+<polygon points="442,352 460,361 442,370 424,361" fill="#3E628D" fill-opacity="0.88"/>
+<polygon points="460,361 478,370 478,402 460,393" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="478,370 496,361 496,393 478,402" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="478,352 496,361 478,370 460,361" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="496,361 514,370 514,402 496,393" fill="#3E628D" fill-opacity="0.62"/>
+<polygon points="514,370 532,361 532,393 514,402" fill="#3E628D" fill-opacity="0.42"/>
+<polygon points="514,352 532,361 514,370 496,361" fill="#3E628D" fill-opacity="0.88"/>
+<polygon points="550,384 568,393 550,402 532,393" fill="#d9eaff"/>
+<polygon points="370,394 388,403 388,411 370,402" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="388,403 406,394 406,402 388,411" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="388,385 406,394 388,403 370,394" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="406,386 424,395 424,411 406,402" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="424,395 442,386 442,402 424,411" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="424,377 442,386 424,395 406,386" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="442,370 460,379 460,411 442,402" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="460,379 478,370 478,402 460,411" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="460,361 478,370 460,379 442,370" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="478,370 496,379 496,411 478,402" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="496,379 514,370 514,402 496,411" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="496,361 514,370 496,379 478,370" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="514,386 532,395 532,411 514,402" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="532,395 550,386 550,402 532,411" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="532,377 550,386 532,395 514,386" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="388,387 406,396 406,420 388,411" fill="#3E628D" fill-opacity="0.62"/>
+<polygon points="406,396 424,387 424,411 406,420" fill="#3E628D" fill-opacity="0.42"/>
+<polygon points="406,378 424,387 406,396 388,387" fill="#3E628D" fill-opacity="0.88"/>
+<polygon points="424,387 442,396 442,420 424,411" fill="#3E628D" fill-opacity="0.62"/>
+<polygon points="442,396 460,387 460,411 442,420" fill="#3E628D" fill-opacity="0.42"/>
+<polygon points="442,378 460,387 442,396 424,387" fill="#3E628D" fill-opacity="0.88"/>
+<polygon points="478,402 496,411 478,420 460,411" fill="#d9eaff"/>
+<polygon points="496,379 514,388 514,420 496,411" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="514,388 532,379 532,411 514,420" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="514,370 532,379 514,388 496,379" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="424,411 442,420 424,429 406,420" fill="#d9eaff"/>
+<polygon points="442,388 460,397 460,429 442,420" fill="#145EB2" fill-opacity="0.62"/>
+<polygon points="460,397 478,388 478,420 460,429" fill="#145EB2" fill-opacity="0.42"/>
+<polygon points="460,379 478,388 460,397 442,388" fill="#145EB2" fill-opacity="0.88"/>
+<polygon points="478,404 496,413 496,429 478,420" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="496,413 514,404 514,420 496,429" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="496,395 514,404 496,413 478,404" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="424,397 442,406 442,438 424,429" fill="#2960A0" fill-opacity="0.62"/>
+<polygon points="442,406 460,397 460,429 442,438" fill="#2960A0" fill-opacity="0.42"/>
+<polygon points="442,388 460,397 442,406 424,397" fill="#2960A0" fill-opacity="0.88"/>
+<polygon points="460,397 478,406 478,438 460,429" fill="#005CC5" fill-opacity="0.62"/>
+<polygon points="478,406 496,397 496,429 478,438" fill="#005CC5" fill-opacity="0.42"/>
+<polygon points="478,388 496,397 478,406 460,397" fill="#005CC5" fill-opacity="0.88"/>
+<polygon points="442,422 460,431 460,447 442,438" fill="#52647A" fill-opacity="0.62"/>
+<polygon points="460,431 478,422 478,438 460,447" fill="#52647A" fill-opacity="0.42"/>
+<polygon points="460,413 478,422 460,431 442,422" fill="#52647A" fill-opacity="0.88"/>
+<text x="24" y="467" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">Commits</text>
+<polygon points="75,461 81,464 81,466 75,463" fill="#52647a" fill-opacity="0.62"/>
+<polygon points="81,464 87,461 87,463 81,466" fill="#52647a" fill-opacity="0.42"/>
+<polygon points="81,458 87,461 81,464 75,461" fill="#52647a" fill-opacity="0.88"/>
+<text x="91" y="467" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">1</text>
+<polygon points="111,459 117,462 117,466 111,463" fill="#52647a" fill-opacity="0.62"/>
+<polygon points="117,462 123,459 123,463 117,466" fill="#52647a" fill-opacity="0.42"/>
+<polygon points="117,456 123,459 117,462 111,459" fill="#52647a" fill-opacity="0.88"/>
+<text x="127" y="467" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">2-4</text>
+<polygon points="159,457 165,460 165,466 159,463" fill="#52647a" fill-opacity="0.62"/>
+<polygon points="165,460 171,457 171,463 165,466" fill="#52647a" fill-opacity="0.42"/>
+<polygon points="165,454 171,457 165,460 159,457" fill="#52647a" fill-opacity="0.88"/>
+<text x="175" y="467" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">5-7</text>
+<polygon points="207,455 213,458 213,466 207,463" fill="#52647a" fill-opacity="0.62"/>
+<polygon points="213,458 219,455 219,463 213,466" fill="#52647a" fill-opacity="0.42"/>
+<polygon points="213,452 219,455 213,458 207,455" fill="#52647a" fill-opacity="0.88"/>
+<text x="223" y="467" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">8+</text>
+<text x="261" y="467" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">AI share</text>
+<text x="311" y="467" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">0%</text>
+<polygon points="338,460 344,463 338,466 332,463" fill="#52647A"/>
+<polygon points="353,460 359,463 353,466 347,463" fill="#3E628D"/>
+<polygon points="368,460 374,463 368,466 362,463" fill="#2960A0"/>
+<polygon points="383,460 389,463 383,466 377,463" fill="#145EB2"/>
+<polygon points="398,460 404,463 398,466 392,463" fill="#005CC5"/>
+<text x="411" y="467" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">100%</text>
+<text x="806" y="467" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">publishable repos only</text>
+<text x="24" y="503" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Attributed commits by provider</text>
+<text x="806" y="503" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">% of 1173 AI-attributed commits</text>
+<rect x="24" y="523" width="20" height="20" rx="4" fill="#F6E5DF"/>
+<path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z" fill="#B74C2A" transform="translate(27,526) scale(0.583333)"/>
+<text x="52" y="539" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">Claude</text>
+<rect x="184" y="527" width="500" height="7" rx="2" fill="#d9eaff"/>
+<rect x="184" y="527" width="500" height="7" rx="2" fill="#B74C2A"/>
+<text x="806" y="539" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">1110</tspan><tspan fill="#52647a" font-weight="400"> · 95%</tspan></text>
+<rect x="24" y="551" width="20" height="20" rx="4" fill="#EBEBEB"/>
+<path d="M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 00-.856 0l-5.97 3.473zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 01.476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33L12 15.128zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303l-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 014.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 01-.476 0zm-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523zm5.899 2.83a5.947 5.947 0 005.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0010.205 0a5.947 5.947 0 00-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 004.162 1.713z" fill="#000000" transform="translate(27,554) scale(0.583333)"/>
+<text x="52" y="567" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">OpenAI</text>
+<rect x="184" y="555" width="500" height="7" rx="2" fill="#d9eaff"/>
+<rect x="184" y="555" width="39" height="7" rx="2" fill="#000000"/>
+<text x="806" y="567" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">87</tspan><tspan fill="#52647a" font-weight="400"> · 7%</tspan></text>
+<text x="24" y="589" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">Provider totals are not mutually exclusive - one commit can involve several providers.</text>
+<rect x="24" y="615" width="171" height="22" rx="4" fill="#fff0bd"/>
+<text x="32" y="631" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Evidence (all records: 1780)</text>
+<rect x="24" y="651" width="525" height="8" rx="2" fill="#0550ae"/>
+<rect x="551" y="651" width="255" height="8" rx="2" fill="#6e7781"/>
+<rect x="24" y="672" width="8" height="8" rx="1" fill="#0550ae"/>
+<text x="36" y="679" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">declared 1197</text>
+<rect x="130" y="672" width="8" height="8" rx="1" fill="#6e7781"/>
+<text x="142" y="679" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">unknown 583</text>
+<rect x="24" y="696" width="8" height="8" rx="1" fill="#52647a"/>
+<text x="36" y="703" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">All activity explicitly publishable</text>
+<line x1="24" y1="735" x2="806" y2="735" stroke="#c2d3e5"/>
+<text x="24" y="759" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">Generated 2026-08-01 · aiprofile</text>
+<text x="24" y="775" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">One commit may include several AI actor presences (one per provider/tool).</text>
 </svg>
