@@ -103,6 +103,8 @@ unknown；同一個 commit 即使包含多個 AI actor，仍只算一個
 unique commit，但會產生多個 actor presences。摘要卡也會呈現明示的
 model family 證據；這是非互斥的證據視圖，同一個 commit 可以命名多個
 family，而缺少模型證據時仍維持 Unknown。
+每個 model family row 在亮色與深色視圖都維持相同的視覺識別，讓貢獻模式
+可以快速比較，但不把它誤解成技能分數。
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>

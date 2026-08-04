@@ -105,6 +105,9 @@ unknown, and a commit with multiple AI actors remains one unique commit while
 contributing multiple actor presences. The card also surfaces explicit model
 families as a non-exclusive evidence view: one commit may name more than one
 family, while missing model evidence remains Unknown.
+Each model-family row keeps the same visual key in light and dark views, so
+contribution patterns are readable at a glance without turning them into a
+skill score.
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
