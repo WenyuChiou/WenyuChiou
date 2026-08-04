@@ -1,37 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="830" height="762" viewBox="0 0 830 762" role="img" aria-labelledby="aiprofileSummaryTitle aiprofileSummaryDesc">
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="882" viewBox="0 0 830 882" role="img" aria-labelledby="aiprofileSummaryTitle aiprofileSummaryDesc">
 <title id="aiprofileSummaryTitle">AI Collaboration Record — All time</title>
-<desc id="aiprofileSummaryDesc">1190 AI-attributed commits, 1216 AI actor presences across 97 active AI days (author dates), 2 AI providers. Daily collaboration 2026-05-13 to 2026-08-04, peak day 138 commits; bar height is total commits, fill is the day's AI share; publishable repositories only. Generated 2026-08-04.</desc>
-<rect x="0.5" y="0.5" width="829" height="761" rx="8" fill="#fbfdff" stroke="#c2d3e5" stroke-width="1"/>
+<desc id="aiprofileSummaryDesc">1163 AI-attributed commits, 1182 AI actor presences across 92 active AI days (author dates), 2 AI providers. 2 known model families plus an unknown bucket are shown in a non-exclusive all-time evidence ledger. Daily collaboration 2026-05-08 to 2026-07-30, peak day 138 commits; bar height is total commits, fill is the day's AI share; publishable repositories only. Generated 2026-08-04.</desc>
+<rect x="0.5" y="0.5" width="829" height="881" rx="8" fill="#fbfdff" stroke="#c2d3e5" stroke-width="1"/>
 <rect x="24" y="24" width="16" height="16" rx="3" fill="#fbfdff" stroke="#005cc5" stroke-width="1"/>
 <rect x="29" y="29" width="6" height="6" rx="1" fill="#005cc5"/>
 <text x="48" y="36" font-family="'IBM Plex Sans Condensed', 'Aptos Display', 'Segoe UI', 'DejaVu Sans Condensed', sans-serif" font-size="16" font-weight="600" fill="#172033" text-anchor="start">AI Collaboration Record</text>
 <text x="806" y="36" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="end">All time</text>
 <line x1="24" y1="56" x2="806" y2="56" stroke="#c2d3e5"/>
-<text x="24" y="112" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="38" font-weight="700" fill="#005cc5" text-anchor="start">1190</text>
+<text x="24" y="112" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="38" font-weight="700" fill="#005cc5" text-anchor="start">1163</text>
 <text x="24" y="140" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI-attributed commits</text>
-<text x="24" y="160" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#172033" text-anchor="start">67% of 1785 unique commits scanned</text>
+<text x="24" y="160" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#172033" text-anchor="start">67% of 1739 unique commits scanned</text>
 <rect x="24" y="172" width="360" height="7" rx="2" fill="#d9eaff"/>
-<rect x="24" y="172" width="240" height="7" rx="2" fill="#005cc5"/>
+<rect x="24" y="172" width="241" height="7" rx="2" fill="#005cc5"/>
 <text x="512" y="88" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Active AI days (author dates)</text>
-<text x="806" y="88" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">97</text>
+<text x="806" y="88" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">92</text>
 <text x="512" y="112" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI providers</text>
 <text x="806" y="112" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">2</text>
 <text x="512" y="136" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI actor presences</text>
-<text x="806" y="136" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">1216</text>
+<text x="806" y="136" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">1182</text>
 <text x="512" y="160" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Unattributed commits</text>
-<text x="806" y="160" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">595</text>
+<text x="806" y="160" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="600" fill="#172033" text-anchor="end">576</text>
 <rect x="24" y="208" width="2" height="12" rx="1" fill="#c2d3e5"/>
 <line x1="26" y1="212" x2="38" y2="212" stroke="#c2d3e5" stroke-opacity="0.65"/>
 <text x="46" y="218" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Daily collaboration (last 12 weeks)</text>
-<text x="261" y="234" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="middle">Jun</text>
+<text x="305" y="234" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="middle">Jun</text>
 <text x="481" y="234" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="middle">Jul</text>
-<text x="657" y="234" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="middle">Aug</text>
-<text x="146" y="258" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">W</text>
-<text x="146" y="284" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">T</text>
-<text x="146" y="310" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">F</text>
-<text x="146" y="336" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">S</text>
-<text x="146" y="362" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">S</text>
-<text x="146" y="388" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">M</text>
+<text x="146" y="258" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">F</text>
+<text x="146" y="284" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">S</text>
+<text x="146" y="310" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">S</text>
+<text x="146" y="336" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">M</text>
+<text x="146" y="362" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">T</text>
+<text x="146" y="388" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">W</text>
 <text x="146" y="414" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">T</text>
 <line x1="154" y1="238" x2="154" y2="424" stroke="#c2d3e5" stroke-opacity="0.35"/>
 <line x1="286" y1="238" x2="286" y2="424" stroke="#c2d3e5" stroke-opacity="0.35"/>
@@ -41,13 +40,13 @@
 <rect x="154" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="158" y="248" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="154" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="158" y="274" width="30" height="12" rx="2" fill="#005CC5"/>
+<rect x="158" y="274" width="30" height="12" rx="2" fill="#2960A0"/>
 <rect x="154" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="158" y="300" width="30" height="12" rx="2" fill="#005CC5"/>
+<rect x="158" y="300" width="30" height="12" rx="2" fill="#3E628D"/>
 <rect x="154" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="158" y="326" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="154" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="158" y="352" width="30" height="12" rx="2" fill="#005CC5"/>
+<rect x="158" y="352" width="30" height="12" rx="2" fill="#145EB2"/>
 <rect x="154" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="158" y="378" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="154" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
@@ -59,140 +58,140 @@
 <rect x="198" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="202" y="300" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="198" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="202" y="326" width="30" height="12" rx="2" fill="#145EB2"/>
+<rect x="202" y="326" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="198" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="202" y="355" width="30" height="9" rx="2" fill="#52647A"/>
+<rect x="202" y="352" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="198" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="202" y="378" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="198" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="202" y="404" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="242" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="246" y="254" width="30" height="6" rx="2" fill="#145EB2"/>
+<rect x="246" y="248" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="242" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="246" y="280" width="30" height="6" rx="2" fill="#005CC5"/>
+<rect x="246" y="274" width="30" height="12" rx="2" fill="#145EB2"/>
 <rect x="242" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="246" y="300" width="30" height="12" rx="2" fill="#005CC5"/>
+<rect x="246" y="303" width="30" height="9" rx="2" fill="#52647A"/>
 <rect x="242" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="246" y="326" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="242" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="246" y="352" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="242" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="246" y="378" width="30" height="12" rx="2" fill="#005CC5"/>
+<rect x="246" y="384" width="30" height="6" rx="2" fill="#145EB2"/>
 <rect x="242" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="246" y="410" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="286" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="290" y="254" width="30" height="6" rx="2" fill="#005CC5"/>
+<rect x="290" y="248" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="286" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="290" y="280" width="30" height="6" rx="2" fill="#005CC5"/>
+<rect x="290" y="274" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="286" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="290" y="306" width="30" height="6" rx="2" fill="#2960A0"/>
+<rect x="290" y="300" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="286" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="290" y="329" width="30" height="9" rx="2" fill="#005CC5"/>
+<rect x="290" y="326" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="286" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="290" y="358" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="286" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="290" y="387" width="30" height="3" rx="2" fill="#005CC5"/>
+<rect x="290" y="384" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="286" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="290" y="410" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="330" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="334" y="254" width="30" height="6" rx="2" fill="#005CC5"/>
+<rect x="334" y="254" width="30" height="6" rx="2" fill="#2960A0"/>
 <rect x="330" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="334" y="277" width="30" height="9" rx="2" fill="#3E628D"/>
+<rect x="334" y="277" width="30" height="9" rx="2" fill="#005CC5"/>
 <rect x="330" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="334" y="303" width="30" height="9" rx="2" fill="#005CC5"/>
+<rect x="334" y="306" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="330" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="334" y="326" width="30" height="12" rx="2" fill="#005CC5"/>
+<rect x="334" y="335" width="30" height="3" rx="2" fill="#005CC5"/>
 <rect x="330" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="334" y="358" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="330" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="334" y="384" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="330" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
+<rect x="334" y="407" width="30" height="9" rx="2" fill="#3E628D"/>
 <rect x="374" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
+<rect x="378" y="251" width="30" height="9" rx="2" fill="#005CC5"/>
 <rect x="374" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
+<rect x="378" y="274" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="374" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
+<rect x="378" y="306" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="374" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
+<rect x="378" y="332" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="374" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="378" y="361" width="30" height="3" rx="2" fill="#005CC5"/>
 <rect x="374" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="378" y="387" width="30" height="3" rx="2" fill="#52647A"/>
 <rect x="374" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="378" y="410" width="30" height="6" rx="2" fill="#52647A"/>
 <rect x="418" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="422" y="248" width="30" height="12" rx="2" fill="#3E628D"/>
 <rect x="418" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="422" y="277" width="30" height="9" rx="2" fill="#52647A"/>
 <rect x="418" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
+<rect x="422" y="309" width="30" height="3" rx="2" fill="#005CC5"/>
 <rect x="418" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
+<rect x="422" y="335" width="30" height="3" rx="2" fill="#52647A"/>
 <rect x="418" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
+<rect x="422" y="358" width="30" height="6" rx="2" fill="#52647A"/>
 <rect x="418" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="422" y="384" width="30" height="6" rx="2" fill="#005CC5"/>
+<rect x="422" y="378" width="30" height="12" rx="2" fill="#3E628D"/>
 <rect x="418" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="422" y="404" width="30" height="12" rx="2" fill="#145EB2"/>
+<rect x="422" y="407" width="30" height="9" rx="2" fill="#52647A"/>
 <rect x="462" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="466" y="248" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="462" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="466" y="277" width="30" height="9" rx="2" fill="#2960A0"/>
 <rect x="462" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="466" y="303" width="30" height="9" rx="2" fill="#52647A"/>
 <rect x="462" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="466" y="329" width="30" height="9" rx="2" fill="#005CC5"/>
+<rect x="466" y="332" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="462" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="466" y="361" width="30" height="3" rx="2" fill="#005CC5"/>
+<rect x="466" y="352" width="30" height="12" rx="2" fill="#145EB2"/>
 <rect x="462" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="466" y="378" width="30" height="12" rx="2" fill="#2960A0"/>
+<rect x="466" y="378" width="30" height="12" rx="2" fill="#005CC5"/>
 <rect x="462" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="466" y="404" width="30" height="12" rx="2" fill="#2960A0"/>
+<rect x="466" y="407" width="30" height="9" rx="2" fill="#2960A0"/>
 <rect x="506" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="510" y="248" width="30" height="12" rx="2" fill="#3E628D"/>
+<rect x="510" y="251" width="30" height="9" rx="2" fill="#52647A"/>
 <rect x="506" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="510" y="274" width="30" height="12" rx="2" fill="#145EB2"/>
+<rect x="510" y="277" width="30" height="9" rx="2" fill="#005CC5"/>
 <rect x="506" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="510" y="300" width="30" height="12" rx="2" fill="#3E628D"/>
+<rect x="510" y="309" width="30" height="3" rx="2" fill="#005CC5"/>
 <rect x="506" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="510" y="332" width="30" height="6" rx="2" fill="#145EB2"/>
+<rect x="510" y="326" width="30" height="12" rx="2" fill="#2960A0"/>
 <rect x="506" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="510" y="355" width="30" height="9" rx="2" fill="#3E628D"/>
+<rect x="510" y="352" width="30" height="12" rx="2" fill="#2960A0"/>
 <rect x="506" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="510" y="378" width="30" height="12" rx="2" fill="#2960A0"/>
+<rect x="510" y="378" width="30" height="12" rx="2" fill="#3E628D"/>
 <rect x="506" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="510" y="404" width="30" height="12" rx="2" fill="#145EB2"/>
 <rect x="550" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="554" y="248" width="30" height="12" rx="2" fill="#2960A0"/>
+<rect x="554" y="248" width="30" height="12" rx="2" fill="#3E628D"/>
 <rect x="550" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="554" y="274" width="30" height="12" rx="2" fill="#2960A0"/>
+<rect x="554" y="280" width="30" height="6" rx="2" fill="#145EB2"/>
 <rect x="550" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="554" y="300" width="30" height="12" rx="2" fill="#145EB2"/>
+<rect x="554" y="303" width="30" height="9" rx="2" fill="#3E628D"/>
 <rect x="550" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="554" y="329" width="30" height="9" rx="2" fill="#3E628D"/>
+<rect x="554" y="326" width="30" height="12" rx="2" fill="#2960A0"/>
 <rect x="550" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
+<rect x="554" y="352" width="30" height="12" rx="2" fill="#145EB2"/>
 <rect x="550" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="554" y="381" width="30" height="9" rx="2" fill="#2960A0"/>
+<rect x="554" y="378" width="30" height="12" rx="2" fill="#2960A0"/>
 <rect x="550" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="554" y="404" width="30" height="12" rx="2" fill="#145EB2"/>
+<rect x="554" y="404" width="30" height="12" rx="2" fill="#2960A0"/>
 <rect x="594" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="598" y="248" width="30" height="12" rx="2" fill="#3E628D"/>
+<rect x="598" y="248" width="30" height="12" rx="2" fill="#145EB2"/>
 <rect x="594" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="598" y="274" width="30" height="12" rx="2" fill="#145EB2"/>
+<rect x="598" y="277" width="30" height="9" rx="2" fill="#3E628D"/>
 <rect x="594" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="594" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="598" y="326" width="30" height="12" rx="2" fill="#145EB2"/>
+<rect x="598" y="329" width="30" height="9" rx="2" fill="#2960A0"/>
 <rect x="594" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="598" y="352" width="30" height="12" rx="2" fill="#2960A0"/>
+<rect x="598" y="352" width="30" height="12" rx="2" fill="#145EB2"/>
 <rect x="594" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="598" y="378" width="30" height="12" rx="2" fill="#2960A0"/>
+<rect x="598" y="378" width="30" height="12" rx="2" fill="#3E628D"/>
 <rect x="594" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
+<rect x="598" y="404" width="30" height="12" rx="2" fill="#145EB2"/>
 <rect x="638" y="244" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="642" y="254" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="638" y="270" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="642" y="274" width="30" height="12" rx="2" fill="#145EB2"/>
 <rect x="638" y="296" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="642" y="306" width="30" height="6" rx="2" fill="#2960A0"/>
+<rect x="642" y="300" width="30" height="12" rx="2" fill="#2960A0"/>
 <rect x="638" y="322" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="642" y="326" width="30" height="12" rx="2" fill="#005CC5"/>
+<rect x="642" y="326" width="30" height="12" rx="2" fill="#2960A0"/>
 <rect x="638" y="348" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="642" y="352" width="30" height="12" rx="2" fill="#2960A0"/>
 <rect x="638" y="374" width="38" height="20" rx="4" fill="#d9eaff"/>
-<rect x="642" y="378" width="30" height="12" rx="2" fill="#145EB2"/>
+<rect x="642" y="384" width="30" height="6" rx="2" fill="#005CC5"/>
 <rect x="638" y="400" width="38" height="20" rx="4" fill="#d9eaff"/>
 <rect x="642" y="404" width="30" height="12" rx="2" fill="#145EB2"/>
 <text x="24" y="438" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">Volume</text>
@@ -216,34 +215,61 @@
 <rect x="24" y="464" width="2" height="12" rx="1" fill="#c2d3e5"/>
 <line x1="26" y1="468" x2="38" y2="468" stroke="#c2d3e5" stroke-opacity="0.65"/>
 <text x="46" y="474" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Attributed commits by provider</text>
-<text x="806" y="474" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">% of 1190 AI-attributed commits</text>
+<text x="806" y="474" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">% of 1163 AI-attributed commits</text>
 <rect x="24" y="494" width="20" height="20" rx="4" fill="#F6E5DF"/>
 <path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z" fill="#B74C2A" transform="translate(27,497) scale(0.583333)"/>
 <text x="52" y="510" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">Claude</text>
 <rect x="184" y="498" width="480" height="7" rx="2" fill="#d9eaff"/>
 <rect x="184" y="498" width="480" height="7" rx="2" fill="#B74C2A"/>
-<text x="748" y="510" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">1124</tspan></text>
-<text x="806" y="510" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 94%</tspan></text>
+<text x="748" y="510" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">1101</tspan></text>
+<text x="806" y="510" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 95%</tspan></text>
 <line x1="24" y1="518" x2="806" y2="518" stroke="#c2d3e5"/>
 <rect x="24" y="522" width="20" height="20" rx="4" fill="#EBEBEB"/>
 <path d="M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 00-.856 0l-5.97 3.473zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 01.476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33L12 15.128zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303l-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 014.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 01-.476 0zm-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523zm5.899 2.83a5.947 5.947 0 005.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0010.205 0a5.947 5.947 0 00-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 004.162 1.713z" fill="#000000" transform="translate(27,525) scale(0.583333)"/>
 <text x="52" y="538" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">OpenAI</text>
 <rect x="184" y="526" width="480" height="7" rx="2" fill="#d9eaff"/>
-<rect x="184" y="526" width="39" height="7" rx="2" fill="#000000"/>
-<text x="748" y="538" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">92</tspan></text>
-<text x="806" y="538" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 8%</tspan></text>
+<rect x="184" y="526" width="35" height="7" rx="2" fill="#000000"/>
+<text x="748" y="538" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">81</tspan></text>
+<text x="806" y="538" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 7%</tspan></text>
 <text x="24" y="560" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">Provider totals are not mutually exclusive - one commit can involve several providers.</text>
-<rect x="24" y="586" width="171" height="22" rx="4" fill="#fff0bd"/>
-<text x="32" y="602" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Evidence (all records: 1811)</text>
-<rect x="24" y="622" width="524" height="8" rx="2" fill="#0550ae"/>
-<rect x="550" y="622" width="256" height="8" rx="2" fill="#6e7781"/>
-<rect x="24" y="643" width="8" height="8" rx="1" fill="#0550ae"/>
-<text x="36" y="650" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">declared 1216</text>
-<rect x="130" y="643" width="8" height="8" rx="1" fill="#6e7781"/>
-<text x="142" y="650" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">unknown 595</text>
-<rect x="24" y="667" width="8" height="8" rx="1" fill="#52647a"/>
-<text x="36" y="674" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">All activity explicitly publishable</text>
-<line x1="24" y1="706" x2="806" y2="706" stroke="#c2d3e5"/>
-<text x="24" y="730" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">Generated 2026-08-04 · aiprofile</text>
-<text x="24" y="746" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">One commit may include several AI actor presences (one per provider/tool).</text>
+<rect x="24" y="590" width="2" height="12" rx="1" fill="#c2d3e5"/>
+<line x1="26" y1="594" x2="38" y2="594" stroke="#c2d3e5" stroke-opacity="0.65"/>
+<text x="46" y="600" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Model contribution</text>
+<text x="806" y="600" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">Non-exclusive · % of 1163 AI-attributed commits</text>
+<rect x="24" y="616" width="20" height="20" rx="4" fill="#d9eaff" stroke="#c2d3e5" stroke-width="1"/>
+<text x="34" y="630" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#52647a" text-anchor="middle">?</text>
+<text x="52" y="632" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">Unknown</text>
+<rect x="184" y="622" width="480" height="7" rx="2" fill="#d9eaff"/>
+<rect x="184" y="622" width="480" height="7" rx="2" fill="#3d5a80"/>
+<text x="748" y="632" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">1096</tspan></text>
+<text x="806" y="632" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 94%</tspan></text>
+<line x1="24" y1="638" x2="806" y2="638" stroke="#c2d3e5"/>
+<rect x="24" y="640" width="20" height="20" rx="4" fill="#d9eaff" stroke="#c2d3e5" stroke-width="1"/>
+<text x="34" y="654" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#52647a" text-anchor="middle">Gp</text>
+<text x="52" y="656" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">GPT</text>
+<rect x="184" y="646" width="480" height="7" rx="2" fill="#d9eaff"/>
+<rect x="184" y="646" width="25" height="7" rx="2" fill="#3d5a80"/>
+<text x="748" y="656" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">57</tspan></text>
+<text x="806" y="656" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 5%</tspan></text>
+<line x1="24" y1="662" x2="806" y2="662" stroke="#c2d3e5"/>
+<rect x="24" y="664" width="20" height="20" rx="4" fill="#d9eaff" stroke="#c2d3e5" stroke-width="1"/>
+<text x="34" y="678" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#52647a" text-anchor="middle">Cl</text>
+<text x="52" y="680" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">Claude</text>
+<rect x="184" y="670" width="480" height="7" rx="2" fill="#d9eaff"/>
+<rect x="184" y="670" width="7" height="7" rx="2" fill="#3d5a80"/>
+<text x="748" y="680" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">15</tspan></text>
+<text x="806" y="680" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 1%</tspan></text>
+<rect x="24" y="706" width="171" height="22" rx="4" fill="#fff0bd"/>
+<text x="32" y="722" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Evidence (all records: 1758)</text>
+<rect x="24" y="742" width="524" height="8" rx="2" fill="#0550ae"/>
+<rect x="550" y="742" width="256" height="8" rx="2" fill="#6e7781"/>
+<rect x="24" y="763" width="8" height="8" rx="1" fill="#0550ae"/>
+<text x="36" y="770" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">declared 1182</text>
+<rect x="130" y="763" width="8" height="8" rx="1" fill="#6e7781"/>
+<text x="142" y="770" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">unknown 576</text>
+<rect x="24" y="787" width="8" height="8" rx="1" fill="#52647a"/>
+<text x="36" y="794" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">All activity explicitly publishable</text>
+<line x1="24" y1="826" x2="806" y2="826" stroke="#c2d3e5"/>
+<text x="24" y="850" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">Generated 2026-08-04 · aiprofile</text>
+<text x="24" y="866" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="start">One commit may include several AI actor presences (one per provider/tool).</text>
 </svg>

@@ -100,12 +100,14 @@
 這份紀錄由 [**ai-profile**](https://github.com/WenyuChiou/ai-profile)
 從選定 repositories 在本機產生；公開卡片只包含彙總資料。Unknown 維持
 unknown；同一個 commit 即使包含多個 AI actor，仍只算一個
-unique commit，但會產生多個 actor presences。
+unique commit，但會產生多個 actor presences。摘要卡也會呈現明示的
+model family 證據；這是非互斥的證據視圖，同一個 commit 可以命名多個
+family，而缺少模型證據時仍維持 Unknown。
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI 協作摘要卡片：跨多個 provider 的長期日常 AI 協作 commit，unique commit 與 actor presences 分開計算，無法歸因的 commit 誠實維持 unknown——每筆歸因皆有明示 Git 證據支持。" width="100%"/>
+    <img src="./dist/summary-light.svg" alt="AI 協作摘要卡片：跨多個 provider 的長期日常 AI 協作 commit、明示 model family 證據，unique commit 與 actor presences 分開計算，無法歸因的 commit 誠實維持 unknown——每筆歸因皆有明示 Git 證據支持。" width="100%"/>
   </picture>
 </a>
 
@@ -113,7 +115,7 @@ unique commit，但會產生多個 actor presences。
   <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">查看我的互動紀錄</a></strong>
   &nbsp;·&nbsp;
   <strong><a href="https://github.com/WenyuChiou/ai-profile">用 ai-profile 建立你的版本 →</a></strong><br/>
-  <sub>切換 All AI、Claude 或 OpenAI · 選擇亮色／深色主題 · 查看已發布的每日紀錄</sub>
+  <sub>切換 All AI、Claude 或 OpenAI · 查看 model family 證據 · 選擇亮色／深色主題 · 查看已發布的每日紀錄</sub>
 </p>
 
 &nbsp;

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="191" height="24" viewBox="0 0 191 24" role="img" aria-labelledby="aiprofileBadgeTitle aiprofileBadgeDesc">
 <title id="aiprofileBadgeTitle">AI-assisted: 67% · verified by git</title>
-<desc id="aiprofileBadgeDesc">1190 of 1785 commits AI-assisted, from explicit git provenance.</desc>
+<desc id="aiprofileBadgeDesc">1163 of 1739 commits AI-assisted, from explicit git provenance.</desc>
 <clipPath id="aiprofileBadgeClip"><rect width="191" height="24" rx="4"/></clipPath>
 <g clip-path="url(#aiprofileBadgeClip)">
 <rect x="0" y="0" width="74" height="24" fill="#3b331e"/>

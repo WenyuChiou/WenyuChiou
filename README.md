@@ -102,12 +102,14 @@ The record is generated locally with
 [**ai-profile**](https://github.com/WenyuChiou/ai-profile) from selected
 repositories. Public cards contain aggregate data only. Unknown stays
 unknown, and a commit with multiple AI actors remains one unique commit while
-contributing multiple actor presences.
+contributing multiple actor presences. The card also surfaces explicit model
+families as a non-exclusive evidence view: one commit may name more than one
+family, while missing model evidence remains Unknown.
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI collaboration summary card: sustained day-to-day AI-assisted commits across multiple providers, with unique commits kept distinct from actor presences and unattributed commits reported honestly as unknown — every attribution backed by explicit Git evidence." width="100%"/>
+    <img src="./dist/summary-light.svg" alt="AI collaboration summary card: sustained day-to-day AI-assisted commits across multiple providers, explicit model-family evidence, unique commits kept distinct from actor presences, and unattributed commits reported honestly as unknown — every attribution backed by explicit Git evidence." width="100%"/>
   </picture>
 </a>
 
@@ -115,7 +117,7 @@ contributing multiple actor presences.
   <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">Explore my interactive record</a></strong>
   &nbsp;·&nbsp;
   <strong><a href="https://github.com/WenyuChiou/ai-profile">Build yours with ai-profile →</a></strong><br/>
-  <sub>Filter All AI, Claude, or OpenAI · switch light/dark themes · inspect the published daily record</sub>
+  <sub>Filter All AI, Claude, or OpenAI · inspect model-family evidence · switch light/dark themes · view the published daily record</sub>
 </p>
 
 &nbsp;
