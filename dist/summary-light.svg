@@ -236,27 +236,27 @@
 <line x1="26" y1="594" x2="38" y2="594" stroke="#c2d3e5" stroke-opacity="0.65"/>
 <text x="46" y="600" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Model contribution</text>
 <text x="806" y="600" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#52647a" text-anchor="end">Non-exclusive · % of 1163 AI-attributed commits</text>
-<rect x="24" y="616" width="20" height="20" rx="4" fill="#d9eaff" stroke="#c2d3e5" stroke-width="1"/>
+<rect x="24" y="616" width="20" height="20" rx="4" fill="#d9eaff" stroke="#52647a" stroke-width="1"/>
 <text x="34" y="630" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#52647a" text-anchor="middle">?</text>
 <text x="52" y="632" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">Unknown</text>
 <rect x="184" y="622" width="480" height="7" rx="2" fill="#d9eaff"/>
-<rect x="184" y="622" width="480" height="7" rx="2" fill="#3d5a80"/>
+<rect x="184" y="622" width="480" height="7" rx="2" fill="#52647a"/>
 <text x="748" y="632" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">1096</tspan></text>
 <text x="806" y="632" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 94%</tspan></text>
 <line x1="24" y1="638" x2="806" y2="638" stroke="#c2d3e5"/>
-<rect x="24" y="640" width="20" height="20" rx="4" fill="#d9eaff" stroke="#c2d3e5" stroke-width="1"/>
-<text x="34" y="654" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#52647a" text-anchor="middle">Gp</text>
+<rect x="24" y="640" width="20" height="20" rx="4" fill="#d9eaff" stroke="#146b5a" stroke-width="1"/>
+<text x="34" y="654" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#146b5a" text-anchor="middle">Gp</text>
 <text x="52" y="656" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">GPT</text>
 <rect x="184" y="646" width="480" height="7" rx="2" fill="#d9eaff"/>
-<rect x="184" y="646" width="25" height="7" rx="2" fill="#3d5a80"/>
+<rect x="184" y="646" width="25" height="7" rx="2" fill="#146b5a"/>
 <text x="748" y="656" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">57</tspan></text>
 <text x="806" y="656" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 5%</tspan></text>
 <line x1="24" y1="662" x2="806" y2="662" stroke="#c2d3e5"/>
-<rect x="24" y="664" width="20" height="20" rx="4" fill="#d9eaff" stroke="#c2d3e5" stroke-width="1"/>
-<text x="34" y="678" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#52647a" text-anchor="middle">Cl</text>
+<rect x="24" y="664" width="20" height="20" rx="4" fill="#d9eaff" stroke="#8a3f2f" stroke-width="1"/>
+<text x="34" y="678" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#8a3f2f" text-anchor="middle">Cl</text>
 <text x="52" y="680" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">Claude</text>
 <rect x="184" y="670" width="480" height="7" rx="2" fill="#d9eaff"/>
-<rect x="184" y="670" width="7" height="7" rx="2" fill="#3d5a80"/>
+<rect x="184" y="670" width="7" height="7" rx="2" fill="#8a3f2f"/>
 <text x="748" y="680" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">15</tspan></text>
 <text x="806" y="680" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 1%</tspan></text>
 <rect x="24" y="706" width="171" height="22" rx="4" fill="#fff0bd"/>
