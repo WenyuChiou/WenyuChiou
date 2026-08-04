@@ -23,6 +23,7 @@
       --muted: #52647a;
       --faint: #65758a;
       --accent: #005cc5;
+      --model-accent: #3d5a80;
       --success: #1a7f37;
       --warning: #9a6700;
       --warning-strong: #7d4e00;
@@ -64,6 +65,7 @@
         --muted: #b5c7da;
         --faint: #9fb2c6;
         --accent: #8bc8ff;
+        --model-accent: #9ecbff;
         --success: #3fb950;
         --warning: #eac54f;
         --warning-strong: #fae17d;
@@ -87,6 +89,7 @@
       --muted: #b5c7da;
       --faint: #9fb2c6;
       --accent: #8bc8ff;
+      --model-accent: #9ecbff;
       --success: #3fb950;
       --warning: #eac54f;
       --warning-strong: #fae17d;
@@ -470,6 +473,7 @@
 
     .activity-panel,
     .providers-panel,
+    .models-panel,
     .evidence-panel,
     .notes-panel {
       padding: clamp(1.5rem, 3vw, 2.25rem);
@@ -597,6 +601,92 @@
     .provider-list {
       display: grid;
       gap: var(--space-3);
+    }
+
+    .models-panel {
+      grid-column: 1 / -1;
+    }
+
+    .model-list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-4);
+    }
+
+    .model-row {
+      display: grid;
+      gap: var(--space-2);
+      min-width: 0;
+      padding: var(--space-3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+    }
+
+    .model-row-head {
+      display: flex;
+      gap: var(--space-2);
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .model-name {
+      display: inline-flex;
+      gap: var(--space-2);
+      align-items: center;
+      color: var(--text);
+      font-size: 0.9375rem;
+      font-weight: 700;
+    }
+
+    .model-mark {
+      display: inline-grid;
+      width: 1.35rem;
+      height: 1.35rem;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 0.3rem;
+      background: var(--grid-empty);
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 0.8125rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .model-count {
+      font-family: var(--mono);
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+
+    .model-track {
+      height: 0.38rem;
+      overflow: hidden;
+      border-radius: 0.125rem;
+      background: var(--grid-empty);
+    }
+
+    .model-fill {
+      height: 100%;
+      border-radius: inherit;
+      background: var(--model-accent);
+    }
+
+    .model-detail {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 0.8125rem;
+      line-height: 1.5;
+    }
+
+    .model-empty {
+      min-height: 4rem;
+      padding: var(--space-3);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius-md);
+      color: var(--muted);
     }
 
     .providers-panel .panel-title {
@@ -844,6 +934,14 @@
         display: block;
       }
 
+      .models-panel {
+        grid-column: auto;
+      }
+
+      .model-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .evidence-panel .panel-heading {
         display: flex;
         margin-bottom: var(--space-6);
@@ -926,7 +1024,8 @@
       }
 
       .evidence-grid,
-      .notes-panel {
+      .notes-panel,
+      .model-list {
         grid-template-columns: 1fr;
       }
     }
@@ -1101,6 +1200,17 @@
         <div class="provider-list" id="providerList"></div>
       </article>
 
+      <article class="panel models-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="section-kicker">Explicit model evidence</p>
+            <h2 class="panel-title">Model contribution</h2>
+          </div>
+          <p class="panel-meta">All AI view · family categories<br>not mutually exclusive</p>
+        </div>
+        <div class="model-list" id="modelList"></div>
+      </article>
+
       <article class="panel evidence-panel">
         <div class="panel-heading">
           <div>
@@ -1137,7 +1247,7 @@
   </main>
 
   <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
-  <script type="application/json" id="profileData">{"daily":[{"ai_commits":0,"counts":[],"date":"2025-10-06","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-07","total_commits":4},{"ai_commits":0,"counts":[],"date":"2025-10-09","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-12","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-23","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-24","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-30","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-02","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-05","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-09","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-14","total_commits":2},{"ai_commits":0,"counts":[],"date":"2025-12-31","total_commits":11},{"ai_commits":0,"counts":[],"date":"2026-04-05","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-10","total_commits":4},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":6,"provider":"openai"}],"date":"2026-04-11","total_commits":17},{"ai_commits":49,"counts":[{"attributed_commits":49,"provider":"anthropic"}],"date":"2026-04-12","total_commits":56},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-04-13","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-14","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-15","total_commits":2},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-16","total_commits":12},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-04-17","total_commits":21},{"ai_commits":26,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":9,"provider":"openai"}],"date":"2026-04-18","total_commits":29},{"ai_commits":12,"counts":[{"attributed_commits":11,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-04-19","total_commits":25},{"ai_commits":0,"counts":[],"date":"2026-04-20","total_commits":15},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-04-21","total_commits":11},{"ai_commits":0,"counts":[],"date":"2026-04-22","total_commits":1},{"ai_commits":8,"counts":[{"attributed_commits":8,"provider":"anthropic"}],"date":"2026-04-23","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-24","total_commits":2},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-04-25","total_commits":34},{"ai_commits":44,"counts":[{"attributed_commits":44,"provider":"anthropic"}],"date":"2026-04-26","total_commits":53},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-04-27","total_commits":17},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-04-28","total_commits":26},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-29","total_commits":5},{"ai_commits":0,"counts":[],"date":"2026-04-30","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-02","total_commits":6},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-03","total_commits":13},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-05-04","total_commits":15},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-05-05","total_commits":5},{"ai_commits":32,"counts":[{"attributed_commits":32,"provider":"anthropic"}],"date":"2026-05-06","total_commits":33},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-05-07","total_commits":10},{"ai_commits":14,"counts":[{"attributed_commits":14,"provider":"anthropic"}],"date":"2026-05-08","total_commits":17},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-09","total_commits":40},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-10","total_commits":26},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"}],"date":"2026-05-11","total_commits":10},{"ai_commits":40,"counts":[{"attributed_commits":40,"provider":"anthropic"}],"date":"2026-05-12","total_commits":69},{"ai_commits":120,"counts":[{"attributed_commits":120,"provider":"anthropic"}],"date":"2026-05-13","total_commits":138},{"ai_commits":61,"counts":[{"attributed_commits":61,"provider":"anthropic"},{"attributed_commits":5,"provider":"openai"}],"date":"2026-05-14","total_commits":73},{"ai_commits":51,"counts":[{"attributed_commits":51,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-05-15","total_commits":52},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-05-16","total_commits":29},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-05-17","total_commits":23},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-18","total_commits":19},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-19","total_commits":17},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-20","total_commits":34},{"ai_commits":21,"counts":[{"attributed_commits":21,"provider":"anthropic"}],"date":"2026-05-21","total_commits":21},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-22","total_commits":29},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-23","total_commits":24},{"ai_commits":0,"counts":[],"date":"2026-05-24","total_commits":7},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-25","total_commits":17},{"ai_commits":19,"counts":[{"attributed_commits":19,"provider":"anthropic"}],"date":"2026-05-26","total_commits":19},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-27","total_commits":3},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-05-28","total_commits":3},{"ai_commits":18,"counts":[{"attributed_commits":18,"provider":"anthropic"}],"date":"2026-05-29","total_commits":18},{"ai_commits":23,"counts":[{"attributed_commits":23,"provider":"anthropic"}],"date":"2026-05-30","total_commits":28},{"ai_commits":25,"counts":[{"attributed_commits":25,"provider":"anthropic"}],"date":"2026-05-31","total_commits":25},{"ai_commits":13,"counts":[{"attributed_commits":13,"provider":"anthropic"}],"date":"2026-06-01","total_commits":13},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-02","total_commits":4},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-03","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-04","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-05","total_commits":2},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-06-06","total_commits":5},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-07","total_commits":4},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-08","total_commits":1},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-09","total_commits":3},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-10","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-11","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-06-12","total_commits":5},{"ai_commits":15,"counts":[{"attributed_commits":15,"provider":"anthropic"}],"date":"2026-06-13","total_commits":17},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-14","total_commits":4},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-15","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-21","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-06-22","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-06-23","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-24","total_commits":10},{"ai_commits":0,"counts":[],"date":"2026-06-25","total_commits":6},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-29","total_commits":2},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-06-30","total_commits":17},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-01","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-02","total_commits":6},{"ai_commits":0,"counts":[],"date":"2026-07-03","total_commits":6},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-04","total_commits":7},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-05","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-07-06","total_commits":8},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-07","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-07-08","total_commits":20},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-07-09","total_commits":20},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-10","total_commits":20},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-11","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-12","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-07-13","total_commits":16},{"ai_commits":20,"counts":[{"attributed_commits":20,"provider":"anthropic"}],"date":"2026-07-14","total_commits":32},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-15","total_commits":17},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-16","total_commits":12},{"ai_commits":11,"counts":[{"attributed_commits":11,"provider":"anthropic"}],"date":"2026-07-17","total_commits":19},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-18","total_commits":5},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-20","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-07-21","total_commits":9},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-22","total_commits":10},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"},{"attributed_commits":3,"provider":"openai"}],"date":"2026-07-23","total_commits":12},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"openai"}],"date":"2026-07-25","total_commits":8},{"ai_commits":26,"counts":[{"attributed_commits":26,"provider":"openai"}],"date":"2026-07-26","total_commits":71},{"ai_commits":9,"counts":[{"attributed_commits":1,"provider":"anthropic"},{"attributed_commits":8,"provider":"openai"}],"date":"2026-07-27","total_commits":19},{"ai_commits":4,"counts":[{"attributed_commits":2,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-07-29","total_commits":4},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"openai"}],"date":"2026-07-30","total_commits":20},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-31","total_commits":2},{"ai_commits":11,"counts":[{"attributed_commits":11,"provider":"anthropic"},{"attributed_commits":7,"provider":"openai"}],"date":"2026-08-01","total_commits":14},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-08-02","total_commits":10},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-08-03","total_commits":8},{"ai_commits":5,"counts":[{"attributed_commits":2,"provider":"anthropic"},{"attributed_commits":3,"provider":"openai"}],"date":"2026-08-04","total_commits":8}],"evidence_records":{"declared":1216,"imported":0,"inferred":0,"total_records":1811,"unknown":595,"verified":0},"generated_on":"2026-08-04","period":{"from":null,"label":"All time","to":null},"privacy":{"anonymous_aggregate_commits":0,"explicitly_publishable_commits":1785,"includes_anonymous_aggregate":false},"provider_count":2,"providers":[{"active_days":94,"actor_presences":1124,"attributed_commits":1124,"display_name":"Claude","provider":"anthropic"},{"active_days":15,"actor_presences":92,"attributed_commits":92,"display_name":"OpenAI","provider":"openai"}],"schema_version":"0.2.0","totals":{"active_ai_days":97,"ai_actor_presences":1216,"ai_attributed_commits":1190,"commits_scanned":1785,"human_declared_commits":0,"unknown_commits":595}}</script>
+  <script type="application/json" id="profileData">{"daily":[{"ai_commits":0,"counts":[],"date":"2025-10-06","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-07","total_commits":4},{"ai_commits":0,"counts":[],"date":"2025-10-09","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-12","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-23","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-24","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-10-30","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-02","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-05","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-09","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-11-14","total_commits":2},{"ai_commits":0,"counts":[],"date":"2025-12-31","total_commits":11},{"ai_commits":0,"counts":[],"date":"2026-04-05","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-10","total_commits":4},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":6,"provider":"openai"}],"date":"2026-04-11","total_commits":17},{"ai_commits":49,"counts":[{"attributed_commits":49,"provider":"anthropic"}],"date":"2026-04-12","total_commits":56},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-04-13","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-14","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-15","total_commits":2},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-16","total_commits":12},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-04-17","total_commits":21},{"ai_commits":26,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":9,"provider":"openai"}],"date":"2026-04-18","total_commits":29},{"ai_commits":12,"counts":[{"attributed_commits":11,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-04-19","total_commits":25},{"ai_commits":0,"counts":[],"date":"2026-04-20","total_commits":15},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-04-21","total_commits":11},{"ai_commits":0,"counts":[],"date":"2026-04-22","total_commits":1},{"ai_commits":8,"counts":[{"attributed_commits":8,"provider":"anthropic"}],"date":"2026-04-23","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-24","total_commits":2},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-04-25","total_commits":34},{"ai_commits":44,"counts":[{"attributed_commits":44,"provider":"anthropic"}],"date":"2026-04-26","total_commits":53},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-04-27","total_commits":17},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-04-28","total_commits":26},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-29","total_commits":5},{"ai_commits":0,"counts":[],"date":"2026-04-30","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-02","total_commits":6},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-03","total_commits":13},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-05-04","total_commits":15},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-05-05","total_commits":5},{"ai_commits":32,"counts":[{"attributed_commits":32,"provider":"anthropic"}],"date":"2026-05-06","total_commits":33},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-05-07","total_commits":10},{"ai_commits":14,"counts":[{"attributed_commits":14,"provider":"anthropic"}],"date":"2026-05-08","total_commits":17},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-09","total_commits":40},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-10","total_commits":26},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"}],"date":"2026-05-11","total_commits":10},{"ai_commits":40,"counts":[{"attributed_commits":40,"provider":"anthropic"}],"date":"2026-05-12","total_commits":69},{"ai_commits":120,"counts":[{"attributed_commits":120,"provider":"anthropic"}],"date":"2026-05-13","total_commits":138},{"ai_commits":61,"counts":[{"attributed_commits":61,"provider":"anthropic"},{"attributed_commits":5,"provider":"openai"}],"date":"2026-05-14","total_commits":73},{"ai_commits":51,"counts":[{"attributed_commits":51,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-05-15","total_commits":52},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-05-16","total_commits":29},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-05-17","total_commits":23},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-18","total_commits":19},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-19","total_commits":17},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-20","total_commits":34},{"ai_commits":21,"counts":[{"attributed_commits":21,"provider":"anthropic"}],"date":"2026-05-21","total_commits":21},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-22","total_commits":29},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-23","total_commits":24},{"ai_commits":0,"counts":[],"date":"2026-05-24","total_commits":7},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-25","total_commits":17},{"ai_commits":19,"counts":[{"attributed_commits":19,"provider":"anthropic"}],"date":"2026-05-26","total_commits":19},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-27","total_commits":3},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-05-28","total_commits":3},{"ai_commits":18,"counts":[{"attributed_commits":18,"provider":"anthropic"}],"date":"2026-05-29","total_commits":18},{"ai_commits":23,"counts":[{"attributed_commits":23,"provider":"anthropic"}],"date":"2026-05-30","total_commits":28},{"ai_commits":25,"counts":[{"attributed_commits":25,"provider":"anthropic"}],"date":"2026-05-31","total_commits":25},{"ai_commits":13,"counts":[{"attributed_commits":13,"provider":"anthropic"}],"date":"2026-06-01","total_commits":13},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-02","total_commits":4},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-03","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-04","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-05","total_commits":2},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-06-06","total_commits":5},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-07","total_commits":4},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-08","total_commits":1},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-09","total_commits":3},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-10","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-11","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-06-12","total_commits":5},{"ai_commits":15,"counts":[{"attributed_commits":15,"provider":"anthropic"}],"date":"2026-06-13","total_commits":17},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-14","total_commits":4},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-15","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-21","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-06-22","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-06-23","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-24","total_commits":10},{"ai_commits":0,"counts":[],"date":"2026-06-25","total_commits":6},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-29","total_commits":2},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-06-30","total_commits":17},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-01","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-02","total_commits":6},{"ai_commits":0,"counts":[],"date":"2026-07-03","total_commits":6},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-04","total_commits":7},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-05","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-07-06","total_commits":8},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-07","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-07-08","total_commits":20},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-07-09","total_commits":20},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-10","total_commits":20},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-11","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-12","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-07-13","total_commits":16},{"ai_commits":20,"counts":[{"attributed_commits":20,"provider":"anthropic"}],"date":"2026-07-14","total_commits":32},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-15","total_commits":17},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-16","total_commits":12},{"ai_commits":11,"counts":[{"attributed_commits":11,"provider":"anthropic"}],"date":"2026-07-17","total_commits":19},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-18","total_commits":5},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-20","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-07-21","total_commits":9},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-22","total_commits":10},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"},{"attributed_commits":3,"provider":"openai"}],"date":"2026-07-23","total_commits":12},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"openai"}],"date":"2026-07-25","total_commits":8},{"ai_commits":26,"counts":[{"attributed_commits":26,"provider":"openai"}],"date":"2026-07-26","total_commits":71},{"ai_commits":9,"counts":[{"attributed_commits":1,"provider":"anthropic"},{"attributed_commits":8,"provider":"openai"}],"date":"2026-07-27","total_commits":19},{"ai_commits":4,"counts":[{"attributed_commits":2,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-07-29","total_commits":4},{"ai_commits":11,"counts":[{"attributed_commits":11,"provider":"openai"}],"date":"2026-07-30","total_commits":16}],"evidence_records":{"declared":1182,"imported":0,"inferred":0,"total_records":1758,"unknown":576,"verified":0},"generated_on":"2026-08-04","model_count":2,"models":[{"active_days":86,"actor_presences":1110,"attributed_commits":1096,"category":"unknown","display_name":"Unknown"},{"active_days":7,"actor_presences":57,"attributed_commits":57,"category":"gpt","display_name":"GPT"},{"active_days":4,"actor_presences":15,"attributed_commits":15,"category":"claude","display_name":"Claude"}],"period":{"from":null,"label":"All time","to":null},"privacy":{"anonymous_aggregate_commits":0,"explicitly_publishable_commits":1739,"includes_anonymous_aggregate":false},"provider_count":2,"providers":[{"active_days":89,"actor_presences":1101,"attributed_commits":1101,"display_name":"Claude","provider":"anthropic"},{"active_days":13,"actor_presences":81,"attributed_commits":81,"display_name":"OpenAI","provider":"openai"}],"schema_version":"0.3.0","totals":{"active_ai_days":92,"ai_actor_presences":1182,"ai_attributed_commits":1163,"commits_scanned":1739,"human_declared_commits":0,"unknown_commits":576}}</script>
   <script>
     (() => {
       "use strict";
@@ -1148,6 +1258,19 @@
       const $ = (id) => document.getElementById(id);
       const number = new Intl.NumberFormat("en-US");
       const percent = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 });
+      const modelMarks = {
+        claude: "Cl",
+        gpt: "Gp",
+        gemini: "Ge",
+        llama: "Ll",
+        mistral: "Mi",
+        deepseek: "Ds",
+        qwen: "Qw",
+        grok: "Gk",
+        kimi: "Km",
+        other: "+",
+        unknown: "?"
+      };
       const providerColors = {
         anthropic: "#9a6700",
         openai: "#1a7f37",
@@ -1235,6 +1358,15 @@
       function rgba(hex, alpha) {
         const [r, g, b] = hexToRgb(hex);
         return `rgba(${r}, ${g}, ${b}, ${alpha.toFixed(3)})`;
+      }
+
+      function honestPercentLabel(numerator, denominator) {
+        if (!denominator || numerator === 0) return "0%";
+        if (numerator === denominator) return "100%";
+        const rounded = Math.round((numerator / denominator) * 100);
+        if (rounded === 0) return "<1%";
+        if (rounded === 100) return ">99%";
+        return `${rounded}%`;
       }
 
       function providerBySlug(slug) {
@@ -1606,6 +1738,52 @@
         }));
       }
 
+      function renderModels() {
+        const list = $("modelList");
+        if (!data.models.length) {
+          const empty = document.createElement("div");
+          empty.className = "model-empty";
+          empty.textContent = data.totals.ai_actor_presences
+            ? "No explicit model-family evidence published."
+            : "No model contribution recorded yet.";
+          list.replaceChildren(empty);
+          return;
+        }
+        const max = Math.max(...data.models.map((row) => row.attributed_commits), 1);
+        list.replaceChildren(...data.models.map((row) => {
+          const item = document.createElement("div");
+          item.className = "model-row";
+          const head = document.createElement("div");
+          head.className = "model-row-head";
+          const name = document.createElement("span");
+          name.className = "model-name";
+          const mark = document.createElement("span");
+          mark.className = "model-mark";
+          mark.setAttribute("aria-hidden", "true");
+          mark.textContent = modelMarks[row.category] || "?";
+          name.append(mark, document.createTextNode(row.display_name));
+          const count = document.createElement("span");
+          count.className = "model-count";
+          count.textContent = number.format(row.attributed_commits);
+          head.append(name, count);
+          const track = document.createElement("div");
+          track.className = "model-track";
+          const fill = document.createElement("div");
+          fill.className = "model-fill";
+          fill.style.width = `${(row.attributed_commits / max) * 100}%`;
+          track.append(fill);
+          const detail = document.createElement("div");
+          detail.className = "model-detail";
+          const denominator = data.totals.ai_attributed_commits;
+          const share = honestPercentLabel(row.attributed_commits, denominator);
+          detail.textContent = `${share} of ${number.format(denominator)} unique ` +
+            `AI-attributed commits · ${number.format(row.actor_presences)} presences · ` +
+            `${number.format(row.active_days)} active days`;
+          item.append(head, track, detail);
+          return item;
+        }));
+      }
+
       function renderEvidence() {
         const entries = ["verified", "declared", "imported", "inferred", "unknown"]
           .map((key) => ({ key, value: data.evidence_records[key] }))
@@ -1696,6 +1874,7 @@
       setTheme("auto");
       renderFilters();
       renderProviders();
+      renderModels();
       render();
     })();
   </script>
