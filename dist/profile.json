@@ -1127,87 +1127,52 @@
       "total_commits": 8
     },
     {
-      "ai_commits": 26,
+      "ai_commits": 23,
       "counts": [
         {
-          "attributed_commits": 26,
+          "attributed_commits": 23,
           "provider": "openai"
         }
       ],
       "date": "2026-07-26",
-      "total_commits": 71
+      "total_commits": 68
     },
     {
-      "ai_commits": 9,
-      "counts": [
-        {
-          "attributed_commits": 1,
-          "provider": "anthropic"
-        },
-        {
-          "attributed_commits": 8,
-          "provider": "openai"
-        }
-      ],
+      "ai_commits": 0,
+      "counts": [],
       "date": "2026-07-27",
-      "total_commits": 19
-    },
-    {
-      "ai_commits": 4,
-      "counts": [
-        {
-          "attributed_commits": 2,
-          "provider": "anthropic"
-        },
-        {
-          "attributed_commits": 2,
-          "provider": "openai"
-        }
-      ],
-      "date": "2026-07-29",
       "total_commits": 4
-    },
-    {
-      "ai_commits": 11,
-      "counts": [
-        {
-          "attributed_commits": 11,
-          "provider": "openai"
-        }
-      ],
-      "date": "2026-07-30",
-      "total_commits": 16
     }
   ],
   "evidence_records": {
-    "declared": 1182,
+    "declared": 1155,
     "imported": 0,
     "inferred": 0,
-    "total_records": 1758,
-    "unknown": 576,
+    "total_records": 1720,
+    "unknown": 565,
     "verified": 0
   },
-  "generated_on": "2026-08-04",
+  "generated_on": "2026-08-05",
   "model_count": 2,
   "models": [
     {
-      "active_days": 86,
-      "actor_presences": 1110,
-      "attributed_commits": 1096,
+      "active_days": 85,
+      "actor_presences": 1109,
+      "attributed_commits": 1095,
       "category": "unknown",
       "display_name": "Unknown"
     },
     {
-      "active_days": 7,
-      "actor_presences": 57,
-      "attributed_commits": 57,
+      "active_days": 4,
+      "actor_presences": 33,
+      "attributed_commits": 33,
       "category": "gpt",
       "display_name": "GPT"
     },
     {
-      "active_days": 4,
-      "actor_presences": 15,
-      "attributed_commits": 15,
+      "active_days": 3,
+      "actor_presences": 13,
+      "attributed_commits": 13,
       "category": "claude",
       "display_name": "Claude"
     }
@@ -1219,33 +1184,33 @@
   },
   "privacy": {
     "anonymous_aggregate_commits": 0,
-    "explicitly_publishable_commits": 1739,
+    "explicitly_publishable_commits": 1701,
     "includes_anonymous_aggregate": false
   },
   "provider_count": 2,
   "providers": [
     {
-      "active_days": 89,
-      "actor_presences": 1101,
-      "attributed_commits": 1101,
+      "active_days": 87,
+      "actor_presences": 1098,
+      "attributed_commits": 1098,
       "display_name": "Claude",
       "provider": "anthropic"
     },
     {
-      "active_days": 13,
-      "actor_presences": 81,
-      "attributed_commits": 81,
+      "active_days": 10,
+      "actor_presences": 57,
+      "attributed_commits": 57,
       "display_name": "OpenAI",
       "provider": "openai"
     }
   ],
   "schema_version": "0.3.0",
   "totals": {
-    "active_ai_days": 92,
-    "ai_actor_presences": 1182,
-    "ai_attributed_commits": 1163,
-    "commits_scanned": 1739,
+    "active_ai_days": 89,
+    "ai_actor_presences": 1155,
+    "ai_attributed_commits": 1136,
+    "commits_scanned": 1701,
     "human_declared_commits": 0,
-    "unknown_commits": 576
+    "unknown_commits": 565
   }
 }

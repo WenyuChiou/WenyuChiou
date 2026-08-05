@@ -31,7 +31,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/From-Taiwan-2dd4bf?style=flat-square&labelColor=0d1117" alt="From Taiwan"/>
   <img src="https://img.shields.io/badge/Based%20in-Bethlehem,%20PA-2dd4bf?style=flat-square&labelColor=0d1117" alt="Based in Bethlehem, PA"/>
-  <img src="https://img.shields.io/badge/PhD-2024–2027-2dd4bf?style=flat-square&labelColor=0d1117" alt="PhD 2024 to 2027"/>
+  <img src="https://img.shields.io/badge/PhD-2024%E2%80%932027-2dd4bf?style=flat-square&labelColor=0d1117" alt="PhD 2024 to 2027"/>
   <img src="https://img.shields.io/badge/Open%20to-Summer%202027%20AI%20internship-f59e0b?style=flat-square&labelColor=0d1117" alt="Open to Summer 2027 AI internship"/>
 </p>
 
@@ -60,7 +60,7 @@ Declared Git evidence · local-first generation · Unknown stays Unknown.
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI collaboration summary card: sustained day-to-day AI-assisted commits across multiple providers, explicit model-family evidence, unique commits kept distinct from actor presences, and unattributed commits reported honestly as unknown — every attribution backed by explicit Git evidence." width="100%"/>
+    <img src="./dist/summary-light.svg" alt="AI collaboration summary card: sustained day-to-day AI-assisted commits across multiple providers, unique commits kept distinct from actor presences, and unattributed commits reported honestly as unknown — every attribution backed by explicit Git evidence." width="100%"/>
   </picture>
 </a>
 
