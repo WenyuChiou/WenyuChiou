@@ -42,16 +42,31 @@
       <img src="./dist/badge-light.svg" alt="AI-assisted share verified from explicit Git provenance"/>
     </picture>
   </a><br/>
-  <sub><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">View my evidence-backed AI collaboration record →</a></sub>
 </p>
 
 &nbsp;
 
 <img src="https://img.shields.io/badge/ABOUT-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="About"/>
 
-I build **governed LLM-agent frameworks coupled with living environments**. My PhD integrates LLM-driven agents into flood-adaptation simulations grounded in real household data — each agent *perceives → reasons → is verified by a harness → acts*, talks to its neighbours, and co-evolves with a physically-based water system.
+I build governed LLM-agent systems for flood-risk and water research.
+My work connects agent reasoning, verification, and physically grounded environments.
 
-Broader AI interests: **quantifying decision-making with LLMs** · **agentic workflows** · **multi-agent collaboration** · **AI tooling for research**. I ship the infrastructure I use day-to-day as open-source Claude Code skills, MCPs, and plugins.
+&nbsp;
+
+<img src="https://img.shields.io/badge/AI%20COLLABORATION-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI Collaboration"/>
+
+Declared Git evidence · local-first generation · Unknown stays Unknown.
+
+<a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
+    <img src="./dist/summary-light.svg" alt="AI collaboration summary card: sustained day-to-day AI-assisted commits across multiple providers, explicit model-family evidence, unique commits kept distinct from actor presences, and unattributed commits reported honestly as unknown — every attribution backed by explicit Git evidence." width="100%"/>
+  </picture>
+</a>
+
+<p align="center">
+  <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">Open interactive dashboard ↗</a></strong>
+</p>
 
 &nbsp;
 
@@ -89,45 +104,9 @@ Broader AI interests: **quantifying decision-making with LLMs** · **agentic wor
 <!-- TOOLING:START — add new tools as table rows above this line -->
 <!-- TOOLING:END -->
 
-&nbsp;
-
-<img src="https://img.shields.io/badge/AI%20COLLABORATION-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI Collaboration"/>
-
-Most GitHub statistics answer **how much activity happened**. This view
-answers **how AI participated**: how sustained the collaboration has been,
-how many providers took part, and what explicit Git evidence supports each
-attribution. It is a record of collaboration, not a skill score.
-
-The record is generated locally with
-[**ai-profile**](https://github.com/WenyuChiou/ai-profile) from selected
-repositories. Public cards contain aggregate data only. Unknown stays
-unknown, and a commit with multiple AI actors remains one unique commit while
-contributing multiple actor presences. The card also surfaces explicit model
-families as a non-exclusive evidence view: one commit may name more than one
-family, while missing model evidence remains Unknown.
-Each model-family row keeps the same visual key in light and dark views, so
-contribution patterns are readable at a glance without turning them into a
-skill score.
-
-<a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI collaboration summary card: sustained day-to-day AI-assisted commits across multiple providers, explicit model-family evidence, unique commits kept distinct from actor presences, and unattributed commits reported honestly as unknown — every attribution backed by explicit Git evidence." width="100%"/>
-  </picture>
-</a>
-
-<p align="center">
-  <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">Explore my interactive record</a></strong>
-  &nbsp;·&nbsp;
-  <strong><a href="https://github.com/WenyuChiou/ai-profile">Build yours with ai-profile →</a></strong><br/>
-  <sub>Filter All AI, Claude, or OpenAI · inspect model-family evidence · switch light/dark themes · view the published daily record</sub>
-</p>
-
-&nbsp;
-
 <img src="https://img.shields.io/badge/OPEN%20SOURCE-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Open-source contributions — merged pull requests to projects I use"/>
 
-A few merged pull requests to open-source projects I use:
+Selected merged pull requests:
 
 | | |
 |---|---|

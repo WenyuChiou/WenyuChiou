@@ -42,16 +42,31 @@
       <img src="./dist/badge-light.svg" alt="由明示 Git provenance 驗證的 AI 協作比例"/>
     </picture>
   </a><br/>
-  <sub><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">查看我的證據型 AI 協作紀錄 →</a></sub>
 </p>
 
 &nbsp;
 
 <img src="https://img.shields.io/badge/%E9%97%9C%E6%96%BC-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="關於"/>
 
-我打造**與真實環境耦合、受治理的 LLM 代理人框架**。我的博士研究把 LLM 驅動的代理人放進以真實家戶資料為基礎的洪水調適模擬——每個代理人*感知 → 推理 → 經 harness 驗證 → 行動*，會和鄰居互動，並與一個物理基礎的水文系統共同演化。
+我打造受治理的 LLM 代理人系統，專注於洪水風險與水資源研究。
+我的工作連結代理人推理、驗證，以及具物理基礎的環境。
 
-更廣的 AI 興趣：**用 LLM 量化決策行為** · **agentic workflow** · **多代理協作** · **研究用 AI 工具**。我把每天在用的基礎設施，以開源的 Claude Code skills、MCP 與 plugin 形式釋出。
+&nbsp;
+
+<img src="https://img.shields.io/badge/AI%20%E5%8D%94%E4%BD%9C-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI 協作"/>
+
+明示 Git 證據 · 本機產生 · Unknown 維持 Unknown。
+
+<a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
+    <img src="./dist/summary-light.svg" alt="AI 協作摘要卡片：跨多個 provider 的長期日常 AI 協作 commit、明示 model family 證據，unique commit 與 actor presences 分開計算，無法歸因的 commit 誠實維持 unknown——每筆歸因皆有明示 Git 證據支持。" width="100%"/>
+  </picture>
+</a>
+
+<p align="center">
+  <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">開啟互動 dashboard ↗</a></strong>
+</p>
 
 &nbsp;
 
@@ -89,42 +104,9 @@
 <!-- TOOLING:START — 在此行上方新增工具表格列 -->
 <!-- TOOLING:END -->
 
-&nbsp;
-
-<img src="https://img.shields.io/badge/AI%20%E5%8D%94%E4%BD%9C-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI 協作"/>
-
-多數 GitHub 統計回答的是**發生多少活動**。這裡回答的是
-**AI 如何參與**：協作持續了多久、有多少 provider 參與，以及每筆歸因由
-哪些明示 Git 證據支持。這是一份協作紀錄，不是技能評分。
-
-這份紀錄由 [**ai-profile**](https://github.com/WenyuChiou/ai-profile)
-從選定 repositories 在本機產生；公開卡片只包含彙總資料。Unknown 維持
-unknown；同一個 commit 即使包含多個 AI actor，仍只算一個
-unique commit，但會產生多個 actor presences。摘要卡也會呈現明示的
-model family 證據；這是非互斥的證據視圖，同一個 commit 可以命名多個
-family，而缺少模型證據時仍維持 Unknown。
-每個 model family row 在亮色與深色視圖都維持相同的視覺識別，讓貢獻模式
-可以快速比較，但不把它誤解成技能分數。
-
-<a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI 協作摘要卡片：跨多個 provider 的長期日常 AI 協作 commit、明示 model family 證據，unique commit 與 actor presences 分開計算，無法歸因的 commit 誠實維持 unknown——每筆歸因皆有明示 Git 證據支持。" width="100%"/>
-  </picture>
-</a>
-
-<p align="center">
-  <strong><a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">查看我的互動紀錄</a></strong>
-  &nbsp;·&nbsp;
-  <strong><a href="https://github.com/WenyuChiou/ai-profile">用 ai-profile 建立你的版本 →</a></strong><br/>
-  <sub>切換 All AI、Claude 或 OpenAI · 查看 model family 證據 · 選擇亮色／深色主題 · 查看已發布的每日紀錄</sub>
-</p>
-
-&nbsp;
-
 <img src="https://img.shields.io/badge/%E9%96%8B%E6%BA%90%E8%B2%A2%E7%8D%BB-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="開源貢獻"/>
 
-向我日常使用的開源專案送出、且已合併（merged）的 pull request：
+精選已合併的 pull request：
 
 | | |
 |---|---|
