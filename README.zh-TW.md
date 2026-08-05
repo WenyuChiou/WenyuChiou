@@ -60,7 +60,7 @@
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI 協作摘要卡片：跨多個 provider 的長期日常 AI 協作 commit、明示 model family 證據，unique commit 與 actor presences 分開計算，無法歸因的 commit 誠實維持 unknown——每筆歸因皆有明示 Git 證據支持。" width="100%"/>
+    <img src="./dist/summary-light.svg" alt="AI 協作摘要卡片：跨多個 provider 的長期日常 AI 協作 commit、unique commit 與 actor presences 分開計算，無法歸因的 commit 誠實維持 unknown——每筆歸因皆有明示 Git 證據支持。" width="100%"/>
   </picture>
 </a>
 
