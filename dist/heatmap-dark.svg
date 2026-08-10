@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="830" height="313" viewBox="0 0 830 313" role="img" aria-labelledby="aiprofileHeatmapTitle aiprofileHeatmapDesc">
 <title id="aiprofileHeatmapTitle">Commit Activity × AI Collaboration — All time</title>
-<desc id="aiprofileHeatmapDesc">Daily commit heatmap 2025-08-11 to 2026-08-10: 1708 commits, 1207 AI-assisted (71%), publishable repositories only. Intensity is total commits (the owner's own commits included); hue is the day's AI share. Generated 2026-08-10.</desc>
+<desc id="aiprofileHeatmapDesc">Daily commit heatmap 2025-08-11 to 2026-08-10: 1710 commits, 1208 AI-assisted (71%), publishable repositories only. Intensity is total commits (the owner's own commits included); hue is the day's AI share. Generated 2026-08-10.</desc>
 <rect x="0.5" y="0.5" width="829" height="312" rx="8" fill="#091321" stroke="#34526f" stroke-width="1"/>
 <rect x="24" y="23" width="16" height="16" rx="3" fill="#091321" stroke="#8bc8ff" stroke-width="1"/>
 <rect x="29" y="28" width="6" height="6" rx="1" fill="#8bc8ff"/>
 <text x="48" y="36" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="600" fill="#eff6ff" text-anchor="start">Commit Activity × AI Collaboration</text>
 <text x="806" y="36" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#b5c7da" text-anchor="end">All time</text>
 <line x1="24" y1="56" x2="806" y2="56" stroke="#34526f"/>
-<text x="24" y="84" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#eff6ff" text-anchor="start"><tspan fill="#eff6ff" font-weight="700">1708</tspan><tspan fill="#b5c7da" font-weight="400"> commits</tspan><tspan fill="#b5c7da" font-weight="400">  ·  </tspan><tspan fill="#8bc8ff" font-weight="700">1207</tspan><tspan fill="#8bc8ff" font-weight="400"> AI-assisted (71%)</tspan></text>
+<text x="24" y="84" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#eff6ff" text-anchor="start"><tspan fill="#eff6ff" font-weight="700">1710</tspan><tspan fill="#b5c7da" font-weight="400"> commits</tspan><tspan fill="#b5c7da" font-weight="400">  ·  </tspan><tspan fill="#8bc8ff" font-weight="700">1208</tspan><tspan fill="#8bc8ff" font-weight="400"> AI-assisted (71%)</tspan></text>
 <text x="806" y="84" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#b5c7da" text-anchor="end">2025-08-11 → 2026-08-10</text>
 <text x="100" y="112" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#b5c7da" text-anchor="start">Sep</text>
 <text x="170" y="112" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#b5c7da" text-anchor="start">Oct</text>
@@ -388,7 +388,7 @@
 <rect x="772" y="176" width="11" height="11" rx="3" fill="#1e3852"/>
 <rect x="772" y="190" width="11" height="11" rx="3" fill="#1e3852"/>
 <rect x="772" y="204" width="11" height="11" rx="3" fill="#78ADDE"/>
-<rect x="786" y="120" width="11" height="11" rx="3" fill="#8BC8FF"/>
+<rect x="786" y="120" width="11" height="11" rx="3" fill="#96C8F6"/>
 <text x="24.0" y="254" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="10" font-weight="400" fill="#b5c7da" text-anchor="start">Volume</text>
 <rect x="70.0" y="245" width="11" height="11" rx="3" fill="#566474"/>
 <text x="85.0" y="254" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="10" font-weight="400" fill="#b5c7da" text-anchor="start">1</text>
