@@ -55,12 +55,12 @@ My work connects agent reasoning, verification, and physically grounded environm
 
 <img src="https://img.shields.io/badge/AI%20COLLABORATION-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI Collaboration"/>
 
-Declared Git evidence · local-first generation · Unknown stays Unknown.
+Verified by `ai-profile v0.7.1` · refreshed daily from local Git evidence · Unknown stays Unknown.
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI collaboration summary card: sustained day-to-day AI-assisted commits across multiple providers, unique commits kept distinct from actor presences, and unattributed commits reported honestly as unknown — every attribution backed by explicit Git evidence." width="100%"/>
+    <img src="./dist/summary-light.svg" alt="AI collaboration summary card: active AI days, provider contribution, evidence totals, and unattributed commits kept as unknown." width="100%"/>
   </picture>
 </a>
 
