@@ -55,12 +55,12 @@
 
 <img src="https://img.shields.io/badge/AI%20%E5%8D%94%E4%BD%9C-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI 協作"/>
 
-明示 Git 證據 · 本機產生 · Unknown 維持 Unknown。
+由 `ai-profile v0.7.1` 驗證 · 每日從本機 Git 證據更新 · Unknown 維持 Unknown。
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI 協作摘要卡片：跨多個 provider 的長期日常 AI 協作 commit、unique commit 與 actor presences 分開計算，無法歸因的 commit 誠實維持 unknown——每筆歸因皆有明示 Git 證據支持。" width="100%"/>
+    <img src="./dist/summary-light.svg" alt="AI 協作摘要卡片：AI 活躍日、provider 貢獻、證據總數，以及維持 unknown 的無法歸因 commit。" width="100%"/>
   </picture>
 </a>
 
