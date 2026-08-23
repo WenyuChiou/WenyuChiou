@@ -15,7 +15,7 @@
 
 <!-- TAGLINE:START — animated; edit the lines= segments (separated by ;) -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=0d9488&center=true&vCenter=true&width=640&height=42&lines=Governed+LLM+agents+for+flood-risk+%26+water+systems;Coupling+AI+agents+with+catastrophe+models" alt="Governed LLM agents for flood-risk and water systems · Coupling AI agents with catastrophe models" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=0d9488&center=true&vCenter=true&width=680&height=42&lines=Human-grounded+LLM+evaluation+%26+governed+agents;Behavioral+simulation+for+human-environment+systems" alt="Human-grounded LLM evaluation and governed agents · Behavioral simulation for human-environment systems" />
 </p>
 <!-- TAGLINE:END -->
 
@@ -23,6 +23,7 @@
 <p align="center">
   <a href="https://wenyuchiou.github.io/"><img src="https://img.shields.io/badge/Website-wenyuchiou.github.io-2dd4bf?style=flat-square&logo=githubpages&logoColor=white&labelColor=0d1117" alt="Website"/></a>
   <a href="https://www.linkedin.com/in/wenyu-chiou"><img src="https://img.shields.io/badge/LinkedIn-wenyu--chiou-0a66c2?style=flat-square&labelColor=0d1117" alt="LinkedIn"/></a>
+  <a href="https://scholar.google.com/citations?user=vSQ3zT4AAAAJ&amp;hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285f4?style=flat-square&amp;logo=googlescholar&amp;logoColor=white&amp;labelColor=0d1117" alt="Google Scholar"/></a>
   <a href="mailto:wec324@lehigh.edu"><img src="https://img.shields.io/badge/Email-wec324%40lehigh.edu-f59e0b?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
   <a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
 </p>
@@ -31,7 +32,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/From-Taiwan-2dd4bf?style=flat-square&labelColor=0d1117" alt="From Taiwan"/>
   <img src="https://img.shields.io/badge/Based%20in-Bethlehem,%20PA-2dd4bf?style=flat-square&labelColor=0d1117" alt="Based in Bethlehem, PA"/>
-  <img src="https://img.shields.io/badge/PhD-2024%E2%80%932027-2dd4bf?style=flat-square&labelColor=0d1117" alt="PhD 2024 to 2027"/>
+  <img src="https://img.shields.io/badge/PhD-Expected%20Dec%202027-2dd4bf?style=flat-square&labelColor=0d1117" alt="PhD expected December 2027"/>
   <img src="https://img.shields.io/badge/Open%20to-Summer%202027%20AI%20internship-f59e0b?style=flat-square&labelColor=0d1117" alt="Open to Summer 2027 AI internship"/>
 </p>
 
@@ -48,8 +49,8 @@
 
 <img src="https://img.shields.io/badge/ABOUT-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="About"/>
 
-I build governed LLM-agent systems for flood-risk and water research.
-My work connects agent reasoning, verification, and physically grounded environments.
+I build human-grounded evaluation and governed agent systems for behavioral and human-environment simulation.
+My work connects 937-household evidence, interpretable decision pathways, agent-based models, and explicit constraints so model behavior can be audited before it changes a coupled system.
 
 &nbsp;
 
@@ -85,7 +86,7 @@ Verified by `ai-profile` · refreshed daily by GitHub Actions from public Git ev
 <img src="https://img.shields.io/badge/PUBLICATIONS-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Publications"/>
 
 <!-- PUBS:START — newest first; format: - **[Title](link)** — venue, year -->
-- **Leveraging Large Language Models for Agent-Based Simulation of Human-Water System Interactions** — *Water Resources Research*, **62**(6), e2025WR042111 (2026) · DOI [`10.1029/2025WR042111`](https://doi.org/10.1029/2025WR042111)
+- [**Leveraging Large Language Models for Agent-Based Simulation of Human-Water System Interactions**](https://doi.org/10.1029/2025WR042111) — *Water Resources Research*, **62**(6), e2025WR042111 (2026)
 <!-- PUBS:END -->
 
 &nbsp;
@@ -166,9 +167,9 @@ Selected merged pull requests:
 
 &nbsp;
 
-<img src="https://img.shields.io/badge/ADVISORY-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Advisory"/>
+<img src="https://img.shields.io/badge/CONTACT-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Contact"/>
 
-Currently available for **advisory work** — **prompt review / audit** and **AI agent workflow consulting**. As a full-time PhD student my availability is limited, but teams or companies working in these areas are welcome to reach out: 📧 [wenyuchiou12@gmail.com](mailto:wenyuchiou12@gmail.com)
+Open to **full-time Summer 2027 internships** (approximately late May through mid-August) in LLM evaluation, agent systems, behavioral simulation, and AI for science. F-1 student; CPT eligible. Contact: [wec324@lehigh.edu](mailto:wec324@lehigh.edu)
 
 <div align="center">
 
