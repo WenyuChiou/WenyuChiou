@@ -55,7 +55,7 @@ My work connects agent reasoning, verification, and physically grounded environm
 
 <img src="https://img.shields.io/badge/AI%20COLLABORATION-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI Collaboration"/>
 
-Verified by `ai-profile v0.7.1` · refreshed daily from local Git evidence · Unknown stays Unknown.
+Verified by `ai-profile` · refreshed daily by GitHub Actions from public Git evidence · Unknown stays Unknown.
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>

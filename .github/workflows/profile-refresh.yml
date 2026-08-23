@@ -1,0 +1,107 @@
+# Daily cloud refresh for the public ai-profile dashboard.
+# The reusable workflow validates that every source repository is public,
+# scans only explicit Git provenance, and publishes the exact eight assets.
+name: Daily ai-profile refresh
+
+on:
+  schedule:
+    - cron: '37 5 * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: profile-refresh-pages-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  refresh-profile:
+    permissions:
+      contents: write
+    uses: WenyuChiou/ai-profile/.github/workflows/profile-refresh.yml@9c4f276cb437f1866a2c1b407efe54d3790ce811
+    with:
+      repositories: |
+        WenyuChiou/academic-writing-skills
+        WenyuChiou/agent-collab-skills
+        WenyuChiou/ai-profile
+        WenyuChiou/ai-research-skills
+        WenyuChiou/awesome-agentic-ai-zh
+        WenyuChiou/Event-Driven-Strategy
+        WenyuChiou/fable-method-harness
+        WenyuChiou/FLOODABM
+        WenyuChiou/research-hub
+        WenyuChiou/wenyuchiou.github.io
+    secrets:
+      identities: ${{ secrets.AIPROFILE_IDENTITIES }}
+
+  deploy-pages:
+    needs: refresh-profile
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Validate immutable published revision
+        env:
+          PUBLISHED_SHA: ${{ needs.refresh-profile.outputs.published-sha }}
+        run: |
+          python - <<'PY'
+          import os
+          import re
+
+          value = os.environ.get("PUBLISHED_SHA", "")
+          if re.fullmatch(r"[0-9a-f]{40}", value) is None:
+              raise SystemExit("published revision is invalid")
+          PY
+      - name: Check out exact published revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ needs.refresh-profile.outputs.published-sha }}
+          persist-credentials: false
+      - name: Build exact Pages artifact
+        run: |
+          python - <<'PY'
+          import shutil
+          from pathlib import Path
+
+          names = {
+              "badge-dark.svg",
+              "badge-light.svg",
+              "dashboard.html",
+              "heatmap-dark.svg",
+              "heatmap-light.svg",
+              "profile.json",
+              "summary-dark.svg",
+              "summary-light.svg",
+          }
+          source = Path("dist")
+          destination = Path("_site")
+          if not source.is_dir() or source.is_symlink():
+              raise SystemExit("dist asset bundle is unavailable")
+          entries = list(source.iterdir())
+          if (
+              {entry.name for entry in entries} != names
+              or any(not entry.is_file() or entry.is_symlink() for entry in entries)
+          ):
+              raise SystemExit("unexpected dist asset set")
+          if destination.exists() or destination.is_symlink():
+              raise SystemExit("Pages staging directory already exists")
+          target = destination / "dist"
+          target.mkdir(parents=True)
+          for name in sorted(names):
+              shutil.copyfile(source / name, target / name)
+          PY
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d
+      - name: Upload exact Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
+        with:
+          path: _site
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128

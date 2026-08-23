@@ -55,7 +55,7 @@
 
 <img src="https://img.shields.io/badge/AI%20%E5%8D%94%E4%BD%9C-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI 協作"/>
 
-由 `ai-profile v0.7.1` 驗證 · 每日從本機 Git 證據更新 · Unknown 維持 Unknown。
+由 `ai-profile` 驗證 · GitHub Actions 每日從公開 Git 證據更新 · Unknown 維持 Unknown。
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
