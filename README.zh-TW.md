@@ -15,7 +15,7 @@
 
 <!-- TAGLINE:START — 動畫標語；英文保留（JetBrains Mono 無中文字形，若換中文會變豆腐字） -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=0d9488&center=true&vCenter=true&width=640&height=42&lines=Governed+LLM+agents+for+flood-risk+%26+water+systems;Coupling+AI+agents+with+catastrophe+models" alt="Governed LLM agents for flood-risk and water systems · Coupling AI agents with catastrophe models" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=0d9488&center=true&vCenter=true&width=680&height=42&lines=Human-grounded+LLM+evaluation+%26+governed+agents;Behavioral+simulation+for+human-environment+systems" alt="Human-grounded LLM evaluation and governed agents · Behavioral simulation for human-environment systems" />
 </p>
 <!-- TAGLINE:END -->
 
@@ -23,6 +23,7 @@
 <p align="center">
   <a href="https://wenyuchiou.github.io/"><img src="https://img.shields.io/badge/Website-wenyuchiou.github.io-2dd4bf?style=flat-square&logo=githubpages&logoColor=white&labelColor=0d1117" alt="Website"/></a>
   <a href="https://www.linkedin.com/in/wenyu-chiou"><img src="https://img.shields.io/badge/LinkedIn-wenyu--chiou-0a66c2?style=flat-square&labelColor=0d1117" alt="LinkedIn"/></a>
+  <a href="https://scholar.google.com/citations?user=vSQ3zT4AAAAJ&amp;hl=zh-TW"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285f4?style=flat-square&amp;logo=googlescholar&amp;logoColor=white&amp;labelColor=0d1117" alt="Google Scholar"/></a>
   <a href="mailto:wec324@lehigh.edu"><img src="https://img.shields.io/badge/Email-wec324%40lehigh.edu-f59e0b?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
   <a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
 </p>
@@ -31,7 +32,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/%E4%BE%86%E8%87%AA-%E5%8F%B0%E7%81%A3-2dd4bf?style=flat-square&labelColor=0d1117" alt="來自 台灣"/>
   <img src="https://img.shields.io/badge/%E7%8F%BE%E5%B1%85-Bethlehem%2C%20PA-2dd4bf?style=flat-square&labelColor=0d1117" alt="現居 Bethlehem, PA"/>
-  <img src="https://img.shields.io/badge/%E5%8D%9A%E5%A3%AB-2024%E2%80%932027-2dd4bf?style=flat-square&labelColor=0d1117" alt="博士 2024–2027"/>
+  <img src="https://img.shields.io/badge/%E5%8D%9A%E5%A3%AB-%E9%A0%90%E8%A8%88%202027%20%E5%B9%B4%2012%20%E6%9C%88-2dd4bf?style=flat-square&labelColor=0d1117" alt="博士預計 2027 年 12 月畢業"/>
   <img src="https://img.shields.io/badge/%E9%96%8B%E6%94%BE-2027%20%E6%9A%91%E6%9C%9F%20AI%20%E5%AF%A6%E7%BF%92-f59e0b?style=flat-square&labelColor=0d1117" alt="開放 2027 暑期 AI 實習"/>
 </p>
 
@@ -48,8 +49,8 @@
 
 <img src="https://img.shields.io/badge/%E9%97%9C%E6%96%BC-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="關於"/>
 
-我打造受治理的 LLM 代理人系統，專注於洪水風險與水資源研究。
-我的工作連結代理人推理、驗證，以及具物理基礎的環境。
+我開發以人類行為證據為基礎的評估與受治理代理系統，應用於行為與人類—環境模擬。
+我的工作串聯 937 戶實證資料、可解釋決策路徑、代理人基礎模型與明確限制，讓模型行為在改變耦合系統前即可接受稽核。
 
 &nbsp;
 
@@ -85,7 +86,7 @@
 <img src="https://img.shields.io/badge/%E8%91%97%E4%BD%9C-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="著作"/>
 
 <!-- PUBS:START — 由新到舊；格式： - **[標題](連結)** — 期刊, 年份 -->
-- **Leveraging Large Language Models for Agent-Based Simulation of Human-Water System Interactions** — *Water Resources Research*, **62**(6), e2025WR042111 (2026) · DOI [`10.1029/2025WR042111`](https://doi.org/10.1029/2025WR042111)
+- [**Leveraging Large Language Models for Agent-Based Simulation of Human-Water System Interactions**](https://doi.org/10.1029/2025WR042111) — *Water Resources Research*, **62**(6), e2025WR042111 (2026)
 <!-- PUBS:END -->
 
 &nbsp;
@@ -166,9 +167,9 @@
 
 &nbsp;
 
-<img src="https://img.shields.io/badge/%E5%90%88%E4%BD%9C%E6%B4%BD%E8%A9%A2-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="合作洽詢"/>
+<img src="https://img.shields.io/badge/%E8%81%AF%E7%B5%A1%E6%96%B9%E5%BC%8F-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="聯絡方式"/>
 
-目前以**顧問**為主——**prompt review / audit** 與 **AI agent workflow 諮詢**。我是全職博士生、時間有限，但團隊或公司若在這些方向需要協助，歡迎來信：📧 [wenyuchiou12@gmail.com](mailto:wenyuchiou12@gmail.com)
+正在尋求 **2027 年夏季全職實習**（約 5 月下旬至 8 月中旬），方向包括 LLM 評估、代理系統、行為模擬與 AI for Science。F-1 學生身分，具備 CPT 資格。聯絡信箱：[wec324@lehigh.edu](mailto:wec324@lehigh.edu)
 
 <div align="center">
 
