@@ -49,8 +49,7 @@
 
 <img src="https://img.shields.io/badge/ABOUT-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="About"/>
 
-I build human-grounded evaluation and governed agent systems for behavioral and human-environment simulation.
-My work connects 937-household evidence, interpretable decision pathways, agent-based models, and explicit constraints so model behavior can be audited before it changes a coupled system.
+I’m a PhD researcher in Civil and Environmental Engineering at Lehigh University. My work sits at the intersection of behavioral science, LLM-based simulation, and quantitative evaluation. A central part of my research is understanding and modeling human decision-making. I evaluate whether LLMs capture meaningful decision processes, not only whether their answers sound plausible, but whether their perceptions and constraints relate coherently to the choices they make. I also work with agent-based modeling, which is widely used to simulate how individual decisions accumulate over time and interact with larger social, financial, and physical systems. My current direction is to move from traditional rule-based agents toward LLM-driven agents that can respond to richer information, memory, and changing conditions. More broadly, I’m interested in how human behavior can be simulated in a way that remains empirically grounded while interacting with and changing the external world.
 
 &nbsp;
 
