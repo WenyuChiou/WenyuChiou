@@ -1373,27 +1373,27 @@
       "total_commits": 1
     },
     {
-      "ai_commits": 20,
+      "ai_commits": 22,
       "counts": [
         {
-          "attributed_commits": 19,
+          "attributed_commits": 21,
           "provider": "anthropic"
         },
         {
-          "attributed_commits": 6,
+          "attributed_commits": 8,
           "provider": "openai"
         }
       ],
       "date": "2026-08-23",
-      "total_commits": 28
+      "total_commits": 32
     }
   ],
   "evidence_records": {
-    "declared": 1336,
+    "declared": 1340,
     "imported": 0,
     "inferred": 0,
-    "total_records": 1866,
-    "unknown": 530,
+    "total_records": 1872,
+    "unknown": 532,
     "verified": 0
   },
   "generated_on": "2026-08-24",
@@ -1408,15 +1408,15 @@
     },
     {
       "active_days": 13,
-      "actor_presences": 90,
-      "attributed_commits": 90,
+      "actor_presences": 92,
+      "attributed_commits": 92,
       "category": "gpt",
       "display_name": "GPT"
     },
     {
       "active_days": 9,
-      "actor_presences": 44,
-      "attributed_commits": 44,
+      "actor_presences": 46,
+      "attributed_commits": 46,
       "category": "claude",
       "display_name": "Claude"
     }
@@ -1428,22 +1428,22 @@
   },
   "privacy": {
     "anonymous_aggregate_commits": 0,
-    "explicitly_publishable_commits": 1822,
+    "explicitly_publishable_commits": 1826,
     "includes_anonymous_aggregate": false
   },
   "provider_count": 3,
   "providers": [
     {
       "active_days": 110,
-      "actor_presences": 1220,
-      "attributed_commits": 1220,
+      "actor_presences": 1222,
+      "attributed_commits": 1222,
       "display_name": "Claude",
       "provider": "anthropic"
     },
     {
       "active_days": 19,
-      "actor_presences": 114,
-      "attributed_commits": 114,
+      "actor_presences": 116,
+      "attributed_commits": 116,
       "display_name": "OpenAI",
       "provider": "openai"
     },
@@ -1458,10 +1458,10 @@
   "schema_version": "0.3.0",
   "totals": {
     "active_ai_days": 113,
-    "ai_actor_presences": 1336,
-    "ai_attributed_commits": 1292,
-    "commits_scanned": 1822,
+    "ai_actor_presences": 1340,
+    "ai_attributed_commits": 1294,
+    "commits_scanned": 1826,
     "human_declared_commits": 0,
-    "unknown_commits": 530
+    "unknown_commits": 532
   }
 }
