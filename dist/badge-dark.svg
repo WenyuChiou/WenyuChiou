@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="203" height="24" viewBox="0 0 203 24" role="img" aria-labelledby="aiprofileBadgeTitle aiprofileBadgeDesc">
-<title id="aiprofileBadgeTitle">AI-assisted: 70% · verified by git</title>
-<desc id="aiprofileBadgeDesc">1297 of 1851 commits AI-assisted, from explicit git provenance.</desc>
+<title id="aiprofileBadgeTitle">AI-assisted: 69% · verified by git</title>
+<desc id="aiprofileBadgeDesc">1297 of 1872 commits AI-assisted, from explicit git provenance.</desc>
 <clipPath id="aiprofileBadgeClip"><rect width="203" height="24" rx="4"/></clipPath>
 <g clip-path="url(#aiprofileBadgeClip)">
 <rect x="0" y="0" width="86" height="24" fill="#091321"/>
@@ -9,5 +9,5 @@
 <rect x="8" y="9" width="6" height="6" rx="1" fill="#8bc8ff"/>
 <rect x="0.5" y="0.5" width="202" height="23" rx="4" fill="none" stroke="#34526f" stroke-width="1"/>
 <text x="20" y="16" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="600" fill="#eff6ff" text-anchor="start">AI-assisted</text>
-<text x="144" y="16" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="600" fill="#091321" text-anchor="middle">70% · verified by git</text>
+<text x="144" y="16" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="600" fill="#091321" text-anchor="middle">69% · verified by git</text>
 </svg>
