@@ -18,7 +18,7 @@ jobs:
   refresh-profile:
     permissions:
       contents: write
-    uses: WenyuChiou/ai-profile/.github/workflows/profile-refresh.yml@18fb08eb6bca4fac6cb4cd1058cc7641452e7bf3
+    uses: WenyuChiou/ai-profile/.github/workflows/profile-refresh.yml@c2a014aa9ad946fe867c2f513d76353759d55741
     with:
       repositories: |
         WenyuChiou/academic-writing-skills
