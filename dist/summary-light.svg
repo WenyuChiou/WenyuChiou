@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="830" height="658" viewBox="0 0 830 658" role="img" aria-labelledby="aiprofileSummaryTitle aiprofileSummaryDesc">
 <title id="aiprofileSummaryTitle">AI Collaboration Record — All time</title>
-<desc id="aiprofileSummaryDesc">1297 AI-attributed commits, 1343 AI actor presences across 115 active AI days (author dates), 3 AI providers. Daily collaboration pulse 2026-06-10 to 2026-09-01, peak day 55 commits; pulse height encodes total commits, accent fill height encodes the day's AI-attributed share; publishable dates only. Generated 2026-09-02.</desc>
+<desc id="aiprofileSummaryDesc">1297 AI-attributed commits, 1343 AI actor presences across 115 active AI days (author dates), 3 AI providers. Daily collaboration pulse 2026-06-10 to 2026-09-01, peak day 55 commits; pulse height encodes total commits, accent fill height encodes the day's AI-attributed share; publishable dates only. Generated 2026-09-03.</desc>
 <rect x="0.5" y="0.5" width="829" height="657" rx="8" fill="#fbfdff" stroke="#c2d3e5" stroke-width="1"/>
 <rect x="24" y="24" width="16" height="16" rx="3" fill="#fbfdff" stroke="#005cc5" stroke-width="1"/>
 <rect x="29" y="29" width="6" height="6" rx="1" fill="#005cc5"/>
 <text x="48" y="36" font-family="'IBM Plex Sans Condensed', 'Aptos Display', 'Segoe UI', 'DejaVu Sans Condensed', sans-serif" font-size="18" font-weight="600" fill="#172033" text-anchor="start">AI Collaboration Record</text>
-<text x="806" y="36" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="end">All time · snapshot 2026-09-02</text>
+<text x="806" y="36" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="end">All time · snapshot 2026-09-03</text>
 <line x1="24" y1="56" x2="806" y2="56" stroke="#c2d3e5"/>
 <text x="24" y="116" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="40" font-weight="700" fill="#005cc5" text-anchor="start">1297</text>
 <text x="24" y="140" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI-attributed commits</text>
@@ -208,6 +208,6 @@
 <rect x="24" y="563" width="8" height="8" rx="1" fill="#52647a"/>
 <text x="36" y="570" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">All activity explicitly publishable</text>
 <line x1="24" y1="602" x2="806" y2="602" stroke="#c2d3e5"/>
-<text x="24" y="626" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Generated 2026-09-02 · aiprofile</text>
+<text x="24" y="626" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Generated 2026-09-03 · aiprofile</text>
 <text x="24" y="642" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">One commit may include several AI actor presences (one per provider/tool).</text>
 </svg>
