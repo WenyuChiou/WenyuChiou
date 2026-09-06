@@ -18,28 +18,31 @@
   </a>
 </div>
 
-<!-- TAGLINE:START — 動畫標語；英文保留（JetBrains Mono 無中文字形，若換中文會變豆腐字） -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=0d9488&center=true&vCenter=true&width=680&height=42&lines=Human-grounded+LLM+evaluation+%26+governed+agents;Behavioral+simulation+for+human-environment+systems" alt="Human-grounded LLM evaluation and governed agents · Behavioral simulation for human-environment systems" />
+<!-- HIGHLIGHTS:START -->
+<p>
+  <strong>尋找 2027 暑期 AI 實習機會</strong><br/>
+  Lehigh University · 美國 Bethlehem, PA · 預計 2027 年 12 月博士畢業
 </p>
-<!-- TAGLINE:END -->
 
-<!-- HIGHLIGHTS:START — 聯絡連結 + 即時星數 -->
-<p align="center">
-  <a href="https://wenyuchiou.github.io/"><img src="https://img.shields.io/badge/Website-wenyuchiou.github.io-2dd4bf?style=flat-square&logo=githubpages&logoColor=white&labelColor=0d1117" alt="Website"/></a>
-  <a href="https://www.linkedin.com/in/wenyu-chiou"><img src="https://img.shields.io/badge/LinkedIn-wenyu--chiou-0a66c2?style=flat-square&labelColor=0d1117" alt="LinkedIn"/></a>
-  <a href="https://scholar.google.com/citations?user=vSQ3zT4AAAAJ&amp;hl=zh-TW"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285f4?style=flat-square&amp;logo=googlescholar&amp;logoColor=white&amp;labelColor=0d1117" alt="Google Scholar"/></a>
-  <a href="mailto:wec324@lehigh.edu"><img src="https://img.shields.io/badge/Email-wec324%40lehigh.edu-f59e0b?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
-  <a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
+<h3>招聘與履歷</h3>
+<p>
+  <a href="https://wenyuchiou.github.io/zh/hire/" title="招聘摘要"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/hire-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/hire-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="招聘摘要"/></picture></a>
+  <a href="https://wenyuchiou.github.io/assets/Wenyu_Chiou_Industry_Resume_EN.pdf" title="英文業界履歷（PDF）"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/resume-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/resume-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="英文業界履歷（PDF）"/></picture></a>
+</p>
+
+<h3>研究與作品</h3>
+<p>
+  <a href="https://wenyuchiou.github.io/zh/" title="個人網站"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/portfolio-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/portfolio-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="個人網站"/></picture></a>
+  <a href="https://scholar.google.com/citations?user=vSQ3zT4AAAAJ&amp;hl=zh-TW" title="Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/scholar-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/scholar-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="Google Scholar"/></picture></a>
+</p>
+
+<h3>聯絡與社群</h3>
+<p>
+  <a href="mailto:wec324@lehigh.edu" title="寄信給邱文昱"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/email-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/email-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="寄信給邱文昱"/></picture></a>
+  <a href="https://www.linkedin.com/in/wenyu-chiou" title="LinkedIn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/linkedin-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/linkedin-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="LinkedIn"/></picture></a>
+  <a href="https://www.threads.com/@wenyu_chiou" title="Threads"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/threads-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/threads-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="Threads"/></picture></a>
 </p>
 <!-- HIGHLIGHTS:END -->
-
-<p align="center">
-  <img src="https://img.shields.io/badge/%E4%BE%86%E8%87%AA-%E5%8F%B0%E7%81%A3-2dd4bf?style=flat-square&labelColor=0d1117" alt="來自 台灣"/>
-  <img src="https://img.shields.io/badge/%E7%8F%BE%E5%B1%85-Bethlehem%2C%20PA-2dd4bf?style=flat-square&labelColor=0d1117" alt="現居 Bethlehem, PA"/>
-  <img src="https://img.shields.io/badge/%E5%8D%9A%E5%A3%AB-%E9%A0%90%E8%A8%88%202027%20%E5%B9%B4%2012%20%E6%9C%88-2dd4bf?style=flat-square&labelColor=0d1117" alt="博士預計 2027 年 12 月畢業"/>
-  <img src="https://img.shields.io/badge/%E9%96%8B%E6%94%BE-2027%20%E6%9A%91%E6%9C%9F%20AI%20%E5%AF%A6%E7%BF%92-f59e0b?style=flat-square&labelColor=0d1117" alt="開放 2027 暑期 AI 實習"/>
-</p>
 
 <p align="center">
   <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
@@ -53,6 +56,8 @@
 &nbsp;
 
 <img src="https://img.shields.io/badge/%E9%97%9C%E6%96%BC-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="關於"/>
+
+來自台灣，目前居住在美國賓州 Bethlehem。
 
 我開發以人類行為證據為基礎的評估與受治理代理系統，應用於行為與人類—環境模擬。
 我的工作串聯 937 戶實證資料、可解釋決策路徑、代理人基礎模型與明確限制，讓模型行為在改變耦合系統前即可接受稽核。
@@ -126,6 +131,8 @@
 &nbsp;
 
 <img src="https://img.shields.io/badge/%E5%AD%B8%E7%BF%92%E8%B3%87%E6%BA%90-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="學習資源"/>
+
+<a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
 
 | | |
 |---|---|

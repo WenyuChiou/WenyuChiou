@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="44" viewBox="0 0 180 44" role="img" aria-labelledby="title" lang="en">
+<!-- ISC License
+
+Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. -->
+<title id="title">Recruiter brief</title>
+<g transform="translate(2 5)"><rect x="2" y="3" width="32" height="32" rx="6" fill="#112b25"/><rect width="32" height="32" rx="6" fill="#203d36" stroke="#86d8bd"/><g transform="translate(6 6) scale(.833333)" fill="none" stroke="#86d8bd" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></g></g>
+<text x="46" y="27" fill="#f0f3f6" font-family="'Atkinson Hyperlegible Next', 'Segoe UI', 'Microsoft JhengHei', sans-serif" font-size="16" font-weight="500">Recruiter brief</text>
+</svg>
