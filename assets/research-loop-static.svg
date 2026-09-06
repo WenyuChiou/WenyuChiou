@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title description" xml:lang="en" data-design="precision-robot-workbench" data-duration="4800">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title description" xml:lang="en" data-design="precision-robot-workbench" data-duration="0" data-motion="static">
 <title id="title">Wenyu Chiou: LLM evaluation &amp; governed agents</title><desc id="description">Human evidence and context inform LLM proposals. Paired human and agent choices, working memory and an audit trail connect evaluation with governed action. A river basin with tributaries, rainfall, a stream gauge and households represents environmental feedback. Conceptual illustration, without measured results.</desc>
 <defs>
 <style>
@@ -118,6 +118,7 @@ text{font-family:"Atkinson Hyperlegible Next","Segoe UI","Chiron Hei HK","Micros
 @keyframes accept{0%,76%{opacity:.25}83%,100%{opacity:1}}
 @keyframes feedback{0%,86%{opacity:.3}96%,100%{opacity:1}}
 @media(prefers-reduced-motion:reduce){.motion{animation:none!important}}
+.motion{animation:none!important}
 </style>
 <marker id="arrow-human" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m1 1 7 4-7 4" fill="none" stroke="#176e67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
 <marker id="arrow-proposal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m1 1 7 4-7 4" fill="none" stroke="#70496d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
