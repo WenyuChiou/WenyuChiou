@@ -1456,27 +1456,27 @@
       "total_commits": 7
     },
     {
-      "ai_commits": 2,
+      "ai_commits": 3,
       "counts": [
         {
           "attributed_commits": 1,
           "provider": "anthropic"
         },
         {
-          "attributed_commits": 2,
+          "attributed_commits": 3,
           "provider": "openai"
         }
       ],
       "date": "2026-09-06",
-      "total_commits": 3
+      "total_commits": 5
     }
   ],
   "evidence_records": {
-    "declared": 1346,
+    "declared": 1347,
     "imported": 0,
     "inferred": 0,
-    "total_records": 2027,
-    "unknown": 681,
+    "total_records": 2029,
+    "unknown": 682,
     "verified": 0
   },
   "generated_on": "2026-09-06",
@@ -1484,8 +1484,8 @@
   "models": [
     {
       "active_days": 110,
-      "actor_presences": 1208,
-      "attributed_commits": 1193,
+      "actor_presences": 1209,
+      "attributed_commits": 1194,
       "category": "unknown",
       "display_name": "Unknown"
     },
@@ -1511,7 +1511,7 @@
   },
   "privacy": {
     "anonymous_aggregate_commits": 0,
-    "explicitly_publishable_commits": 1980,
+    "explicitly_publishable_commits": 1982,
     "includes_anonymous_aggregate": false
   },
   "provider_count": 3,
@@ -1525,8 +1525,8 @@
     },
     {
       "active_days": 21,
-      "actor_presences": 119,
-      "attributed_commits": 119,
+      "actor_presences": 120,
+      "attributed_commits": 120,
       "display_name": "OpenAI",
       "provider": "openai"
     },
@@ -1541,10 +1541,10 @@
   "schema_version": "0.3.0",
   "totals": {
     "active_ai_days": 116,
-    "ai_actor_presences": 1346,
-    "ai_attributed_commits": 1299,
-    "commits_scanned": 1980,
+    "ai_actor_presences": 1347,
+    "ai_attributed_commits": 1300,
+    "commits_scanned": 1982,
     "human_declared_commits": 0,
-    "unknown_commits": 681
+    "unknown_commits": 682
   }
 }
