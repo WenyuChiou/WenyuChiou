@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="830" height="313" viewBox="0 0 830 313" role="img" aria-labelledby="aiprofileHeatmapTitle aiprofileHeatmapDesc">
 <title id="aiprofileHeatmapTitle">Commit Activity × AI Collaboration — All time</title>
-<desc id="aiprofileHeatmapDesc">Daily commit heatmap 2025-09-05 to 2026-09-04: 1939 commits, 1297 AI-assisted (67%), publishable repositories only. Intensity is total commits (the owner's own commits included); hue is the day's AI share. Generated 2026-09-05.</desc>
+<desc id="aiprofileHeatmapDesc">Daily commit heatmap 2025-09-05 to 2026-09-04: 1939 commits, 1297 AI-assisted (67%), publishable repositories only. Intensity is total commits (the owner's own commits included); hue is the day's AI share. Generated 2026-09-06.</desc>
 <rect x="0.5" y="0.5" width="829" height="312" rx="8" fill="#091321" stroke="#34526f" stroke-width="1"/>
 <rect x="24" y="23" width="16" height="16" rx="3" fill="#091321" stroke="#8bc8ff" stroke-width="1"/>
 <rect x="29" y="28" width="6" height="6" rx="1" fill="#8bc8ff"/>
 <text x="48" y="36" font-family="'IBM Plex Sans Condensed', 'Aptos Display', 'Segoe UI', 'DejaVu Sans Condensed', sans-serif" font-size="18" font-weight="600" fill="#eff6ff" text-anchor="start">Commit Activity × AI Collaboration</text>
-<text x="806" y="36" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#b5c7da" text-anchor="end">All time · snapshot 2026-09-05</text>
+<text x="806" y="36" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#b5c7da" text-anchor="end">All time · snapshot 2026-09-06</text>
 <line x1="24" y1="56" x2="806" y2="56" stroke="#34526f"/>
 <text x="24" y="84" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#eff6ff" text-anchor="start"><tspan fill="#eff6ff" font-weight="700">1939</tspan><tspan fill="#b5c7da" font-weight="400"> commits</tspan><tspan fill="#b5c7da" font-weight="400">  ·  </tspan><tspan fill="#8bc8ff" font-weight="700">1297</tspan><tspan fill="#8bc8ff" font-weight="400"> AI-assisted (67%)</tspan></text>
 <text x="806" y="84" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#b5c7da" text-anchor="end">2025-09-05 → 2026-09-04</text>
@@ -407,5 +407,5 @@
 <text x="405.0" y="254" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#b5c7da" text-anchor="start">100%</text>
 <text x="806" y="254" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#b5c7da" text-anchor="end">publishable repos only</text>
 <line x1="24" y1="271" x2="806" y2="271" stroke="#34526f"/>
-<text x="24" y="295" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#b5c7da" text-anchor="start">Generated 2026-09-05 · aiprofile</text>
+<text x="24" y="295" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#b5c7da" text-anchor="start">Generated 2026-09-06 · aiprofile</text>
 </svg>
