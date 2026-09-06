@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title description" xml:lang="zh-TW" data-design="precision-robot-workbench" data-duration="4800">
+<title id="title">邱文昱 Wenyu Chiou: LLM 評估與代理治理</title><desc id="description">人類證據與情境建立 LLM 提案；人類與代理選擇對照、工作記憶與稽核紀錄串起評估及受治理的行動。支流、降雨、水位尺和家戶構成環境回饋。這是概念插圖，不含實測結果。</desc>
+<defs>
+<style>
+.bg{fill:#171e20;color:#171e20}
+.bg-fill{fill:#171e20}
+.bg-stroke{stroke:#171e20}
+.ink{fill:#e8efeb;color:#e8efeb}
+.ink-fill{fill:#e8efeb}
+.ink-stroke{stroke:#e8efeb}
+.muted{fill:#b8c8c5;color:#b8c8c5}
+.muted-fill{fill:#b8c8c5}
+.muted-stroke{stroke:#b8c8c5}
+.paper{fill:#d7dfdc;color:#d7dfdc}
+.paper-fill{fill:#d7dfdc}
+.paper-stroke{stroke:#d7dfdc}
+.shade{fill:#889e9c;color:#889e9c}
+.shade-fill{fill:#889e9c}
+.shade-stroke{stroke:#889e9c}
+.metal{fill:#728988;color:#728988}
+.metal-fill{fill:#728988}
+.metal-stroke{stroke:#728988}
+.edge{fill:#acc0bc;color:#acc0bc}
+.edge-fill{fill:#acc0bc}
+.edge-stroke{stroke:#acc0bc}
+.screen{fill:#233435;color:#233435}
+.screen-fill{fill:#233435}
+.screen-stroke{stroke:#233435}
+.eyes{fill:#a7e0cb;color:#a7e0cb}
+.eyes-fill{fill:#a7e0cb}
+.eyes-stroke{stroke:#a7e0cb}
+.human{fill:#83cbbb;color:#83cbbb}
+.human-fill{fill:#83cbbb}
+.human-stroke{stroke:#83cbbb}
+.human-soft{fill:#264d47;color:#264d47}
+.human-soft-fill{fill:#264d47}
+.human-soft-stroke{stroke:#264d47}
+.proposal{fill:#d3b2d2;color:#d3b2d2}
+.proposal-fill{fill:#d3b2d2}
+.proposal-stroke{stroke:#d3b2d2}
+.proposal-soft{fill:#493b4d;color:#493b4d}
+.proposal-soft-fill{fill:#493b4d}
+.proposal-soft-stroke{stroke:#493b4d}
+.check{fill:#dfc173;color:#dfc173}
+.check-fill{fill:#dfc173}
+.check-stroke{stroke:#dfc173}
+.check-soft{fill:#544d35;color:#544d35}
+.check-soft-fill{fill:#544d35}
+.check-soft-stroke{stroke:#544d35}
+.coral{fill:#f0a496;color:#f0a496}
+.coral-fill{fill:#f0a496}
+.coral-stroke{stroke:#f0a496}
+.coral-soft{fill:#623f39;color:#623f39}
+.coral-soft-fill{fill:#623f39}
+.coral-soft-stroke{stroke:#623f39}
+.water{fill:#95c7e1;color:#95c7e1}
+.water-fill{fill:#95c7e1}
+.water-stroke{stroke:#95c7e1}
+.water-soft{fill:#397999;color:#397999}
+.water-soft-fill{fill:#397999}
+.water-soft-stroke{stroke:#397999}
+.land{fill:#58735a;color:#58735a}
+.land-fill{fill:#58735a}
+.land-stroke{stroke:#58735a}
+.hill{fill:#75936c;color:#75936c}
+.hill-fill{fill:#75936c}
+.hill-stroke{stroke:#75936c}
+.green{fill:#c0d4a9;color:#c0d4a9}
+.green-fill{fill:#c0d4a9}
+.green-stroke{stroke:#c0d4a9}
+text{font-family:"Atkinson Hyperlegible Next","Segoe UI","Chiron Hei HK","Microsoft JhengHei",sans-serif;letter-spacing:0}
+.heading{font-family:Literata,Georgia,"Chiron Sung HK","Microsoft JhengHei",serif;font-weight:500}
+.paper-ink{fill:#273638}.eye-stroke{stroke:#a7e0cb}
+.motion{animation-duration:4.8s;animation-timing-function:cubic-bezier(.22,1,.36,1);animation-iteration-count:1;animation-fill-mode:both}
+.evidence-sheet{animation-name:evidence}.context-scan{animation-name:context}
+.robot-head{animation-name:think;transform-box:fill-box;transform-origin:50% 95%}
+.robot-arm{animation-name:offer;transform-box:fill-box;transform-origin:0 60%}
+.robot-eyes{animation-name:blink;transform-box:fill-box;transform-origin:center}
+.check-schema{animation-name:schema}.check-permission{animation-name:permission}.check-budget{animation-name:budget}
+.rejection{animation-name:reject}.adaptation{animation-name:adapt}
+.paper-flight{animation-name:flight}.repair-flight{animation-name:return-paper}
+.passed-highlight{animation-name:accept}.feedback-highlight{animation-name:feedback}
+.choice-match{animation-name:choice-match}.audit-record{animation-name:audit-record}
+.decision-cursor{animation-name:decision-match}.ownership-key{animation-name:ownership-key;transform-box:fill-box;transform-origin:left center}
+.lease-paper{animation-name:lease-paper}.owner-window,.renter-window{animation-name:window-light}
+.memory-sheet{animation-name:memory-sheet}.proposal-clipboard{animation-name:clipboard}
+.validation-needle{animation-name:needle}.validation-slider{animation-name:slider}
+.river-current{animation-name:river-current;animation-duration:1.25s;animation-iteration-count:3;animation-timing-function:linear}
+.flow-1{animation-delay:.35s}.flow-2{animation-delay:.7s}
+.rain-streaks{animation-name:rainfall;animation-duration:1s;animation-iteration-count:4;animation-timing-function:linear}.rain-second{animation-delay:.25s}
+.flood-water{animation-name:flood;transform-box:fill-box;transform-origin:center}.water-level{animation-name:water-level}
+@keyframes decision-match{0%,7%{transform:translateX(28px)}19%,100%{transform:translateX(0)}}
+@keyframes ownership-key{0%,6%,35%,100%{transform:translate(71px,111px) rotate(0deg)}15%,23%{transform:translate(71px,108px) rotate(-12deg)}}
+@keyframes lease-paper{0%,8%,36%,100%{transform:translate(-13px,84px)}17%,25%{transform:translate(-13px,77px)}}
+@keyframes window-light{0%,8%{opacity:.1}20%,28%{opacity:.9}44%,100%{opacity:.35}}
+@keyframes memory-sheet{0%,15%,44%,100%{transform:translate(0,0)}26%,34%{transform:translate(-3px,-7px)}}
+@keyframes clipboard{0%,25%,58%,100%{transform:translate(0,0)}36%,47%,69%,76%{transform:translate(2px,-5px)}}
+@keyframes needle{0%,16%{transform:rotate(-55deg)}34%,42%{transform:rotate(20deg)}56%{transform:rotate(-30deg)}78%,100%{transform:rotate(0deg)}}
+@keyframes slider{0%,28%{transform:translateX(0)}46%{transform:translateX(26px)}57%{transform:translateX(8px)}80%,100%{transform:translateX(36px)}}
+@keyframes river-current{0.00%{transform:translate(116px,33px) rotate(-9.5deg);opacity:0}7.69%{transform:translate(118px,45px) rotate(14.0deg);opacity:1}15.38%{transform:translate(110px,57px) rotate(39.8deg);opacity:1}23.08%{transform:translate(98px,69px) rotate(35.3deg);opacity:1}30.77%{transform:translate(93px,81px) rotate(4.6deg);opacity:1}38.46%{transform:translate(96px,94px) rotate(-35.3deg);opacity:1}46.15%{transform:translate(110px,105px) rotate(-50.8deg);opacity:1}53.85%{transform:translate(123px,116px) rotate(-40.8deg);opacity:1}61.54%{transform:translate(129px,127px) rotate(0.0deg);opacity:1}69.23%{transform:translate(123px,141px) rotate(34.6deg);opacity:1}76.92%{transform:translate(109px,156px) rotate(38.0deg);opacity:1}84.62%{transform:translate(98px,173px) rotate(23.8deg);opacity:1}92.31%{transform:translate(94px,190px) rotate(7.9deg);opacity:1}100.00%{transform:translate(93px,209px) rotate(3.0deg);opacity:0}}
+@keyframes rainfall{0%{opacity:0;transform:translate(5px,-8px)}10%,78%{opacity:.9}100%{opacity:0;transform:translate(-14px,52px)}}
+@keyframes flood{0%,12%{opacity:0;transform:scaleX(.45)}42%,68%{opacity:.45;transform:scaleX(1)}92%,100%{opacity:.18;transform:scaleX(.75)}}
+@keyframes water-level{0%,12%{transform:translateY(3px)}42%,68%{transform:translateY(-12px)}92%,100%{transform:translateY(0)}}
+@keyframes choice-match{0%,26%{opacity:.25}35%,100%{opacity:1}}
+@keyframes audit-record{0%,76%{opacity:0;transform:translateY(-6px)}84%,100%{opacity:1;transform:translateY(0)}}
+@keyframes evidence{0%{transform:translateY(7px)}12%,100%{transform:translateY(0)}}
+@keyframes context{0%,8%{opacity:.45}20%,100%{opacity:1}}
+@keyframes think{0%,16%,100%{transform:rotate(0deg)}30%,53%{transform:rotate(-5deg)}68%{transform:rotate(3deg)}82%{transform:rotate(0deg)}}
+@keyframes offer{0%,16%,50%,100%{transform:rotate(0deg)}28%,40%,67%,76%{transform:rotate(-8deg)}}
+@keyframes blink{0%,37%,43%,100%{transform:scaleY(1)}39%,41%{transform:scaleY(.15)}}
+@keyframes schema{0%,27%{opacity:.2}35%,100%{opacity:1}}
+@keyframes permission{0%,66%{opacity:0}73%,100%{opacity:1}}
+@keyframes budget{0%,72%{opacity:.2}80%,100%{opacity:1}}
+@keyframes reject{0%,34%{opacity:0}39%,48%{opacity:1}54%,100%{opacity:0}}
+@keyframes adapt{0%,80%{opacity:0;transform:translateY(5px)}90%,100%{opacity:1;transform:translateY(0)}}
+@keyframes flight{0%,18%,41%,56%,80%,100%{opacity:0;transform:translate(0,0)}21%,59%{opacity:1;transform:translate(0,0)}35%,73%{opacity:1;transform:translate(42px,0px)}}
+@keyframes return-paper{0%,40%,61%,100%{opacity:0;transform:translate(0,0)}43%{opacity:1;transform:translate(0,0)}47%{opacity:1;transform:translate(0px,26px)}54%{opacity:1;transform:translate(-254px,26px)}58%{opacity:1;transform:translate(-254px,0px)}}
+@keyframes accept{0%,76%{opacity:.25}83%,100%{opacity:1}}
+@keyframes feedback{0%,86%{opacity:.3}96%,100%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.motion{animation:none!important}}
+</style>
+<marker id="arrow-human" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m1 1 7 4-7 4" fill="none" stroke="#83cbbb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="arrow-proposal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m1 1 7 4-7 4" fill="none" stroke="#d3b2d2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="arrow-check" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m1 1 7 4-7 4" fill="none" stroke="#dfc173" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m1 1 7 4-7 4" fill="none" stroke="#f0a496" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="arrow-water" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m1 1 7 4-7 4" fill="none" stroke="#95c7e1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<clipPath id="river-mask" clipPathUnits="userSpaceOnUse"><path d="M109 29c27 25-25 43-21 66s53 23 34 51-40 22-38 61l15 8c-4-29 15-37 30-54s20-38-10-56-24-19-2-40 14-28 6-36Z"/></clipPath>
+<clipPath id="rain-mask" clipPathUnits="userSpaceOnUse"><path d="M96 22h99v60H96Z"/></clipPath>
+</defs>
+<rect width="1200" height="750" class="bg-fill" fill="#171e20"/>
+<text id="name" x="30" y="76" class="ink heading" font-family="Literata,Georgia,&quot;Chiron Sung HK&quot;,&quot;Microsoft JhengHei&quot;,serif" font-size="54" letter-spacing="0" font-weight="500" fill="#e8efeb" color="#e8efeb">邱文昱 Wenyu Chiou</text>
+<text id="heading" x="30" y="124" class="ink" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="34" letter-spacing="0" font-weight="600" fill="#e8efeb" color="#e8efeb">LLM 評估與代理治理</text>
+<text id="subtitle" x="30" y="160" class="muted" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="24" letter-spacing="0"  fill="#b8c8c5" color="#b8c8c5">以行為模擬探索人類—環境互動</text>
+<g id="stage-human" transform="translate(30 218)"><text id="human-label" x="0" y="0" class="human" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="26" letter-spacing="0" font-weight="600" fill="#83cbbb" color="#83cbbb">人類證據</text><g class="human" transform="translate(0 38)" fill="#83cbbb" color="#83cbbb"><path d="M5 70 151 43l25 23v179L27 267 5 248Z" class="human-soft-fill human-stroke" stroke-width="2" fill="#264d47" stroke="#83cbbb"/><path d="m150 45 24 23v178l-22-17Z" class="shade-fill human-stroke" stroke-width="2" fill="#889e9c" stroke="#83cbbb"/>
+    <path id="evidence-tabs" d="M10 20 148 9v20L10 40Zm4-10L139 0v10L14 21Z" class="shade-fill human-stroke" stroke-width="1.5" fill="#889e9c" stroke="#83cbbb"/>
+    <g id="evidence-page" class="evidence-sheet motion"><path d="m18 15 135-11 9 10v147L23 173Z" class="paper-fill human-stroke" stroke-width="2" fill="#d7dfdc" stroke="#83cbbb"/><path d="m143 6 1 17 17-1" class="shade-fill human-stroke" stroke-width="1.5" fill="#889e9c" stroke="#83cbbb"/><g transform="translate(35 45)"><circle cx="10" cy="7" r="7" fill="currentColor"/><path d="M0 29v-5a10 10 0 0 1 20 0v5Z" fill="currentColor"/></g><path d="M75 48h61M75 63h47M36 94h98M36 108h82" class="muted-stroke" stroke-width="3" stroke="#b8c8c5"/><text id="behavior-label" x="34" y="139" class="paper-ink" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="23" letter-spacing="0"  fill="#273638">行為</text></g>
+    <path d="m10 172 145-17v87L27 267 10 251Z" class="human-soft-fill human-stroke" stroke-width="2" fill="#264d47" stroke="#83cbbb"/><text id="choices-label" x="31" y="195" class="human" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="23" letter-spacing="0"  fill="#83cbbb" color="#83cbbb">選擇</text>
+    <g id="human-agent-comparison" stroke-width="1.8">
+      <g transform="translate(32 207) scale(.55)"><g transform="translate(0 0)"><circle cx="10" cy="7" r="7" fill="currentColor"/><path d="M0 29v-5a10 10 0 0 1 20 0v5Z" fill="currentColor"/></g></g>
+      <path d="M31 236h16v13H31Zm8-4v4m-4 5h2m4 0h2m-8 4h8" class="proposal-stroke" fill="none" stroke="#d3b2d2"/>
+      <path d="M62 209h16v14H62Zm56 0h16v14h-16Z" class="human-stroke" fill="none" stroke="#83cbbb"/>
+      <path d="M90 209h16v14H90Z" class="human-fill" fill="#83cbbb"/>
+      <g class="choice-match motion"><path d="M62 235h16v14H62Zm28 0h16v14H90Zm28 0h16v14h-16Z" class="proposal-stroke" fill="none" stroke="#d3b2d2"/><g id="decision-match" class="decision-cursor motion"><path d="M90 235h16v14H90Z" class="proposal-fill" fill="#d3b2d2"/></g></g>
+    </g>
+    <path d="M-1 280H186M7 286h20m20 0h20m20 0h20m20 0h20" class="shade-stroke" stroke-width="2" stroke="#889e9c"/>
+  </g></g>
+<g id="stage-context" transform="translate(244 218)"><text id="context-label" x="0" y="0" class="ink" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="26" letter-spacing="0" font-weight="600" fill="#e8efeb" color="#e8efeb">情境</text><g transform="translate(2 54)">
+    <g id="homeowner-house" transform="translate(0 3)" stroke-width="1.6" stroke-linejoin="round">
+    <path d="m-2 91 49 23 46-25-47-21Z" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/>
+    <path d="M7 43 44 22l40 23v43l-37 21L7 88Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/><path d="m47 59 37-14v43l-37 21Z" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/>
+    <path d="M60 15V3l12 4v19" class="coral-soft-fill edge-stroke" fill="#623f39" stroke="#acc0bc"/><path d="m58 3 7-3 11 5-5 4Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/>
+    <path d="m-1 45 44-38 49 35-45 23Z" class="human-fill edge-stroke" fill="#83cbbb" stroke="#acc0bc"/><path d="m10 46 35-29m-25 35 36-27m-25 32 36-24m-25 29 36-24" class="human-soft-stroke" opacity=".65" stroke="#264d47"/>
+    <path d="m1 49 46 22 42-23" class="edge-stroke" fill="none" stroke="#acc0bc"/>
+    <path d="m14 58 17 8v18l-17-8Zm45 5 15-7v19l-15 7Z" class="water-fill paper-stroke" fill="#95c7e1" stroke="#d7dfdc"/>
+    <path d="m22 62 0 17m-8-13 17 8m35-15v20m-7-7 15-7" class="paper-stroke" stroke="#d7dfdc"/>
+    <path class="owner-window motion" d="m15 60 15 7v7l-15-7Zm45 5 13-6v8l-13 6Z" fill="#dfc173"/>
+    <path id="owner-door" d="m35 81 10 5v21l-10-5Z" class="human-fill edge-stroke" fill="#83cbbb" stroke="#acc0bc"/><circle cx="42" cy="94" r="1.4" class="paper-fill" fill="#d7dfdc"/>
+    <path d="m30 101 16 8-7 4-16-8Zm-7 6 16 8-6 3-16-8Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/>
+    <path d="M7 91 14 94v8l-9-4ZM74 93l10-5v8l-10 5Z" class="land-fill green-stroke" fill="#58735a" stroke="#c0d4a9"/>
+    <g id="homeowner-key" class="ownership-key motion" transform="translate(71 111)"><circle r="6" class="check-soft-fill check-stroke" fill="#544d35" stroke="#dfc173"/><path d="M6 0h15m-5 0v5m5-5v4" class="check-stroke" stroke-width="2.8" fill="none" stroke-linecap="round" stroke="#dfc173"/></g>
+  </g><g id="renter-building" transform="translate(107 0)" stroke-width="1.5" stroke-linejoin="round">
+    <path d="m-5 105 27 14 47-13-25-16Z" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/>
+    <path d="M0 16 44 4l23 15v83l-44 13L0 102Z" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/><path d="m23 31 44-12v83l-44 13Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/>
+    <path d="m-3 15 47-13 27 15-48 15Z" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/><path d="M3 14 43 5l17 10-37 10Z" class="bg-fill edge-stroke" fill="#171e20" stroke="#acc0bc"/>
+    <path d="m33 11 12-3 9 6-12 3Z" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/><path d="M42 9v7m4-8v7" class="edge-stroke" stroke="#acc0bc"/>
+    <path d="M6 33l10 5v12l-10-5Zm25 1 12-3v15l-12 3Zm19-5 11-3v15l-11 3Z" class="water-fill paper-stroke" fill="#95c7e1" stroke="#d7dfdc"/><path d="M37 32v15m18-20v15" class="paper-stroke" stroke="#d7dfdc"/><path d="M6 56l10 5v12l-10-5Zm25 1 12-3v15l-12 3Zm19-5 11-3v15l-11 3Z" class="water-fill paper-stroke" fill="#95c7e1" stroke="#d7dfdc"/><path d="M37 55v15m18-20v15" class="paper-stroke" stroke="#d7dfdc"/><path d="M6 79l10 5v12l-10-5Zm25 1 12-3v15l-12 3Zm19-5 11-3v15l-11 3Z" class="water-fill paper-stroke" fill="#95c7e1" stroke="#d7dfdc"/><path d="M37 78v15m18-20v15" class="paper-stroke" stroke="#d7dfdc"/>
+    <path class="renter-window motion" d="m32 35 10-3v13l-10 3Zm19 18 9-3v13l-9 3Z" fill="#dfc173"/>
+    <path d="M26 58l41-11 5 5-41 12Z" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/><path d="M31 64v-9l41-11v9m-31-5v9m10-12v9m10-12v9" class="edge-stroke" fill="none" stroke="#acc0bc"/><path d="M26 81l41-11 5 5-41 12Z" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/><path d="M31 87v-9l41-11v9m-31-5v9m10-12v9m10-12v9" class="edge-stroke" fill="none" stroke="#acc0bc"/>
+    <path d="m47 94 12-3v13l-12 4Z" class="human-fill edge-stroke" fill="#83cbbb" stroke="#acc0bc"/><path d="m46 108 16-5 5 3-16 5" class="edge-stroke" fill="none" stroke="#acc0bc"/>
+    <g id="renter-lease" class="lease-paper motion" transform="translate(-13 84)"><path d="M0 0h24l6 6v28H0Z" class="paper-fill proposal-stroke" fill="#d7dfdc" stroke="#d3b2d2"/><path d="M24 0v7h6M5 11h18M5 17h13m-12 9 4-4 3 3 5-2" class="proposal-stroke" fill="none" stroke="#d3b2d2"/></g>
+  </g>
+    <text id="owner-label" x="43" y="145" class="ink" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="24" letter-spacing="0" text-anchor="middle" font-weight="600" fill="#e8efeb" color="#e8efeb">屋主</text><text id="renter-label" x="139" y="145" class="ink" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="24" letter-spacing="0" text-anchor="middle" font-weight="600" fill="#e8efeb" color="#e8efeb">租客</text>
+    <path d="M0 169H175" class="shade-stroke" stroke-width="2" stroke="#889e9c"/>
+    <g class="context-scan motion"><path d="m16 188 15 28H1Z" class="check-soft-fill check-stroke" stroke-width="2" fill="#544d35" stroke="#dfc173"/><path d="M16 195v10m0 5v2" class="check-stroke" stroke-width="2.5" stroke="#dfc173"/><text id="risk-label" x="43" y="212" class="ink" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="23" letter-spacing="0"  fill="#e8efeb" color="#e8efeb">風險</text></g>
+    <path d="M2 238h28v21H2Zm6-6h16v6m-9 10h4" class="human-stroke" fill="none" stroke-width="2" stroke="#83cbbb"/><text id="resources-label" x="43" y="258" class="ink" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="23" letter-spacing="0"  fill="#e8efeb" color="#e8efeb">資源</text>
+  </g></g>
+<g id="stage-proposal" transform="translate(453 218)"><text id="proposal-label" x="0" y="0" class="proposal" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="26" letter-spacing="0" font-weight="600" fill="#d3b2d2" color="#d3b2d2">LLM 提案</text><g id="robot" transform="translate(0 37)" stroke-width="2" stroke-linejoin="round">
+    <g id="working-memory"><path d="M0 36h23v33H0Z" class="shade-fill proposal-stroke" fill="#889e9c" stroke="#d3b2d2"/><g id="memory-sheet" class="memory-sheet motion"><path d="M7 43h23v33H7Z" class="paper-fill proposal-stroke" fill="#d7dfdc" stroke="#d3b2d2"/><path d="M12 51h12m-12 7h12m-12 7h7" class="proposal-stroke" fill="none" stroke="#d3b2d2"/></g><path d="M30 62h11" class="proposal-stroke" stroke="#d3b2d2"/></g>
+    <ellipse cx="121" cy="277" rx="115" ry="17" class="shade-fill" fill="#889e9c"/>
+    <path d="m59 229-11 19v23l55 8 23-15-7-28Z" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/><path d="m137 231-9 29 18 16 61-5v-25l-21-19Z" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/>
+    <path d="M60 251v16m13-15v17m13-17v18m66-18v17m15-16v17m16-16v14" class="edge-stroke" stroke="#acc0bc"/>
+    <path d="m78 216 9 28 30-5 7-26m16 1 7 30 29-4 1-26" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/>
+    <path d="m74 143 95-5 30 24-7 65-86 12-39-24-7-48Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/>
+    <path d="m169 138 30 24-7 65-23 6Z" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/>
+    <path d="m91 167 64-6 17 15-5 29-65 8-17-13Z" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/>
+    <path id="wc-monogram" d="m99 177 6 23 9-18 8 17 6-24m25 1c-19-8-27 27-4 23" class="human-stroke" fill="none" stroke-width="3.2" stroke-linecap="round" stroke="#83cbbb"/>
+    <circle cx="64" cy="162" r="20" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/><circle cx="64" cy="162" r="10" class="human-soft-fill edge-stroke" fill="#264d47" stroke="#acc0bc"/>
+    <path d="M55 181 36 206 57 232l20-15-17-15 11-15" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/><path d="m49 228 14 12 21-8-5-17-9-3-3 14-8-5Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/>
+    <circle cx="192" cy="161" r="15" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/>
+    <g class="robot-arm motion"><path d="m199 166 30-13 14 11-32 30-18-12Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/><path d="m230 151 20-7 10 10-3 13-23 3Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/></g>
+    <path d="M101 128v18l49-3v-20" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/>
+    <g id="robot-head" class="robot-head motion">
+      <path d="m54 25 108-12 39 26v94l-120 18-34-24V45Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/>
+      <path d="m162 13 39 26v94l-27-13V32Z" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/>
+      <path d="m66 34 96-10 15 13-99 12Z" class="shade-fill" fill="#889e9c"/>
+      <path d="M65 64q0-10 10-12l80-9q12-1 12 11v54q0 11-11 13l-79 11q-12 1-12-10Z" class="screen-fill edge-stroke" fill="#233435" stroke="#acc0bc"/>
+      <g class="robot-eyes motion"><path d="M84 82q8-9 16-2m32-7q8-9 16-2" class="eye-stroke" stroke-width="6" stroke-linecap="round" fill="none" stroke="#a7e0cb"/></g>
+      <path d="M106 107q12 6 22-3" class="eye-stroke" stroke-width="2.5" fill="none" stroke-linecap="round" stroke="#a7e0cb"/>
+      <ellipse cx="47" cy="83" rx="11" ry="22" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/><ellipse cx="47" cy="83" rx="5" ry="12" class="human-soft-fill edge-stroke" fill="#264d47" stroke="#acc0bc"/>
+      <path d="M85 21 81 3" class="edge-stroke" stroke-width="4" stroke="#acc0bc"/><circle cx="80" cy="0" r="6" class="human-fill edge-stroke" fill="#83cbbb" stroke="#acc0bc"/>
+      <path d="M184 56v43m7-39v33" class="edge-stroke" stroke="#acc0bc"/>
+      <circle cx="59" cy="40" r="2.3" class="edge-fill" fill="#acc0bc"/><circle cx="62" cy="124" r="2.3" class="edge-fill" fill="#acc0bc"/>
+    </g>
+    <g transform="translate(198 179) rotate(8)"><g id="proposal-sheet" class="proposal-clipboard motion">
+      <path d="M0 0h64l9 10v101H0Z" class="proposal-soft-fill proposal-stroke" fill="#493b4d" stroke="#d3b2d2"/><path d="M6 7h53l7 7v89H6Z" class="paper-fill proposal-stroke" fill="#d7dfdc" stroke="#d3b2d2"/><path d="M19-4h30v13H19Z" class="metal-fill proposal-stroke" fill="#728988" stroke="#d3b2d2"/>
+      <path d="m16 39 12-12 12 12m-20-3v15h15V35M17 66h38M17 77h27M17 88h34" class="proposal-stroke" fill="none" stroke-width="2.5" stroke="#d3b2d2"/>
+    </g></g>
+  </g></g>
+<g id="stage-validation" transform="translate(742 218)"><text id="validation-label" x="0" y="0" class="check" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="26" letter-spacing="0" font-weight="600" fill="#dfc173" color="#dfc173">驗證</text><g transform="translate(0 44)" stroke-linejoin="round" stroke-width="2">
+    <path d="M7 25 174 14l21 21v225l-168 15L7 258Z" class="check-soft-fill check-stroke" fill="#544d35" stroke="#dfc173"/>
+    <path d="m174 14 21 21v225l-21-18Z" class="metal-fill check-stroke" fill="#728988" stroke="#dfc173"/>
+    <path d="M21 46h149v181H21Z" class="bg-fill check-stroke" fill="#171e20" stroke="#dfc173"/>
+    <path d="M21 105h149M21 165h149" class="shade-stroke" stroke="#889e9c"/>
+    <path d="M41 25v-8a22 22 0 0 1 44 0v8" class="paper-fill check-stroke" fill="#d7dfdc" stroke="#dfc173"/><path d="M47 15h3m3-11 2 3m8-8v4m10 1-2 3m5 8h3" class="check-stroke" stroke="#dfc173"/><g transform="translate(63 17)"><path id="validation-needle" class="check-stroke validation-needle motion" d="M0 0 10-14" stroke-width="3" stroke="#dfc173"/></g>
+    <path d="M128 22V9h25v12m-29-13h33v-9h-33Z" class="metal-fill check-stroke" fill="#728988" stroke="#dfc173"/>
+    <text id="schema-label" x="32" y="82" class="ink" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="22" letter-spacing="0"  fill="#e8efeb" color="#e8efeb">結構</text><text id="permission-label" x="32" y="143" class="ink" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="22" letter-spacing="0"  fill="#e8efeb" color="#e8efeb">權限</text><text id="budget-label" x="32" y="203" class="ink" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="22" letter-spacing="0"  fill="#e8efeb" color="#e8efeb">預算</text>
+    <g id="schema-check" class="human check-schema motion" transform="translate(142 75)" fill="#83cbbb" color="#83cbbb"><path d="m0 7 6 6 13-16" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></g><g id="permission-check" class="human check-permission motion" transform="translate(142 136)" fill="#83cbbb" color="#83cbbb"><path d="m0 7 6 6 13-16" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></g><g id="budget-check" class="human check-budget motion" transform="translate(142 196)" fill="#83cbbb" color="#83cbbb"><path d="m0 7 6 6 13-16" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="rejected-mark" class="coral rejection motion" opacity="0" fill="#f0a496" color="#f0a496"><path d="m142 132 17 17m0-17-17 17" stroke="currentColor" stroke-width="4"/></g>
+    <path d="M37 244h77" class="edge-stroke" stroke-width="6" stroke-linecap="round" stroke="#acc0bc"/><path id="validation-slider" class="check-stroke validation-slider motion" d="M46 244h20" stroke-width="4" stroke-linecap="round" stroke="#dfc173"/>
+    <path d="M182 47v23m0 9v23m0 9v23" class="edge-stroke" stroke="#acc0bc"/>
+    <circle cx="16" cy="37" r="2.3" class="edge-fill" fill="#acc0bc"/><circle cx="164" cy="28" r="2.3" class="edge-fill" fill="#acc0bc"/><circle cx="18" cy="252" r="2.3" class="edge-fill" fill="#acc0bc"/><circle cx="163" cy="247" r="2.3" class="edge-fill" fill="#acc0bc"/>
+    <circle cx="151" cy="245" r="6" class="human-fill" fill="#83cbbb"/>
+    <g id="audit-trail" class="audit-record motion">
+      <path d="M48 266h100v44l-10-5-10 5-10-5-10 5-10-5-10 5-10-5-10 5-10-5-10 5Z" class="paper-fill check-stroke" fill="#d7dfdc" stroke="#dfc173"/>
+      <path d="M68 283h59" class="human-stroke" stroke="#83cbbb"/>
+      <circle cx="68" cy="283" r="5" class="human-soft-fill human-stroke" fill="#264d47" stroke="#83cbbb"/><circle cx="98" cy="283" r="5" class="human-soft-fill human-stroke" fill="#264d47" stroke="#83cbbb"/><circle cx="127" cy="283" r="5" class="human-soft-fill human-stroke" fill="#264d47" stroke="#83cbbb"/>
+      <path d="M62 298h11m19 0h11m19 0h11" class="edge-stroke" stroke-linecap="round" stroke="#acc0bc"/>
+    </g>
+  </g></g>
+<g id="stage-consequence" transform="translate(970 218)"><text id="consequence-label" x="0" y="0" class="water" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="26" letter-spacing="0" font-weight="600" fill="#95c7e1" color="#95c7e1">後果</text><g id="terrain" transform="translate(0 48)" stroke-linejoin="round" stroke-width="1.6">
+    <path d="m4 178 136 53 72-131v43L140 273 4 219Z" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/>
+    <path id="soil-layers" d="m5 193 135 54 71-131M5 208l135 54 71-131" class="edge-stroke" fill="none" stroke="#acc0bc"/>
+    <path d="m4 178 64-148 74-7 70 77-72 131Z" class="land-fill green-stroke" fill="#58735a" stroke="#c0d4a9"/>
+    <path d="m17 148 42-98 16-9 31 9-38 57-22 50Z" class="hill-fill" fill="#75936c"/>
+    <path d="M48 100 68 53l20-8M27 155l23-23 21-10m79-50 21 29-12 17M140 201l17-14 16-1" class="green-stroke" fill="none" stroke="#c0d4a9"/>
+    <path id="flood-extent" class="water-soft-fill water-stroke flood-water motion" opacity=".18" d="M99 66c-25 17-17 36 2 49s18 24 4 40-29 30-28 46l24 12c1-25 30-45 42-67s-12-32-25-45-8-23-5-29Z" fill="#397999" stroke="#95c7e1"/>
+    <path d="M109 29c27 25-25 43-21 66s53 23 34 51-40 22-38 61l15 8c-4-29 15-37 30-54s20-38-10-56-24-19-2-40 14-28 6-36Z" class="water-soft-fill water-stroke" fill="#397999" stroke="#95c7e1"/>
+    <path d="M114 33c17 20-27 43-19 64s54 24 27 52-27 29-29 60" class="paper-stroke" fill="none" stroke-width="2.6" stroke="#d7dfdc"/>
+    <path id="tributaries" d="M82 61q-5 15 12 23m-22-10 10 4m70-32q-23-4-28 16m-5-18 8 5" class="water-stroke" fill="none" stroke-width="2.4" stroke="#95c7e1"/>
+    <g id="river-currents" clip-path="url(#river-mask)"><g id="river-current-0" class="river-current flow-0 motion" transform="translate(98 69)"><path d="m-3-5 3 5 3-5" class="paper-stroke" stroke-width="2.6" fill="none" stroke-linecap="round" stroke="#d7dfdc"/></g><g id="river-current-1" class="river-current flow-1 motion" transform="translate(110 105)"><path d="m-3-5 3 5 3-5" class="paper-stroke" stroke-width="2.6" fill="none" stroke-linecap="round" stroke="#d7dfdc"/></g><g id="river-current-2" class="river-current flow-2 motion" transform="translate(123 141)"><path d="m-3-5 3 5 3-5" class="paper-stroke" stroke-width="2.6" fill="none" stroke-linecap="round" stroke="#d7dfdc"/></g></g>
+    <g id="rainfall"><path d="M110 17c-13-1-12-19 0-20 5-17 29-17 35-4 16-10 30-1 29 10 19-2 23 16 9 19Z" class="bg-fill water-stroke" fill="#171e20" stroke="#95c7e1"/><path d="M117 9q4-9 16-7m21 5q9-7 16 3" class="shade-stroke" fill="none" stroke="#889e9c"/><g clip-path="url(#rain-mask)"><path id="rain-front" d="m116 25-4 9m24-9-4 9m24-9-4 9m24-9-4 9" class="water-stroke rain-streaks motion" stroke-width="2.5" stroke-linecap="round" stroke="#95c7e1"/><path id="rain-back" d="m127 18-3 7m24-7-3 7m24-7-3 7" class="water-stroke rain-streaks rain-second motion" stroke-width="2" stroke-linecap="round" stroke="#95c7e1"/></g></g>
+    <path id="household-network" d="M77 125q29-29 69-16M81 140q15 37 47 44" class="human-stroke" stroke-dasharray="3 4" fill="none" stroke="#83cbbb"/>
+    <g transform="translate(127 87) scale(0.66)" stroke-linejoin="round" stroke-width="1.8"><path d="m0 25 29-17 32 19v42L30 87 0 69Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/><path d="m30 44 31-17v42L30 87Z" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/><path d="m-6 29 35-32 39 29-37 21Z" class="water-fill edge-stroke" fill="#95c7e1" stroke="#acc0bc"/><path d="m5 30 25-24m-13 31 25-23m-13 30 26-22" class="paper-stroke" opacity=".35" stroke="#d7dfdc"/><path d="m10 46 10 6v14L10 60Zm33 7 9-5v15l-9 5Z" class="water-fill" fill="#95c7e1"/><path d="m15 49 0 14m-5-10 10 6m28-7v15m-5-4 9-5" class="paper-stroke" stroke-width="1.2" stroke="#d7dfdc"/><path d="m9 65 10 6v10L9 75Z" class="edge-fill" fill="#acc0bc"/><path d="m6 76 15 8m-18-4 18 10" class="edge-stroke" fill="none" stroke="#acc0bc"/></g><g transform="translate(56 107) scale(0.56)" stroke-linejoin="round" stroke-width="1.8"><path d="m0 25 29-17 32 19v42L30 87 0 69Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/><path d="m30 44 31-17v42L30 87Z" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/><path d="m-6 29 35-32 39 29-37 21Z" class="human-fill edge-stroke" fill="#83cbbb" stroke="#acc0bc"/><path d="m5 30 25-24m-13 31 25-23m-13 30 26-22" class="paper-stroke" opacity=".35" stroke="#d7dfdc"/><path d="m10 46 10 6v14L10 60Zm33 7 9-5v15l-9 5Z" class="water-fill" fill="#95c7e1"/><path d="m15 49 0 14m-5-10 10 6m28-7v15m-5-4 9-5" class="paper-stroke" stroke-width="1.2" stroke="#d7dfdc"/><path d="m9 65 10 6v10L9 75Z" class="edge-fill" fill="#acc0bc"/><path d="m6 76 15 8m-18-4 18 10" class="edge-stroke" fill="none" stroke="#acc0bc"/></g><g transform="translate(116 164) scale(0.49)" stroke-linejoin="round" stroke-width="1.8"><path d="m0 25 29-17 32 19v42L30 87 0 69Z" class="paper-fill edge-stroke" fill="#d7dfdc" stroke="#acc0bc"/><path d="m30 44 31-17v42L30 87Z" class="shade-fill edge-stroke" fill="#889e9c" stroke="#acc0bc"/><path d="m-6 29 35-32 39 29-37 21Z" class="metal-fill edge-stroke" fill="#728988" stroke="#acc0bc"/><path d="m5 30 25-24m-13 31 25-23m-13 30 26-22" class="paper-stroke" opacity=".35" stroke="#d7dfdc"/><path d="m10 46 10 6v14L10 60Zm33 7 9-5v15l-9 5Z" class="water-fill" fill="#95c7e1"/><path d="m15 49 0 14m-5-10 10 6m28-7v15m-5-4 9-5" class="paper-stroke" stroke-width="1.2" stroke="#d7dfdc"/><path d="m9 65 10 6v10L9 75Z" class="edge-fill" fill="#acc0bc"/><path d="m6 76 15 8m-18-4 18 10" class="edge-stroke" fill="none" stroke="#acc0bc"/></g>
+    <g class="adaptation motion"><path d="m62 144 28 11-3 15-30-12Z" class="human-soft-fill human-stroke" fill="#264d47" stroke="#83cbbb"/><path d="m65 143 8-4 6 7 8-3 9 8" class="human-stroke" fill="none" stroke-width="3" stroke="#83cbbb"/></g>
+    <g id="stream-gauge"><path d="M78 166v39m-8-30h8m-5 8h5m-8 8h8m-5 8h5" class="paper-stroke" stroke-width="3.5" stroke="#d7dfdc"/><path d="M78 166v39m-8-30h8m-5 8h5m-8 8h8m-5 8h5" class="edge-stroke" stroke="#acc0bc"/><path id="water-level" class="coral-fill water-level motion" d="m81 188 9-4v8Z" fill="#f0a496"/></g>
+    <g transform="translate(74 29)"><path d="M0 7v13" class="edge-stroke" stroke-width="3" stroke="#acc0bc"/><path d="M-8 10-5-3 0-12 7-2 10 10 1 14Z" class="hill-fill green-stroke" fill="#75936c" stroke="#c0d4a9"/></g><g transform="translate(180 108)"><path d="M0 7v13" class="edge-stroke" stroke-width="3" stroke="#acc0bc"/><path d="M-8 10-5-3 0-12 7-2 10 10 1 14Z" class="hill-fill green-stroke" fill="#75936c" stroke="#c0d4a9"/></g><g transform="translate(30 132)"><path d="M0 7v13" class="edge-stroke" stroke-width="3" stroke="#acc0bc"/><path d="M-8 10-5-3 0-12 7-2 10 10 1 14Z" class="hill-fill green-stroke" fill="#75936c" stroke="#c0d4a9"/></g>
+  </g><text id="consequence-caption" x="108" y="360" class="water" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="24" letter-spacing="0" text-anchor="middle" fill="#95c7e1" color="#95c7e1">調適</text></g>
+<path id="evidence-route" d="M214 360h20" fill="none" class="human-stroke " stroke-width="2.5" marker-end="url(#arrow-human)" stroke="#83cbbb"/><path id="context-route" d="M426 360h19" fill="none" class="human-stroke " stroke-width="2.5" marker-end="url(#arrow-human)" stroke="#83cbbb"/><path id="proposal-route" d="M714 360h19" fill="none" class="proposal-stroke " stroke-width="2.5" marker-end="url(#arrow-proposal)" stroke="#d3b2d2"/><path id="passed-route" d="M944 360h17" fill="none" class="check-stroke passed-highlight motion" stroke-width="2.5" marker-end="url(#arrow-check)" stroke="#dfc173"/>
+<path id="repair-route" d="M832 596v26H578v-26" class="coral-stroke" stroke-width="2.5" stroke-dasharray="7 6" fill="none" marker-end="url(#arrow-coral)" stroke="#f0a496"/>
+<path id="feedback-route" d="M1101 600v75H322V584" class="water-stroke feedback-highlight motion" stroke-width="2.5" stroke-dasharray="7 6" fill="none" marker-end="url(#arrow-water)" stroke="#95c7e1"/>
+<text id="repair-label" x="705" y="609" class="coral" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="24" letter-spacing="0" text-anchor="middle" fill="#f0a496" color="#f0a496">修復</text>
+<text id="feedback-label" x="712" y="660" class="water" font-family="&quot;Atkinson Hyperlegible Next&quot;,&quot;Segoe UI&quot;,&quot;Chiron Hei HK&quot;,&quot;Microsoft JhengHei&quot;,sans-serif" font-size="24" letter-spacing="0" text-anchor="middle" fill="#95c7e1" color="#95c7e1">環境回饋</text>
+<g transform="translate(703 340)"><g class="paper-flight motion" opacity="0"><path d="M0 0h18l5 5v24H0Z" class="paper-fill proposal-stroke" stroke-width="2" fill="#d7dfdc" stroke="#d3b2d2"/><path d="M5 10h12M5 16h10M5 22h8" class="proposal-stroke" stroke-width="2" stroke="#d3b2d2"/></g></g>
+<g transform="translate(832 596)"><g class="repair-flight motion" opacity="0"><path d="M-8-12H8v24H-8Z" class="paper-fill coral-stroke" stroke-width="2" fill="#d7dfdc" stroke="#f0a496"/><path d="m-3-4 6 8m0-8-6 8" class="coral-stroke" stroke-width="2" stroke="#f0a496"/></g></g>
+</svg>

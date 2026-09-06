@@ -8,8 +8,13 @@
 <p align="center"><sub><a href="README.md">English</a> · <b>繁體中文</b></sub></p>
 
 <div align="center">
-  <a href="https://wenyuchiou.github.io/">
-    <img src="assets/research-loop.svg" alt="受治理的 LLM 代理人 × 人—環境系統：真實家戶行為錨定代理人；代理人感知、推理、經 harness 驗證、行動；代理人彼此社交互動；並與活的水文環境共同演化。" width="100%"/>
+  <a href="https://wenyuchiou.github.io/zh/#decision-provenance">
+    <picture>
+      <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/research-loop-zh-TW-dark-static.svg"/>
+      <source media="(prefers-reduced-motion: reduce)" srcset="assets/research-loop-zh-TW-static.svg"/>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/research-loop-zh-TW-dark.svg"/>
+      <img src="assets/research-loop-zh-TW.svg" alt="邱文昱 Wenyu Chiou：LLM 評估、代理治理與行為模擬。人類與代理選擇對照、工作記憶、獨立驗證與稽核紀錄，串起決策與人類—環境回饋。" width="100%"/>
+    </picture>
   </a>
 </div>
 

@@ -8,8 +8,13 @@
 <p align="center"><sub><b>English</b> · <a href="README.zh-TW.md">繁體中文</a></sub></p>
 
 <div align="center">
-  <a href="https://wenyuchiou.github.io/">
-    <img src="assets/research-loop.svg" alt="Governed LLM agents × human–environment systems: real household behaviour grounds the agent; the agent perceives, reasons, is verified by a harness, and acts; agents interact socially; and the agent co-evolves with a living water environment." width="100%"/>
+  <a href="https://wenyuchiou.github.io/#decision-provenance">
+    <picture>
+      <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/research-loop-dark-static.svg"/>
+      <source media="(prefers-reduced-motion: reduce)" srcset="assets/research-loop-static.svg"/>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/research-loop-dark.svg"/>
+      <img src="assets/research-loop.svg" alt="Wenyu Chiou: LLM evaluation, agent governance and behavioral simulation. Human and agent choice comparison, working memory, independent validation and an audit trail connect decisions to human-environment feedback." width="100%"/>
+    </picture>
   </a>
 </div>
 
