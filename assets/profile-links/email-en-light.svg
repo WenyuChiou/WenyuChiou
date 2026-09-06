@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="92" viewBox="0 0 136 92" role="img" aria-labelledby="title" lang="en">
+<!-- ISC License
+
+Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. -->
+<title id="title">Email</title>
+<g transform="translate(44 6)"><rect x="4" y="5" width="44" height="44" rx="8" fill="#e7b3a4"/><rect width="44" height="44" rx="8" fill="#fce8e3" stroke="#a04434"/><path d="M9 4h25" stroke="#a04434" stroke-opacity=".2" stroke-linecap="round"/><g transform="translate(10 10)" fill="none" stroke="#a04434" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></g></g>
+<text x="68" y="79" text-anchor="middle" fill="#24292f" font-family="'Atkinson Hyperlegible Next', 'Segoe UI', 'Microsoft JhengHei', sans-serif" font-size="16" font-weight="600">Email</text>
+</svg>

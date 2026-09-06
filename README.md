@@ -18,28 +18,25 @@
   </a>
 </div>
 
-<!-- TAGLINE:START — animated; edit the lines= segments (separated by ;) -->
+<!-- HIGHLIGHTS:START -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=0d9488&center=true&vCenter=true&width=680&height=42&lines=Human-grounded+LLM+evaluation+%26+governed+agents;Behavioral+simulation+for+human-environment+systems" alt="Human-grounded LLM evaluation and governed agents · Behavioral simulation for human-environment systems" />
+  <strong>Open to Summer 2027 AI internships</strong><br/>
+  Lehigh University · Bethlehem, PA · Ph.D. expected Dec 2027
 </p>
-<!-- TAGLINE:END -->
 
-<!-- HIGHLIGHTS:START — contact links + live star count (third-party-verified, auto-updates) -->
 <p align="center">
-  <a href="https://wenyuchiou.github.io/"><img src="https://img.shields.io/badge/Website-wenyuchiou.github.io-2dd4bf?style=flat-square&logo=githubpages&logoColor=white&labelColor=0d1117" alt="Website"/></a>
-  <a href="https://www.linkedin.com/in/wenyu-chiou"><img src="https://img.shields.io/badge/LinkedIn-wenyu--chiou-0a66c2?style=flat-square&labelColor=0d1117" alt="LinkedIn"/></a>
-  <a href="https://scholar.google.com/citations?user=vSQ3zT4AAAAJ&amp;hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285f4?style=flat-square&amp;logo=googlescholar&amp;logoColor=white&amp;labelColor=0d1117" alt="Google Scholar"/></a>
-  <a href="mailto:wec324@lehigh.edu"><img src="https://img.shields.io/badge/Email-wec324%40lehigh.edu-f59e0b?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
-  <a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
+  <a href="https://wenyuchiou.github.io/hire/" title="Recruiter brief"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/hire-en-dark.svg"/><img src="assets/profile-links/hire-en-light.svg" width="136" height="92" alt="Recruiter brief"/></picture></a>
+  <a href="https://wenyuchiou.github.io/assets/Wenyu_Chiou_Industry_Resume_EN.pdf" title="Resume (English PDF)"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/resume-en-dark.svg"/><img src="assets/profile-links/resume-en-light.svg" width="136" height="92" alt="Resume (English PDF)"/></picture></a>
+  <a href="mailto:wec324@lehigh.edu" title="Email Wenyu Chiou"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/email-en-dark.svg"/><img src="assets/profile-links/email-en-light.svg" width="136" height="92" alt="Email Wenyu Chiou"/></picture></a>
+  <a href="https://www.linkedin.com/in/wenyu-chiou" title="LinkedIn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/linkedin-en-dark.svg"/><img src="assets/profile-links/linkedin-en-light.svg" width="136" height="92" alt="LinkedIn"/></picture></a>
+</p>
+
+<p align="center">
+  <a href="https://wenyuchiou.github.io/" title="Portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/portfolio-en-dark.svg"/><img src="assets/profile-links/portfolio-en-light.svg" width="136" height="70" alt="Portfolio"/></picture></a>
+  <a href="https://scholar.google.com/citations?user=vSQ3zT4AAAAJ&amp;hl=en" title="Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/scholar-en-dark.svg"/><img src="assets/profile-links/scholar-en-light.svg" width="136" height="70" alt="Google Scholar"/></picture></a>
+  <a href="https://www.threads.com/@wenyu_chiou" title="Threads"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/threads-en-dark.svg"/><img src="assets/profile-links/threads-en-light.svg" width="136" height="70" alt="Threads"/></picture></a>
 </p>
 <!-- HIGHLIGHTS:END -->
-
-<p align="center">
-  <img src="https://img.shields.io/badge/From-Taiwan-2dd4bf?style=flat-square&labelColor=0d1117" alt="From Taiwan"/>
-  <img src="https://img.shields.io/badge/Based%20in-Bethlehem,%20PA-2dd4bf?style=flat-square&labelColor=0d1117" alt="Based in Bethlehem, PA"/>
-  <img src="https://img.shields.io/badge/PhD-Expected%20Dec%202027-2dd4bf?style=flat-square&labelColor=0d1117" alt="PhD expected December 2027"/>
-  <img src="https://img.shields.io/badge/Open%20to-Summer%202027%20AI%20internship-f59e0b?style=flat-square&labelColor=0d1117" alt="Open to Summer 2027 AI internship"/>
-</p>
 
 <p align="center">
   <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
@@ -53,6 +50,8 @@
 &nbsp;
 
 <img src="https://img.shields.io/badge/ABOUT-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="About"/>
+
+Originally from Taiwan, now based in Bethlehem, Pennsylvania.
 
 I’m a PhD researcher in Civil and Environmental Engineering at Lehigh University. My work sits at the intersection of behavioral science, LLM-based simulation, and quantitative evaluation. A central part of my research is understanding and modeling human decision-making. I evaluate whether LLMs capture meaningful decision processes, not only whether their answers sound plausible, but whether their perceptions and constraints relate coherently to the choices they make. I also work with agent-based modeling, which is widely used to simulate how individual decisions accumulate over time and interact with larger social, financial, and physical systems. My current direction is to move from traditional rule-based agents toward LLM-driven agents that can respond to richer information, memory, and changing conditions. More broadly, I’m interested in how human behavior can be simulated in a way that remains empirically grounded while interacting with and changing the external world.
 
@@ -125,6 +124,8 @@ Selected merged pull requests:
 &nbsp;
 
 <img src="https://img.shields.io/badge/LEARNING-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Learning materials"/>
+
+<a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
 
 | | |
 |---|---|
