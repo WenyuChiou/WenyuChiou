@@ -19,22 +19,28 @@
 </div>
 
 <!-- HIGHLIGHTS:START -->
-<p align="center">
+<p>
   <strong>Open to Summer 2027 AI internships</strong><br/>
   Lehigh University · Bethlehem, PA · Ph.D. expected Dec 2027
 </p>
 
-<p align="center">
-  <a href="https://wenyuchiou.github.io/hire/" title="Recruiter brief"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/hire-en-dark.svg"/><img src="assets/profile-links/hire-en-light.svg" width="136" height="92" alt="Recruiter brief"/></picture></a>
-  <a href="https://wenyuchiou.github.io/assets/Wenyu_Chiou_Industry_Resume_EN.pdf" title="Resume (English PDF)"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/resume-en-dark.svg"/><img src="assets/profile-links/resume-en-light.svg" width="136" height="92" alt="Resume (English PDF)"/></picture></a>
-  <a href="mailto:wec324@lehigh.edu" title="Email Wenyu Chiou"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/email-en-dark.svg"/><img src="assets/profile-links/email-en-light.svg" width="136" height="92" alt="Email Wenyu Chiou"/></picture></a>
-  <a href="https://www.linkedin.com/in/wenyu-chiou" title="LinkedIn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/linkedin-en-dark.svg"/><img src="assets/profile-links/linkedin-en-light.svg" width="136" height="92" alt="LinkedIn"/></picture></a>
+<h3>Hiring &amp; resume</h3>
+<p>
+  <a href="https://wenyuchiou.github.io/hire/" title="Recruiter brief"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/hire-en-dark.svg?v=grouped-1"/><img src="assets/profile-links/hire-en-light.svg?v=grouped-1" width="180" height="44" alt="Recruiter brief"/></picture></a>
+  <a href="https://wenyuchiou.github.io/assets/Wenyu_Chiou_Industry_Resume_EN.pdf" title="Resume (English PDF)"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/resume-en-dark.svg?v=grouped-1"/><img src="assets/profile-links/resume-en-light.svg?v=grouped-1" width="180" height="44" alt="Resume (English PDF)"/></picture></a>
 </p>
 
-<p align="center">
-  <a href="https://wenyuchiou.github.io/" title="Portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/portfolio-en-dark.svg"/><img src="assets/profile-links/portfolio-en-light.svg" width="136" height="70" alt="Portfolio"/></picture></a>
-  <a href="https://scholar.google.com/citations?user=vSQ3zT4AAAAJ&amp;hl=en" title="Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/scholar-en-dark.svg"/><img src="assets/profile-links/scholar-en-light.svg" width="136" height="70" alt="Google Scholar"/></picture></a>
-  <a href="https://www.threads.com/@wenyu_chiou" title="Threads"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/threads-en-dark.svg"/><img src="assets/profile-links/threads-en-light.svg" width="136" height="70" alt="Threads"/></picture></a>
+<h3>Research &amp; work</h3>
+<p>
+  <a href="https://wenyuchiou.github.io/" title="Portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/portfolio-en-dark.svg?v=grouped-1"/><img src="assets/profile-links/portfolio-en-light.svg?v=grouped-1" width="180" height="44" alt="Portfolio"/></picture></a>
+  <a href="https://scholar.google.com/citations?user=vSQ3zT4AAAAJ&amp;hl=en" title="Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/scholar-en-dark.svg?v=grouped-1"/><img src="assets/profile-links/scholar-en-light.svg?v=grouped-1" width="180" height="44" alt="Google Scholar"/></picture></a>
+</p>
+
+<h3>Contact &amp; social</h3>
+<p>
+  <a href="mailto:wec324@lehigh.edu" title="Email Wenyu Chiou"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/email-en-dark.svg?v=grouped-1"/><img src="assets/profile-links/email-en-light.svg?v=grouped-1" width="180" height="44" alt="Email Wenyu Chiou"/></picture></a>
+  <a href="https://www.linkedin.com/in/wenyu-chiou" title="LinkedIn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/linkedin-en-dark.svg?v=grouped-1"/><img src="assets/profile-links/linkedin-en-light.svg?v=grouped-1" width="180" height="44" alt="LinkedIn"/></picture></a>
+  <a href="https://www.threads.com/@wenyu_chiou" title="Threads"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/threads-en-dark.svg?v=grouped-1"/><img src="assets/profile-links/threads-en-light.svg?v=grouped-1" width="180" height="44" alt="Threads"/></picture></a>
 </p>
 <!-- HIGHLIGHTS:END -->
 
