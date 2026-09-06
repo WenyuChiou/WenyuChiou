@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" viewBox="0 0 60 80" role="img" aria-labelledby="title" lang="en">
+<!-- ISC License
+
+Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. -->
+<title id="title">LinkedIn</title>
+<style>:root{--face:#e6effb;--depth:#b4c9e8;--stroke:#225c9a;--ink:#24292f}@media(prefers-color-scheme:dark){:root{--face:#25364e;--depth:#172539;--stroke:#a2c6f2;--ink:#f0f3f6}}</style>
+<g transform="translate(2 5)"><rect x="2" y="3" width="32" height="32" rx="6" fill="var(--depth)"/><rect width="32" height="32" rx="6" fill="var(--face)" stroke="var(--stroke)"/><g transform="translate(6 6) scale(.833333)" fill="none" stroke="var(--stroke)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></g></g>
+<text x="2" y="56" fill="var(--ink)" font-family="'Atkinson Hyperlegible Next', 'Segoe UI', 'Microsoft JhengHei', sans-serif" font-size="14" font-weight="500">LinkedIn</text>
+</svg>
