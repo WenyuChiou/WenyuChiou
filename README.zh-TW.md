@@ -24,24 +24,28 @@
   Lehigh University · 美國 Bethlehem, PA · 預計 2027 年 12 月博士畢業
 </p>
 
-<h3>招聘與履歷</h3>
-<p>
-  <a href="https://wenyuchiou.github.io/zh/hire/" title="招聘摘要"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/hire-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/hire-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="招聘摘要"/></picture></a>
-  <a href="https://wenyuchiou.github.io/assets/Wenyu_Chiou_Industry_Resume_EN.pdf" title="英文業界履歷（PDF）"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/resume-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/resume-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="英文業界履歷（PDF）"/></picture></a>
-</p>
-
-<h3>研究與作品</h3>
-<p>
-  <a href="https://wenyuchiou.github.io/zh/" title="個人網站"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/portfolio-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/portfolio-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="個人網站"/></picture></a>
-  <a href="https://scholar.google.com/citations?user=vSQ3zT4AAAAJ&amp;hl=zh-TW" title="Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/scholar-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/scholar-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="Google Scholar"/></picture></a>
-</p>
-
-<h3>聯絡與社群</h3>
-<p>
-  <a href="mailto:wec324@lehigh.edu" title="寄信給邱文昱"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/email-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/email-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="寄信給邱文昱"/></picture></a>
-  <a href="https://www.linkedin.com/in/wenyu-chiou" title="LinkedIn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/linkedin-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/linkedin-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="LinkedIn"/></picture></a>
-  <a href="https://www.threads.com/@wenyu_chiou" title="Threads"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/threads-zh-TW-dark.svg?v=grouped-1"/><img src="assets/profile-links/threads-zh-TW-light.svg?v=grouped-1" width="180" height="44" alt="Threads"/></picture></a>
-</p>
+<table width="100%">
+<thead><tr>
+  <th width="280" align="left" scope="col">招聘履歷</th>
+  <th width="280" align="left" scope="col">研究作品</th>
+  <th width="280" align="left" scope="col">聯絡社群</th>
+</tr></thead>
+<tbody><tr>
+  <td width="280" align="left" valign="top">
+    <p><a href="https://wenyuchiou.github.io/zh/hire/" title="招聘摘要"><picture><source media="(max-width: 1199px)" srcset="assets/profile-links/hire-zh-TW-compact.svg?v=columns-3"/><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/hire-zh-TW-dark.svg?v=columns-3"/><img src="assets/profile-links/hire-zh-TW-light.svg?v=columns-3" alt="招聘摘要"/></picture></a></p>
+    <p><a href="https://wenyuchiou.github.io/assets/Wenyu_Chiou_Industry_Resume_EN.pdf" title="英文業界履歷（PDF）"><picture><source media="(max-width: 1199px)" srcset="assets/profile-links/resume-zh-TW-compact.svg?v=columns-3"/><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/resume-zh-TW-dark.svg?v=columns-3"/><img src="assets/profile-links/resume-zh-TW-light.svg?v=columns-3" alt="英文業界履歷（PDF）"/></picture></a></p>
+  </td>
+  <td width="280" align="left" valign="top">
+    <p><a href="https://wenyuchiou.github.io/zh/" title="個人網站"><picture><source media="(max-width: 1199px)" srcset="assets/profile-links/portfolio-zh-TW-compact.svg?v=columns-3"/><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/portfolio-zh-TW-dark.svg?v=columns-3"/><img src="assets/profile-links/portfolio-zh-TW-light.svg?v=columns-3" alt="個人網站"/></picture></a></p>
+    <p><a href="https://scholar.google.com/citations?user=vSQ3zT4AAAAJ&amp;hl=zh-TW" title="Google Scholar"><picture><source media="(max-width: 1199px)" srcset="assets/profile-links/scholar-zh-TW-compact.svg?v=columns-3"/><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/scholar-zh-TW-dark.svg?v=columns-3"/><img src="assets/profile-links/scholar-zh-TW-light.svg?v=columns-3" alt="Google Scholar"/></picture></a></p>
+  </td>
+  <td width="280" align="left" valign="top">
+    <p><a href="mailto:wec324@lehigh.edu" title="寄信給邱文昱"><picture><source media="(max-width: 1199px)" srcset="assets/profile-links/email-zh-TW-compact.svg?v=columns-3"/><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/email-zh-TW-dark.svg?v=columns-3"/><img src="assets/profile-links/email-zh-TW-light.svg?v=columns-3" alt="寄信給邱文昱"/></picture></a></p>
+    <p><a href="https://www.linkedin.com/in/wenyu-chiou" title="LinkedIn"><picture><source media="(max-width: 1199px)" srcset="assets/profile-links/linkedin-zh-TW-compact.svg?v=columns-3"/><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/linkedin-zh-TW-dark.svg?v=columns-3"/><img src="assets/profile-links/linkedin-zh-TW-light.svg?v=columns-3" alt="LinkedIn"/></picture></a></p>
+    <p><a href="https://www.threads.com/@wenyu_chiou" title="Threads"><picture><source media="(max-width: 1199px)" srcset="assets/profile-links/threads-zh-TW-compact.svg?v=columns-3"/><source media="(prefers-color-scheme: dark)" srcset="assets/profile-links/threads-zh-TW-dark.svg?v=columns-3"/><img src="assets/profile-links/threads-zh-TW-light.svg?v=columns-3" alt="Threads"/></picture></a></p>
+  </td>
+</tr></tbody>
+</table>
 <!-- HIGHLIGHTS:END -->
 
 <p align="center">

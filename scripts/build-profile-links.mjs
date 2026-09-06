@@ -24,15 +24,23 @@ const palettes = {
 };
 
 export function renderLink(link, locale, theme) {
-  const colors = palettes[theme];
-  const [face, depth, stroke] = colors[link.color];
+  const compact = theme === 'auto';
+  const colors = palettes[compact ? 'light' : theme];
+  const [face, depth, stroke] = compact ? ['var(--face)', 'var(--depth)', 'var(--stroke)'] : colors[link.color];
+  const ink = compact ? 'var(--ink)' : colors.ink;
+  const variables = mode => {
+    const palette = palettes[mode];
+    const [face, depth, stroke] = palette[link.color];
+    return `--face:${face};--depth:${depth};--stroke:${stroke};--ink:${palette.ink}`;
+  };
   const label = escape(link.labels[locale === 'en' ? 0 : 1]);
+  const lines = label.split(' ');
   const icon = `<g transform="translate(2 5)"><rect x="2" y="3" width="32" height="32" rx="6" fill="${depth}"/><rect width="32" height="32" rx="6" fill="${face}" stroke="${stroke}"/><g transform="translate(6 6) scale(.833333)" fill="none" stroke="${stroke}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${link.icon}</g></g>`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="180" height="44" viewBox="0 0 180 44" role="img" aria-labelledby="title" lang="${locale}">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${compact ? 60 : 180}" height="${compact ? 80 : 44}" viewBox="0 0 ${compact ? '60 80' : '180 44'}" role="img" aria-labelledby="title" lang="${locale}">
 <!-- ${license} -->
 <title id="title">${label}</title>
-${icon}
-<text x="46" y="27" fill="${colors.ink}" font-family="'Atkinson Hyperlegible Next', 'Segoe UI', 'Microsoft JhengHei', sans-serif" font-size="16" font-weight="500">${label}</text>
+${compact ? `<style>:root{${variables('light')}}@media(prefers-color-scheme:dark){:root{${variables('dark')}}}</style>\n` : ''}${icon}
+${compact ? lines.map((line, index) => `<text x="2" y="${56 + index * 18}" fill="${ink}" font-family="'Atkinson Hyperlegible Next', 'Segoe UI', 'Microsoft JhengHei', sans-serif" font-size="14" font-weight="500">${line}</text>`).join('\n') : `<text x="46" y="27" fill="${ink}" font-family="'Atkinson Hyperlegible Next', 'Segoe UI', 'Microsoft JhengHei', sans-serif" font-size="16" font-weight="500">${label}</text>`}
 </svg>
 `;
 }
@@ -40,12 +48,12 @@ ${icon}
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const check = process.argv.includes('--check');
   if (!check) mkdirSync(directory, { recursive: true });
-  for (const link of links) for (const locale of ['en', 'zh-TW']) for (const theme of ['light', 'dark']) {
-    const path = resolve(directory, `${link.id}-${locale}-${theme}.svg`);
+  for (const link of links) for (const locale of ['en', 'zh-TW']) for (const theme of ['light', 'dark', 'auto']) {
+    const path = resolve(directory, `${link.id}-${locale}-${theme === 'auto' ? 'compact' : theme}.svg`);
     const svg = renderLink(link, locale, theme);
     if (check) {
       if (readFileSync(path, 'utf8').replaceAll('\r\n', '\n') !== svg) throw new Error(`Stale link asset: ${path}`);
     } else writeFileSync(path, svg);
   }
-  console.log(`${check ? 'Verified' : 'Generated'} 28 profile link assets`);
+  console.log(`${check ? 'Verified' : 'Generated'} 42 profile link assets`);
 }
