@@ -10,10 +10,10 @@
 <div align="center">
   <a href="https://wenyuchiou.github.io/#decision-provenance">
     <picture>
-      <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/research-loop-dark-static.svg"/>
-      <source media="(prefers-reduced-motion: reduce)" srcset="assets/research-loop-static.svg"/>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/research-loop-dark.svg"/>
-      <img src="assets/research-loop.svg" alt="Wenyu Chiou: LLM evaluation, agent governance and behavioral simulation. Human and agent choice comparison, working memory, independent validation and an audit trail connect decisions to human-environment feedback." width="100%"/>
+      <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/research-loop-dark-static.svg?v=loop-1"/>
+      <source media="(prefers-reduced-motion: reduce)" srcset="assets/research-loop-static.svg?v=loop-1"/>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/research-loop-dark.svg?v=loop-1"/>
+      <img src="assets/research-loop.svg?v=loop-1" alt="Wenyu Chiou: LLM evaluation, agent governance and behavioral simulation. Human and agent choice comparison, working memory, independent validation and an audit trail connect decisions to human-environment feedback." width="100%"/>
     </picture>
   </a>
 </div>
