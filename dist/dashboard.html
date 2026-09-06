@@ -27,6 +27,18 @@
       --grid-empty: #e5eef7;
       --calendar-active-border: #52647a;
       --focus: #005cc5;
+      --voxel-grass-top: #5b8c32;
+      --voxel-grass-fringe: #6fa83e;
+      --voxel-dirt-front: #866043;
+      --voxel-dirt-side: #5a402d;
+      --voxel-ai-front: #0ea5e9;
+      --voxel-ai-top: #7dd3fc;
+      --voxel-ai-side: #0284c7;
+      --voxel-other-front: #94a3b8;
+      --voxel-other-top: #cbd5e1;
+      --voxel-other-side: #64748b;
+      --voxel-slot-border: #c2d3e5;
+      --voxel-slot-bg: #e2e8f0;
       --display: "IBM Plex Sans Condensed", "Aptos Display", "Segoe UI",
         "DejaVu Sans Condensed", "Liberation Sans Narrow", sans-serif;
       --body: "IBM Plex Sans", "Aptos", "Segoe UI", "Noto Sans",
@@ -45,8 +57,10 @@
       --space-5: 1.25rem;
       --space-6: 1.5rem;
       --space-8: 2rem;
-      --radius-sm: 0.25rem;
-      --radius-md: 0.375rem;
+      --radius-sm: 0;
+      --radius-md: 0;
+      --voxel-bevel-light: #ffffff;
+      --voxel-bevel-dark: #c2d3e5;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -67,6 +81,20 @@
         --grid-empty: #111923;
         --calendar-active-border: #b5ddff;
         --focus: #8bc8ff;
+        --voxel-grass-top: #3a6920;
+        --voxel-grass-fringe: #4d822d;
+        --voxel-dirt-front: #4d3726;
+        --voxel-dirt-side: #332419;
+        --voxel-ai-front: #38bdf8;
+        --voxel-ai-top: #bae6fd;
+        --voxel-ai-side: #0284c7;
+        --voxel-other-front: #64748b;
+        --voxel-other-top: #94a3b8;
+        --voxel-other-side: #475569;
+        --voxel-slot-border: #34526f;
+        --voxel-slot-bg: #1e293b;
+        --voxel-bevel-light: #22374e;
+        --voxel-bevel-dark: #070d18;
       }
     }
 
@@ -87,6 +115,20 @@
       --grid-empty: #111923;
       --calendar-active-border: #b5ddff;
       --focus: #8bc8ff;
+      --voxel-grass-top: #3a6920;
+      --voxel-grass-fringe: #4d822d;
+      --voxel-dirt-front: #4d3726;
+      --voxel-dirt-side: #332419;
+      --voxel-ai-front: #38bdf8;
+      --voxel-ai-top: #bae6fd;
+      --voxel-ai-side: #0284c7;
+      --voxel-other-front: #64748b;
+      --voxel-other-top: #94a3b8;
+      --voxel-other-side: #475569;
+      --voxel-slot-border: #34526f;
+      --voxel-slot-bg: #1e293b;
+      --voxel-bevel-light: #22374e;
+      --voxel-bevel-dark: #070d18;
     }
 
     * {
@@ -95,102 +137,67 @@
 
     html {
       min-width: 0;
-      background: var(--canvas);
       font-family: var(--body);
-      font-kerning: normal;
-      font-variant-numeric: lining-nums tabular-nums;
+      font-size: 16px;
+      line-height: 1.5;
+      background: var(--canvas);
       color: var(--text);
-      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
     }
 
     body {
-      min-height: 100vh;
       margin: 0;
-      overflow-x: clip;
+      padding: 0;
       background: var(--canvas);
-      font-size: var(--text-2);
-      line-height: 1.5;
-    }
-
-    button {
-      font: inherit;
-    }
-
-    .theme-toggle,
-    .filter,
-    .provider-row {
-      appearance: none;
-      -webkit-appearance: none;
-    }
-
-    button:focus-visible,
-    summary:focus-visible,
-    [tabindex="0"]:focus-visible {
-      outline: 0.1875rem solid var(--focus);
-      outline-offset: 0.125rem;
+      color: var(--text);
+      font-variant-numeric: lining-nums tabular-nums;
     }
 
     .console {
       width: min(100% - 2rem, 76rem);
-      min-width: 0;
       margin: 0 auto;
       padding: var(--space-4) 0 var(--space-8);
     }
 
-    .console > *,
-    .console-grid > *,
-    .sidebar > *,
-    .metrics > * {
-      min-width: 0;
-    }
-
     .statusbar {
       display: grid;
-      grid-template-columns: auto minmax(0, 1fr) auto;
+      grid-template-columns: auto 1fr auto;
       grid-template-areas: "title meta controls";
-      gap: var(--space-2) var(--space-5);
+      gap: var(--space-4);
       align-items: baseline;
-      padding: var(--space-3) 0;
-      border-bottom: 1px solid var(--border-strong);
+      padding-bottom: var(--space-3);
+      border-bottom: 2px solid var(--border-strong);
     }
 
     .statusbar-title {
       grid-area: title;
       margin: 0;
       font-family: var(--display);
-      font-size: var(--text-3);
-      font-weight: 600;
+      font-size: 1.25rem;
+      font-weight: 700;
       letter-spacing: -0.01em;
-      line-height: 1.3;
+      white-space: nowrap;
     }
 
     .statusbar-meta {
       grid-area: meta;
+      margin: 0;
       display: flex;
       flex-wrap: wrap;
-      gap: var(--space-1) var(--space-3);
-      margin: 0;
+      gap: var(--space-2) var(--space-4);
       color: var(--muted);
       font-size: var(--text-1);
-      line-height: 1.5;
     }
 
     .status-item {
       display: inline-flex;
       gap: var(--space-1);
-      align-items: baseline;
-    }
-
-    .status-item + .status-item::before {
-      content: "·";
-      margin-right: var(--space-1);
-      color: var(--border-strong);
     }
 
     .status-value {
-      color: var(--text);
       font-family: var(--mono);
       font-weight: 600;
+      color: var(--text);
     }
 
     .statusbar-controls {
@@ -202,32 +209,39 @@
     }
 
     .theme-toggle {
-      min-height: 2.25rem;
+      min-height: 2rem;
       padding: 0 var(--space-3);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-strong);
+      border-radius: 0;
       background: var(--surface);
       color: var(--text);
       cursor: pointer;
+      font-family: var(--body);
       font-size: var(--text-1);
       font-weight: 600;
+      box-shadow:
+        inset 1px 1px 0 var(--voxel-bevel-light),
+        inset -1px -1px 0 var(--voxel-bevel-dark);
     }
 
     .theme-toggle:hover {
-      border-color: var(--border-strong);
+      border-color: var(--accent);
     }
 
     .metrics {
       display: grid;
-      grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       margin-top: var(--space-4);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
+      border: 1px solid var(--border-strong);
+      border-radius: 0;
       background: var(--surface);
+      box-shadow:
+        inset 1px 1px 0 var(--voxel-bevel-light),
+        inset -1px -1px 0 var(--voxel-bevel-dark);
     }
 
     .metric {
-      padding: var(--space-4) var(--space-5);
+      padding: var(--space-4);
       border-inline-start: 1px solid var(--border);
     }
 
@@ -235,56 +249,62 @@
       border-inline-start: 0;
     }
 
+    .metric--primary {
+      background: var(--surface-subtle);
+    }
+
     .metric-value {
       margin: 0;
       font-family: var(--mono);
-      font-size: var(--text-4);
-      font-weight: 600;
+      font-size: var(--text-5);
+      font-weight: 700;
+      line-height: 1.1;
       letter-spacing: -0.02em;
-      line-height: 1;
-      font-variant-numeric: tabular-nums;
+      color: var(--text);
     }
 
     .metric--primary .metric-value {
       color: var(--active-accent, var(--accent));
-      font-size: var(--text-5);
     }
 
     .metric-label {
-      margin: var(--space-2) 0 0;
+      margin: var(--space-1) 0 0;
       font-size: var(--text-2);
       font-weight: 600;
-      line-height: 1.35;
+      color: var(--text);
     }
 
     .metric-detail {
       margin: var(--space-1) 0 0;
       color: var(--muted);
       font-size: var(--text-1);
-      line-height: 1.45;
+      line-height: 1.4;
     }
 
     .share-track {
       height: 0.375rem;
-      margin-top: var(--space-3);
+      margin-top: var(--space-2);
       overflow: hidden;
-      border-radius: 0.125rem;
       background: var(--grid-empty);
+      border: 1px solid var(--voxel-slot-border);
     }
 
     .share-fill {
-      width: 0;
       height: 100%;
-      border-radius: inherit;
       background: var(--active-accent, var(--accent));
     }
 
     .toolbar {
       display: flex;
       flex-wrap: wrap;
-      gap: var(--space-2) var(--space-3);
+      gap: var(--space-2) var(--space-4);
       align-items: center;
       margin-top: var(--space-4);
+      padding: var(--space-2) 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
     }
 
     .toolbar-label {
@@ -294,72 +314,82 @@
     }
 
     .filters {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
+      width: 100%;
       gap: var(--space-2);
+      align-items: center;
     }
 
     .filter {
       display: inline-flex;
-      gap: var(--space-2);
+      flex-direction: column;
+      gap: var(--space-1);
       align-items: center;
-      min-height: 2.25rem;
-      padding: 0 var(--space-3);
+      justify-content: center;
+      min-height: 4.5rem;
+      padding: var(--space-2);
       border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
+      border-radius: 0;
       background: var(--surface);
       color: var(--text);
       cursor: pointer;
       font-size: var(--text-1);
       font-weight: 600;
+      box-shadow:
+        inset 1px 1px 0 var(--voxel-bevel-light),
+        inset -1px -1px 0 var(--voxel-bevel-dark);
+      transition: transform 120ms ease;
     }
 
     .filter:hover {
       border-color: var(--provider-accent, var(--accent));
+      background: color-mix(in srgb, var(--provider-accent, var(--accent)) 8%, var(--surface));
     }
 
     .filter[aria-pressed="true"] {
       border-color: var(--provider-accent, var(--accent));
-      background: color-mix(in srgb, var(--provider-accent, var(--accent)) 12%, var(--surface));
+      background: color-mix(in srgb, var(--provider-accent, var(--accent)) 15%, var(--surface));
+      color: var(--provider-accent, var(--accent));
       box-shadow: inset 0 0 0 1px var(--provider-accent, var(--accent));
     }
 
     .provider-icon {
-      display: inline-block;
-      flex: 0 0 auto;
       width: 1rem;
       height: 1rem;
-      color: var(--provider-accent, var(--accent));
-      vertical-align: -0.14rem;
+      flex-shrink: 0;
+    }
+
+    .provider-icon--filter {
+      width: 2rem;
+      height: 2rem;
+      color: var(--provider-accent, currentColor);
     }
 
     .provider-icon--row {
-      width: 1.25rem;
-      height: 1.25rem;
-      padding: 0.18rem;
-      border: 1px solid color-mix(in srgb, var(--provider-accent) 38%, var(--border));
-      border-radius: var(--radius-sm);
-      background: color-mix(in srgb, var(--provider-accent) 10%, var(--surface));
+      width: 2.5rem;
+      height: 2.5rem;
+      color: var(--provider-accent, currentColor);
+      background: var(--surface);
+      padding: var(--space-1);
     }
 
     .console-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.6fr) minmax(18rem, 0.8fr);
+      grid-template-columns: minmax(0, 1fr) 22rem;
       gap: var(--space-4);
-      align-items: start;
       margin-top: var(--space-4);
-    }
-
-    .sidebar {
-      display: grid;
-      gap: var(--space-4);
+      align-items: start;
     }
 
     .panel {
-      padding: var(--space-5);
+      padding: var(--space-4);
       border: 1px solid var(--border);
-      border-radius: var(--radius-md);
+      border-radius: 0;
       background: var(--surface);
+      box-shadow:
+        inset 1px 1px 0 var(--voxel-bevel-light),
+        inset -1px -1px 0 var(--voxel-bevel-dark);
     }
 
     .panel-heading {
@@ -368,22 +398,129 @@
       gap: var(--space-2) var(--space-4);
       align-items: baseline;
       justify-content: space-between;
-      margin-bottom: var(--space-4);
+      margin-bottom: var(--space-3);
     }
 
     .panel-title {
       margin: 0;
       font-family: var(--display);
       font-size: var(--text-3);
-      font-weight: 600;
-      line-height: 1.3;
+      font-weight: 700;
+      letter-spacing: -0.01em;
     }
 
     .panel-meta {
       margin: 0;
       color: var(--muted);
       font-size: var(--text-1);
-      line-height: 1.5;
+    }
+
+    .voxel-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--space-3);
+    }
+
+    .date-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      align-items: center;
+    }
+
+    .preset-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-1);
+    }
+
+    .range-btn {
+      min-height: 2rem;
+      padding: 0 var(--space-3);
+      border: 1px solid var(--border-strong);
+      border-radius: 0;
+      background: var(--surface-subtle);
+      color: var(--text);
+      cursor: pointer;
+      font-size: var(--text-1);
+      font-weight: 600;
+      box-shadow:
+        inset 1px 1px 0 var(--voxel-bevel-light),
+        inset -1px -1px 0 var(--voxel-bevel-dark);
+      transition: transform 120ms ease;
+    }
+
+    .range-btn:hover {
+      border-color: var(--accent);
+      background: var(--surface-raised);
+    }
+
+    .range-btn[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: color-mix(in srgb, var(--accent) 15%, var(--surface));
+      color: var(--accent);
+      box-shadow: inset 0 0 0 1px var(--accent);
+    }
+
+    .custom-range-form {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: var(--space-1) var(--space-2);
+      align-items: center;
+      font-size: var(--text-1);
+      color: var(--muted);
+      max-width: 100%;
+    }
+
+    .date-input {
+      min-height: 2rem;
+      padding: 0 var(--space-2);
+      border: 1px solid var(--border);
+      border-radius: 0;
+      background: var(--surface);
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: var(--text-1);
+      box-shadow: inset 1px 1px 0 var(--voxel-bevel-dark);
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .voxel-action-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      align-items: center;
+    }
+
+    .date-range-error {
+      color: #dc2626;
+      font-size: var(--text-1);
+      font-weight: 600;
+      margin-inline-start: var(--space-2);
+    }
+
+    .anim-toggle-btn {
+      min-height: 2rem;
+      padding: 0 var(--space-3);
+      border: 1px solid var(--border-strong);
+      border-radius: 0;
+      background: var(--surface-subtle);
+      color: var(--text);
+      cursor: pointer;
+      font-size: var(--text-1);
+      font-weight: 600;
+      box-shadow:
+        inset 1px 1px 0 var(--voxel-bevel-light),
+        inset -1px -1px 0 var(--voxel-bevel-dark);
+    }
+
+    .anim-toggle-btn:hover {
+      border-color: var(--accent);
+      background: var(--surface-raised);
     }
 
     .calendar-scroll {
@@ -391,46 +528,100 @@
       min-width: 0;
       max-width: 100%;
       overflow-x: auto;
-      padding: var(--space-2) var(--space-1) var(--space-3);
+      padding: var(--space-1) 0 var(--space-3);
       scrollbar-color: var(--border-strong) transparent;
     }
 
     .calendar {
-      display: grid;
-      grid-template-rows: repeat(7, 0.82rem);
-      grid-auto-flow: column;
-      grid-auto-columns: 0.82rem;
-      gap: 0.28rem;
-      width: max-content;
-      min-width: 100%;
-      align-content: start;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      width: 100%;
     }
 
-    .day-cell,
-    .day-spacer {
-      width: 0.82rem;
-      height: 0.82rem;
+    .voxel-terraces {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      width: 100%;
     }
 
-    .day-cell {
-      appearance: none;
-      padding: 0;
-      border: 1px solid color-mix(in srgb, var(--border) 62%, transparent);
-      border-radius: 0.19rem;
-      background: var(--grid-empty);
-      cursor: help;
-      transition: transform 120ms ease;
+    .voxel-terrace-row {
+      display: flex;
+      flex-direction: column;
+      padding: var(--space-1) 0;
+      border: none;
+      background: transparent;
+      box-shadow: none;
     }
 
-    .day-cell[data-active="true"] {
-      border-color: var(--calendar-active-border);
+    .voxel-terrace-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+      margin-bottom: 2px;
+      font-family: var(--mono);
+      font-size: var(--text-1);
+      color: var(--muted);
+      font-weight: 600;
     }
 
-    .day-cell:hover,
-    .day-cell:focus-visible {
-      z-index: 2;
-      border-color: var(--text);
-      transform: scale(1.42);
+    .voxel-terrace-svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: visible;
+    }
+
+    g.day-cell {
+      cursor: pointer;
+      outline: none;
+    }
+
+    :focus-visible {
+      outline: 0.1875rem solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    g.day-cell .day-label {
+      font-family: var(--mono);
+      font-size: 14px;
+      font-weight: 600;
+      fill: var(--muted);
+      user-select: none;
+    }
+
+    g.day-cell[data-selected-day="true"] .day-ground-marker {
+      fill: var(--focus);
+    }
+
+    g.day-cell[data-selected-day="true"] .day-label {
+      fill: var(--text);
+      font-weight: 700;
+    }
+
+    g.day-cell[data-highlighted="true"] .day-ground-marker {
+      fill: var(--provider-accent, var(--accent));
+    }
+
+    g.day-cell:hover .day-label {
+      fill: var(--text);
+    }
+
+    g.day-cell:hover .day-ground-marker {
+      fill: var(--text);
+    }
+
+    g.day-cell:focus-visible .day-hit {
+      stroke: var(--focus);
+      stroke-width: 1.5;
+      stroke-dasharray: 3 2;
+    }
+
+    g.day-cell:focus-visible .day-ground-marker {
+      fill: var(--focus);
     }
 
     .calendar-empty {
@@ -438,7 +629,7 @@
       min-height: 8rem;
       place-items: center;
       border: 1px dashed var(--border);
-      border-radius: var(--radius-md);
+      border-radius: 0;
       color: var(--muted);
       text-align: center;
     }
@@ -453,6 +644,37 @@
       color: var(--muted);
       font-size: var(--text-1);
       line-height: 1.45;
+    }
+
+    .legend-swatches {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      align-items: center;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      gap: var(--space-1);
+      align-items: center;
+    }
+
+    .legend-swatch {
+      width: 0.65rem;
+      height: 0.65rem;
+      border-radius: 0.12rem;
+    }
+
+    .legend-swatch--ai {
+      background: var(--voxel-ai-front);
+    }
+
+    .legend-swatch--other {
+      background: var(--voxel-other-front);
+    }
+
+    .legend-swatch--base {
+      background: var(--voxel-grass-top);
     }
 
     .legend-scale {
@@ -473,37 +695,232 @@
       border-color: var(--calendar-active-border);
     }
 
+    .detail-panel {
+      margin-top: var(--space-4);
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+
+    .detail-card {
+      display: flex;
+      flex-direction: column;
+      padding: var(--space-3);
+      border: 1px solid var(--border);
+      border-radius: 0;
+      background: var(--surface-subtle);
+      box-shadow:
+        inset 1px 1px 0 var(--voxel-bevel-light),
+        inset -1px -1px 0 var(--voxel-bevel-dark);
+    }
+
+    .detail-card--ai {
+      border-color: color-mix(in srgb, var(--voxel-ai-front) 40%, var(--border));
+      background: color-mix(in srgb, var(--voxel-ai-front) 8%, var(--surface));
+    }
+
+    .detail-card--other {
+      border-color: color-mix(in srgb, var(--voxel-other-front) 40%, var(--border));
+      background: color-mix(in srgb, var(--voxel-other-front) 8%, var(--surface));
+    }
+
+    .detail-label {
+      color: var(--muted);
+      font-size: var(--text-1);
+      font-weight: 600;
+    }
+
+    .detail-val {
+      margin-top: var(--space-1);
+      font-size: var(--text-3);
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .detail-sub {
+      margin-top: var(--space-1);
+      font-size: var(--text-1);
+      color: var(--muted);
+    }
+
+    .detail-providers {
+      border-top: 1px solid var(--border);
+      padding-top: var(--space-3);
+    }
+
+    .detail-subtitle {
+      margin: 0 0 var(--space-2);
+      font-size: var(--text-1);
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    .detail-provider-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    .detail-chip {
+      display: inline-flex;
+      gap: var(--space-2);
+      align-items: center;
+      padding: 0.25rem 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 0;
+      background: var(--surface);
+      font-size: var(--text-1);
+    }
+
+    .table-panel {
+      margin-top: var(--space-4);
+    }
+
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+      max-height: 22rem;
+      scrollbar-color: var(--border-strong) transparent;
+    }
+
+    .daily-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: var(--text-1);
+      text-align: left;
+    }
+
+    .daily-table th,
+    .daily-table td {
+      padding: var(--space-2) var(--space-3);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    .daily-table th {
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+      color: var(--muted);
+      font-weight: 600;
+      z-index: 1;
+    }
+
+    .sort-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      color: var(--muted);
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .sort-btn:hover {
+      color: var(--text);
+    }
+
+    .sort-icon {
+      font-size: var(--text-1);
+    }
+
+    .daily-row {
+      cursor: pointer;
+    }
+
+    .daily-row:hover {
+      background: var(--surface-subtle);
+    }
+
+    .date-select {
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      min-height: 2.75rem;
+      cursor: pointer;
+    }
+
+    .daily-row[data-selected="true"] {
+      background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+      font-weight: 600;
+    }
+
+    .workstations-panel .panel-heading {
+      margin-bottom: var(--space-3);
+    }
+
     .provider-list {
       display: grid;
       gap: var(--space-2);
+      padding: var(--space-2);
+      position: relative;
     }
 
     .provider-row {
       display: grid;
-      gap: var(--space-2);
+      gap: var(--space-1);
       width: 100%;
-      padding: var(--space-3);
-      border: 1px solid transparent;
-      border-radius: var(--radius-sm);
+      padding: var(--space-2);
+      border: none;
+      border-bottom: 1px solid var(--border);
+      border-radius: 0;
       background: transparent;
       color: inherit;
       cursor: pointer;
       text-align: left;
+      box-shadow: none;
+      transition: transform 120ms ease;
+      position: relative;
+    }
+
+    .provider-row::before {
+      content: "";
+      position: absolute;
+      left: calc(-1 * var(--space-2) - 3px);
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #78350f;
+    }
+
+    .provider-row::after {
+      content: "";
+      position: absolute;
+      left: calc(-1 * var(--space-2) - 5px);
+      bottom: 0;
+      width: 8px;
+      height: 4px;
+      background: var(--voxel-stone-front, #6e7681);
+    }
+
+    .provider-row:last-child {
+      border-bottom: none;
     }
 
     .provider-row[aria-current="true"] {
       border-color: var(--provider-accent);
       background: color-mix(in srgb, var(--provider-accent) 10%, var(--surface));
+      outline: 2px solid var(--provider-accent);
+      outline-offset: -2px;
     }
 
     .provider-row:hover {
-      background: color-mix(in srgb, var(--provider-accent) 6%, var(--surface));
+      background: color-mix(in srgb, var(--provider-accent) 8%, var(--surface));
     }
 
     .provider-row-head {
       display: flex;
       gap: var(--space-3);
-      align-items: baseline;
+      align-items: center;
       justify-content: space-between;
     }
 
@@ -516,6 +933,15 @@
       font-weight: 600;
     }
 
+    .workbench-tool {
+      display: inline-block;
+      width: 0.75rem;
+      height: 0.75rem;
+      margin-left: 2px;
+      opacity: 0.75;
+      vertical-align: -0.1em;
+    }
+
     .provider-count {
       font-family: var(--mono);
       font-size: var(--text-2);
@@ -523,33 +949,96 @@
     }
 
     .provider-track {
-      height: 0.375rem;
+      display: block;
+      width: 100%;
+      height: 0.75rem;
       overflow: hidden;
-      border-radius: 0.125rem;
-      background: var(--grid-empty);
+      border: 1px solid var(--voxel-slot-border);
+      border-radius: 0;
+      background: var(--voxel-slot-bg);
+      box-shadow: inset 1px 1px 0 var(--voxel-bevel-dark), 0 1px 0 var(--voxel-bevel-light);
+      position: relative;
     }
 
     .provider-fill {
+      display: block;
       height: 100%;
-      border-radius: inherit;
-      background: var(--provider-accent);
+      background: var(--provider-accent, var(--accent));
+      box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.35), inset 0 -1px 0 rgba(0, 0, 0, 0.25);
     }
 
     .provider-detail {
       color: var(--muted);
       font-size: var(--text-1);
-      line-height: 1.5;
+      line-height: 1.4;
+    }
+
+    .custom-range > summary,
+    .ledger-disclosure > summary {
+      cursor: pointer;
+      color: var(--text);
+      font-weight: 600;
+      padding: var(--space-2) 0;
+    }
+
+    .custom-range[open] {
+      flex-basis: 100%;
+    }
+
+    .ledger-disclosure {
+      min-width: 0;
+    }
+
+    .day-composition {
+      display: flex;
+      height: 1.5rem;
+      background: var(--grid-empty);
+      margin-bottom: var(--space-3);
+    }
+
+    .day-composition span {
+      display: block;
+      height: 100%;
+    }
+
+    .day-composition-ai { background: var(--voxel-ai-front); }
+    .day-composition-other { background: var(--voxel-other-front); }
+
+    .provider-facts {
+      padding-left: var(--space-4);
+      color: var(--muted);
+    }
+
+    .workstations-overlap-note {
+      margin: var(--space-3) 0 0;
+      padding-top: var(--space-2);
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: var(--text-1);
+      line-height: 1.45;
+    }
+
+    .rock-stratum-container {
+      margin-bottom: var(--space-3);
+    }
+
+    .rock-stratum-svg {
+      display: block;
+      width: 100%;
+      height: 32px;
+      overflow: visible;
     }
 
     .evidence-panel .panel-title::before {
       content: "";
       display: inline-block;
-      width: 0.5rem;
-      height: 0.5rem;
+      width: 0.625rem;
+      height: 0.625rem;
       margin-right: var(--space-2);
-      border: 1px solid var(--evidence);
+      border: 1px solid #d97706;
       border-radius: 0.125rem;
-      background: var(--evidence-surface);
+      background: #f59e0b;
+      box-shadow: inset 1px 1px 0 #fef08a, 0 0 0 1px #78350f;
       vertical-align: 0.05em;
     }
 
@@ -608,8 +1097,11 @@
     .definitions {
       margin-top: var(--space-4);
       border: 1px solid var(--border);
-      border-radius: var(--radius-md);
+      border-radius: 0;
       background: var(--surface);
+      box-shadow:
+        inset 1px 1px 0 var(--voxel-bevel-light),
+        inset -1px -1px 0 var(--voxel-bevel-dark);
     }
 
     .definitions-summary {
@@ -682,13 +1174,14 @@
       max-width: min(18rem, calc(100vw - 2rem));
       padding: var(--space-2) var(--space-3);
       border: 1px solid var(--border-strong);
-      border-radius: var(--radius-sm);
+      border-radius: 0;
       background: var(--surface-raised);
       color: var(--text);
       font-size: var(--text-1);
       line-height: 1.5;
       pointer-events: none;
       transform: translate(-50%, calc(-100% - 0.75rem));
+      box-shadow: 2px 2px 0 var(--voxel-bevel-dark);
     }
 
     .tooltip[hidden] {
@@ -713,9 +1206,97 @@
       border: 0;
     }
 
+    .mono {
+      font-family: var(--mono);
+    }
+
+    @keyframes minerMine18s {
+      0% { transform: translate(0px, 0px); }
+      12% { transform: translate(6px, 0px); }
+      22% { transform: translate(12px, -6px); }
+      32% { transform: translate(18px, -6px); }
+      40% { transform: translate(18px, -6px); }
+      60% { transform: translate(18px, -6px); }
+      70% { transform: translate(12px, -6px); }
+      80% { transform: translate(6px, 0px); }
+      90% { transform: translate(0px, 0px); }
+      100% { transform: translate(0px, 0px); }
+    }
+
+    @keyframes pickaxeSwing18s {
+      0%, 36% { transform: rotate(0deg); transform-origin: 23px 23px; }
+      40% { transform: rotate(-30deg); transform-origin: 23px 23px; }
+      44% { transform: rotate(38deg); transform-origin: 23px 23px; }
+      48% { transform: rotate(-25deg); transform-origin: 23px 23px; }
+      52% { transform: rotate(38deg); transform-origin: 23px 23px; }
+      56% { transform: rotate(-25deg); transform-origin: 23px 23px; }
+      60% { transform: rotate(38deg); transform-origin: 23px 23px; }
+      64%, 100% { transform: rotate(0deg); transform-origin: 23px 23px; }
+    }
+
+    @keyframes zombiePatrol18s {
+      0%, 100% { transform: translate(0px, 0px); }
+      15% { transform: translate(-8px, 0px); }
+      35% { transform: translate(-8px, 20px); }
+      55% { transform: translate(-8px, 20px); }
+      75% { transform: translate(-8px, 0px); }
+      90% { transform: translate(0px, 0px); }
+    }
+
+    @keyframes actorLegWalk {
+      0%, 100% { transform: translateY(0px); }
+      25%, 75% { transform: translateY(-2px); }
+      50% { transform: translateY(1px); }
+    }
+
+    .miner-actor {
+      animation: minerMine18s 18s ease-in-out infinite;
+    }
+
+    .pickaxe-arm {
+      animation: pickaxeSwing18s 18s ease-in-out infinite;
+    }
+
+    .zombie-actor {
+      animation: zombiePatrol18s 18s ease-in-out infinite;
+    }
+
+    .miner-leg-l,
+    .zombie-leg-l {
+      animation: actorLegWalk 0.8s ease-in-out infinite;
+    }
+
+    .actors-paused .miner-actor,
+    .actors-paused .pickaxe-arm,
+    .actors-paused .zombie-actor,
+    .actors-paused .miner-leg-l,
+    .actors-paused .zombie-leg-l {
+      animation-play-state: paused !important;
+    }
+
     @media (max-width: 54rem) {
       .console-grid {
         grid-template-columns: minmax(0, 1fr);
+      }
+
+      .activity-panel {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      #selectedDatePanel {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .sidebar {
+        grid-column: 1;
+        grid-row: 3;
+      }
+
+      .table-panel {
+        grid-column: 1;
+        grid-row: 4;
       }
 
       .metrics {
@@ -734,6 +1315,7 @@
     @media (max-width: 38rem) {
       .console {
         width: min(100% - 1rem, 76rem);
+        padding: 0.5rem 0 1.5rem;
       }
 
       .statusbar {
@@ -742,14 +1324,129 @@
           "title controls"
           "meta meta";
         align-items: center;
+        padding-bottom: 0.25rem;
+        gap: 0.25rem 0.5rem;
+      }
+
+      .statusbar-title {
+        font-size: 1.25rem;
+      }
+
+      .statusbar-meta {
+        font-size: var(--text-1);
+        gap: 0.25rem 0.5rem;
+      }
+
+      .theme-toggle {
+        min-height: 1.75rem;
+        padding: 0 0.5rem;
+        font-size: var(--text-1);
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-top: 0.35rem;
+        padding: 0.35rem;
+        gap: 0.25rem;
       }
 
       .metric {
-        padding: var(--space-3) var(--space-4);
+        padding: 0.25rem 0.35rem;
+        border-inline-start: 1px solid var(--border);
+        border-top: 0;
+      }
+
+      .metric:first-child {
+        border-inline-start: 0;
+      }
+
+      .metric-value {
+        font-size: 1.125rem;
+      }
+
+      .metric--primary .metric-value {
+        font-size: 1.125rem;
+      }
+
+      .metric-label {
+        margin: 0.15rem 0 0;
+        font-size: var(--text-1);
+        letter-spacing: 0.02em;
+      }
+
+      .metric-detail,
+      .share-track {
+        display: none;
+      }
+
+      .toolbar {
+        margin-top: 0.35rem;
+        gap: 0.25rem;
+        overflow-x: auto;
+        flex-wrap: wrap;
+        padding-bottom: 8px;
+      }
+
+      .toolbar-label {
+        font-size: var(--text-1);
+        white-space: nowrap;
+      }
+
+      .filters {
+        flex-wrap: wrap;
+        gap: 0.25rem;
+      }
+
+      .filter {
+        min-height: 4.5rem;
+        padding: var(--space-2);
+        font-size: var(--text-1);
+        white-space: nowrap;
+      }
+
+      .console-grid {
+        margin-top: 0.35rem;
+        gap: var(--space-3);
       }
 
       .panel {
-        padding: var(--space-4);
+        padding: 0.5rem 0.65rem;
+      }
+
+      .panel-heading {
+        margin-bottom: 0.35rem;
+      }
+
+      .panel-title {
+        font-size: 1rem;
+      }
+
+      .panel-meta {
+        font-size: var(--text-1);
+      }
+
+      .voxel-controls {
+        margin-bottom: 0.35rem;
+        gap: 0.25rem;
+      }
+
+      .range-btn {
+        min-height: 1.75rem;
+        padding: 0 0.5rem;
+        font-size: var(--text-1);
+      }
+
+      .anim-toggle-btn {
+        min-height: 1.75rem;
+        padding: 0 0.5rem;
+        font-size: var(--text-1);
+      }
+
+      .legend {
+        margin-top: 0.35rem;
+        font-size: var(--text-1);
+        gap: 0.25rem 0.5rem;
       }
 
       .evidence-grid {
@@ -758,6 +1455,26 @@
     }
 
     @media (max-width: 22rem) {
+      .console {
+        width: 100%;
+        padding-left: var(--space-2);
+        padding-right: var(--space-2);
+      }
+
+      .statusbar-title {
+        white-space: normal;
+      }
+
+      .preset-group {
+        width: 100%;
+      }
+
+      .range-btn,
+      .anim-toggle-btn {
+        padding: 0 var(--space-2);
+        font-size: var(--text-1);
+      }
+
       .statusbar {
         grid-template-columns: minmax(0, 1fr);
         grid-template-areas:
@@ -774,18 +1491,17 @@
         grid-template-columns: minmax(0, 1fr);
       }
 
-      .metric {
-        border-inline-start: 0;
+      .metric:nth-child(n+2) {
         border-top: 1px solid var(--border);
       }
 
-      .metric:first-child {
-        border-top: 0;
+      .metric {
+        border-inline-start: 0;
       }
 
       .filters {
         display: grid;
-        grid-template-columns: minmax(0, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
       }
 
       .filter {
@@ -799,7 +1515,7 @@
       }
 
       .definitions-body {
-        padding: 0 var(--space-4) var(--space-4);
+        padding: 0 var(--space-3) var(--space-3);
       }
 
       .panel-heading > *,
@@ -818,40 +1534,41 @@
       .provider-name,
       .provider-detail,
       .evidence-item,
+      .legend-scale,
       .console-foot {
         overflow-wrap: anywhere;
       }
 
       .provider-row-head,
-      .legend-scale,
       .status-item {
         flex-wrap: wrap;
       }
     }
 
     @media (pointer: coarse) {
-      .calendar {
-        grid-template-rows: repeat(7, 1rem);
-        grid-auto-columns: 1rem;
-        gap: 0.5rem;
-      }
-
-      .day-cell,
-      .day-spacer {
-        width: 1rem;
-        height: 1rem;
+      .filter,
+      .range-btn,
+      .anim-toggle-btn {
+        min-height: 2.25rem;
       }
     }
 
-    @media (prefers-reduced-motion: reduce) {
+    @media (prefers-reduced-motion: reduce), print {
       .day-cell,
-      .definitions-summary::after {
-        transition: none;
+      .definitions-summary::after,
+      .filter,
+      .daily-row,
+      .miner-actor,
+      .pickaxe-arm,
+      .zombie-actor {
+        animation: none !important;
+        transition: none !important;
       }
 
       .day-cell:hover,
-      .day-cell:focus-visible {
-        transform: none;
+      .day-cell:focus-visible,
+      .filter:hover {
+        transform: none !important;
       }
     }
   </style>
@@ -864,7 +1581,6 @@
         <span class="status-item"><span>Snapshot</span>
           <time class="status-value" id="snapshotDate"></time> <span>UTC</span></span>
         <span class="status-item" id="periodLabel"></span>
-        <span class="status-item" id="schemaLabel"></span>
       </p>
       <div class="statusbar-controls">
         <button class="theme-toggle" id="themeToggle" type="button"
@@ -878,7 +1594,7 @@
       <div class="metric metric--primary" id="primaryMetric">
         <p class="metric-value" id="primaryValue">0</p>
         <p class="metric-label" id="primaryLabel">AI-attributed commits</p>
-        <p class="metric-detail" id="primaryDetail"></p>
+        <p class="metric-detail sr-only" id="primaryDetail"></p>
         <div class="share-track" aria-hidden="true">
           <div class="share-fill" id="shareFill"></div>
         </div>
@@ -886,22 +1602,22 @@
       <div class="metric">
         <p class="metric-value" id="presenceValue">0</p>
         <p class="metric-label" id="presenceLabel">AI actor presences</p>
-        <p class="metric-detail">One per provider/tool in a commit.</p>
+        <p class="metric-detail sr-only">One per provider/tool in a commit.</p>
       </div>
       <div class="metric">
         <p class="metric-value" id="daysValue">0</p>
         <p class="metric-label">Active AI days</p>
-        <p class="metric-detail">Commit author dates with AI evidence.</p>
+        <p class="metric-detail sr-only">Commit author dates with AI evidence.</p>
       </div>
       <div class="metric">
         <p class="metric-value" id="unknownValue">0</p>
         <p class="metric-label">Unattributed commits</p>
-        <p class="metric-detail">No explicit AI or human declaration recorded.</p>
+        <p class="metric-detail sr-only">No explicit AI or human declaration recorded.</p>
       </div>
     </section>
 
     <section class="toolbar" aria-label="Provider view">
-      <span class="toolbar-label" id="filterLabel">Provider view</span>
+      <span class="toolbar-label sr-only" id="filterLabel">Provider view</span>
       <div class="filters" id="providerFilters" role="group"
            aria-label="Filter dashboard by AI provider"></div>
     </section>
@@ -909,57 +1625,195 @@
     <div class="console-grid">
       <section class="panel activity-panel" aria-labelledby="activityTitle">
         <div class="panel-heading">
-          <h2 class="panel-title" id="activityTitle">Commit map</h2>
+          <h2 class="panel-title" id="activityTitle">Collaboration mine</h2>
           <p class="panel-meta" id="activityMeta"></p>
+        </div>
+
+        <div class="voxel-controls">
+          <div class="date-controls" id="dateControls" aria-label="Date range selection">
+            <div class="preset-group" role="group" aria-label="Date range presets">
+              <button type="button" class="range-btn" id="preset28" data-preset="28d">28d</button>
+              <button type="button" class="range-btn" id="preset84"
+                      data-preset="84d" aria-pressed="true">84d</button>
+              <button type="button" class="range-btn" id="preset365"
+                      data-preset="365d">365d</button>
+              <button type="button" class="range-btn" id="presetAll" data-preset="all">All</button>
+            </div>
+            <details class="custom-range" id="customRangeDisclosure">
+              <summary>Custom dates</summary>
+              <div class="custom-range-form" id="customRangeForm">
+              <label for="customStartDate">From</label>
+              <input type="date" class="date-input" id="customStartDate">
+              <label for="customEndDate">To</label>
+              <input type="date" class="date-input" id="customEndDate">
+              <button type="button" class="range-btn" id="applyCustomRangeBtn">Apply</button>
+              <span class="date-range-error" id="dateRangeError" role="alert"></span>
+              </div>
+            </details>
+          </div>
+          <div class="voxel-action-controls">
+            <button type="button" class="range-btn" id="zoomToggleBtn"
+                    aria-label="Toggle zoom density">Zoom: Standard</button>
+            <button type="button" class="anim-toggle-btn" id="animToggleBtn"
+                    aria-label="Pause character animation">⏸ Pause</button>
+          </div>
+        </div>
+
+        <div class="panel-meta" id="scaleMeta"
+             style="margin-bottom: var(--space-2);">Scale: 0–100 commits/day</div>
+
+        <div class="legend">
+          <div class="legend-swatches">
+            <span class="legend-item">
+              <span class="legend-swatch legend-swatch--ai"></span>
+              <span>AI-attributed</span>
+            </span>
+            <span class="legend-item">
+              <span class="legend-swatch legend-swatch--other"></span>
+              <span>Other (total − AI)</span>
+            </span>
+            <span class="legend-item">
+              <span class="legend-swatch legend-swatch--base"></span>
+              <span>Published dates</span>
+            </span>
+          </div>
+          <div class="sr-only" id="legendScaleMeta"></div>
         </div>
         <div class="calendar-scroll">
           <div class="calendar" id="activityCalendar" role="group"
                aria-labelledby="activitySummary"></div>
         </div>
         <p class="sr-only" id="activitySummary"></p>
-        <div class="legend">
-          <span>
-            Fixed bins: 1 / 2-4 / 5-7 / 8+ selected commits.
-            Newest activity is shown; scroll for earlier days.
-          </span>
-          <span class="legend-scale"
-                aria-label="Selected attributed-commit volume: none, 1, 2 to 4, 5 to 7, 8 or more">
-            none
-            <span class="legend-cell"></span>
-            <span class="legend-cell" data-level="1"></span>
-            <span class="legend-cell" data-level="2"></span>
-            <span class="legend-cell" data-level="3"></span>
-            <span class="legend-cell" data-level="4"></span>
-            8+
-          </span>
+      </section>
+
+      <section class="panel detail-panel" id="selectedDatePanel" aria-labelledby="detailTitle">
+        <div class="panel-heading">
+          <h2 class="panel-title" id="detailTitle">Day breakdown</h2>
+          <p class="panel-meta sr-only" id="selectedDateMeta">
+            Select a day in the landscape or ledger</p>
+        </div>
+        <div class="day-composition" id="dayComposition" role="img"
+             aria-label="Select a day for its AI and Other composition"></div>
+        <div class="detail-grid" id="detailGrid">
+          <div class="detail-card">
+            <span class="detail-label">Date</span>
+            <span class="detail-val mono" id="detailDate">—</span>
+          </div>
+          <div class="detail-card">
+            <span class="detail-label">Total Commits</span>
+            <span class="detail-val mono" id="detailTotal">—</span>
+          </div>
+          <div class="detail-card detail-card--ai">
+            <span class="detail-label">AI-Attributed</span>
+            <span class="detail-val mono" id="detailAi">—</span>
+          </div>
+          <div class="detail-card detail-card--other">
+            <span class="detail-label">Other Records</span>
+            <span class="detail-val mono" id="detailOther">—</span>
+            <span class="detail-sub">Total − AI (not human)</span>
+          </div>
+          <div class="detail-card">
+            <span class="detail-label">AI Share</span>
+            <span class="detail-val mono" id="detailShare">—</span>
+          </div>
+        </div>
+        <div class="detail-providers" id="detailProviders">
+          <h3 class="detail-subtitle">Attributed Providers</h3>
+          <div class="detail-provider-list" id="detailProviderList"></div>
         </div>
       </section>
 
-      <aside class="sidebar" aria-label="Provider ledger and evidence">
-        <section class="panel providers-panel" aria-labelledby="providersTitle">
+      <aside class="sidebar" aria-label="Provider workstations and evidence">
+        <section
+          class="panel workstations-panel"
+          id="workstationsSection"
+          aria-labelledby="workstationsTitle"
+        >
           <div class="panel-heading">
-            <h2 class="panel-title" id="providersTitle">Providers</h2>
-            <p class="panel-meta">Attributed commits, not mutually exclusive</p>
+            <h2 class="panel-title" id="workstationsTitle">Mining Workstations</h2>
+            <p class="panel-meta" id="workstationsDenominator"></p>
           </div>
           <div class="provider-list" id="providerList"></div>
+          <p class="workstations-overlap-note">
+            Provider counts overlap — do not add them together.
+          </p>
         </section>
 
-        <section class="panel evidence-panel" aria-labelledby="evidenceTitle">
+        <section class="panel evidence-panel" id="evidenceSection" aria-labelledby="evidenceTitle">
           <div class="panel-heading">
-            <h2 class="panel-title" id="evidenceTitle">Evidence</h2>
+            <h2 class="panel-title" id="evidenceTitle">Archive Rock Stratum</h2>
             <p class="panel-meta" id="evidenceTotal"></p>
           </div>
-          <div class="evidence-track" id="evidenceTrack" aria-hidden="true"></div>
+          <div class="rock-stratum-container" id="rockStratumContainer" aria-hidden="true"></div>
+          <div class="evidence-track" id="evidenceTrack" aria-hidden="true"
+               style="display: none;"></div>
           <div class="evidence-grid" id="evidenceGrid"></div>
-          <p class="evidence-note">All ACE records, every actor type. Unknown evidence is
-            recorded as unknown; it is never recolored or inferred.</p>
+          <p class="evidence-note">All-time evidence · unknown ≠ human.</p>
         </section>
       </aside>
+
+      <section class="panel table-panel" id="dailyTableSection" aria-labelledby="tableTitle">
+        <details class="ledger-disclosure" id="dailyLedger">
+        <summary>Daily table</summary>
+        <div class="panel-heading">
+          <h2 class="panel-title" id="tableTitle">Daily Activity Ledger</h2>
+          <p class="panel-meta" id="tableRangeMeta">Showing selected range</p>
+        </div>
+        <div class="table-scroll">
+          <table class="daily-table" id="dailyTable" aria-label="Daily activity table">
+            <thead>
+              <tr>
+                <th scope="col" aria-sort="descending">
+                  <button type="button" class="sort-btn" data-sort="date">
+                    Date <span class="sort-icon" id="sortIcon-date">▼</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button type="button" class="sort-btn" data-sort="total">
+                    Total <span class="sort-icon" id="sortIcon-total"></span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button type="button" class="sort-btn" data-sort="ai">
+                    AI <span class="sort-icon" id="sortIcon-ai"></span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button type="button" class="sort-btn" data-sort="other">
+                    Other <span class="sort-icon" id="sortIcon-other"></span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button type="button" class="sort-btn" data-sort="share">
+                    AI % <span class="sort-icon" id="sortIcon-share"></span>
+                  </button>
+                </th>
+                <th scope="col">Providers</th>
+              </tr>
+            </thead>
+            <tbody id="dailyTableBody"></tbody>
+          </table>
+        </div>
+        </details>
+      </section>
     </div>
 
     <details class="definitions" id="definitions">
-      <summary class="definitions-summary">Definitions, attribution, and privacy boundary</summary>
+      <summary class="definitions-summary">How to read this profile</summary>
       <div class="definitions-body">
+        <div>
+          <h2 class="note-title">Symbols and scope</h2>
+          <p class="note-copy">Blue crystal = AI-attributed commits; stone = Other records
+            (total minus AI), not human. Heights share one linear scale. Provider symbols
+            highlight participation without changing the columns. Provider identity does not
+            identify a specific editor or tool.</p>
+          <p class="note-copy">All top metrics cover the full profile period. Active-day counts
+            use commit author dates. AI actor presences count one per provider/tool in a commit.</p>
+        </div>
+        <div>
+          <h2 class="note-title">Provider details</h2>
+          <ul class="provider-facts" id="providerFacts"></ul>
+        </div>
         <div>
           <h2 class="note-title">Unique commits</h2>
           <p class="note-copy">
@@ -972,6 +1826,9 @@
           <p class="note-copy">
             Commits without an explicit AI or human declaration stay unattributed. They are
             never inferred from source-code style and never counted as human work.
+            Human-Only means an explicit human-only declaration. All ACE records, every
+            actor type, contribute to the all-time evidence archive; no daily evidence
+            grade is inferred.
           </p>
         </div>
         <div>
@@ -984,27 +1841,26 @@
         <div>
           <h2 class="note-title">Privacy boundary</h2>
           <p class="note-copy" id="privacyCopy"></p>
+          <p class="note-copy" id="schemaLabel"></p>
         </div>
       </div>
     </details>
 
     <footer class="console-foot">
-      <span>Static snapshot rendered locally by aiprofile from explicit Git provenance;
-        numbers change only when the profile is regenerated.</span>
+      <span>Git provenance · static snapshot</span>
       <span id="footSnapshot"></span>
     </footer>
   </main>
 
   <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
-  <script type="application/json" id="profileData">{"daily":[{"ai_commits":0,"counts":[],"date":"2025-10-06","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-12-31","total_commits":11},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-02-19","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-02-26","total_commits":4},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-03-16","total_commits":1},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-03-17","total_commits":1},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-03-18","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-03-28","total_commits":4},{"ai_commits":0,"counts":[],"date":"2026-04-05","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-10","total_commits":4},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":6,"provider":"openai"}],"date":"2026-04-11","total_commits":17},{"ai_commits":49,"counts":[{"attributed_commits":49,"provider":"anthropic"}],"date":"2026-04-12","total_commits":56},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-04-13","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-14","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-15","total_commits":2},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-16","total_commits":12},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-04-17","total_commits":21},{"ai_commits":26,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":9,"provider":"openai"}],"date":"2026-04-18","total_commits":29},{"ai_commits":12,"counts":[{"attributed_commits":11,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-04-19","total_commits":25},{"ai_commits":0,"counts":[],"date":"2026-04-20","total_commits":15},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-04-21","total_commits":11},{"ai_commits":0,"counts":[],"date":"2026-04-22","total_commits":1},{"ai_commits":8,"counts":[{"attributed_commits":8,"provider":"anthropic"}],"date":"2026-04-23","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-24","total_commits":2},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-04-25","total_commits":34},{"ai_commits":44,"counts":[{"attributed_commits":44,"provider":"anthropic"}],"date":"2026-04-26","total_commits":53},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-04-27","total_commits":18},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-04-28","total_commits":15},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-29","total_commits":5},{"ai_commits":0,"counts":[],"date":"2026-04-30","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-02","total_commits":6},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-03","total_commits":12},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-05-04","total_commits":15},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-05-05","total_commits":5},{"ai_commits":32,"counts":[{"attributed_commits":32,"provider":"anthropic"}],"date":"2026-05-06","total_commits":33},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-05-07","total_commits":10},{"ai_commits":14,"counts":[{"attributed_commits":14,"provider":"anthropic"}],"date":"2026-05-08","total_commits":14},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-09","total_commits":40},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-10","total_commits":26},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"}],"date":"2026-05-11","total_commits":10},{"ai_commits":40,"counts":[{"attributed_commits":40,"provider":"anthropic"}],"date":"2026-05-12","total_commits":69},{"ai_commits":120,"counts":[{"attributed_commits":120,"provider":"anthropic"}],"date":"2026-05-13","total_commits":137},{"ai_commits":61,"counts":[{"attributed_commits":61,"provider":"anthropic"},{"attributed_commits":5,"provider":"openai"}],"date":"2026-05-14","total_commits":73},{"ai_commits":51,"counts":[{"attributed_commits":51,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-05-15","total_commits":52},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-05-16","total_commits":29},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-05-17","total_commits":23},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-18","total_commits":19},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-19","total_commits":16},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-20","total_commits":34},{"ai_commits":21,"counts":[{"attributed_commits":21,"provider":"anthropic"}],"date":"2026-05-21","total_commits":21},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-22","total_commits":29},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-23","total_commits":24},{"ai_commits":0,"counts":[],"date":"2026-05-24","total_commits":7},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-25","total_commits":17},{"ai_commits":19,"counts":[{"attributed_commits":19,"provider":"anthropic"}],"date":"2026-05-26","total_commits":19},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-27","total_commits":2},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-05-28","total_commits":3},{"ai_commits":18,"counts":[{"attributed_commits":18,"provider":"anthropic"}],"date":"2026-05-29","total_commits":18},{"ai_commits":23,"counts":[{"attributed_commits":23,"provider":"anthropic"}],"date":"2026-05-30","total_commits":23},{"ai_commits":25,"counts":[{"attributed_commits":25,"provider":"anthropic"}],"date":"2026-05-31","total_commits":25},{"ai_commits":13,"counts":[{"attributed_commits":13,"provider":"anthropic"}],"date":"2026-06-01","total_commits":13},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-02","total_commits":4},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-03","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-04","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-05","total_commits":1},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-06-06","total_commits":5},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-06-07","total_commits":12},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-06-08","total_commits":6},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-09","total_commits":3},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-10","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-11","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-12","total_commits":4},{"ai_commits":19,"counts":[{"attributed_commits":19,"provider":"anthropic"}],"date":"2026-06-13","total_commits":19},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-14","total_commits":4},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-15","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-21","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-06-23","total_commits":1},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-24","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-29","total_commits":2},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-06-30","total_commits":10},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-01","total_commits":7},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-02","total_commits":4},{"ai_commits":0,"counts":[],"date":"2026-07-03","total_commits":6},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-04","total_commits":7},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-05","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-07-06","total_commits":8},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-07","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-07-08","total_commits":20},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-07-09","total_commits":20},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-10","total_commits":19},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-11","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-12","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-07-13","total_commits":16},{"ai_commits":20,"counts":[{"attributed_commits":20,"provider":"anthropic"}],"date":"2026-07-14","total_commits":32},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-15","total_commits":17},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-07-16","total_commits":10},{"ai_commits":11,"counts":[{"attributed_commits":11,"provider":"anthropic"}],"date":"2026-07-17","total_commits":17},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-18","total_commits":5},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-20","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-07-21","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":1,"provider":"anthropic"},{"attributed_commits":1,"provider":"github"}],"date":"2026-07-22","total_commits":11},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"},{"attributed_commits":3,"provider":"openai"}],"date":"2026-07-23","total_commits":12},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"openai"}],"date":"2026-07-25","total_commits":5},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"openai"}],"date":"2026-07-26","total_commits":31},{"ai_commits":9,"counts":[{"attributed_commits":1,"provider":"anthropic"},{"attributed_commits":8,"provider":"openai"}],"date":"2026-07-27","total_commits":27},{"ai_commits":4,"counts":[{"attributed_commits":2,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-07-29","total_commits":4},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"openai"}],"date":"2026-07-30","total_commits":18},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-31","total_commits":2},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"},{"attributed_commits":6,"provider":"openai"}],"date":"2026-08-01","total_commits":13},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-08-02","total_commits":20},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-08-03","total_commits":9},{"ai_commits":17,"counts":[{"attributed_commits":7,"provider":"anthropic"},{"attributed_commits":12,"provider":"openai"}],"date":"2026-08-04","total_commits":24},{"ai_commits":3,"counts":[{"attributed_commits":2,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-08-05","total_commits":10},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"},{"attributed_commits":5,"provider":"openai"}],"date":"2026-08-09","total_commits":9},{"ai_commits":11,"counts":[{"attributed_commits":9,"provider":"anthropic"},{"attributed_commits":1,"provider":"github"},{"attributed_commits":8,"provider":"openai"}],"date":"2026-08-10","total_commits":14},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"}],"date":"2026-08-11","total_commits":9},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-08-12","total_commits":2},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-08-13","total_commits":2},{"ai_commits":13,"counts":[{"attributed_commits":13,"provider":"anthropic"}],"date":"2026-08-14","total_commits":13},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-08-15","total_commits":2},{"ai_commits":0,"counts":[],"date":"2026-08-17","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-08-18","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-08-19","total_commits":5},{"ai_commits":0,"counts":[],"date":"2026-08-21","total_commits":1},{"ai_commits":22,"counts":[{"attributed_commits":21,"provider":"anthropic"},{"attributed_commits":8,"provider":"openai"}],"date":"2026-08-23","total_commits":33},{"ai_commits":2,"counts":[{"attributed_commits":1,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-08-26","total_commits":4},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"github"}],"date":"2026-08-27","total_commits":19},{"ai_commits":0,"counts":[],"date":"2026-08-28","total_commits":12},{"ai_commits":0,"counts":[],"date":"2026-08-29","total_commits":55},{"ai_commits":0,"counts":[],"date":"2026-08-30","total_commits":12},{"ai_commits":0,"counts":[],"date":"2026-08-31","total_commits":38},{"ai_commits":0,"counts":[],"date":"2026-09-01","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-09-03","total_commits":2},{"ai_commits":0,"counts":[],"date":"2026-09-04","total_commits":7}],"evidence_records":{"declared":1343,"imported":0,"inferred":0,"total_records":2023,"unknown":680,"verified":0},"generated_on":"2026-09-06","model_count":2,"models":[{"active_days":109,"actor_presences":1205,"attributed_commits":1191,"category":"unknown","display_name":"Unknown"},{"active_days":13,"actor_presences":92,"attributed_commits":92,"category":"gpt","display_name":"GPT"},{"active_days":9,"actor_presences":46,"attributed_commits":46,"category":"claude","display_name":"Claude"}],"period":{"from":null,"label":"All time","to":null},"privacy":{"anonymous_aggregate_commits":0,"explicitly_publishable_commits":1977,"includes_anonymous_aggregate":false},"provider_count":3,"providers":[{"active_days":111,"actor_presences":1223,"attributed_commits":1223,"display_name":"Claude","provider":"anthropic"},{"active_days":20,"actor_presences":117,"attributed_commits":117,"display_name":"OpenAI","provider":"openai"},{"active_days":3,"actor_presences":3,"attributed_commits":3,"display_name":"Copilot","provider":"github"}],"schema_version":"0.3.0","totals":{"active_ai_days":115,"ai_actor_presences":1343,"ai_attributed_commits":1297,"commits_scanned":1977,"human_declared_commits":0,"unknown_commits":680}}</script>
+  <script type="application/json" id="profileData">{"daily":[{"ai_commits":0,"counts":[],"date":"2025-10-06","total_commits":1},{"ai_commits":0,"counts":[],"date":"2025-12-31","total_commits":11},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-02-19","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-02-26","total_commits":4},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-03-16","total_commits":1},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-03-17","total_commits":1},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-03-18","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-03-28","total_commits":4},{"ai_commits":0,"counts":[],"date":"2026-04-05","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-10","total_commits":4},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":6,"provider":"openai"}],"date":"2026-04-11","total_commits":17},{"ai_commits":49,"counts":[{"attributed_commits":49,"provider":"anthropic"}],"date":"2026-04-12","total_commits":56},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-04-13","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-14","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-15","total_commits":2},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-16","total_commits":12},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-04-17","total_commits":21},{"ai_commits":26,"counts":[{"attributed_commits":17,"provider":"anthropic"},{"attributed_commits":9,"provider":"openai"}],"date":"2026-04-18","total_commits":29},{"ai_commits":12,"counts":[{"attributed_commits":11,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-04-19","total_commits":25},{"ai_commits":0,"counts":[],"date":"2026-04-20","total_commits":15},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-04-21","total_commits":11},{"ai_commits":0,"counts":[],"date":"2026-04-22","total_commits":1},{"ai_commits":8,"counts":[{"attributed_commits":8,"provider":"anthropic"}],"date":"2026-04-23","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-04-24","total_commits":2},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-04-25","total_commits":34},{"ai_commits":44,"counts":[{"attributed_commits":44,"provider":"anthropic"}],"date":"2026-04-26","total_commits":53},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-04-27","total_commits":18},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-04-28","total_commits":15},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-04-29","total_commits":5},{"ai_commits":0,"counts":[],"date":"2026-04-30","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-02","total_commits":6},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-03","total_commits":12},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-05-04","total_commits":15},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-05-05","total_commits":5},{"ai_commits":32,"counts":[{"attributed_commits":32,"provider":"anthropic"}],"date":"2026-05-06","total_commits":33},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-05-07","total_commits":10},{"ai_commits":14,"counts":[{"attributed_commits":14,"provider":"anthropic"}],"date":"2026-05-08","total_commits":14},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-09","total_commits":40},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-05-10","total_commits":26},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"}],"date":"2026-05-11","total_commits":10},{"ai_commits":40,"counts":[{"attributed_commits":40,"provider":"anthropic"}],"date":"2026-05-12","total_commits":69},{"ai_commits":120,"counts":[{"attributed_commits":120,"provider":"anthropic"}],"date":"2026-05-13","total_commits":137},{"ai_commits":61,"counts":[{"attributed_commits":61,"provider":"anthropic"},{"attributed_commits":5,"provider":"openai"}],"date":"2026-05-14","total_commits":73},{"ai_commits":51,"counts":[{"attributed_commits":51,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-05-15","total_commits":52},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-05-16","total_commits":29},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"anthropic"}],"date":"2026-05-17","total_commits":23},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-18","total_commits":19},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-19","total_commits":16},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-20","total_commits":34},{"ai_commits":21,"counts":[{"attributed_commits":21,"provider":"anthropic"}],"date":"2026-05-21","total_commits":21},{"ai_commits":29,"counts":[{"attributed_commits":29,"provider":"anthropic"}],"date":"2026-05-22","total_commits":29},{"ai_commits":16,"counts":[{"attributed_commits":16,"provider":"anthropic"}],"date":"2026-05-23","total_commits":24},{"ai_commits":0,"counts":[],"date":"2026-05-24","total_commits":7},{"ai_commits":17,"counts":[{"attributed_commits":17,"provider":"anthropic"}],"date":"2026-05-25","total_commits":17},{"ai_commits":19,"counts":[{"attributed_commits":19,"provider":"anthropic"}],"date":"2026-05-26","total_commits":19},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-05-27","total_commits":2},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-05-28","total_commits":3},{"ai_commits":18,"counts":[{"attributed_commits":18,"provider":"anthropic"}],"date":"2026-05-29","total_commits":18},{"ai_commits":23,"counts":[{"attributed_commits":23,"provider":"anthropic"}],"date":"2026-05-30","total_commits":23},{"ai_commits":25,"counts":[{"attributed_commits":25,"provider":"anthropic"}],"date":"2026-05-31","total_commits":25},{"ai_commits":13,"counts":[{"attributed_commits":13,"provider":"anthropic"}],"date":"2026-06-01","total_commits":13},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-02","total_commits":4},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-03","total_commits":3},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-04","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-05","total_commits":1},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-06-06","total_commits":5},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-06-07","total_commits":12},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-06-08","total_commits":6},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-09","total_commits":3},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-06-10","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-11","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-12","total_commits":4},{"ai_commits":19,"counts":[{"attributed_commits":19,"provider":"anthropic"}],"date":"2026-06-13","total_commits":19},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-06-14","total_commits":4},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-15","total_commits":2},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-21","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-06-23","total_commits":1},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-06-24","total_commits":1},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-06-29","total_commits":2},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"}],"date":"2026-06-30","total_commits":10},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-01","total_commits":7},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-02","total_commits":4},{"ai_commits":0,"counts":[],"date":"2026-07-03","total_commits":6},{"ai_commits":7,"counts":[{"attributed_commits":7,"provider":"anthropic"}],"date":"2026-07-04","total_commits":7},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-05","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-07-06","total_commits":8},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-07","total_commits":17},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-07-08","total_commits":20},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"anthropic"}],"date":"2026-07-09","total_commits":20},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-10","total_commits":19},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-11","total_commits":3},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-12","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"}],"date":"2026-07-13","total_commits":16},{"ai_commits":20,"counts":[{"attributed_commits":20,"provider":"anthropic"}],"date":"2026-07-14","total_commits":32},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-07-15","total_commits":17},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-07-16","total_commits":10},{"ai_commits":11,"counts":[{"attributed_commits":11,"provider":"anthropic"}],"date":"2026-07-17","total_commits":17},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-18","total_commits":5},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-07-20","total_commits":6},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-07-21","total_commits":8},{"ai_commits":2,"counts":[{"attributed_commits":1,"provider":"anthropic"},{"attributed_commits":1,"provider":"github"}],"date":"2026-07-22","total_commits":11},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"},{"attributed_commits":3,"provider":"openai"}],"date":"2026-07-23","total_commits":12},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"openai"}],"date":"2026-07-25","total_commits":5},{"ai_commits":22,"counts":[{"attributed_commits":22,"provider":"openai"}],"date":"2026-07-26","total_commits":31},{"ai_commits":9,"counts":[{"attributed_commits":1,"provider":"anthropic"},{"attributed_commits":8,"provider":"openai"}],"date":"2026-07-27","total_commits":27},{"ai_commits":4,"counts":[{"attributed_commits":2,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-07-29","total_commits":4},{"ai_commits":12,"counts":[{"attributed_commits":12,"provider":"openai"}],"date":"2026-07-30","total_commits":18},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"anthropic"}],"date":"2026-07-31","total_commits":2},{"ai_commits":10,"counts":[{"attributed_commits":10,"provider":"anthropic"},{"attributed_commits":6,"provider":"openai"}],"date":"2026-08-01","total_commits":13},{"ai_commits":3,"counts":[{"attributed_commits":3,"provider":"anthropic"}],"date":"2026-08-02","total_commits":20},{"ai_commits":6,"counts":[{"attributed_commits":6,"provider":"anthropic"}],"date":"2026-08-03","total_commits":9},{"ai_commits":17,"counts":[{"attributed_commits":7,"provider":"anthropic"},{"attributed_commits":12,"provider":"openai"}],"date":"2026-08-04","total_commits":24},{"ai_commits":3,"counts":[{"attributed_commits":2,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-08-05","total_commits":10},{"ai_commits":5,"counts":[{"attributed_commits":5,"provider":"anthropic"},{"attributed_commits":5,"provider":"openai"}],"date":"2026-08-09","total_commits":9},{"ai_commits":11,"counts":[{"attributed_commits":9,"provider":"anthropic"},{"attributed_commits":1,"provider":"github"},{"attributed_commits":8,"provider":"openai"}],"date":"2026-08-10","total_commits":14},{"ai_commits":9,"counts":[{"attributed_commits":9,"provider":"anthropic"}],"date":"2026-08-11","total_commits":9},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-08-12","total_commits":2},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-08-13","total_commits":2},{"ai_commits":13,"counts":[{"attributed_commits":13,"provider":"anthropic"}],"date":"2026-08-14","total_commits":13},{"ai_commits":2,"counts":[{"attributed_commits":2,"provider":"anthropic"}],"date":"2026-08-15","total_commits":2},{"ai_commits":0,"counts":[],"date":"2026-08-17","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-08-18","total_commits":1},{"ai_commits":4,"counts":[{"attributed_commits":4,"provider":"anthropic"}],"date":"2026-08-19","total_commits":5},{"ai_commits":0,"counts":[],"date":"2026-08-21","total_commits":1},{"ai_commits":22,"counts":[{"attributed_commits":21,"provider":"anthropic"},{"attributed_commits":8,"provider":"openai"}],"date":"2026-08-23","total_commits":33},{"ai_commits":2,"counts":[{"attributed_commits":1,"provider":"anthropic"},{"attributed_commits":1,"provider":"openai"}],"date":"2026-08-26","total_commits":4},{"ai_commits":1,"counts":[{"attributed_commits":1,"provider":"github"}],"date":"2026-08-27","total_commits":19},{"ai_commits":0,"counts":[],"date":"2026-08-28","total_commits":12},{"ai_commits":0,"counts":[],"date":"2026-08-29","total_commits":55},{"ai_commits":0,"counts":[],"date":"2026-08-30","total_commits":12},{"ai_commits":0,"counts":[],"date":"2026-08-31","total_commits":38},{"ai_commits":0,"counts":[],"date":"2026-09-01","total_commits":1},{"ai_commits":0,"counts":[],"date":"2026-09-03","total_commits":2},{"ai_commits":0,"counts":[],"date":"2026-09-04","total_commits":7},{"ai_commits":2,"counts":[{"attributed_commits":1,"provider":"anthropic"},{"attributed_commits":2,"provider":"openai"}],"date":"2026-09-06","total_commits":3}],"evidence_records":{"declared":1346,"imported":0,"inferred":0,"total_records":2027,"unknown":681,"verified":0},"generated_on":"2026-09-06","model_count":2,"models":[{"active_days":110,"actor_presences":1208,"attributed_commits":1193,"category":"unknown","display_name":"Unknown"},{"active_days":13,"actor_presences":92,"attributed_commits":92,"category":"gpt","display_name":"GPT"},{"active_days":9,"actor_presences":46,"attributed_commits":46,"category":"claude","display_name":"Claude"}],"period":{"from":null,"label":"All time","to":null},"privacy":{"anonymous_aggregate_commits":0,"explicitly_publishable_commits":1980,"includes_anonymous_aggregate":false},"provider_count":3,"providers":[{"active_days":112,"actor_presences":1224,"attributed_commits":1224,"display_name":"Claude","provider":"anthropic"},{"active_days":21,"actor_presences":119,"attributed_commits":119,"display_name":"OpenAI","provider":"openai"},{"active_days":3,"actor_presences":3,"attributed_commits":3,"display_name":"Copilot","provider":"github"}],"schema_version":"0.3.0","totals":{"active_ai_days":116,"ai_actor_presences":1346,"ai_attributed_commits":1299,"commits_scanned":1980,"human_declared_commits":0,"unknown_commits":681}}</script>
   <script>
     (() => {
       "use strict";
 
       const data = JSON.parse(document.getElementById("profileData").textContent);
       const providerGlyphs = {"alibaba":"M23.919 14.545 20.817 9.17l1.47-2.544a.56.56 0 0 0 0-.566l-1.633-2.83a.57.57 0 0 0-.49-.283h-6.207L12.487.402a.57.57 0 0 0-.49-.284H8.732a.56.56 0 0 0-.49.284L5.139 5.775h-2.94a.56.56 0 0 0-.49.284L.077 8.887a.56.56 0 0 0 0 .567L3.18 14.83l-1.47 2.545a.56.56 0 0 0 0 .566l1.634 2.83a.57.57 0 0 0 .49.283h6.205l1.47 2.545a.57.57 0 0 0 .49.284h3.266a.57.57 0 0 0 .49-.284l3.104-5.375h2.94a.57.57 0 0 0 .49-.283l1.634-2.828a.55.55 0 0 0-.004-.568M8.733.686l1.634 2.828-1.634 2.828H21.8L20.164 9.17H7.425L5.63 6.06Zm1.306 19.801-6.205-.002 1.634-2.83h3.265L2.201 6.344h3.267q3.182 5.517 6.367 11.032zm10.124-5.66L18.53 12l-6.532 11.315-1.634-2.83c2.129-3.673 4.25-7.351 6.373-11.028h3.592l3.102 5.374z","anthropic":"m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z","cursor":"M11.503.131 1.891 5.678a.84.84 0 0 0-.42.726v11.188c0 .3.162.575.42.724l9.609 5.55a1 1 0 0 0 .998 0l9.61-5.55a.84.84 0 0 0 .42-.724V6.404a.84.84 0 0 0-.42-.726L12.497.131a1.01 1.01 0 0 0-.996 0M2.657 6.338h18.55c.263 0 .43.287.297.515L12.23 22.918c-.062.107-.229.064-.229-.06V12.335a.59.59 0 0 0-.295-.51l-9.11-5.257c-.109-.063-.064-.23.061-.23","deepseek":"M23.748 4.651c-.254-.124-.364.113-.512.233-.051.04-.094.09-.137.137-.372.397-.806.657-1.373.626-.829-.046-1.537.214-2.163.848-.133-.782-.575-1.248-1.247-1.548-.352-.155-.708-.311-.955-.65-.172-.24-.219-.509-.305-.774-.055-.16-.11-.323-.293-.35-.2-.031-.278.136-.356.276-.313.572-.434 1.202-.422 1.84.027 1.436.633 2.58 1.838 3.393.137.094.172.187.129.323-.082.28-.18.553-.266.833-.055.179-.137.218-.328.14a5.5 5.5 0 0 1-1.737-1.179c-.857-.828-1.631-1.743-2.597-2.46a12 12 0 0 0-.689-.47c-.985-.957.13-1.743.387-1.836.27-.098.094-.433-.778-.428-.872.003-1.67.295-2.687.685a3 3 0 0 1-.465.136 9.6 9.6 0 0 0-2.883-.101c-1.885.21-3.39 1.1-4.497 2.622C.082 8.776-.231 10.854.152 13.02c.403 2.284 1.568 4.175 3.36 5.653 1.857 1.533 3.997 2.284 6.438 2.14 1.482-.085 3.132-.284 4.994-1.86.47.234.962.328 1.78.398.629.058 1.235-.031 1.705-.129.735-.155.684-.836.418-.961-2.155-1.004-1.682-.595-2.112-.926 1.095-1.295 2.768-3.598 3.284-6.733.05-.346.115-.834.108-1.114-.004-.171.035-.238.23-.257a4.2 4.2 0 0 0 1.545-.475c1.397-.763 1.96-2.016 2.093-3.517.02-.23-.004-.467-.247-.588M11.58 18.168c-2.088-1.642-3.101-2.183-3.52-2.16-.39.024-.32.472-.234.763.09.288.207.487.371.74.114.167.192.416-.113.603-.673.416-1.842-.14-1.897-.168-1.361-.801-2.5-1.86-3.301-3.306-.775-1.393-1.225-2.888-1.299-4.482-.02-.385.094-.522.477-.592a4.7 4.7 0 0 1 1.53-.038c2.131.311 3.946 1.264 5.467 2.774.868.86 1.525 1.887 2.202 2.89.72 1.066 1.494 2.082 2.48 2.915.348.291.626.513.892.677-.802.09-2.14.109-3.055-.615zm1.001-6.44a.306.306 0 0 1 .415-.287.3.3 0 0 1 .113.074.3.3 0 0 1 .086.214c0 .17-.136.307-.308.307a.303.303 0 0 1-.306-.307m3.11 1.596c-.2.081-.4.151-.591.16a1.25 1.25 0 0 1-.798-.254c-.274-.23-.47-.358-.551-.758a1.7 1.7 0 0 1 .015-.588c.07-.327-.007-.537-.238-.727-.188-.156-.426-.199-.689-.199a.6.6 0 0 1-.254-.078.253.253 0 0 1-.114-.358 1 1 0 0 1 .192-.21c.356-.202.767-.136 1.146.016.352.144.618.408 1.001.782.392.451.462.576.685.915.176.264.336.536.446.848.066.194-.02.353-.25.45","github":"M23.922 16.997C23.061 18.492 18.063 22.02 12 22.02 5.937 22.02.939 18.492.078 16.997A.641.641 0 0 1 0 16.741v-2.869a.883.883 0 0 1 .053-.22c.372-.935 1.347-2.292 2.605-2.656.167-.429.414-1.055.644-1.517a10.098 10.098 0 0 1-.052-1.086c0-1.331.282-2.499 1.132-3.368.397-.406.89-.717 1.474-.952C7.255 2.937 9.248 1.98 11.978 1.98c2.731 0 4.767.957 6.166 2.093.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086.23.462.477 1.088.644 1.517 1.258.364 2.233 1.721 2.605 2.656a.841.841 0 0 1 .053.22v2.869a.641.641 0 0 1-.078.256Zm-11.75-5.992h-.344a4.359 4.359 0 0 1-.355.508c-.77.947-1.918 1.492-3.508 1.492-1.725 0-2.989-.359-3.782-1.259a2.137 2.137 0 0 1-.085-.104L4 11.746v6.585c1.435.779 4.514 2.179 8 2.179 3.486 0 6.565-1.4 8-2.179v-6.585l-.098-.104s-.033.045-.085.104c-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.545-3.508-1.492a4.359 4.359 0 0 1-.355-.508Zm2.328 3.25c.549 0 1 .451 1 1v2c0 .549-.451 1-1 1-.549 0-1-.451-1-1v-2c0-.549.451-1 1-1Zm-5 0c.549 0 1 .451 1 1v2c0 .549-.451 1-1 1-.549 0-1-.451-1-1v-2c0-.549.451-1 1-1Zm3.313-6.185c.136 1.057.403 1.913.878 2.497.442.544 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.15.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.319-.862-2.824-1.025-1.487-.161-2.192.138-2.533.529-.269.307-.437.808-.438 1.578v.021c0 .265.021.562.063.893Zm-1.626 0c.042-.331.063-.628.063-.894v-.02c-.001-.77-.169-1.271-.438-1.578-.341-.391-1.046-.69-2.533-.529-1.505.163-2.347.537-2.824 1.025-.462.472-.705 1.179-.705 2.319 0 1.211.175 1.926.558 2.361.365.414 1.084.751 2.657.751 1.21 0 1.902-.394 2.344-.938.475-.584.742-1.44.878-2.497Z","google":"M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81","meta":"M10.73.032c-1.333 0-2.032 1.016-2.032 2.285 0 2.223 2.127 4.953 4.318 4.953 1.301 0 2-.953 2-2.254 0-2.254-2.095-4.984-4.286-4.984m8.413 2.984c-1.968 0-3.397 2.73-3.397 4.825 0 1.556.794 3.016 2.254 3.016 2 0 3.365-2.762 3.365-4.794 0-1.523-.762-3.047-2.222-3.047M4.857 4.159c-1.968 0-3.778 1.016-3.778 2.54 0 1.65 2.16 2.793 4.254 2.793 1.873 0 3.778-.92 3.778-2.508 0-1.682-2.159-2.825-4.254-2.825m-.222 6.476C2.413 10.635 0 13.175 0 15.397c0 1.301.825 2.159 2.095 2.159 2.19 0 4.603-2.508 4.603-4.794 0-1.27-.761-2.127-2.063-2.127m16.667.698c-2.223 0-5.016 1.62-5.016 3.651 0 1.238 1.047 2.19 2.698 2.19 2.159 0 5.016-1.587 5.016-3.682 0-1.302-1.08-2.159-2.698-2.159M7.619 16c-1.524 0-2.38 1.746-2.38 3.429 0 2.063 1.269 4.54 3.047 4.54 1.524 0 2.38-1.81 2.38-3.461C10.667 18.57 9.46 16 7.62 16m6.571 1.016c-1.333 0-2.476.667-2.476 2.032 0 2.095 2.667 4.063 4.92 4.063 1.366 0 2.54-.73 2.54-2.063 0-2.032-2.698-4.032-4.984-4.032","mistral":"M17.143 3.429v3.428h-3.429v3.429h-3.428V6.857H6.857V3.43H3.43v13.714H0v3.428h10.286v-3.428H6.857v-3.429h3.429v3.429h3.429v-3.429h3.428v3.429h-3.428v3.428H24v-3.428h-3.43V3.429z","moonshot":"M21.765.351C22.998.351 24 1.353 24 2.586S22.998 4.82 21.765 4.82h-1.974c-.15 0-.26-.12-.26-.26V2.586A2.237 2.237 0 0 1 21.765.35M9.41 13.388l8.447-8.377c.16-.16.07-.471-.14-.471h-4.55s-.1.02-.14.06l-9.099 9.029c-.14.14-.35.02-.35-.21V4.81c0-.15-.1-.27-.221-.27H.22c-.12 0-.22.12-.22.27v18.57c0 .15.1.27.22.27h3.137c.12 0 .22-.12.22-.27v-3.79c0-.08.03-.16.08-.21l2.826-2.796c.07-.07.16-.08.241-.03l7.546 5.551a8.9 8.9 0 0 0 4.018 1.493c.12.01.23-.11.23-.27V19.76c0-.14-.08-.25-.19-.26a5.8 5.8 0 0 1-2.355-.942l-6.533-4.73c-.14-.09-.15-.32-.03-.441","ollama":"M16.361 10.26a.894.894 0 0 0-.558.47l-.072.148.001.207c0 .193.004.217.059.353.076.193.152.312.291.448.24.238.51.3.872.205a.86.86 0 0 0 .517-.436.752.752 0 0 0 .08-.498c-.064-.453-.33-.782-.724-.897a1.06 1.06 0 0 0-.466 0zm-9.203.005c-.305.096-.533.32-.65.639a1.187 1.187 0 0 0-.06.52c.057.309.31.59.598.667.362.095.632.033.872-.205.14-.136.215-.255.291-.448.055-.136.059-.16.059-.353l.001-.207-.072-.148a.894.894 0 0 0-.565-.472 1.02 1.02 0 0 0-.474.007Zm4.184 2c-.131.071-.223.25-.195.383.031.143.157.288.353.407.105.063.112.072.117.136.004.038-.01.146-.029.243-.02.094-.036.194-.036.222.002.074.07.195.143.253.064.052.076.054.255.059.164.005.198.001.264-.03.169-.082.212-.234.15-.525-.052-.243-.042-.28.087-.355.137-.08.281-.219.324-.314a.365.365 0 0 0-.175-.48.394.394 0 0 0-.181-.033c-.126 0-.207.03-.355.124l-.085.053-.053-.032c-.219-.13-.259-.145-.391-.143a.396.396 0 0 0-.193.032zm.39-2.195c-.373.036-.475.05-.654.086-.291.06-.68.195-.951.328-.94.46-1.589 1.226-1.787 2.114-.04.176-.045.234-.045.53 0 .294.005.357.043.524.264 1.16 1.332 2.017 2.714 2.173.3.033 1.596.033 1.896 0 1.11-.125 2.064-.727 2.493-1.571.114-.226.169-.372.22-.602.039-.167.044-.23.044-.523 0-.297-.005-.355-.045-.531-.288-1.29-1.539-2.304-3.072-2.497a6.873 6.873 0 0 0-.855-.031zm.645.937a3.283 3.283 0 0 1 1.44.514c.223.148.537.458.671.662.166.251.26.508.303.82.02.143.01.251-.043.482-.08.345-.332.705-.672.957a3.115 3.115 0 0 1-.689.348c-.382.122-.632.144-1.525.138-.582-.006-.686-.01-.853-.042-.57-.107-1.022-.334-1.35-.68-.264-.28-.385-.535-.45-.946-.03-.192.025-.509.137-.776.136-.326.488-.73.836-.963.403-.269.934-.46 1.422-.512.187-.02.586-.02.773-.002zm-5.503-11a1.653 1.653 0 0 0-.683.298C5.617.74 5.173 1.666 4.985 2.819c-.07.436-.119 1.04-.119 1.503 0 .544.064 1.24.155 1.721.02.107.031.202.023.208a8.12 8.12 0 0 1-.187.152 5.324 5.324 0 0 0-.949 1.02 5.49 5.49 0 0 0-.94 2.339 6.625 6.625 0 0 0-.023 1.357c.091.78.325 1.438.727 2.04l.13.195-.037.064c-.269.452-.498 1.105-.605 1.732-.084.496-.095.629-.095 1.294 0 .67.009.803.088 1.266.095.555.288 1.143.503 1.534.071.128.243.393.264.407.007.003-.014.067-.046.141a7.405 7.405 0 0 0-.548 1.873c-.062.417-.071.552-.071.991 0 .56.031.832.148 1.279L3.42 24h1.478l-.05-.091c-.297-.552-.325-1.575-.068-2.597.117-.472.25-.819.498-1.296l.148-.29v-.177c0-.165-.003-.184-.057-.293a.915.915 0 0 0-.194-.25 1.74 1.74 0 0 1-.385-.543c-.424-.92-.506-2.286-.208-3.451.124-.486.329-.918.544-1.154a.787.787 0 0 0 .223-.531c0-.195-.07-.355-.224-.522a3.136 3.136 0 0 1-.817-1.729c-.14-.96.114-2.005.69-2.834.563-.814 1.353-1.336 2.237-1.475.199-.033.57-.028.776.01.226.04.367.028.512-.041.179-.085.268-.19.374-.431.093-.215.165-.333.36-.576.234-.29.46-.489.822-.729.413-.27.884-.467 1.352-.561.17-.035.25-.04.569-.04.319 0 .398.005.569.04a4.07 4.07 0 0 1 1.914.997c.117.109.398.457.488.602.034.057.095.177.132.267.105.241.195.346.374.43.14.068.286.082.503.045.343-.058.607-.053.943.016 1.144.23 2.14 1.173 2.581 2.437.385 1.108.276 2.267-.296 3.153-.097.15-.193.27-.333.419-.301.322-.301.722-.001 1.053.493.539.801 1.866.708 3.036-.062.772-.26 1.463-.533 1.854a2.096 2.096 0 0 1-.224.258.916.916 0 0 0-.194.25c-.054.109-.057.128-.057.293v.178l.148.29c.248.476.38.823.498 1.295.253 1.008.231 2.01-.059 2.581a.845.845 0 0 0-.044.098c0 .006.329.009.732.009h.73l.02-.074.036-.134c.019-.076.057-.3.088-.516.029-.217.029-1.016 0-1.258-.11-.875-.295-1.57-.597-2.226-.032-.074-.053-.138-.046-.141.008-.005.057-.074.108-.152.376-.569.607-1.284.724-2.228.031-.26.031-1.378 0-1.628-.083-.645-.182-1.082-.348-1.525a6.083 6.083 0 0 0-.329-.7l-.038-.064.131-.194c.402-.604.636-1.262.727-2.04a6.625 6.625 0 0 0-.024-1.358 5.512 5.512 0 0 0-.939-2.339 5.325 5.325 0 0 0-.95-1.02 8.097 8.097 0 0 1-.186-.152.692.692 0 0 1 .023-.208c.208-1.087.201-2.443-.017-3.503-.19-.924-.535-1.658-.98-2.082-.354-.338-.716-.482-1.15-.455-.996.059-1.8 1.205-2.116 3.01a6.805 6.805 0 0 0-.097.726c0 .036-.007.066-.015.066a.96.96 0 0 1-.149-.078A4.857 4.857 0 0 0 12 3.03c-.832 0-1.687.243-2.456.698a.958.958 0 0 1-.148.078c-.008 0-.015-.03-.015-.066a6.71 6.71 0 0 0-.097-.725C8.997 1.392 8.337.319 7.46.048a2.096 2.096 0 0 0-.585-.041Zm.293 1.402c.248.197.523.759.682 1.388.03.113.06.244.069.292.007.047.026.152.041.233.067.365.098.76.102 1.24l.002.475-.12.175-.118.178h-.278c-.324 0-.646.041-.954.124l-.238.06c-.033.007-.038-.003-.057-.144a8.438 8.438 0 0 1 .016-2.323c.124-.788.413-1.501.696-1.711.067-.05.079-.049.157.013zm9.825-.012c.17.126.358.46.498.888.28.854.36 2.028.212 3.145-.019.14-.024.151-.057.144l-.238-.06a3.693 3.693 0 0 0-.954-.124h-.278l-.119-.178-.119-.175.002-.474c.004-.669.066-1.19.214-1.772.157-.623.434-1.185.68-1.382.078-.062.09-.063.159-.012z","openai":"M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 00-.856 0l-5.97 3.473zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 01.476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33L12 15.128zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303l-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 014.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 01-.476 0zm-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523zm5.899 2.83a5.947 5.947 0 005.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0010.205 0a5.947 5.947 0 00-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 004.162 1.713z","replit":"M2 1.5A1.5 1.5 0 0 1 3.5 0h7A1.5 1.5 0 0 1 12 1.5V8H3.5A1.5 1.5 0 0 1 2 6.5ZM12 8h8.5A1.5 1.5 0 0 1 22 9.5v5a1.5 1.5 0 0 1-1.5 1.5H12ZM2 17.5A1.5 1.5 0 0 1 3.5 16H12v6.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 2 22.5Z","windsurf":"M23.55 5.067c-1.2038-.002-2.1806.973-2.1806 2.1765v4.8676c0 .972-.8035 1.7594-1.7597 1.7594-.568 0-1.1352-.286-1.4718-.7659l-4.9713-7.1003c-.4125-.5896-1.0837-.941-1.8103-.941-1.1334 0-2.1533.9635-2.1533 2.153v4.8957c0 .972-.7969 1.7594-1.7596 1.7594-.57 0-1.1363-.286-1.4728-.7658L.4076 5.1598C.2822 4.9798 0 5.0688 0 5.2882v4.2452c0 .2147.0656.4228.1884.599l5.4748 7.8183c.3234.462.8006.8052 1.3509.9298 1.3771.313 2.6446-.747 2.6446-2.0977v-4.893c0-.972.7875-1.7593 1.7596-1.7593h.003a1.798 1.798 0 0 1 1.4718.7658l4.9723 7.0994c.4135.5905 1.05.941 1.8093.941 1.1587 0 2.1515-.9645 2.1515-2.153v-4.8948c0-.972.7875-1.7594 1.7596-1.7594h.194a.22.22 0 0 0 .2204-.2202v-4.622a.22.22 0 0 0-.2203-.2203Z","xai":"M9.27 15.29l7.978-5.897c.391-.29.95-.177 1.137.272.98 2.369.542 5.215-1.41 7.169-1.951 1.954-4.667 2.382-7.149 1.406l-2.711 1.257c3.889 2.661 8.611 2.003 11.562-.953 2.341-2.344 3.066-5.539 2.388-8.42l.006.007c-.983-4.232.242-5.924 2.75-9.383.06-.082.12-.164.179-.248l-3.301 3.305v-.01L9.267 15.292M7.623 16.723c-2.792-2.67-2.31-6.801.071-9.184 1.761-1.763 4.647-2.483 7.166-1.425l2.705-1.25a7.808 7.808 0 00-1.829-1A8.975 8.975 0 005.984 5.83c-2.533 2.536-3.33 6.436-1.962 9.764 1.022 2.487-.653 4.246-2.34 6.022-.599.63-1.199 1.259-1.682 1.925l7.62-6.815","zhipu":"M12.606 1.806l-1.677 2.388c-0.258 0.374-0.697 0.606-1.161 0.606h-9.162V1.794C0.594 1.806 12.606 1.806 12.606 1.806zM24 1.806L9.6 22.206 0 22.206 14.4 1.806zM11.394 22.206l1.69-2.4c0.258-0.374 0.697-0.606 1.161-0.606h9.149v3.006H11.394z"};
-      // The SVG namespace URI for createElementNS - an identifier, never a
-      // fetched network URL (the CSP forbids all connections anyway).
+      const actorBodies = {"miner":"\u003cpath d=\"M 7 19 l 4 -3 v 15 l -4 3 Z\" fill=\"#59452f\"/\u003e\u003crect x=\"1\" y=\"19\" width=\"6\" height=\"15\" fill=\"#8b693e\"/\u003e\u003cpath d=\"M 1 19 l 4 -3 h 6 l -4 3 Z\" fill=\"#baa06a\"/\u003e\n\u003cg class=\"miner-leg-l\"\u003e\u003cpath d=\"M 13 33 l 4 -3 v 9 l -4 3 Z\" fill=\"#233143\"/\u003e\u003crect x=\"7\" y=\"33\" width=\"6\" height=\"9\" fill=\"#384b62\"/\u003e\u003cpath d=\"M 7 33 l 4 -3 h 6 l -4 3 Z\" fill=\"#5a6a7d\"/\u003e\u003c/g\u003e\n\u003cpath d=\"M 22 33 l 4 -3 v 9 l -4 3 Z\" fill=\"#233143\"/\u003e\u003crect x=\"16\" y=\"33\" width=\"6\" height=\"9\" fill=\"#384b62\"/\u003e\u003cpath d=\"M 16 33 l 4 -3 h 6 l -4 3 Z\" fill=\"#5a6a7d\"/\u003e\n\u003cpath d=\"M 22 18 l 4 -3 v 15 l -4 3 Z\" fill=\"#1d5265\"/\u003e\u003crect x=\"7\" y=\"18\" width=\"15\" height=\"15\" fill=\"#297b96\"/\u003e\u003cpath d=\"M 7 18 l 4 -3 h 15 l -4 3 Z\" fill=\"#62a7b3\"/\u003e\n\u003cpath d=\"M 22 30 l 4 -3 v 3 l -4 3 Z\" fill=\"#4d382a\"/\u003e\u003crect x=\"7\" y=\"30\" width=\"15\" height=\"3\" fill=\"#785439\"/\u003e\u003cpath d=\"M 7 30 l 4 -3 h 15 l -4 3 Z\" fill=\"#ae8751\"/\u003e\n\u003cpath d=\"M 22 5 l 4 -3 v 13 l -4 3 Z\" fill=\"#b98157\"/\u003e\u003crect x=\"6\" y=\"5\" width=\"16\" height=\"13\" fill=\"#eac194\"/\u003e\u003cpath d=\"M 6 5 l 4 -3 h 16 l -4 3 Z\" fill=\"#ffe1b9\"/\u003e\n\u003crect x=\"10\" y=\"10\" width=\"3\" height=\"3\" fill=\"#24352f\"/\u003e\n\u003crect x=\"18\" y=\"10\" width=\"2\" height=\"3\" fill=\"#24352f\"/\u003e\n\u003crect x=\"14\" y=\"15\" width=\"5\" height=\"1\" fill=\"#6f6147\"/\u003e\n\u003cpath d=\"M 23 4 l 4 -3 v 4 l -4 3 Z\" fill=\"#9c691f\"/\u003e\u003crect x=\"5\" y=\"4\" width=\"18\" height=\"4\" fill=\"#d4972d\"/\u003e\u003cpath d=\"M 5 4 l 4 -3 h 18 l -4 3 Z\" fill=\"#f1ca68\"/\u003e\n\u003cpath d=\"M 24 7 l 4 -3 v 2 l -4 3 Z\" fill=\"#795017\"/\u003e\u003crect x=\"4\" y=\"7\" width=\"20\" height=\"2\" fill=\"#b88024\"/\u003e\u003cpath d=\"M 4 7 l 4 -3 h 20 l -4 3 Z\" fill=\"#e9b647\"/\u003e\n\u003cpath d=\"M 23 4 l 4 -3 v 5 l -4 3 Z\" fill=\"#c89639\"/\u003e\u003crect x=\"18\" y=\"4\" width=\"5\" height=\"5\" fill=\"#ffe5a0\"/\u003e\u003cpath d=\"M 18 4 l 4 -3 h 5 l -4 3 Z\" fill=\"#fff0c7\"/\u003e\n\u003cg class=\"pickaxe-arm\"\u003e\n\u003cpath d=\"M 25 19 l 4 -3 v 8 l -4 3 Z\" fill=\"#1d5265\"/\u003e\u003crect x=\"20\" y=\"19\" width=\"5\" height=\"8\" fill=\"#297b96\"/\u003e\u003cpath d=\"M 20 19 l 4 -3 h 5 l -4 3 Z\" fill=\"#62a7b3\"/\u003e\n\u003cpath d=\"M 23 23 L 34 12\" stroke=\"#8e683e\" stroke-width=\"3\"/\u003e\n\u003cpath d=\"M 29 11 L 35 9 L 40 14 L 39 18 L 34 13 L 28 14 Z\" fill=\"#9facb5\"/\u003e\n\u003cpath d=\"M 29 11 L 35 9 L 39 12 L 35 11 Z\" fill=\"#d7e1e3\"/\u003e\n\u003c/g\u003e","zombie":"\u003cpath d=\"M 7 19 l 4 -3 v 15 l -4 3 Z\" fill=\"#59452f\"/\u003e\u003crect x=\"1\" y=\"19\" width=\"6\" height=\"15\" fill=\"#8b693e\"/\u003e\u003cpath d=\"M 1 19 l 4 -3 h 6 l -4 3 Z\" fill=\"#baa06a\"/\u003e\n\u003cg class=\"zombie-leg-l\"\u003e\u003cpath d=\"M 13 33 l 4 -3 v 9 l -4 3 Z\" fill=\"#233143\"/\u003e\u003crect x=\"7\" y=\"33\" width=\"6\" height=\"9\" fill=\"#384b62\"/\u003e\u003cpath d=\"M 7 33 l 4 -3 h 6 l -4 3 Z\" fill=\"#5a6a7d\"/\u003e\u003c/g\u003e\n\u003cpath d=\"M 22 33 l 4 -3 v 9 l -4 3 Z\" fill=\"#233143\"/\u003e\u003crect x=\"16\" y=\"33\" width=\"6\" height=\"9\" fill=\"#384b62\"/\u003e\u003cpath d=\"M 16 33 l 4 -3 h 6 l -4 3 Z\" fill=\"#5a6a7d\"/\u003e\n\u003cpath d=\"M 22 18 l 4 -3 v 15 l -4 3 Z\" fill=\"#3d5244\"/\u003e\u003crect x=\"7\" y=\"18\" width=\"15\" height=\"15\" fill=\"#627c65\"/\u003e\u003cpath d=\"M 7 18 l 4 -3 h 15 l -4 3 Z\" fill=\"#8ba183\"/\u003e\n\u003cpath d=\"M 22 30 l 4 -3 v 3 l -4 3 Z\" fill=\"#4d382a\"/\u003e\u003crect x=\"7\" y=\"30\" width=\"15\" height=\"3\" fill=\"#785439\"/\u003e\u003cpath d=\"M 7 30 l 4 -3 h 15 l -4 3 Z\" fill=\"#ae8751\"/\u003e\n\u003cpath d=\"M 22 5 l 4 -3 v 13 l -4 3 Z\" fill=\"#496b3a\"/\u003e\u003crect x=\"6\" y=\"5\" width=\"16\" height=\"13\" fill=\"#7ba55a\"/\u003e\u003cpath d=\"M 6 5 l 4 -3 h 16 l -4 3 Z\" fill=\"#a0c278\"/\u003e\n\u003crect x=\"10\" y=\"10\" width=\"3\" height=\"3\" fill=\"#24352f\"/\u003e\n\u003crect x=\"18\" y=\"10\" width=\"2\" height=\"3\" fill=\"#24352f\"/\u003e\n\u003crect x=\"14\" y=\"15\" width=\"5\" height=\"1\" fill=\"#6f6147\"/\u003e\n\u003cpath d=\"M 26 20 l 4 -3 v 10 l -4 3 Z\" fill=\"#496b3a\"/\u003e\u003crect x=\"21\" y=\"20\" width=\"5\" height=\"10\" fill=\"#7ba55a\"/\u003e\u003cpath d=\"M 21 20 l 4 -3 h 5 l -4 3 Z\" fill=\"#a0c278\"/\u003e\n\u003cpath d=\"M 7 5 h 5 v 3 H 9 v 2 H 6 V 5 Z\" fill=\"#3d653c\"/\u003e\n\u003crect x=\"16\" y=\"4\" width=\"5\" height=\"3\" fill=\"#4d733e\"/\u003e\n\u003crect x=\"2\" y=\"24\" width=\"5\" height=\"2\" fill=\"#c7b06d\"/\u003e"};
       const SVG_NS = "http:" + "//www.w3.org/2000/svg";
       const $ = (id) => document.getElementById(id);
       const number = new Intl.NumberFormat("en-US");
@@ -1032,19 +1888,45 @@
         "#0969da", "#1a7f37", "#9a6700", "#8250df", "#cf222e", "#1f6feb"
       ];
       const evidenceColors = {
-        verified: "#1a7f37",
-        declared: "#0969da",
-        imported: "#8250df",
-        inferred: "#bf8700",
-        unknown: "#6e7781"
+        verified: "#10b981",
+        declared: "#0284c7",
+        imported: "#8b5cf6",
+        inferred: "#d97706",
+        unknown: "#64748b"
       };
+      const evidence3D = {
+        verified: { front: "#10b981", top: "#34d399", side: "#059669" },
+        declared: { front: "#0284c7", top: "#38bdf8", side: "#0369a1" },
+        imported: { front: "#8b5cf6", top: "#a78bfa", side: "#7c3aed" },
+        inferred: { front: "#d97706", top: "#fbbf24", side: "#b45309" },
+        unknown:  { front: "#64748b", top: "#94a3b8", side: "#475569" }
+      };
+
       let selected = "all";
       let theme = "auto";
       let calendarFocusIndex = null;
+      let selectedDate = null;
+      let sortCol = "date";
+      let sortDir = "desc";
+      let isZoomed = false;
+      let animRunning = true;
+
       let tooltipOwner = null;
       let tooltipPinned = false;
       let tooltipSuppressed = null;
       let tooltipHoverPaused = false;
+
+      // Publishable date extent
+      const dailyData = data.daily || [];
+      const byDate = new Map(dailyData.map((d) => [d.date, d]));
+      const minPublishableDate = dailyData.length ? dailyData[0].date : null;
+      const maxPublishableDate = dailyData.length ? dailyData[dailyData.length - 1].date : null;
+
+      let activePreset = "84d";
+      let currentStartDate = null;
+      let currentEndDate = null;
+      let lastValidStartDate = null;
+      let lastValidEndDate = null;
 
       function colorFor(slug) {
         if (providerColors[slug]) return providerColors[slug];
@@ -1084,20 +1966,6 @@
         return icon;
       }
 
-      function hexToRgb(hex) {
-        const value = hex.replace("#", "");
-        return [
-          parseInt(value.slice(0, 2), 16),
-          parseInt(value.slice(2, 4), 16),
-          parseInt(value.slice(4, 6), 16)
-        ];
-      }
-
-      function rgba(hex, alpha) {
-        const [r, g, b] = hexToRgb(hex);
-        return `rgba(${r}, ${g}, ${b}, ${alpha.toFixed(3)})`;
-      }
-
       function providerBySlug(slug) {
         return data.providers.find((row) => row.provider === slug);
       }
@@ -1119,6 +1987,7 @@
       }
 
       function selectedDayCount(day) {
+        if (!day) return 0;
         if (selected === "all") return day.ai_commits;
         const row = day.counts.find((count) => count.provider === selected);
         return row ? row.attributed_commits : 0;
@@ -1133,26 +2002,83 @@
         return value.toISOString().slice(0, 10);
       }
 
-      function fillDailySeries() {
-        if (!data.daily.length) return [];
-        const byDate = new Map(data.daily.map((day) => [day.date, day]));
-        const start = dateAtUtc(data.daily[0].date);
-        const end = dateAtUtc(data.daily[data.daily.length - 1].date);
-        const rows = [];
-        for (
-          let cursor = new Date(start);
-          cursor <= end && rows.length < 365;
-          cursor.setUTCDate(cursor.getUTCDate() + 1)
-        ) {
-          const key = dateKey(cursor);
-          rows.push(byDate.get(key) || {
+      function niceCeiling(peak) {
+        if (peak <= 1) return 1;
+        const s = String(peak);
+        const power = 10 ** (s.length - 1);
+        const leading = Math.ceil(peak / power);
+        return leading * power;
+      }
+
+      function computePresetRange(preset) {
+        if (!maxPublishableDate) return { start: null, end: null };
+        const end = dateAtUtc(maxPublishableDate);
+        let daysBack = 84;
+        if (preset === "28d") daysBack = 28;
+        else if (preset === "84d") daysBack = 84;
+        else if (preset === "365d") daysBack = 365;
+        else if (preset === "all") {
+          return { start: minPublishableDate, end: maxPublishableDate };
+        }
+        const start = new Date(end);
+        start.setUTCDate(start.getUTCDate() - (daysBack - 1));
+        return {
+          start: dateKey(start),
+          end: maxPublishableDate
+        };
+      }
+
+      function initDates() {
+        if (!dailyData.length) {
+          $("preset28").disabled = true;
+          $("preset84").disabled = true;
+          $("preset365").disabled = true;
+          $("presetAll").disabled = true;
+          $("customStartDate").disabled = true;
+          $("customEndDate").disabled = true;
+          $("applyCustomRangeBtn").disabled = true;
+          return;
+        }
+        const range = computePresetRange("84d");
+        currentStartDate = range.start;
+        currentEndDate = range.end;
+        lastValidStartDate = currentStartDate;
+        lastValidEndDate = currentEndDate;
+        $("customStartDate").value = currentStartDate;
+        $("customEndDate").value = currentEndDate;
+        $("customStartDate").min = minPublishableDate;
+        $("customStartDate").max = maxPublishableDate;
+        $("customEndDate").min = minPublishableDate;
+        $("customEndDate").max = maxPublishableDate;
+      }
+
+      function getActiveSeries() {
+        if (!currentStartDate || !currentEndDate) return [];
+        const start = dateAtUtc(currentStartDate);
+        const end = dateAtUtc(currentEndDate);
+        const series = [];
+        const curr = new Date(start);
+        while (curr <= end) {
+          const key = dateKey(curr);
+          const cell = byDate.get(key) || {
             date: key,
             total_commits: 0,
             ai_commits: 0,
             counts: []
-          });
+          };
+          series.push(cell);
+          curr.setUTCDate(curr.getUTCDate() + 1);
         }
-        return rows;
+        return series;
+      }
+
+      function pctLabel(num, den) {
+        if (den <= 0 || num === 0) return "0%";
+        if (num === den) return "100%";
+        const p = Math.round((100 * num) / den);
+        if (p === 0) return "<1%";
+        if (p === 100) return ">99%";
+        return `${p}%`;
       }
 
       function renderFilters() {
@@ -1164,6 +2090,7 @@
           button.className = "filter";
           button.dataset.provider = row.provider;
           button.setAttribute("aria-pressed", String(selected === row.provider));
+          button.setAttribute("aria-label", `Highlight ${row.display_name}`);
           button.style.setProperty("--provider-accent", accent);
           button.append(
             providerIcon(row.provider, row.display_name, "filter"),
@@ -1178,97 +2105,283 @@
       }
 
       function renderMetrics() {
-        const row = selectedRow();
-        const commitCount = row ? row.attributed_commits : data.totals.ai_attributed_commits;
-        const presenceCount = row ? row.actor_presences : data.totals.ai_actor_presences;
-        const dayCount = row ? row.active_days : data.totals.active_ai_days;
+        const commitCount = data.totals.ai_attributed_commits;
+        const presenceCount = data.totals.ai_actor_presences;
+        const dayCount = data.totals.active_ai_days;
         const denominator = data.totals.commits_scanned;
         const share = denominator ? (commitCount / denominator) * 100 : 0;
         const accent = selectedAccent();
 
         $("primaryMetric").style.setProperty("--active-accent", accent);
-        $("primaryLabel").textContent = row
-          ? `${row.display_name}-attributed commits`
-          : "Unique AI-attributed commits";
+        $("primaryLabel").textContent = "AI-attributed commits";
         $("primaryValue").textContent = number.format(commitCount);
         $("primaryDetail").textContent =
-          `${percent.format(share)}% of ${number.format(denominator)} commits scanned` +
-          (row ? " · may overlap other providers" : " · each commit counted once");
+          `${percent.format(share)}% of ${number.format(denominator)} commits scanned · ` +
+          "each commit counted once";
         $("shareFill").style.width = `${Math.min(100, share)}%`;
         $("presenceValue").textContent = number.format(presenceCount);
-        $("presenceLabel").textContent = row
-          ? `${row.display_name} actor presences`
-          : "AI actor presences";
+        $("presenceLabel").textContent = "AI actor presences";
         $("daysValue").textContent = number.format(dayCount);
         $("unknownValue").textContent = number.format(data.totals.unknown_commits);
       }
 
-      function renderCalendar() {
-        const series = fillDailySeries();
-        const calendar = $("activityCalendar");
-        const scroller = document.querySelector(".calendar-scroll");
-        const previousMaxScroll = Math.max(
-          0,
-          scroller.scrollWidth - scroller.clientWidth
-        );
-        const previousScrollLeft = scroller.scrollLeft;
-        const followNewest =
-          previousMaxScroll <= 1 || previousMaxScroll - previousScrollLeft <= 2;
-        calendar.replaceChildren();
-        if (!series.length) {
-          calendarFocusIndex = null;
-          const empty = document.createElement("div");
-          empty.className = "calendar-empty";
-          empty.textContent = "No publishable daily activity in this profile.";
-          calendar.className = "calendar-empty";
-          calendar.append(empty);
-          $("activityMeta").textContent = "No daily series";
-          $("activitySummary").textContent = "No publishable daily activity.";
-          return;
+      function getPalette() {
+        const isDark = document.documentElement.dataset.theme === "dark" ||
+          (document.documentElement.dataset.theme === "auto" &&
+           window.matchMedia("(prefers-color-scheme: dark)").matches);
+        return isDark ? {
+          grassTop: "#3a6920",
+          grassFringe: "#4d822d",
+          dirtFront: "#4d3726",
+          dirtSide: "#332419",
+          stoneFront: "#3d444d",
+          stoneSide: "#282d33",
+          aiFront: "#38bdf8",
+          aiTop: "#bae6fd",
+          aiSide: "#0284c7",
+          otherFront: "#64748b",
+          otherTop: "#94a3b8",
+          otherSide: "#475569",
+          slotBorder: "#34526f",
+          slotBg: "#1e293b"
+        } : {
+          grassTop: "#5b8c32",
+          grassFringe: "#6fa83e",
+          dirtFront: "#866043",
+          dirtSide: "#5a402d",
+          stoneFront: "#6e7681",
+          stoneSide: "#57606a",
+          aiFront: "#0ea5e9",
+          aiTop: "#7dd3fc",
+          aiSide: "#0284c7",
+          otherFront: "#94a3b8",
+          otherTop: "#cbd5e1",
+          otherSide: "#64748b",
+          slotBorder: "#c2d3e5",
+          slotBg: "#e2e8f0"
+        };
+      }
+
+      function renderTerraceSvg(
+        terraceIdx, rowDays, ceiling, globalStartIndex, rovingIndex, hasActors, hasActivity,
+        rowCapacity, compact
+      ) {
+        const dayPitch = 25;
+        // One pixel scale for every row, including an incomplete final row.
+        const baseW = 12 + rowCapacity * dayPitch;
+        const totalW = baseW + (compact ? 22 : 92);
+        const totalH = compact && hasActors ? 258 : 146;
+        const baselineY = 80;
+        const maxH = 46.0;
+        const voxelDx = 3;
+        const voxelDy = 2.5;
+        const pal = getPalette();
+
+        const svg = document.createElementNS(SVG_NS, "svg");
+        svg.setAttribute("viewBox", `0 0 ${totalW} ${totalH}`);
+        svg.setAttribute("class", "voxel-terrace-svg");
+        svg.setAttribute("role", "group");
+        svg.setAttribute("aria-label", `Terrace ${terraceIdx + 1} activity landscape`);
+
+        const baseX = 6;
+
+        // Broad orthographic slab. Only pillar fronts carry quantities.
+        function decor(tag, attrs) {
+          const el = document.createElementNS(SVG_NS, tag);
+          for (const [key, value] of Object.entries(attrs)) el.setAttribute(key, String(value));
+          svg.append(el);
+          return el;
         }
-        calendar.className = "calendar";
-        const accent = selectedAccent();
-        const binOpacity = [0.42, 0.62, 0.81, 1];
-        const rovingIndex = calendarFocusIndex === null
-          ? series.length - 1
-          : Math.max(0, Math.min(series.length - 1, calendarFocusIndex));
-        if (calendarFocusIndex !== null) calendarFocusIndex = rovingIndex;
-        const firstWeekday = dateAtUtc(series[0].date).getUTCDay();
-        for (let index = 0; index < firstWeekday; index += 1) {
-          const spacer = document.createElement("span");
-          spacer.className = "day-spacer";
-          spacer.setAttribute("aria-hidden", "true");
-          calendar.append(spacer);
+        decor("path", {class: "terrain-top", fill: pal.grassTop,
+          d: "M " + baseX + " " + baselineY + " l 18 -12 h " + baseW + " l -18 12 Z"});
+        for (let i = 0; i <= rowCapacity; i++) {
+          decor("path", {d: "M " + (baseX + i * dayPitch) + " " + baselineY + " l 18 -12",
+            stroke: pal.grassFringe, "stroke-width": 1});
+        }
+        decor("rect", {x: baseX, y: baselineY, width: baseW, height: 14, fill: pal.dirtFront});
+        decor("rect", {x: baseX, y: baselineY + 14, width: baseW, height: 22,
+          fill: pal.stoneFront});
+        decor("path", {d: "M " + (baseX + baseW) + " " + baselineY +
+          " l 18 -12 v 14 l -18 12 Z", fill: pal.dirtSide});
+        decor("path", {d: "M " + (baseX + baseW) + " " + (baselineY + 14) +
+          " l 18 -12 v 22 l -18 12 Z", fill: pal.stoneSide});
+        for (let course = 0; course < 2; course++) {
+          for (let i = 0; i <= rowCapacity; i++) {
+            const bx = baseX + i * dayPitch + (course ? 12 : 0);
+            const bw = Math.min(24, baseX + baseW - bx);
+            if (bw <= 0) continue;
+            const by = baselineY + 15 + course * 10;
+            decor("rect", {x: bx, y: by, width: bw, height: 9,
+              fill: (i + course + terraceIdx) % 5 === 0 ? pal.stoneSide : pal.stoneFront});
+            decor("path", {d: "M " + bx + " " + (by + 9) + " h " + bw,
+              stroke: pal.stoneSide, "stroke-width": 1});
+          }
+        }
+        for (let i = 0; i < rowCapacity; i += 2) {
+          const gx = baseX + i * dayPitch;
+          decor("rect", {x: gx, y: baselineY, width: 24, height: 3, fill: pal.grassFringe});
+          decor("rect", {x: gx + 8, y: baselineY + 3, width: 5, height: 3, fill: pal.grassTop});
+        }
+        for (const ratio of [0.2, 0.65]) {
+          const ox = baseX + Math.floor(baseW * ratio);
+          decor("rect", {x: ox, y: baselineY + 23, width: 5, height: 4, fill: pal.aiSide});
+          decor("rect", {x: ox + 5, y: baselineY + 20, width: 3, height: 3, fill: pal.aiTop});
         }
 
-        for (const [index, day] of series.entries()) {
+        // Days in this row
+        for (let d = 0; d < rowDays.length; d++) {
+          const day = rowDays[d];
+          const index = globalStartIndex + d;
           const selectedCount = selectedDayCount(day);
-          const level = selectedCount === 0
-            ? 0
-            : selectedCount === 1
-              ? 1
-              : selectedCount <= 4
-                ? 2
-                : selectedCount <= 7
-                  ? 3
-                  : 4;
           const share = day.total_commits
             ? (selectedCount / day.total_commits) * 100
             : 0;
-          const cell = document.createElement("button");
-          cell.type = "button";
-          cell.className = "day-cell";
-          cell.tabIndex = index === rovingIndex ? 0 : -1;
-          cell.dataset.index = String(index);
-          cell.dataset.active = String(selectedCount > 0);
-          cell.dataset.level = String(level);
-          if (selectedCount) {
-            cell.style.background = rgba(accent, binOpacity[level - 1]);
-          }
           const label = `${day.date}: ${day.total_commits} total commits; ` +
             `${selectedCount} ${selectedName()} attributed commits; ` +
             `${percent.format(share)}% share`;
+
+          const dayX = baseX + 4 + d * dayPitch;
+          const cell = document.createElementNS(SVG_NS, "g");
+          cell.setAttribute("class", "day-cell");
+          cell.setAttribute("role", "button");
+          cell.tabIndex = index === rovingIndex ? 0 : -1;
+          cell.dataset.index = String(index);
+          cell.dataset.date = day.date;
+          cell.dataset.active = String(selectedCount > 0);
+          if (selectedCount) {
+            cell.dataset.hasSelected = "true";
+          }
           cell.setAttribute("aria-label", label);
+
+          if (day.date === selectedDate) {
+            cell.setAttribute("data-selected-day", "true");
+          }
+
+          const hasProviderParticipation = selected === "all" ||
+            (day.counts && day.counts.some(c => c.provider === selected));
+          if (selected !== "all" && hasProviderParticipation) {
+            cell.setAttribute("data-highlighted", "true");
+          }
+
+          // Ground marker
+          const groundMarker = document.createElementNS(SVG_NS, "rect");
+          groundMarker.setAttribute("class", "day-ground-marker");
+          groundMarker.setAttribute("x", String(dayX - 1));
+          groundMarker.setAttribute("y", String(baselineY - 2));
+          groundMarker.setAttribute("width", "19");
+          groundMarker.setAttribute("height", "3");
+          groundMarker.setAttribute("rx", "1");
+          groundMarker.setAttribute("fill", "transparent");
+          cell.append(groundMarker);
+
+          // Day label
+          const dayNum = day.date.slice(8);
+          const textLabel = document.createElementNS(SVG_NS, "text");
+          textLabel.setAttribute("class", "day-label");
+          textLabel.setAttribute("x", String(dayX + 8.5));
+          textLabel.setAttribute("y", String(baselineY + 57));
+          textLabel.setAttribute("text-anchor", "middle");
+          textLabel.setAttribute("font-size", "14");
+          if (compact) textLabel.style.fontSize = "18px";
+          textLabel.setAttribute("font-family", "var(--mono)");
+          textLabel.setAttribute("fill", "var(--muted)");
+          textLabel.textContent = dayNum;
+          cell.append(textLabel);
+
+          // Pillars or Zero slot
+          if (day.total_commits === 0 && day.ai_commits === 0) {
+            const slot = document.createElementNS(SVG_NS, "rect");
+            slot.setAttribute("x", String(dayX));
+            slot.setAttribute("y", String(baselineY - 1));
+            slot.setAttribute("width", "17");
+            slot.setAttribute("height", "1");
+            slot.setAttribute("fill", pal.slotBorder);
+            cell.append(slot);
+          } else {
+            const cAi = day.ai_commits;
+            const cOther = Math.max(0, day.total_commits - day.ai_commits);
+
+            if (cAi > 0) {
+              const hAi = (maxH * cAi) / ceiling;
+              const aiX = dayX;
+
+              const rect = document.createElementNS(SVG_NS, "rect");
+              rect.setAttribute("x", String(aiX));
+              rect.setAttribute("y", String(baselineY - hAi));
+              rect.setAttribute("width", "8");
+              rect.setAttribute("height", String(hAi));
+              rect.setAttribute("fill", pal.aiFront);
+              cell.append(rect);
+
+              const top = document.createElementNS(SVG_NS, "path");
+              top.setAttribute(
+                "d",
+                `M ${aiX} ${baselineY - hAi} ` +
+                `L ${aiX + voxelDx} ${baselineY - hAi - voxelDy} ` +
+                `L ${aiX + 8 + voxelDx} ${baselineY - hAi - voxelDy} ` +
+                `L ${aiX + 8} ${baselineY - hAi} Z`
+              );
+              top.setAttribute("fill", pal.aiTop);
+              cell.append(top);
+
+              const side = document.createElementNS(SVG_NS, "path");
+              side.setAttribute(
+                "d",
+                `M ${aiX + 8} ${baselineY} L ${aiX + 8} ${baselineY - hAi} ` +
+                `L ${aiX + 8 + voxelDx} ${baselineY - hAi - voxelDy} ` +
+                `L ${aiX + 8 + voxelDx} ${baselineY - voxelDy} Z`
+              );
+              side.setAttribute("fill", pal.aiSide);
+              cell.append(side);
+            }
+
+            if (cOther > 0) {
+              const hOther = (maxH * cOther) / ceiling;
+              const otherX = dayX + 9;
+
+              const rect = document.createElementNS(SVG_NS, "rect");
+              rect.setAttribute("x", String(otherX));
+              rect.setAttribute("y", String(baselineY - hOther));
+              rect.setAttribute("width", "8");
+              rect.setAttribute("height", String(hOther));
+              rect.setAttribute("fill", pal.otherFront);
+              cell.append(rect);
+
+              const top = document.createElementNS(SVG_NS, "path");
+              top.setAttribute(
+                "d",
+                `M ${otherX} ${baselineY - hOther} ` +
+                `L ${otherX + voxelDx} ${baselineY - hOther - voxelDy} ` +
+                `L ${otherX + 8 + voxelDx} ${baselineY - hOther - voxelDy} ` +
+                `L ${otherX + 8} ${baselineY - hOther} Z`
+              );
+              top.setAttribute("fill", pal.otherTop);
+              cell.append(top);
+
+              const side = document.createElementNS(SVG_NS, "path");
+              side.setAttribute(
+                "d",
+                `M ${otherX + 8} ${baselineY} L ${otherX + 8} ${baselineY - hOther} ` +
+                `L ${otherX + 8 + voxelDx} ${baselineY - hOther - voxelDy} ` +
+                `L ${otherX + 8 + voxelDx} ${baselineY - voxelDy} Z`
+              );
+              side.setAttribute("fill", pal.otherSide);
+              cell.append(side);
+            }
+          }
+
+          // Full-height hit area
+          const hit = document.createElementNS(SVG_NS, "rect");
+          hit.setAttribute("class", "day-hit");
+          hit.setAttribute("x", String(dayX - 2));
+          hit.setAttribute("y", "4");
+          hit.setAttribute("width", "21");
+          hit.setAttribute("height", "137");
+          hit.setAttribute("fill", "transparent");
+          hit.setAttribute("cursor", "pointer");
+          cell.append(hit);
+
+          // Listeners
           cell.addEventListener("mouseenter", (event) => {
             if (!tooltipHoverPaused && tooltipSuppressed !== cell) {
               showTooltip(cell, day, selectedCount, event);
@@ -1292,9 +2405,11 @@
             tooltipHoverPaused = false;
             tooltipSuppressed = null;
             showTooltip(cell, day, selectedCount);
+            updateDetailPanel(day);
           });
           cell.addEventListener("blur", hideTooltip);
           cell.addEventListener("click", () => {
+            updateDetailPanel(day);
             if (tooltipOwner === cell && tooltipPinned) {
               tooltipHoverPaused = true;
               tooltipSuppressed = cell;
@@ -1307,25 +2422,213 @@
             }
           });
           cell.addEventListener("keydown", handleCalendarKeydown);
-          calendar.append(cell);
+
+          svg.append(cell);
         }
 
+        // Characters stay outside all date hit areas, including at 195px.
+        if (hasActors) {
+          const sx = compact ? Math.max(16, baseW - 82) : baseW + 26;
+          const sy = compact ? baselineY + 142 : baselineY;
+          for (const px of [sx, sx + 58]) {
+            decor("rect", {x: px, y: sy - 66, width: 3, height: 96, fill: "#765036"});
+            decor("rect", {x: px + 3, y: sy - 66, width: 2, height: 96, fill: "#a47d4d"});
+          }
+          for (const py of [sy - 36, sy]) {
+            decor("path", {d: "M " + sx + " " + py + " l 5 -4 h 58 l -5 4 Z", fill: "#c09b61"});
+            decor("rect", {x: sx, y: py, width: 58, height: 4, fill: "#765036"});
+          }
+          for (const lx of [sx + 3, sx + 14]) {
+            decor("rect", {x: lx, y: sy - 58, width: 2, height: 80, fill: "#c09b61"});
+          }
+          for (let ly = sy - 54; ly < sy + 20; ly += 8) {
+            decor("rect", {x: sx + 3, y: ly, width: 13, height: 2, fill: "#a47d4d"});
+          }
+          const ox = sx + 39, oy = sy - 19;
+          decor("rect", {x: ox, y: oy, width: 17, height: 19, fill: pal.stoneFront});
+          decor("path", {d: "M " + ox + " " + oy + " l 4 -3 h 17 l -4 3 Z", fill: pal.otherTop});
+          decor("path", {d: "M " + (ox + 17) + " " + oy + " l 4 -3 v 19 l -4 3 Z",
+            fill: pal.stoneSide});
+          decor("rect", {x: ox + 3, y: oy + 5, width: 5, height: 5, fill: pal.aiFront});
+          decor("rect", {x: ox + 10, y: oy + 11, width: 4, height: 4, fill: pal.aiTop});
+          for (const [kind, ax, ay] of [
+            ["zombie", sx + 20, sy - 78], ["miner", sx + 1, sy - 42]
+          ]) {
+            const wrap = decor("g", {transform: "translate(" + ax + ", " + ay + ")"});
+            const actor = document.createElementNS(SVG_NS, "g");
+            actor.setAttribute("class", kind + "-actor");
+            actor.innerHTML = actorBodies[kind];
+            if (!hasActivity) {
+              actor.style.animation = "none";
+              actor.querySelectorAll("[class]").forEach(part => {part.style.animation = "none";});
+            }
+            wrap.append(actor);
+          }
+        }
+
+        return svg;
+      }
+
+      function updateDetailPanel(day) {
+        if (!day) return;
+        selectedDate = day.date;
+        $("detailDate").textContent = day.date;
+        $("detailTotal").textContent = number.format(day.total_commits);
+        $("detailAi").textContent = number.format(day.ai_commits);
+        const other = Math.max(0, day.total_commits - day.ai_commits);
+        $("detailOther").textContent = number.format(other);
+        const share = day.total_commits ? (day.ai_commits / day.total_commits) * 100 : 0;
+        $("detailShare").textContent = `${percent.format(share)}%`;
+        $("selectedDateMeta").textContent = `${day.date} collaboration breakdown`;
+        const composition = $("dayComposition");
+        composition.replaceChildren();
+        composition.setAttribute("aria-label", `${day.date}: ${day.ai_commits} AI-attributed, ` +
+          `${other} Other records, ${day.total_commits} total commits`);
+        for (const [kind, value] of [["ai", day.ai_commits], ["other", other]]) {
+          const segment = document.createElement("span");
+          segment.className = `day-composition-${kind}`;
+          segment.style.width = `${day.total_commits ? value / day.total_commits * 100 : 0}%`;
+          composition.append(segment);
+        }
+
+        const list = $("detailProviderList");
+        list.replaceChildren();
+        if (day.counts && day.counts.length) {
+          for (const count of day.counts) {
+            const row = providerBySlug(count.provider);
+            const name = row ? row.display_name : count.provider;
+            const chip = document.createElement("span");
+            chip.className = "detail-chip";
+            chip.append(
+              providerIcon(count.provider, name, "filter"),
+              document.createTextNode(`${name}: ${count.attributed_commits}`)
+            );
+            list.append(chip);
+          }
+        } else {
+          const empty = document.createElement("span");
+          empty.className = "panel-meta";
+          empty.textContent = day.ai_commits === 0
+            ? "No AI provider activity recorded."
+            : "AI attribution recorded.";
+          list.append(empty);
+        }
+
+        document.querySelectorAll("g.day-cell").forEach((btn) => {
+          btn.setAttribute("data-selected-day", String(btn.dataset.date === day.date));
+        });
+        document.querySelectorAll(".daily-row").forEach((tr) => {
+          tr.dataset.selected = String(tr.dataset.date === day.date);
+          const dateButton = tr.querySelector(".date-select");
+          if (dateButton) dateButton.setAttribute("aria-pressed", tr.dataset.selected);
+        });
+      }
+
+      function renderCalendar() {
+        const series = getActiveSeries();
+        const calendar = $("activityCalendar");
+        const scroller = document.querySelector(".calendar-scroll");
+        const previousMaxScroll = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
+        const previousScrollLeft = scroller.scrollLeft;
+        const followNewest = previousMaxScroll <= 1 || previousMaxScroll - previousScrollLeft <= 2;
+        calendar.replaceChildren();
+
+        if (!series.length) {
+          calendarFocusIndex = null;
+          const empty = document.createElement("div");
+          empty.className = "calendar-empty";
+          empty.textContent = "No publishable daily activity in this profile.";
+          calendar.className = "calendar-empty";
+          calendar.append(empty);
+          $("activityMeta").textContent = "No daily series";
+          $("activitySummary").textContent = "No publishable daily activity.";
+          return;
+        }
+
+        calendar.className = "calendar";
+        const rovingIndex = calendarFocusIndex === null
+          ? series.length - 1
+          : Math.max(0, Math.min(series.length - 1, calendarFocusIndex));
+        if (calendarFocusIndex !== null) calendarFocusIndex = rovingIndex;
+
+        let peakTotal = 0;
+        let peakDate = series[series.length - 1].date;
+        for (const day of series) {
+          if (day.total_commits > peakTotal) {
+            peakTotal = day.total_commits;
+            peakDate = day.date;
+          }
+        }
+        const ceiling = niceCeiling(peakTotal);
+        const mid = Math.round(ceiling / 2);
+        $("scaleMeta").textContent =
+          `Scale: 0–${ceiling} commits/day · Peak: ${peakTotal} (${peakDate}) · ` +
+          `${series.length} days`;
+        const legendScale = $("legendScaleMeta");
+        if (legendScale) {
+          legendScale.textContent = `Linear scale: 0 · ${mid} · ${ceiling} commits/day`;
+        }
+
+        // Determine days per row based on container width & zoom
+        const containerWidth = calendar.clientWidth || window.innerWidth;
+        let daysPerRow = 28;
+        if (containerWidth < 480) {
+          daysPerRow = 7;
+        } else if (containerWidth < 800) {
+          daysPerRow = 14;
+        }
+        if (isZoomed) {
+          daysPerRow = Math.max(7, Math.floor(daysPerRow / 2));
+        }
+        calendar.dataset.daysPerRow = String(daysPerRow);
+
+        const terracesContainer = document.createElement("div");
+        terracesContainer.className = "voxel-terraces";
+
+        const numTerraces = Math.ceil(series.length / daysPerRow);
+        for (let t = 0; t < numTerraces; t++) {
+          const rowStart = t * daysPerRow;
+          const rowEnd = Math.min(series.length, (t + 1) * daysPerRow);
+          const rowDays = series.slice(rowStart, rowEnd);
+          const hasActors = (t === 0);
+
+          const terraceRow = document.createElement("div");
+          terraceRow.className = "voxel-terrace-row";
+
+          const header = document.createElement("div");
+          header.className = "voxel-terrace-header";
+          const firstDate = rowDays[0].date;
+          const lastDate = rowDays[rowDays.length - 1].date;
+          header.textContent = `${firstDate} → ${lastDate}`;
+          terraceRow.append(header);
+
+          const terraceSvg = renderTerraceSvg(
+            t, rowDays, ceiling, rowStart, rovingIndex, hasActors, peakTotal > 0,
+            daysPerRow, containerWidth < 240
+          );
+          terraceRow.append(terraceSvg);
+          terracesContainer.append(terraceRow);
+        }
+
+        calendar.append(terracesContainer);
+
         $("activityMeta").textContent =
-          `${series[0].date} → ${series[series.length - 1].date} · ` +
-          "publishable activity only";
+          `${series[0].date} → ${series[series.length - 1].date}`;
         $("activitySummary").textContent =
           `Daily ${selectedName()} attributed-commit counts from ` +
           `${series[0].date} through ${series[series.length - 1].date}; ` +
           "each cell uses the validated published daily aggregate.";
-        const levels = document.querySelectorAll(".legend-cell[data-level]");
-        levels.forEach((cell, index) => {
-          cell.style.background = rgba(accent, binOpacity[index]);
-        });
+
+        // Selected date retention or fall back to last date
+        if (selectedDate && series.some(d => d.date === selectedDate)) {
+          const currentDay = series.find(d => d.date === selectedDate);
+          updateDetailPanel(currentDay);
+        } else if (series.length) {
+          updateDetailPanel(series[series.length - 1]);
+        }
+
         requestAnimationFrame(() => {
-          const nextMaxScroll = Math.max(
-            0,
-            scroller.scrollWidth - scroller.clientWidth
-          );
+          const nextMaxScroll = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
           scroller.scrollLeft = followNewest
             ? nextMaxScroll
             : Math.min(previousScrollLeft, nextMaxScroll);
@@ -1333,42 +2636,58 @@
       }
 
       function calendarCells() {
-        return [...document.querySelectorAll(".day-cell")];
+        return [...document.querySelectorAll("g.day-cell")];
       }
 
       function focusCalendarCell(index) {
+        const series = getActiveSeries();
+        const maxIdx = Math.max(0, series.length - 1);
+        const bounded = Math.max(0, Math.min(maxIdx, index));
         const cells = calendarCells();
-        const bounded = Math.max(0, Math.min(cells.length - 1, index));
         calendarFocusIndex = bounded;
-        cells.forEach((cell, cellIndex) => {
-          cell.tabIndex = cellIndex === bounded ? 0 : -1;
+        cells.forEach((cell) => {
+          const cIdx = Number(cell.dataset.index);
+          cell.tabIndex = cIdx === bounded ? 0 : -1;
         });
-        cells[bounded]?.focus();
+        const targetCell = cells.find(c => Number(c.dataset.index) === bounded);
+        if (targetCell) {
+          targetCell.focus();
+        }
       }
 
       function handleCalendarKeydown(event) {
         const index = Number(event.currentTarget.dataset.index);
-        const offsets = {
-          ArrowDown: 1,
-          ArrowUp: -1,
-          ArrowRight: 7,
-          ArrowLeft: -7
-        };
+        const rowStep = Number($("activityCalendar").dataset.daysPerRow) || 7;
+        const series = getActiveSeries();
+        const maxIdx = Math.max(0, series.length - 1);
+        let target = null;
         if (event.key === "Escape") {
           tooltipHoverPaused = true;
           tooltipSuppressed = event.currentTarget;
           hideTooltip();
           return;
         }
-        if (event.key === "Home" || event.key === "End" || offsets[event.key]) {
+        if (event.key === "ArrowRight") {
+          target = index + 1;
+        } else if (event.key === "ArrowLeft") {
+          target = index - 1;
+        } else if (event.key === "ArrowDown") {
+          target = index + rowStep;
+        } else if (event.key === "ArrowUp") {
+          target = index - rowStep;
+        } else if (event.key === "Home") {
+          target = 0;
+        } else if (event.key === "End") {
+          target = maxIdx;
+        } else if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          const cells = calendarCells();
-          const target = event.key === "Home"
-            ? 0
-            : event.key === "End"
-              ? cells.length - 1
-              : index + offsets[event.key];
-          focusCalendarCell(target);
+          if (series[index]) updateDetailPanel(series[index]);
+          return;
+        }
+        if (target !== null) {
+          event.preventDefault();
+          const bounded = Math.max(0, Math.min(maxIdx, target));
+          focusCalendarCell(bounded);
         }
       }
 
@@ -1418,8 +2737,96 @@
         tooltipPinned = false;
       }
 
+      function renderDailyTable() {
+        const tbody = $("dailyTableBody");
+        tbody.replaceChildren();
+        document.querySelectorAll(".sort-btn").forEach((button) => {
+          const header = button.closest("th");
+          if (button.dataset.sort === sortCol) {
+            header.setAttribute("aria-sort", sortDir === "asc" ? "ascending" : "descending");
+          } else {
+            header.removeAttribute("aria-sort");
+          }
+        });
+        let rows = [...getActiveSeries()];
+        if (!rows.length) {
+          const tr = document.createElement("tr");
+          const td = document.createElement("td");
+          td.colSpan = 6;
+          td.style.textAlign = "center";
+          td.textContent = "No daily records to display.";
+          tr.append(td);
+          tbody.append(tr);
+          return;
+        }
+
+        rows.sort((a, b) => {
+          let vA, vB;
+          if (sortCol === "date") {
+            vA = a.date; vB = b.date;
+          } else if (sortCol === "total") {
+            vA = a.total_commits; vB = b.total_commits;
+          } else if (sortCol === "ai") {
+            vA = a.ai_commits; vB = b.ai_commits;
+          } else if (sortCol === "other") {
+            vA = a.total_commits - a.ai_commits; vB = b.total_commits - b.ai_commits;
+          } else if (sortCol === "share") {
+            vA = a.total_commits ? a.ai_commits / a.total_commits : 0;
+            vB = b.total_commits ? b.ai_commits / b.total_commits : 0;
+          }
+          if (vA < vB) return sortDir === "asc" ? -1 : 1;
+          if (vA > vB) return sortDir === "asc" ? 1 : -1;
+          return 0;
+        });
+
+        for (const day of rows) {
+          const tr = document.createElement("tr");
+          tr.className = "daily-row";
+          tr.dataset.date = day.date;
+          tr.dataset.selected = String(day.date === selectedDate);
+
+          const other = Math.max(0, day.total_commits - day.ai_commits);
+          const share = day.total_commits ? (day.ai_commits / day.total_commits) * 100 : 0;
+
+          const provText = (day.counts && day.counts.length)
+            ? day.counts.map(c => {
+                const r = providerBySlug(c.provider);
+                return `${r ? r.display_name : c.provider} (${c.attributed_commits})`;
+              }).join(", ")
+            : "—";
+
+          tr.innerHTML = `
+            <td class="mono"><button type="button" class="date-select"
+              aria-label="Select ${day.date}" aria-pressed="${day.date === selectedDate}"
+              >${day.date}</button></td>
+            <td class="mono">${day.total_commits}</td>
+            <td class="mono" style="color: var(--voxel-ai-front);">${day.ai_commits}</td>
+            <td class="mono" style="color: var(--voxel-other-front);">${other}</td>
+            <td class="mono">${percent.format(share)}%</td>
+            <td>${provText}</td>
+          `;
+
+          tr.addEventListener("click", () => {
+            updateDetailPanel(day);
+          });
+          tbody.append(tr);
+        }
+
+        $("tableRangeMeta").textContent =
+          `Showing: ${rows.length} selected dates (${currentStartDate} → ${currentEndDate})`;
+      }
+
       function renderProviders() {
-        const max = Math.max(...data.providers.map((row) => row.attributed_commits), 1);
+        const totalAi = data.totals.ai_attributed_commits || 1;
+        $("workstationsDenominator").textContent =
+          `Commits · % of ${number.format(data.totals.ai_attributed_commits)} ` +
+          "AI-attributed · all time";
+        $("providerFacts").replaceChildren(...data.providers.map(row => {
+          const fact = document.createElement("li");
+          fact.textContent = `${row.display_name}: ${number.format(row.actor_presences)} ` +
+            `AI actor presences · ${number.format(row.active_days)} active days`;
+          return fact;
+        }));
         $("providerList").replaceChildren(...data.providers.map((row) => {
           const accent = colorFor(row.provider);
           const button = document.createElement("button");
@@ -1427,33 +2834,44 @@
           button.className = "provider-row";
           button.dataset.provider = row.provider;
           button.setAttribute("aria-current", String(selected === row.provider));
-          button.setAttribute("aria-label", `Filter dashboard to ${row.display_name}`);
+          button.setAttribute("aria-label", `Highlight ${row.display_name}: ` +
+            `${number.format(row.attributed_commits)} attributed commits`);
           button.style.setProperty("--provider-accent", accent);
 
           const head = document.createElement("span");
           head.className = "provider-row-head";
           const name = document.createElement("span");
           name.className = "provider-name";
+          const tool = document.createElementNS(SVG_NS, "svg");
+          tool.setAttribute("class", "workbench-tool");
+          tool.setAttribute("viewBox", "0 0 12 12");
+          tool.setAttribute("aria-hidden", "true");
+          tool.innerHTML = '<path d="M 2 10 L 7 5 M 5 3 L 8 1 L 10 3 L 8 6 Z"' +
+            ' fill="#94a3b8" stroke="#78350f" stroke-width="1"/>';
           name.append(
             providerIcon(row.provider, row.display_name, "row"),
-            document.createTextNode(row.display_name)
+            document.createTextNode(row.display_name),
+            tool
           );
           const count = document.createElement("span");
           count.className = "provider-count";
-          count.textContent = number.format(row.attributed_commits);
+          const shareStr = pctLabel(row.attributed_commits, data.totals.ai_attributed_commits);
+          count.textContent = `${number.format(row.attributed_commits)} (${shareStr})`;
           head.append(name, count);
 
           const track = document.createElement("span");
           track.className = "provider-track";
           const fill = document.createElement("span");
           fill.className = "provider-fill";
-          fill.style.width = `${(row.attributed_commits / max) * 100}%`;
+          const rawPct = (row.attributed_commits / totalAi) * 100;
+          fill.style.width = `${rawPct}%`;
           track.append(fill);
 
           const detail = document.createElement("span");
-          detail.className = "provider-detail";
+          detail.className = "provider-detail sr-only";
           detail.textContent = `${number.format(row.actor_presences)} presences · ` +
-            `${number.format(row.active_days)} active days`;
+            `${number.format(row.active_days)} active days · ` +
+            `${shareStr} of ${number.format(data.totals.ai_attributed_commits)} total AI`;
           button.append(head, track, detail);
           button.addEventListener("click", () => {
             selected = row.provider;
@@ -1473,15 +2891,84 @@
         const entries = ["verified", "declared", "imported", "inferred", "unknown"]
           .map((key) => ({ key, value: data.evidence_records[key] }))
           .filter((entry) => entry.value > 0 || entry.key === "unknown");
-        const total = data.evidence_records.total_records;
-        $("evidenceTotal").textContent = `${number.format(total)} records`;
+        const total = data.evidence_records.total_records || 1;
+        const totalRec = data.evidence_records.total_records;
+        $("evidenceTotal").textContent = `${number.format(totalRec)} records`;
+
+        // 3D Geological Rock Stratum
+        const stratumContainer = $("rockStratumContainer");
+        stratumContainer.replaceChildren();
+        const sSvg = document.createElementNS(SVG_NS, "svg");
+        sSvg.setAttribute("viewBox", "0 0 340 32");
+        sSvg.setAttribute("class", "rock-stratum-svg");
+
+        const stratumW = 328;
+        let currX = 6;
+        for (const entry of entries) {
+          const segW = (entry.value / total) * stratumW;
+          if (segW <= 0) continue;
+          const pal = evidence3D[entry.key] || evidence3D.unknown;
+
+          // Top facet
+          const topF = document.createElementNS(SVG_NS, "path");
+          topF.setAttribute(
+            "d",
+            `M ${currX} 8 L ${currX + 3} 4 L ${currX + segW + 3} 4 L ${currX + segW} 8 Z`
+          );
+          topF.setAttribute("fill", pal.top);
+          sSvg.append(topF);
+
+          // Front facet
+          const frontF = document.createElementNS(SVG_NS, "rect");
+          frontF.setAttribute("x", String(currX));
+          frontF.setAttribute("y", "8");
+          frontF.setAttribute("width", String(segW));
+          frontF.setAttribute("height", "16");
+          frontF.setAttribute("fill", pal.front);
+          sSvg.append(frontF);
+
+          currX += segW;
+        }
+
+        // Side facet of the stratum
+        const lastPal = entries.length
+          ? (evidence3D[entries[entries.length - 1].key] || evidence3D.unknown)
+          : evidence3D.unknown;
+        const sideF = document.createElementNS(SVG_NS, "path");
+        sideF.setAttribute(
+          "d",
+          `M ${currX} 8 L ${currX + 3} 4 L ${currX + 3} 20 L ${currX} 24 Z`
+        );
+        sideF.setAttribute("fill", lastPal.side);
+        sSvg.append(sideF);
+
+        // Bedrock foundation beneath stratum
+        const bedF = document.createElementNS(SVG_NS, "rect");
+        bedF.setAttribute("x", "6");
+        bedF.setAttribute("y", "24");
+        bedF.setAttribute("width", String(stratumW));
+        bedF.setAttribute("height", "4");
+        bedF.setAttribute("fill", getPalette().stoneFront);
+        sSvg.append(bedF);
+
+        const bedSide = document.createElementNS(SVG_NS, "path");
+        bedSide.setAttribute(
+          "d",
+          `M ${currX} 24 L ${currX + 3} 20 L ${currX + 3} 24 L ${currX} 28 Z`
+        );
+        bedSide.setAttribute("fill", getPalette().stoneSide);
+        sSvg.append(bedSide);
+        stratumContainer.append(sSvg);
+
+        // Fallback track for compatibility
         $("evidenceTrack").replaceChildren(...entries.map((entry) => {
           const segment = document.createElement("span");
           segment.className = "evidence-segment";
-          segment.style.width = `${total ? (entry.value / total) * 100 : 0}%`;
+          segment.style.width = `${(entry.value / total) * 100}%`;
           segment.style.background = evidenceColors[entry.key];
           return segment;
         }));
+
         $("evidenceGrid").replaceChildren(...entries.map((entry) => {
           const item = document.createElement("div");
           item.className = "evidence-item";
@@ -1521,9 +3008,24 @@
         }
       }
 
+      function updateAnimState() {
+        const isPaused = !animRunning || document.hidden;
+        document.documentElement.classList.toggle("actors-paused", isPaused);
+        const btn = $("animToggleBtn");
+        if (btn) {
+          btn.textContent = animRunning ? "⏸ Pause" : "▶ Play";
+          btn.setAttribute(
+            "aria-label",
+            animRunning ? "Pause character animation" : "Play character animation"
+          );
+          btn.setAttribute("aria-pressed", String(!animRunning));
+        }
+      }
+
       function render() {
         renderMetrics();
         renderCalendar();
+        renderDailyTable();
         document.querySelectorAll(".filter").forEach((button) => {
           button.setAttribute("aria-pressed", String(button.dataset.provider === selected));
           if (button.dataset.provider === "all") {
@@ -1536,9 +3038,6 @@
         $("selectionStatus").textContent = `Showing ${selectedName()} collaboration activity.`;
       }
 
-      // CSS updates the surface tokens immediately when the OS preference
-      // changes. The legacy branch keeps this working in older WebKit without
-      // adding a dependency or a network path.
       const systemScheme = window.matchMedia
         ? window.matchMedia("(prefers-color-scheme: dark)") : null;
       const handleSystemSchemeChange = () => {
@@ -1568,12 +3067,120 @@
         render();
       });
 
+      // Preset buttons
+      ["28d", "84d", "365d", "all"].forEach((preset) => {
+        const btnId = preset === "all" ? "presetAll" : `preset${preset.slice(0, -1)}`;
+        const btn = $(btnId);
+        if (btn) {
+          btn.addEventListener("click", () => {
+            activePreset = preset;
+            const r = computePresetRange(preset);
+            currentStartDate = r.start;
+            currentEndDate = r.end;
+            lastValidStartDate = currentStartDate;
+            lastValidEndDate = currentEndDate;
+            $("customStartDate").value = currentStartDate;
+            $("customEndDate").value = currentEndDate;
+            $("dateRangeError").textContent = "";
+            document.querySelectorAll(".range-btn[data-preset]").forEach((b) => {
+              b.setAttribute("aria-pressed", String(b.dataset.preset === preset));
+            });
+            render();
+          });
+        }
+      });
+
+      // Apply custom range
+      $("applyCustomRangeBtn").addEventListener("click", () => {
+        const sVal = $("customStartDate").value;
+        const eVal = $("customEndDate").value;
+        const err = $("dateRangeError");
+        if (!sVal || !eVal) {
+          err.textContent = "Start and end dates are required.";
+          return;
+        }
+        if (!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(sVal) ||
+            !/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(eVal)) {
+          err.textContent = "Invalid date format.";
+          $("customStartDate").value = lastValidStartDate;
+          $("customEndDate").value = lastValidEndDate;
+          return;
+        }
+        if (sVal > eVal) {
+          err.textContent = "Invalid range: start date must precede or equal end date.";
+          $("customStartDate").value = lastValidStartDate;
+          $("customEndDate").value = lastValidEndDate;
+          return;
+        }
+        if (sVal < minPublishableDate || eVal > maxPublishableDate) {
+          err.textContent = "Dates must be within publishable extent (" +
+            minPublishableDate + " to " + maxPublishableDate + ").";
+          $("customStartDate").value = lastValidStartDate;
+          $("customEndDate").value = lastValidEndDate;
+          return;
+        }
+        err.textContent = "";
+        activePreset = "custom";
+        currentStartDate = sVal;
+        currentEndDate = eVal;
+        lastValidStartDate = sVal;
+        lastValidEndDate = eVal;
+        document.querySelectorAll(".range-btn[data-preset]").forEach((b) => {
+          b.setAttribute("aria-pressed", "false");
+        });
+        render();
+      });
+
+      $("zoomToggleBtn").addEventListener("click", () => {
+        isZoomed = !isZoomed;
+        $("zoomToggleBtn").textContent = isZoomed ? "Zoom: Compact" : "Zoom: Standard";
+        $("zoomToggleBtn").setAttribute("aria-pressed", String(isZoomed));
+        renderCalendar();
+      });
+
+      $("animToggleBtn").addEventListener("click", () => {
+        animRunning = !animRunning;
+        updateAnimState();
+      });
+
+      document.addEventListener("visibilitychange", () => {
+        updateAnimState();
+      });
+
+      window.addEventListener("resize", () => {
+        renderCalendar();
+      });
+
+      document.querySelectorAll(".sort-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const col = btn.dataset.sort;
+          if (sortCol === col) {
+            sortDir = sortDir === "asc" ? "desc" : "asc";
+          } else {
+            sortCol = col;
+            sortDir = "desc";
+          }
+          document.querySelectorAll(".sort-icon").forEach(el => el.textContent = "");
+          const icon = $(`sortIcon-${col}`);
+          if (icon) icon.textContent = sortDir === "asc" ? "▲" : "▼";
+          renderDailyTable();
+        });
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          hideTooltip();
+        }
+      });
+
       $("snapshotDate").textContent = data.generated_on;
       $("snapshotDate").setAttribute("datetime", data.generated_on);
       $("periodLabel").textContent = data.period.label;
       $("schemaLabel").textContent = `schema ${data.schema_version}`;
       $("footSnapshot").textContent =
         `Snapshot ${data.generated_on} UTC · ${data.period.label} · aiprofile`;
+
+      initDates();
       renderEvidence();
       renderPrivacy();
       setTheme("auto");

@@ -1,210 +1,1190 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="830" height="658" viewBox="0 0 830 658" role="img" aria-labelledby="aiprofileSummaryTitle aiprofileSummaryDesc">
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="1156" viewBox="0 0 830 1156" role="img" aria-labelledby="aiprofileSummaryTitle aiprofileSummaryDesc">
 <title id="aiprofileSummaryTitle">AI Collaboration Record — All time</title>
-<desc id="aiprofileSummaryDesc">1297 AI-attributed commits, 1343 AI actor presences across 115 active AI days (author dates), 3 AI providers. Daily collaboration pulse 2026-06-13 to 2026-09-04, peak day 55 commits; pulse height encodes total commits, accent fill height encodes the day's AI-attributed share; publishable dates only. Generated 2026-09-06.</desc>
-<rect x="0.5" y="0.5" width="829" height="657" rx="8" fill="#fbfdff" stroke="#c2d3e5" stroke-width="1"/>
-<rect x="24" y="24" width="16" height="16" rx="3" fill="#fbfdff" stroke="#005cc5" stroke-width="1"/>
-<rect x="29" y="29" width="6" height="6" rx="1" fill="#005cc5"/>
+<desc id="aiprofileSummaryDesc">1299 AI-attributed commits, 1346 AI actor presences across 116 active AI days (author dates), 3 AI providers. Voxel collaboration landscape 2026-06-15 to 2026-09-06, peak day 55 commits (2026-08-29); linear scale 0 to 60 commits/day; dual pillars encode AI-attributed and Other commits; publishable dates only. Generated 2026-09-06.</desc>
+<style>
+  @keyframes minerMine {
+    0% { transform: translate(0px, 0px); }
+    22% { transform: translate(8px, 0px); }
+    78% { transform: translate(8px, 0px); }
+    100% { transform: translate(0px, 0px); }
+  }
+  @keyframes pickaxeSwing {
+    0%, 22% { transform: rotate(0deg); transform-origin: 23px 23px; }
+    30% { transform: rotate(-30deg); transform-origin: 23px 23px; }
+    38% { transform: rotate(38deg); transform-origin: 23px 23px; }
+    46% { transform: rotate(-28deg); transform-origin: 23px 23px; }
+    54% { transform: rotate(38deg); transform-origin: 23px 23px; }
+    62% { transform: rotate(-28deg); transform-origin: 23px 23px; }
+    70% { transform: rotate(38deg); transform-origin: 23px 23px; }
+    78%, 100% { transform: rotate(0deg); transform-origin: 23px 23px; }
+  }
+  @keyframes zombieClimb {
+    0% { transform: translate(0px, 0px); }
+    18% { transform: translate(-8px, 0px); }
+    40% { transform: translate(-8px, 20px); }
+    60% { transform: translate(-8px, 20px); }
+    80% { transform: translate(-8px, 0px); }
+    100% { transform: translate(0px, 0px); }
+  }
+  @keyframes legWalk {
+    0%, 100% { transform: translateY(0px); }
+    10%, 30%, 50%, 70%, 90% { transform: translateY(-2px); }
+    20%, 40%, 60%, 80% { transform: translateY(1px); }
+  }
+  .miner-actor {
+    animation: minerMine 18s ease-in-out infinite;
+  }
+  .pickaxe-arm {
+    animation: pickaxeSwing 18s ease-in-out infinite;
+  }
+  .zombie-actor {
+    animation: zombieClimb 18s ease-in-out infinite;
+  }
+  .miner-leg-l, .zombie-leg-l {
+    animation: legWalk 1.2s ease-in-out infinite;
+  }
+  @media (prefers-reduced-motion: reduce), print {
+    .miner-actor, .pickaxe-arm, .zombie-actor, .miner-leg-l, .zombie-leg-l {
+      animation: none !important;
+    }
+  }
+</style>
+<rect x="0.5" y="0.5" width="829" height="1155" rx="8" fill="#fbfdff" stroke="#c2d3e5" stroke-width="1"/>
+<rect x="24" y="23" width="16" height="16" rx="3" fill="#fbfdff" stroke="#005cc5" stroke-width="1"/>
+<rect x="29" y="28" width="6" height="6" rx="1" fill="#005cc5"/>
 <text x="48" y="36" font-family="'IBM Plex Sans Condensed', 'Aptos Display', 'Segoe UI', 'DejaVu Sans Condensed', sans-serif" font-size="18" font-weight="600" fill="#172033" text-anchor="start">AI Collaboration Record</text>
 <text x="806" y="36" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="end">All time · snapshot 2026-09-06</text>
 <line x1="24" y1="56" x2="806" y2="56" stroke="#c2d3e5"/>
-<text x="24" y="116" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="40" font-weight="700" fill="#005cc5" text-anchor="start">1297</text>
+<text x="24" y="116" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="40" font-weight="700" fill="#005cc5" text-anchor="start">1299</text>
 <text x="24" y="140" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI-attributed commits</text>
-<text x="24" y="158" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#172033" text-anchor="start">66% of 1977 unique commits scanned</text>
+<text x="24" y="158" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#172033" text-anchor="start">66% of 1980 unique commits scanned</text>
 <rect x="24" y="166" width="222" height="6" rx="2" fill="#d9eaff"/>
 <rect x="24" y="166" width="146" height="6" rx="2" fill="#005cc5"/>
 <line x1="270" y1="72" x2="270" y2="176" stroke="#c2d3e5"/>
-<text x="284" y="116" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="18" font-weight="600" fill="#172033" text-anchor="start">115</text>
+<text x="284" y="116" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="18" font-weight="600" fill="#172033" text-anchor="start">116</text>
 <text x="284" y="140" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Active AI days</text>
 <text x="284" y="156" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">(author dates)</text>
 <line x1="404" y1="72" x2="404" y2="176" stroke="#c2d3e5"/>
 <text x="418" y="116" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="18" font-weight="600" fill="#172033" text-anchor="start">3</text>
 <text x="418" y="140" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI providers</text>
 <line x1="538" y1="72" x2="538" y2="176" stroke="#c2d3e5"/>
-<text x="552" y="116" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="18" font-weight="600" fill="#172033" text-anchor="start">1343</text>
+<text x="552" y="116" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="18" font-weight="600" fill="#172033" text-anchor="start">1346</text>
 <text x="552" y="140" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI actor presences</text>
 <line x1="672" y1="72" x2="672" y2="176" stroke="#c2d3e5"/>
-<text x="686" y="116" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="18" font-weight="600" fill="#172033" text-anchor="start">680</text>
+<text x="686" y="116" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="18" font-weight="600" fill="#172033" text-anchor="start">681</text>
 <text x="686" y="140" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Unattributed commits</text>
 <rect x="24" y="204" width="2" height="12" rx="1" fill="#c2d3e5"/>
 <line x1="26" y1="208" x2="38" y2="208" stroke="#c2d3e5" stroke-opacity="0.65"/>
-<text x="46" y="214" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Daily collaboration pulse · 12-week published window</text>
-<text x="179" y="230" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="middle">Jul</text>
-<text x="499" y="230" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="middle">Aug</text>
-<text x="755" y="230" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="middle">Sep</text>
-<rect x="24" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="24" y="240" width="6" height="48" rx="0" fill="#005cc5"/>
-<rect x="32" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="32" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="40" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="40" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="48" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="56" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="64" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="72" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="88" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="96" y="276" width="6" height="12" rx="0" fill="#52647a"/>
-<rect x="96" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="104" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="112" y="276" width="6" height="12" rx="0" fill="#52647a"/>
-<rect x="120" y="276" width="6" height="12" rx="0" fill="#52647a"/>
-<rect x="120" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="128" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="136" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="152" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="160" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="168" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="168" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="176" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="176" y="240" width="6" height="48" rx="0" fill="#005cc5"/>
-<rect x="184" y="252" width="6" height="36" rx="0" fill="#52647a"/>
-<rect x="184" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="192" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="192" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="200" y="252" width="6" height="36" rx="0" fill="#52647a"/>
-<rect x="216" y="252" width="6" height="36" rx="0" fill="#52647a"/>
-<rect x="216" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="224" y="276" width="6" height="12" rx="0" fill="#52647a"/>
-<rect x="224" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="232" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="232" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="240" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="240" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="248" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="248" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="256" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="256" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="264" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="264" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="280" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="280" y="270" width="6" height="18" rx="0" fill="#005cc5"/>
-<rect x="288" y="252" width="6" height="36" rx="0" fill="#52647a"/>
-<rect x="288" y="279" width="6" height="9" rx="0" fill="#005cc5"/>
-<rect x="296" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="296" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="304" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="304" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="312" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="312" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="320" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="320" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="328" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="328" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="344" y="252" width="6" height="36" rx="0" fill="#52647a"/>
-<rect x="344" y="279" width="6" height="9" rx="0" fill="#005cc5"/>
-<rect x="352" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="360" y="252" width="6" height="36" rx="0" fill="#52647a"/>
-<rect x="360" y="270" width="6" height="18" rx="0" fill="#005cc5"/>
-<rect x="368" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="368" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="376" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="376" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="384" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="384" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="392" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="408" y="252" width="6" height="36" rx="0" fill="#52647a"/>
-<rect x="408" y="261" width="6" height="27" rx="0" fill="#005cc5"/>
-<rect x="416" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="416" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="424" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="424" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="432" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="440" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="440" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="448" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="448" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="456" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="456" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="472" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="472" y="240" width="6" height="48" rx="0" fill="#005cc5"/>
-<rect x="480" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="480" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="488" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="488" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="496" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="496" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="504" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="504" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="512" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="520" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="536" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="544" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="544" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="552" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="552" y="240" width="6" height="48" rx="0" fill="#005cc5"/>
-<rect x="560" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="560" y="240" width="6" height="48" rx="0" fill="#005cc5"/>
-<rect x="568" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="568" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="576" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="576" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="584" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="584" y="240" width="6" height="48" rx="0" fill="#005cc5"/>
-<rect x="600" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="600" y="264" width="6" height="24" rx="0" fill="#005cc5"/>
-<rect x="608" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="616" y="276" width="6" height="12" rx="0" fill="#52647a"/>
-<rect x="624" y="276" width="6" height="12" rx="0" fill="#52647a"/>
-<rect x="632" y="252" width="6" height="36" rx="0" fill="#52647a"/>
-<rect x="632" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="640" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="648" y="276" width="6" height="12" rx="0" fill="#52647a"/>
-<rect x="664" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="672" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="672" y="252" width="6" height="36" rx="0" fill="#005cc5"/>
-<rect x="680" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="688" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="696" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="696" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="704" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="704" y="276" width="6" height="12" rx="0" fill="#005cc5"/>
-<rect x="712" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="728" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="736" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="744" y="240" width="6" height="48" rx="0" fill="#52647a"/>
-<rect x="752" y="276" width="6" height="12" rx="0" fill="#52647a"/>
-<rect x="760" y="286" width="6" height="2" rx="0" fill="#c2d3e5"/>
-<rect x="768" y="264" width="6" height="24" rx="0" fill="#52647a"/>
-<rect x="776" y="252" width="6" height="36" rx="0" fill="#52647a"/>
-<text x="24" y="306" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">height = total commits · fill = AI-attributed share · publishable dates only</text>
-<rect x="24" y="332" width="2" height="12" rx="1" fill="#c2d3e5"/>
-<line x1="26" y1="336" x2="38" y2="336" stroke="#c2d3e5" stroke-opacity="0.65"/>
-<text x="46" y="342" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Attributed commits by provider</text>
-<text x="806" y="342" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="end">% of 1297 AI-attributed commits</text>
-<rect x="24" y="362" width="20" height="20" rx="4" fill="#F6E5DF"/>
-<path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z" fill="#B74C2A" transform="translate(27,365) scale(0.583333)"/>
-<text x="52" y="378" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">Claude</text>
-<rect x="184" y="366" width="480" height="7" rx="2" fill="#d9eaff"/>
-<rect x="184" y="366" width="480" height="7" rx="2" fill="#B74C2A"/>
-<text x="748" y="378" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">1223</tspan></text>
-<text x="806" y="378" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 94%</tspan></text>
-<line x1="24" y1="386" x2="806" y2="386" stroke="#c2d3e5"/>
-<rect x="24" y="390" width="20" height="20" rx="4" fill="#EBEBEB"/>
-<path d="M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 00-.856 0l-5.97 3.473zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 01.476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33L12 15.128zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303l-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 014.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 01-.476 0zm-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523zm5.899 2.83a5.947 5.947 0 005.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0010.205 0a5.947 5.947 0 00-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 004.162 1.713z" fill="#000000" transform="translate(27,393) scale(0.583333)"/>
-<text x="52" y="406" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">OpenAI</text>
-<rect x="184" y="394" width="480" height="7" rx="2" fill="#d9eaff"/>
-<rect x="184" y="394" width="46" height="7" rx="2" fill="#000000"/>
-<text x="748" y="406" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">117</tspan></text>
-<text x="806" y="406" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 9%</tspan></text>
-<line x1="24" y1="414" x2="806" y2="414" stroke="#c2d3e5"/>
-<rect x="24" y="418" width="20" height="20" rx="4" fill="#EEEFF1"/>
-<path d="M23.922 16.997C23.061 18.492 18.063 22.02 12 22.02 5.937 22.02.939 18.492.078 16.997A.641.641 0 0 1 0 16.741v-2.869a.883.883 0 0 1 .053-.22c.372-.935 1.347-2.292 2.605-2.656.167-.429.414-1.055.644-1.517a10.098 10.098 0 0 1-.052-1.086c0-1.331.282-2.499 1.132-3.368.397-.406.89-.717 1.474-.952C7.255 2.937 9.248 1.98 11.978 1.98c2.731 0 4.767.957 6.166 2.093.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086.23.462.477 1.088.644 1.517 1.258.364 2.233 1.721 2.605 2.656a.841.841 0 0 1 .053.22v2.869a.641.641 0 0 1-.078.256Zm-11.75-5.992h-.344a4.359 4.359 0 0 1-.355.508c-.77.947-1.918 1.492-3.508 1.492-1.725 0-2.989-.359-3.782-1.259a2.137 2.137 0 0 1-.085-.104L4 11.746v6.585c1.435.779 4.514 2.179 8 2.179 3.486 0 6.565-1.4 8-2.179v-6.585l-.098-.104s-.033.045-.085.104c-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.545-3.508-1.492a4.359 4.359 0 0 1-.355-.508Zm2.328 3.25c.549 0 1 .451 1 1v2c0 .549-.451 1-1 1-.549 0-1-.451-1-1v-2c0-.549.451-1 1-1Zm-5 0c.549 0 1 .451 1 1v2c0 .549-.451 1-1 1-.549 0-1-.451-1-1v-2c0-.549.451-1 1-1Zm3.313-6.185c.136 1.057.403 1.913.878 2.497.442.544 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.15.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.319-.862-2.824-1.025-1.487-.161-2.192.138-2.533.529-.269.307-.437.808-.438 1.578v.021c0 .265.021.562.063.893Zm-1.626 0c.042-.331.063-.628.063-.894v-.02c-.001-.77-.169-1.271-.438-1.578-.341-.391-1.046-.69-2.533-.529-1.505.163-2.347.537-2.824 1.025-.462.472-.705 1.179-.705 2.319 0 1.211.175 1.926.558 2.361.365.414 1.084.751 2.657.751 1.21 0 1.902-.394 2.344-.938.475-.584.742-1.44.878-2.497Z" fill="#1B1F24" transform="translate(27,421) scale(0.583333)"/>
-<text x="52" y="434" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">Copilot</text>
-<rect x="184" y="422" width="480" height="7" rx="2" fill="#d9eaff"/>
-<rect x="184" y="422" width="1" height="7" rx="2" fill="#1B1F24"/>
-<text x="748" y="434" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">3</tspan></text>
-<text x="806" y="434" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · &lt;1%</tspan></text>
-<text x="24" y="456" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Provider totals are not mutually exclusive - one commit can involve several providers.</text>
-<rect x="24" y="482" width="171" height="22" rx="4" fill="#fff0bd"/>
-<text x="32" y="498" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Evidence (all records: 2023)</text>
-<rect x="24" y="518" width="518" height="8" rx="2" fill="#0550ae"/>
-<rect x="544" y="518" width="262" height="8" rx="2" fill="#6e7781"/>
-<rect x="24" y="539" width="8" height="8" rx="1" fill="#0550ae"/>
-<text x="36" y="546" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">declared 1343</text>
-<rect x="130" y="539" width="8" height="8" rx="1" fill="#6e7781"/>
-<text x="142" y="546" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">unknown 680</text>
-<rect x="24" y="563" width="8" height="8" rx="1" fill="#52647a"/>
-<text x="36" y="570" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">All activity explicitly publishable</text>
-<line x1="24" y1="602" x2="806" y2="602" stroke="#c2d3e5"/>
-<text x="24" y="626" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Generated 2026-09-06 · aiprofile</text>
-<text x="24" y="642" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">One commit may include several AI actor presences (one per provider/tool).</text>
+<text x="46" y="214" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Voxel collaboration landscape · 84-day published window</text>
+<text x="24" y="232" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Scale: 0–60 commits/day · Peak: 55 commits (2026-08-29) · 3 continuous 28-day terraces</text>
+<rect x="24" y="242" width="8" height="8" rx="0" fill="#0ea5e9"/>
+<text x="36" y="249" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">AI-attributed</text>
+<rect x="134" y="242" width="8" height="8" rx="0" fill="#94a3b8"/>
+<text x="146" y="249" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Other records (total - AI)</text>
+<rect x="324" y="242" width="8" height="8" rx="0" fill="#5b8c32"/>
+<text x="336" y="249" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Publishable dates only</text>
+<line x1="746" y1="216" x2="746" y2="248" stroke="#c2d3e5"/>
+<text x="751" y="219" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">60</text>
+<line x1="743" y1="232" x2="746" y2="232" stroke="#c2d3e5"/>
+<text x="751" y="235" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">30</text>
+<line x1="743" y1="248" x2="746" y2="248" stroke="#c2d3e5"/>
+<text x="751" y="251" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">0</text>
+<text x="30" y="270" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="600" fill="#52647a" text-anchor="start">Jun 15, 2026 — Jul 12, 2026</text>
+<path class="terrain-top" d="M 30 364 l 18 -12 h 680 l -18 12 Z" fill="#5b8c32"/>
+<path d="M 30 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 54 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 78 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 102 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 126 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 150 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 174 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 198 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 222 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 246 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 270 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 294 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 318 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 342 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 366 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 390 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 414 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 438 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 462 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 486 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 510 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 534 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 558 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 582 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 606 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 630 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 654 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 678 364 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<rect x="30" y="364" width="680" height="14" rx="0" fill="#866043"/>
+<rect x="30" y="378" width="680" height="22" rx="0" fill="#6e7681"/>
+<path d="M 710 364 l 18 -12 v 14 l -18 12 Z" fill="#5a402d"/>
+<path d="M 710 378 l 18 -12 v 22 l -18 12 Z" fill="#57606a"/>
+<rect x="30" y="379" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="30" y1="388" x2="53" y2="388" stroke="#57606a"/>
+<rect x="54" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="54" y1="388" x2="77" y2="388" stroke="#57606a"/>
+<rect x="78" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="78" y1="388" x2="101" y2="388" stroke="#57606a"/>
+<rect x="102" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="102" y1="388" x2="125" y2="388" stroke="#57606a"/>
+<rect x="126" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="126" y1="388" x2="149" y2="388" stroke="#57606a"/>
+<rect x="150" y="379" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="150" y1="388" x2="173" y2="388" stroke="#57606a"/>
+<rect x="174" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="174" y1="388" x2="197" y2="388" stroke="#57606a"/>
+<rect x="198" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="198" y1="388" x2="221" y2="388" stroke="#57606a"/>
+<rect x="222" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="222" y1="388" x2="245" y2="388" stroke="#57606a"/>
+<rect x="246" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="246" y1="388" x2="269" y2="388" stroke="#57606a"/>
+<rect x="270" y="379" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="270" y1="388" x2="293" y2="388" stroke="#57606a"/>
+<rect x="294" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="294" y1="388" x2="317" y2="388" stroke="#57606a"/>
+<rect x="318" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="318" y1="388" x2="341" y2="388" stroke="#57606a"/>
+<rect x="342" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="342" y1="388" x2="365" y2="388" stroke="#57606a"/>
+<rect x="366" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="366" y1="388" x2="389" y2="388" stroke="#57606a"/>
+<rect x="390" y="379" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="390" y1="388" x2="413" y2="388" stroke="#57606a"/>
+<rect x="414" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="414" y1="388" x2="437" y2="388" stroke="#57606a"/>
+<rect x="438" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="438" y1="388" x2="461" y2="388" stroke="#57606a"/>
+<rect x="462" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="462" y1="388" x2="485" y2="388" stroke="#57606a"/>
+<rect x="486" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="486" y1="388" x2="509" y2="388" stroke="#57606a"/>
+<rect x="510" y="379" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="510" y1="388" x2="533" y2="388" stroke="#57606a"/>
+<rect x="534" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="534" y1="388" x2="557" y2="388" stroke="#57606a"/>
+<rect x="558" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="558" y1="388" x2="581" y2="388" stroke="#57606a"/>
+<rect x="582" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="582" y1="388" x2="605" y2="388" stroke="#57606a"/>
+<rect x="606" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="606" y1="388" x2="629" y2="388" stroke="#57606a"/>
+<rect x="630" y="379" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="630" y1="388" x2="653" y2="388" stroke="#57606a"/>
+<rect x="654" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="654" y1="388" x2="677" y2="388" stroke="#57606a"/>
+<rect x="678" y="379" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="678" y1="388" x2="701" y2="388" stroke="#57606a"/>
+<rect x="42" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="42" y1="398" x2="65" y2="398" stroke="#57606a"/>
+<rect x="66" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="66" y1="398" x2="89" y2="398" stroke="#57606a"/>
+<rect x="90" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="90" y1="398" x2="113" y2="398" stroke="#57606a"/>
+<rect x="114" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="114" y1="398" x2="137" y2="398" stroke="#57606a"/>
+<rect x="138" y="389" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="138" y1="398" x2="161" y2="398" stroke="#57606a"/>
+<rect x="162" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="162" y1="398" x2="185" y2="398" stroke="#57606a"/>
+<rect x="186" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="186" y1="398" x2="209" y2="398" stroke="#57606a"/>
+<rect x="210" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="210" y1="398" x2="233" y2="398" stroke="#57606a"/>
+<rect x="234" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="234" y1="398" x2="257" y2="398" stroke="#57606a"/>
+<rect x="258" y="389" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="258" y1="398" x2="281" y2="398" stroke="#57606a"/>
+<rect x="282" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="282" y1="398" x2="305" y2="398" stroke="#57606a"/>
+<rect x="306" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="306" y1="398" x2="329" y2="398" stroke="#57606a"/>
+<rect x="330" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="330" y1="398" x2="353" y2="398" stroke="#57606a"/>
+<rect x="354" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="354" y1="398" x2="377" y2="398" stroke="#57606a"/>
+<rect x="378" y="389" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="378" y1="398" x2="401" y2="398" stroke="#57606a"/>
+<rect x="402" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="402" y1="398" x2="425" y2="398" stroke="#57606a"/>
+<rect x="426" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="426" y1="398" x2="449" y2="398" stroke="#57606a"/>
+<rect x="450" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="450" y1="398" x2="473" y2="398" stroke="#57606a"/>
+<rect x="474" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="474" y1="398" x2="497" y2="398" stroke="#57606a"/>
+<rect x="498" y="389" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="498" y1="398" x2="521" y2="398" stroke="#57606a"/>
+<rect x="522" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="522" y1="398" x2="545" y2="398" stroke="#57606a"/>
+<rect x="546" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="546" y1="398" x2="569" y2="398" stroke="#57606a"/>
+<rect x="570" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="570" y1="398" x2="593" y2="398" stroke="#57606a"/>
+<rect x="594" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="594" y1="398" x2="617" y2="398" stroke="#57606a"/>
+<rect x="618" y="389" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="618" y1="398" x2="641" y2="398" stroke="#57606a"/>
+<rect x="642" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="642" y1="398" x2="665" y2="398" stroke="#57606a"/>
+<rect x="666" y="389" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="666" y1="398" x2="689" y2="398" stroke="#57606a"/>
+<rect x="690" y="389" width="20" height="9" rx="0" fill="#6e7681"/>
+<line x1="690" y1="398" x2="710" y2="398" stroke="#57606a"/>
+<rect x="30" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="38" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="78" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="86" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="126" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="134" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="174" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="182" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="222" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="230" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="270" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="278" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="318" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="326" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="366" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="374" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="414" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="422" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="462" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="470" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="510" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="518" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="558" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="566" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="606" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="614" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="654" y="364" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="662" y="367" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="114" y="387" width="5" height="4" rx="0" fill="#0284c7"/>
+<rect x="119" y="384" width="3" height="3" rx="0" fill="#7dd3fc"/>
+<rect x="306" y="387" width="5" height="4" rx="0" fill="#0284c7"/>
+<rect x="311" y="384" width="3" height="3" rx="0" fill="#7dd3fc"/>
+<rect x="546" y="387" width="5" height="4" rx="0" fill="#0284c7"/>
+<rect x="551" y="384" width="3" height="3" rx="0" fill="#7dd3fc"/>
+<rect x="32" y="361.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 32 361.466667 L 35 358.966667 L 43 358.966667 L 40 361.466667 Z" fill="#7dd3fc"/>
+<path d="M 40 364 L 40 361.466667 L 43 358.966667 L 43 361.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="41" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-15">15</text>
+<rect x="56" y="363" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="65" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-16">16</text>
+<rect x="80" y="363" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="89" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-17">17</text>
+<rect x="104" y="363" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="113" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-18">18</text>
+<rect x="128" y="363" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="137" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-19">19</text>
+<rect x="152" y="363" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="161" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-20">20</text>
+<rect x="176" y="362.733333" width="8" height="1.266667" fill="#0ea5e9"/>
+<path d="M 176 362.733333 L 179 360.233333 L 187 360.233333 L 184 362.733333 Z" fill="#7dd3fc"/>
+<path d="M 184 364 L 184 362.733333 L 187 360.233333 L 187 361.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="185" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-21">21</text>
+<rect x="200" y="363" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="209" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-22">22</text>
+<rect x="235" y="362.733333" width="8" height="1.266667" fill="#94a3b8"/>
+<path d="M 235 362.733333 L 238 360.233333 L 246 360.233333 L 243 362.733333 Z" fill="#cbd5e1"/>
+<path d="M 243 364 L 243 362.733333 L 246 360.233333 L 246 361.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="233" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-23">23</text>
+<rect x="248" y="362.733333" width="8" height="1.266667" fill="#0ea5e9"/>
+<path d="M 248 362.733333 L 251 360.233333 L 259 360.233333 L 256 362.733333 Z" fill="#7dd3fc"/>
+<path d="M 256 364 L 256 362.733333 L 259 360.233333 L 259 361.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="257" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-24">24</text>
+<rect x="272" y="363" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="281" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-25">25</text>
+<rect x="296" y="363" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="305" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-26">26</text>
+<rect x="320" y="363" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="329" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-27">27</text>
+<rect x="344" y="363" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="353" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-28">28</text>
+<rect x="368" y="361.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 368 361.466667 L 371 358.966667 L 379 358.966667 L 376 361.466667 Z" fill="#7dd3fc"/>
+<path d="M 376 364 L 376 361.466667 L 379 358.966667 L 379 361.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="377" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-29">29</text>
+<rect x="392" y="351.333333" width="8" height="12.666667" fill="#0ea5e9"/>
+<path d="M 392 351.333333 L 395 348.833333 L 403 348.833333 L 400 351.333333 Z" fill="#7dd3fc"/>
+<path d="M 400 364 L 400 351.333333 L 403 348.833333 L 403 361.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="401" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-06-30">30</text>
+<rect x="416" y="355.133333" width="8" height="8.866667" fill="#0ea5e9"/>
+<path d="M 416 355.133333 L 419 352.633333 L 427 352.633333 L 424 355.133333 Z" fill="#7dd3fc"/>
+<path d="M 424 364 L 424 355.133333 L 427 352.633333 L 427 361.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="425" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-01">01</text>
+<rect x="440" y="361.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 440 361.466667 L 443 358.966667 L 451 358.966667 L 448 361.466667 Z" fill="#7dd3fc"/>
+<path d="M 448 364 L 448 361.466667 L 451 358.966667 L 451 361.5 Z" fill="#0284c7"/>
+<rect x="451" y="361.466667" width="8" height="2.533333" fill="#94a3b8"/>
+<path d="M 451 361.466667 L 454 358.966667 L 462 358.966667 L 459 361.466667 Z" fill="#cbd5e1"/>
+<path d="M 459 364 L 459 361.466667 L 462 358.966667 L 462 361.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="449" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-02">02</text>
+<rect x="475" y="356.4" width="8" height="7.6" fill="#94a3b8"/>
+<path d="M 475 356.4 L 478 353.9 L 486 353.9 L 483 356.4 Z" fill="#cbd5e1"/>
+<path d="M 483 364 L 483 356.4 L 486 353.9 L 486 361.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="473" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-03">03</text>
+<rect x="488" y="355.133333" width="8" height="8.866667" fill="#0ea5e9"/>
+<path d="M 488 355.133333 L 491 352.633333 L 499 352.633333 L 496 355.133333 Z" fill="#7dd3fc"/>
+<path d="M 496 364 L 496 355.133333 L 499 352.633333 L 499 361.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="497" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-04">04</text>
+<rect x="512" y="362.733333" width="8" height="1.266667" fill="#0ea5e9"/>
+<path d="M 512 362.733333 L 515 360.233333 L 523 360.233333 L 520 362.733333 Z" fill="#7dd3fc"/>
+<path d="M 520 364 L 520 362.733333 L 523 360.233333 L 523 361.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="521" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-05">05</text>
+<rect x="536" y="358.933333" width="8" height="5.066667" fill="#0ea5e9"/>
+<path d="M 536 358.933333 L 539 356.433333 L 547 356.433333 L 544 358.933333 Z" fill="#7dd3fc"/>
+<path d="M 544 364 L 544 358.933333 L 547 356.433333 L 547 361.5 Z" fill="#0284c7"/>
+<rect x="547" y="358.933333" width="8" height="5.066667" fill="#94a3b8"/>
+<path d="M 547 358.933333 L 550 356.433333 L 558 356.433333 L 555 358.933333 Z" fill="#cbd5e1"/>
+<path d="M 555 364 L 555 358.933333 L 558 356.433333 L 558 361.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="545" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-06">06</text>
+<rect x="560" y="356.4" width="8" height="7.6" fill="#0ea5e9"/>
+<path d="M 560 356.4 L 563 353.9 L 571 353.9 L 568 356.4 Z" fill="#7dd3fc"/>
+<path d="M 568 364 L 568 356.4 L 571 353.9 L 571 361.5 Z" fill="#0284c7"/>
+<rect x="571" y="350.066667" width="8" height="13.933333" fill="#94a3b8"/>
+<path d="M 571 350.066667 L 574 347.566667 L 582 347.566667 L 579 350.066667 Z" fill="#cbd5e1"/>
+<path d="M 579 364 L 579 350.066667 L 582 347.566667 L 582 361.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="569" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-07">07</text>
+<rect x="584" y="360.2" width="8" height="3.8" fill="#0ea5e9"/>
+<path d="M 584 360.2 L 587 357.7 L 595 357.7 L 592 360.2 Z" fill="#7dd3fc"/>
+<path d="M 592 364 L 592 360.2 L 595 357.7 L 595 361.5 Z" fill="#0284c7"/>
+<rect x="595" y="342.466667" width="8" height="21.533333" fill="#94a3b8"/>
+<path d="M 595 342.466667 L 598 339.966667 L 606 339.966667 L 603 342.466667 Z" fill="#cbd5e1"/>
+<path d="M 603 364 L 603 342.466667 L 606 339.966667 L 606 361.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="593" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-08">08</text>
+<rect x="608" y="348.8" width="8" height="15.2" fill="#0ea5e9"/>
+<path d="M 608 348.8 L 611 346.3 L 619 346.3 L 616 348.8 Z" fill="#7dd3fc"/>
+<path d="M 616 364 L 616 348.8 L 619 346.3 L 619 361.5 Z" fill="#0284c7"/>
+<rect x="619" y="353.866667" width="8" height="10.133333" fill="#94a3b8"/>
+<path d="M 619 353.866667 L 622 351.366667 L 630 351.366667 L 627 353.866667 Z" fill="#cbd5e1"/>
+<path d="M 627 364 L 627 353.866667 L 630 351.366667 L 630 361.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="617" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-09">09</text>
+<rect x="632" y="362.733333" width="8" height="1.266667" fill="#0ea5e9"/>
+<path d="M 632 362.733333 L 635 360.233333 L 643 360.233333 L 640 362.733333 Z" fill="#7dd3fc"/>
+<path d="M 640 364 L 640 362.733333 L 643 360.233333 L 643 361.5 Z" fill="#0284c7"/>
+<rect x="643" y="341.2" width="8" height="22.8" fill="#94a3b8"/>
+<path d="M 643 341.2 L 646 338.7 L 654 338.7 L 651 341.2 Z" fill="#cbd5e1"/>
+<path d="M 651 364 L 651 341.2 L 654 338.7 L 654 361.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="641" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-10">10</text>
+<rect x="656" y="361.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 656 361.466667 L 659 358.966667 L 667 358.966667 L 664 361.466667 Z" fill="#7dd3fc"/>
+<path d="M 664 364 L 664 361.466667 L 667 358.966667 L 667 361.5 Z" fill="#0284c7"/>
+<rect x="667" y="362.733333" width="8" height="1.266667" fill="#94a3b8"/>
+<path d="M 667 362.733333 L 670 360.233333 L 678 360.233333 L 675 362.733333 Z" fill="#cbd5e1"/>
+<path d="M 675 364 L 675 362.733333 L 678 360.233333 L 678 361.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="665" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-11">11</text>
+<rect x="680" y="362.733333" width="8" height="1.266667" fill="#0ea5e9"/>
+<path d="M 680 362.733333 L 683 360.233333 L 691 360.233333 L 688 362.733333 Z" fill="#7dd3fc"/>
+<path d="M 688 364 L 688 362.733333 L 691 360.233333 L 691 361.5 Z" fill="#0284c7"/>
+<rect x="691" y="357.666667" width="8" height="6.333333" fill="#94a3b8"/>
+<path d="M 691 357.666667 L 694 355.166667 L 702 355.166667 L 699 357.666667 Z" fill="#cbd5e1"/>
+<path d="M 699 364 L 699 357.666667 L 702 355.166667 L 702 361.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="689" y="423" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-12">12</text>
+<text x="30" y="458" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="600" fill="#52647a" text-anchor="start">Jul 13, 2026 — Aug 09, 2026</text>
+<path class="terrain-top" d="M 30 552 l 18 -12 h 680 l -18 12 Z" fill="#5b8c32"/>
+<path d="M 30 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 54 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 78 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 102 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 126 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 150 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 174 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 198 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 222 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 246 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 270 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 294 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 318 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 342 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 366 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 390 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 414 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 438 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 462 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 486 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 510 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 534 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 558 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 582 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 606 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 630 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 654 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 678 552 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<rect x="30" y="552" width="680" height="14" rx="0" fill="#866043"/>
+<rect x="30" y="566" width="680" height="22" rx="0" fill="#6e7681"/>
+<path d="M 710 552 l 18 -12 v 14 l -18 12 Z" fill="#5a402d"/>
+<path d="M 710 566 l 18 -12 v 22 l -18 12 Z" fill="#57606a"/>
+<rect x="30" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="30" y1="576" x2="53" y2="576" stroke="#57606a"/>
+<rect x="54" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="54" y1="576" x2="77" y2="576" stroke="#57606a"/>
+<rect x="78" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="78" y1="576" x2="101" y2="576" stroke="#57606a"/>
+<rect x="102" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="102" y1="576" x2="125" y2="576" stroke="#57606a"/>
+<rect x="126" y="567" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="126" y1="576" x2="149" y2="576" stroke="#57606a"/>
+<rect x="150" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="150" y1="576" x2="173" y2="576" stroke="#57606a"/>
+<rect x="174" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="174" y1="576" x2="197" y2="576" stroke="#57606a"/>
+<rect x="198" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="198" y1="576" x2="221" y2="576" stroke="#57606a"/>
+<rect x="222" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="222" y1="576" x2="245" y2="576" stroke="#57606a"/>
+<rect x="246" y="567" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="246" y1="576" x2="269" y2="576" stroke="#57606a"/>
+<rect x="270" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="270" y1="576" x2="293" y2="576" stroke="#57606a"/>
+<rect x="294" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="294" y1="576" x2="317" y2="576" stroke="#57606a"/>
+<rect x="318" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="318" y1="576" x2="341" y2="576" stroke="#57606a"/>
+<rect x="342" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="342" y1="576" x2="365" y2="576" stroke="#57606a"/>
+<rect x="366" y="567" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="366" y1="576" x2="389" y2="576" stroke="#57606a"/>
+<rect x="390" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="390" y1="576" x2="413" y2="576" stroke="#57606a"/>
+<rect x="414" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="414" y1="576" x2="437" y2="576" stroke="#57606a"/>
+<rect x="438" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="438" y1="576" x2="461" y2="576" stroke="#57606a"/>
+<rect x="462" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="462" y1="576" x2="485" y2="576" stroke="#57606a"/>
+<rect x="486" y="567" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="486" y1="576" x2="509" y2="576" stroke="#57606a"/>
+<rect x="510" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="510" y1="576" x2="533" y2="576" stroke="#57606a"/>
+<rect x="534" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="534" y1="576" x2="557" y2="576" stroke="#57606a"/>
+<rect x="558" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="558" y1="576" x2="581" y2="576" stroke="#57606a"/>
+<rect x="582" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="582" y1="576" x2="605" y2="576" stroke="#57606a"/>
+<rect x="606" y="567" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="606" y1="576" x2="629" y2="576" stroke="#57606a"/>
+<rect x="630" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="630" y1="576" x2="653" y2="576" stroke="#57606a"/>
+<rect x="654" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="654" y1="576" x2="677" y2="576" stroke="#57606a"/>
+<rect x="678" y="567" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="678" y1="576" x2="701" y2="576" stroke="#57606a"/>
+<rect x="42" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="42" y1="586" x2="65" y2="586" stroke="#57606a"/>
+<rect x="66" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="66" y1="586" x2="89" y2="586" stroke="#57606a"/>
+<rect x="90" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="90" y1="586" x2="113" y2="586" stroke="#57606a"/>
+<rect x="114" y="577" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="114" y1="586" x2="137" y2="586" stroke="#57606a"/>
+<rect x="138" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="138" y1="586" x2="161" y2="586" stroke="#57606a"/>
+<rect x="162" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="162" y1="586" x2="185" y2="586" stroke="#57606a"/>
+<rect x="186" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="186" y1="586" x2="209" y2="586" stroke="#57606a"/>
+<rect x="210" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="210" y1="586" x2="233" y2="586" stroke="#57606a"/>
+<rect x="234" y="577" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="234" y1="586" x2="257" y2="586" stroke="#57606a"/>
+<rect x="258" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="258" y1="586" x2="281" y2="586" stroke="#57606a"/>
+<rect x="282" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="282" y1="586" x2="305" y2="586" stroke="#57606a"/>
+<rect x="306" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="306" y1="586" x2="329" y2="586" stroke="#57606a"/>
+<rect x="330" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="330" y1="586" x2="353" y2="586" stroke="#57606a"/>
+<rect x="354" y="577" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="354" y1="586" x2="377" y2="586" stroke="#57606a"/>
+<rect x="378" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="378" y1="586" x2="401" y2="586" stroke="#57606a"/>
+<rect x="402" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="402" y1="586" x2="425" y2="586" stroke="#57606a"/>
+<rect x="426" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="426" y1="586" x2="449" y2="586" stroke="#57606a"/>
+<rect x="450" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="450" y1="586" x2="473" y2="586" stroke="#57606a"/>
+<rect x="474" y="577" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="474" y1="586" x2="497" y2="586" stroke="#57606a"/>
+<rect x="498" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="498" y1="586" x2="521" y2="586" stroke="#57606a"/>
+<rect x="522" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="522" y1="586" x2="545" y2="586" stroke="#57606a"/>
+<rect x="546" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="546" y1="586" x2="569" y2="586" stroke="#57606a"/>
+<rect x="570" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="570" y1="586" x2="593" y2="586" stroke="#57606a"/>
+<rect x="594" y="577" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="594" y1="586" x2="617" y2="586" stroke="#57606a"/>
+<rect x="618" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="618" y1="586" x2="641" y2="586" stroke="#57606a"/>
+<rect x="642" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="642" y1="586" x2="665" y2="586" stroke="#57606a"/>
+<rect x="666" y="577" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="666" y1="586" x2="689" y2="586" stroke="#57606a"/>
+<rect x="690" y="577" width="20" height="9" rx="0" fill="#6e7681"/>
+<line x1="690" y1="586" x2="710" y2="586" stroke="#57606a"/>
+<rect x="30" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="38" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="78" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="86" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="126" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="134" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="174" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="182" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="222" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="230" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="270" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="278" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="318" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="326" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="366" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="374" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="414" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="422" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="462" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="470" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="510" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="518" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="558" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="566" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="606" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="614" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="654" y="552" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="662" y="555" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="114" y="575" width="5" height="4" rx="0" fill="#0284c7"/>
+<rect x="119" y="572" width="3" height="3" rx="0" fill="#7dd3fc"/>
+<rect x="306" y="575" width="5" height="4" rx="0" fill="#0284c7"/>
+<rect x="311" y="572" width="3" height="3" rx="0" fill="#7dd3fc"/>
+<rect x="546" y="575" width="5" height="4" rx="0" fill="#0284c7"/>
+<rect x="551" y="572" width="3" height="3" rx="0" fill="#7dd3fc"/>
+<rect x="32" y="545.666667" width="8" height="6.333333" fill="#0ea5e9"/>
+<path d="M 32 545.666667 L 35 543.166667 L 43 543.166667 L 40 545.666667 Z" fill="#7dd3fc"/>
+<path d="M 40 552 L 40 545.666667 L 43 543.166667 L 43 549.5 Z" fill="#0284c7"/>
+<rect x="43" y="538.066667" width="8" height="13.933333" fill="#94a3b8"/>
+<path d="M 43 538.066667 L 46 535.566667 L 54 535.566667 L 51 538.066667 Z" fill="#cbd5e1"/>
+<path d="M 51 552 L 51 538.066667 L 54 535.566667 L 54 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="41" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-13">13</text>
+<rect x="56" y="526.666667" width="8" height="25.333333" fill="#0ea5e9"/>
+<path d="M 56 526.666667 L 59 524.166667 L 67 524.166667 L 64 526.666667 Z" fill="#7dd3fc"/>
+<path d="M 64 552 L 64 526.666667 L 67 524.166667 L 67 549.5 Z" fill="#0284c7"/>
+<rect x="67" y="536.8" width="8" height="15.2" fill="#94a3b8"/>
+<path d="M 67 536.8 L 70 534.3 L 78 534.3 L 75 536.8 Z" fill="#cbd5e1"/>
+<path d="M 75 552 L 75 536.8 L 78 534.3 L 78 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="65" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-14">14</text>
+<rect x="80" y="544.4" width="8" height="7.6" fill="#0ea5e9"/>
+<path d="M 80 544.4 L 83 541.9 L 91 541.9 L 88 544.4 Z" fill="#7dd3fc"/>
+<path d="M 88 552 L 88 544.4 L 91 541.9 L 91 549.5 Z" fill="#0284c7"/>
+<rect x="91" y="538.066667" width="8" height="13.933333" fill="#94a3b8"/>
+<path d="M 91 538.066667 L 94 535.566667 L 102 535.566667 L 99 538.066667 Z" fill="#cbd5e1"/>
+<path d="M 99 552 L 99 538.066667 L 102 535.566667 L 102 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="89" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-15">15</text>
+<rect x="104" y="546.933333" width="8" height="5.066667" fill="#0ea5e9"/>
+<path d="M 104 546.933333 L 107 544.433333 L 115 544.433333 L 112 546.933333 Z" fill="#7dd3fc"/>
+<path d="M 112 552 L 112 546.933333 L 115 544.433333 L 115 549.5 Z" fill="#0284c7"/>
+<rect x="115" y="544.4" width="8" height="7.6" fill="#94a3b8"/>
+<path d="M 115 544.4 L 118 541.9 L 126 541.9 L 123 544.4 Z" fill="#cbd5e1"/>
+<path d="M 123 552 L 123 544.4 L 126 541.9 L 126 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="113" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-16">16</text>
+<rect x="128" y="538.066667" width="8" height="13.933333" fill="#0ea5e9"/>
+<path d="M 128 538.066667 L 131 535.566667 L 139 535.566667 L 136 538.066667 Z" fill="#7dd3fc"/>
+<path d="M 136 552 L 136 538.066667 L 139 535.566667 L 139 549.5 Z" fill="#0284c7"/>
+<rect x="139" y="544.4" width="8" height="7.6" fill="#94a3b8"/>
+<path d="M 139 544.4 L 142 541.9 L 150 541.9 L 147 544.4 Z" fill="#cbd5e1"/>
+<path d="M 147 552 L 147 544.4 L 150 541.9 L 150 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="137" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-17">17</text>
+<rect x="152" y="550.733333" width="8" height="1.266667" fill="#0ea5e9"/>
+<path d="M 152 550.733333 L 155 548.233333 L 163 548.233333 L 160 550.733333 Z" fill="#7dd3fc"/>
+<path d="M 160 552 L 160 550.733333 L 163 548.233333 L 163 549.5 Z" fill="#0284c7"/>
+<rect x="163" y="546.933333" width="8" height="5.066667" fill="#94a3b8"/>
+<path d="M 163 546.933333 L 166 544.433333 L 174 544.433333 L 171 546.933333 Z" fill="#cbd5e1"/>
+<path d="M 171 552 L 171 546.933333 L 174 544.433333 L 174 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="161" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-18">18</text>
+<rect x="176" y="551" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="185" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-19">19</text>
+<rect x="200" y="549.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 200 549.466667 L 203 546.966667 L 211 546.966667 L 208 549.466667 Z" fill="#7dd3fc"/>
+<path d="M 208 552 L 208 549.466667 L 211 546.966667 L 211 549.5 Z" fill="#0284c7"/>
+<rect x="211" y="546.933333" width="8" height="5.066667" fill="#94a3b8"/>
+<path d="M 211 546.933333 L 214 544.433333 L 222 544.433333 L 219 546.933333 Z" fill="#cbd5e1"/>
+<path d="M 219 552 L 219 546.933333 L 222 544.433333 L 222 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="209" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-20">20</text>
+<rect x="224" y="545.666667" width="8" height="6.333333" fill="#0ea5e9"/>
+<path d="M 224 545.666667 L 227 543.166667 L 235 543.166667 L 232 545.666667 Z" fill="#7dd3fc"/>
+<path d="M 232 552 L 232 545.666667 L 235 543.166667 L 235 549.5 Z" fill="#0284c7"/>
+<rect x="235" y="548.2" width="8" height="3.8" fill="#94a3b8"/>
+<path d="M 235 548.2 L 238 545.7 L 246 545.7 L 243 548.2 Z" fill="#cbd5e1"/>
+<path d="M 243 552 L 243 548.2 L 246 545.7 L 246 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="233" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-21">21</text>
+<rect x="248" y="549.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 248 549.466667 L 251 546.966667 L 259 546.966667 L 256 549.466667 Z" fill="#7dd3fc"/>
+<path d="M 256 552 L 256 549.466667 L 259 546.966667 L 259 549.5 Z" fill="#0284c7"/>
+<rect x="259" y="540.6" width="8" height="11.4" fill="#94a3b8"/>
+<path d="M 259 540.6 L 262 538.1 L 270 538.1 L 267 540.6 Z" fill="#cbd5e1"/>
+<path d="M 267 552 L 267 540.6 L 270 538.1 L 270 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="257" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-22">22</text>
+<rect x="272" y="540.6" width="8" height="11.4" fill="#0ea5e9"/>
+<path d="M 272 540.6 L 275 538.1 L 283 538.1 L 280 540.6 Z" fill="#7dd3fc"/>
+<path d="M 280 552 L 280 540.6 L 283 538.1 L 283 549.5 Z" fill="#0284c7"/>
+<rect x="283" y="548.2" width="8" height="3.8" fill="#94a3b8"/>
+<path d="M 283 548.2 L 286 545.7 L 294 545.7 L 291 548.2 Z" fill="#cbd5e1"/>
+<path d="M 291 552 L 291 548.2 L 294 545.7 L 294 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="281" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-23">23</text>
+<rect x="296" y="551" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="305" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-24">24</text>
+<rect x="320" y="548.2" width="8" height="3.8" fill="#0ea5e9"/>
+<path d="M 320 548.2 L 323 545.7 L 331 545.7 L 328 548.2 Z" fill="#7dd3fc"/>
+<path d="M 328 552 L 328 548.2 L 331 545.7 L 331 549.5 Z" fill="#0284c7"/>
+<rect x="331" y="549.466667" width="8" height="2.533333" fill="#94a3b8"/>
+<path d="M 331 549.466667 L 334 546.966667 L 342 546.966667 L 339 549.466667 Z" fill="#cbd5e1"/>
+<path d="M 339 552 L 339 549.466667 L 342 546.966667 L 342 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="329" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-25">25</text>
+<rect x="344" y="524.133333" width="8" height="27.866667" fill="#0ea5e9"/>
+<path d="M 344 524.133333 L 347 521.633333 L 355 521.633333 L 352 524.133333 Z" fill="#7dd3fc"/>
+<path d="M 352 552 L 352 524.133333 L 355 521.633333 L 355 549.5 Z" fill="#0284c7"/>
+<rect x="355" y="540.6" width="8" height="11.4" fill="#94a3b8"/>
+<path d="M 355 540.6 L 358 538.1 L 366 538.1 L 363 540.6 Z" fill="#cbd5e1"/>
+<path d="M 363 552 L 363 540.6 L 366 538.1 L 366 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="353" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-26">26</text>
+<rect x="368" y="540.6" width="8" height="11.4" fill="#0ea5e9"/>
+<path d="M 368 540.6 L 371 538.1 L 379 538.1 L 376 540.6 Z" fill="#7dd3fc"/>
+<path d="M 376 552 L 376 540.6 L 379 538.1 L 379 549.5 Z" fill="#0284c7"/>
+<rect x="379" y="529.2" width="8" height="22.8" fill="#94a3b8"/>
+<path d="M 379 529.2 L 382 526.7 L 390 526.7 L 387 529.2 Z" fill="#cbd5e1"/>
+<path d="M 387 552 L 387 529.2 L 390 526.7 L 390 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="377" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-27">27</text>
+<rect x="392" y="551" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="401" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-28">28</text>
+<rect x="416" y="546.933333" width="8" height="5.066667" fill="#0ea5e9"/>
+<path d="M 416 546.933333 L 419 544.433333 L 427 544.433333 L 424 546.933333 Z" fill="#7dd3fc"/>
+<path d="M 424 552 L 424 546.933333 L 427 544.433333 L 427 549.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="425" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-29">29</text>
+<rect x="440" y="536.8" width="8" height="15.2" fill="#0ea5e9"/>
+<path d="M 440 536.8 L 443 534.3 L 451 534.3 L 448 536.8 Z" fill="#7dd3fc"/>
+<path d="M 448 552 L 448 536.8 L 451 534.3 L 451 549.5 Z" fill="#0284c7"/>
+<rect x="451" y="544.4" width="8" height="7.6" fill="#94a3b8"/>
+<path d="M 451 544.4 L 454 541.9 L 462 541.9 L 459 544.4 Z" fill="#cbd5e1"/>
+<path d="M 459 552 L 459 544.4 L 462 541.9 L 462 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="449" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-30">30</text>
+<rect x="464" y="550.733333" width="8" height="1.266667" fill="#0ea5e9"/>
+<path d="M 464 550.733333 L 467 548.233333 L 475 548.233333 L 472 550.733333 Z" fill="#7dd3fc"/>
+<path d="M 472 552 L 472 550.733333 L 475 548.233333 L 475 549.5 Z" fill="#0284c7"/>
+<rect x="475" y="550.733333" width="8" height="1.266667" fill="#94a3b8"/>
+<path d="M 475 550.733333 L 478 548.233333 L 486 548.233333 L 483 550.733333 Z" fill="#cbd5e1"/>
+<path d="M 483 552 L 483 550.733333 L 486 548.233333 L 486 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="473" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-07-31">31</text>
+<rect x="488" y="539.333333" width="8" height="12.666667" fill="#0ea5e9"/>
+<path d="M 488 539.333333 L 491 536.833333 L 499 536.833333 L 496 539.333333 Z" fill="#7dd3fc"/>
+<path d="M 496 552 L 496 539.333333 L 499 536.833333 L 499 549.5 Z" fill="#0284c7"/>
+<rect x="499" y="548.2" width="8" height="3.8" fill="#94a3b8"/>
+<path d="M 499 548.2 L 502 545.7 L 510 545.7 L 507 548.2 Z" fill="#cbd5e1"/>
+<path d="M 507 552 L 507 548.2 L 510 545.7 L 510 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="497" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-01">01</text>
+<rect x="512" y="548.2" width="8" height="3.8" fill="#0ea5e9"/>
+<path d="M 512 548.2 L 515 545.7 L 523 545.7 L 520 548.2 Z" fill="#7dd3fc"/>
+<path d="M 520 552 L 520 548.2 L 523 545.7 L 523 549.5 Z" fill="#0284c7"/>
+<rect x="523" y="530.466667" width="8" height="21.533333" fill="#94a3b8"/>
+<path d="M 523 530.466667 L 526 527.966667 L 534 527.966667 L 531 530.466667 Z" fill="#cbd5e1"/>
+<path d="M 531 552 L 531 530.466667 L 534 527.966667 L 534 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="521" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-02">02</text>
+<rect x="536" y="544.4" width="8" height="7.6" fill="#0ea5e9"/>
+<path d="M 536 544.4 L 539 541.9 L 547 541.9 L 544 544.4 Z" fill="#7dd3fc"/>
+<path d="M 544 552 L 544 544.4 L 547 541.9 L 547 549.5 Z" fill="#0284c7"/>
+<rect x="547" y="548.2" width="8" height="3.8" fill="#94a3b8"/>
+<path d="M 547 548.2 L 550 545.7 L 558 545.7 L 555 548.2 Z" fill="#cbd5e1"/>
+<path d="M 555 552 L 555 548.2 L 558 545.7 L 558 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="545" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-03">03</text>
+<rect x="560" y="530.466667" width="8" height="21.533333" fill="#0ea5e9"/>
+<path d="M 560 530.466667 L 563 527.966667 L 571 527.966667 L 568 530.466667 Z" fill="#7dd3fc"/>
+<path d="M 568 552 L 568 530.466667 L 571 527.966667 L 571 549.5 Z" fill="#0284c7"/>
+<rect x="571" y="543.133333" width="8" height="8.866667" fill="#94a3b8"/>
+<path d="M 571 543.133333 L 574 540.633333 L 582 540.633333 L 579 543.133333 Z" fill="#cbd5e1"/>
+<path d="M 579 552 L 579 543.133333 L 582 540.633333 L 582 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="569" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-04">04</text>
+<rect x="584" y="548.2" width="8" height="3.8" fill="#0ea5e9"/>
+<path d="M 584 548.2 L 587 545.7 L 595 545.7 L 592 548.2 Z" fill="#7dd3fc"/>
+<path d="M 592 552 L 592 548.2 L 595 545.7 L 595 549.5 Z" fill="#0284c7"/>
+<rect x="595" y="543.133333" width="8" height="8.866667" fill="#94a3b8"/>
+<path d="M 595 543.133333 L 598 540.633333 L 606 540.633333 L 603 543.133333 Z" fill="#cbd5e1"/>
+<path d="M 603 552 L 603 543.133333 L 606 540.633333 L 606 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="593" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-05">05</text>
+<rect x="608" y="551" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="617" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-06">06</text>
+<rect x="632" y="551" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="641" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-07">07</text>
+<rect x="656" y="551" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="665" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-08">08</text>
+<rect x="680" y="545.666667" width="8" height="6.333333" fill="#0ea5e9"/>
+<path d="M 680 545.666667 L 683 543.166667 L 691 543.166667 L 688 545.666667 Z" fill="#7dd3fc"/>
+<path d="M 688 552 L 688 545.666667 L 691 543.166667 L 691 549.5 Z" fill="#0284c7"/>
+<rect x="691" y="546.933333" width="8" height="5.066667" fill="#94a3b8"/>
+<path d="M 691 546.933333 L 694 544.433333 L 702 544.433333 L 699 546.933333 Z" fill="#cbd5e1"/>
+<path d="M 699 552 L 699 546.933333 L 702 544.433333 L 702 549.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="689" y="611" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-09">09</text>
+<text x="30" y="646" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="600" fill="#52647a" text-anchor="start">Aug 10, 2026 — Sep 06, 2026</text>
+<path class="terrain-top" d="M 30 740 l 18 -12 h 680 l -18 12 Z" fill="#5b8c32"/>
+<path d="M 30 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 54 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 78 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 102 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 126 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 150 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 174 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 198 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 222 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 246 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 270 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 294 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 318 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 342 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 366 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 390 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 414 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 438 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 462 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 486 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 510 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 534 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 558 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 582 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 606 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 630 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 654 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<path d="M 678 740 l 18 -12" stroke="#6fa83e" stroke-width="1"/>
+<rect x="30" y="740" width="680" height="14" rx="0" fill="#866043"/>
+<rect x="30" y="754" width="680" height="22" rx="0" fill="#6e7681"/>
+<path d="M 710 740 l 18 -12 v 14 l -18 12 Z" fill="#5a402d"/>
+<path d="M 710 754 l 18 -12 v 22 l -18 12 Z" fill="#57606a"/>
+<rect x="30" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="30" y1="764" x2="53" y2="764" stroke="#57606a"/>
+<rect x="54" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="54" y1="764" x2="77" y2="764" stroke="#57606a"/>
+<rect x="78" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="78" y1="764" x2="101" y2="764" stroke="#57606a"/>
+<rect x="102" y="755" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="102" y1="764" x2="125" y2="764" stroke="#57606a"/>
+<rect x="126" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="126" y1="764" x2="149" y2="764" stroke="#57606a"/>
+<rect x="150" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="150" y1="764" x2="173" y2="764" stroke="#57606a"/>
+<rect x="174" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="174" y1="764" x2="197" y2="764" stroke="#57606a"/>
+<rect x="198" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="198" y1="764" x2="221" y2="764" stroke="#57606a"/>
+<rect x="222" y="755" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="222" y1="764" x2="245" y2="764" stroke="#57606a"/>
+<rect x="246" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="246" y1="764" x2="269" y2="764" stroke="#57606a"/>
+<rect x="270" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="270" y1="764" x2="293" y2="764" stroke="#57606a"/>
+<rect x="294" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="294" y1="764" x2="317" y2="764" stroke="#57606a"/>
+<rect x="318" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="318" y1="764" x2="341" y2="764" stroke="#57606a"/>
+<rect x="342" y="755" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="342" y1="764" x2="365" y2="764" stroke="#57606a"/>
+<rect x="366" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="366" y1="764" x2="389" y2="764" stroke="#57606a"/>
+<rect x="390" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="390" y1="764" x2="413" y2="764" stroke="#57606a"/>
+<rect x="414" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="414" y1="764" x2="437" y2="764" stroke="#57606a"/>
+<rect x="438" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="438" y1="764" x2="461" y2="764" stroke="#57606a"/>
+<rect x="462" y="755" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="462" y1="764" x2="485" y2="764" stroke="#57606a"/>
+<rect x="486" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="486" y1="764" x2="509" y2="764" stroke="#57606a"/>
+<rect x="510" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="510" y1="764" x2="533" y2="764" stroke="#57606a"/>
+<rect x="534" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="534" y1="764" x2="557" y2="764" stroke="#57606a"/>
+<rect x="558" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="558" y1="764" x2="581" y2="764" stroke="#57606a"/>
+<rect x="582" y="755" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="582" y1="764" x2="605" y2="764" stroke="#57606a"/>
+<rect x="606" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="606" y1="764" x2="629" y2="764" stroke="#57606a"/>
+<rect x="630" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="630" y1="764" x2="653" y2="764" stroke="#57606a"/>
+<rect x="654" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="654" y1="764" x2="677" y2="764" stroke="#57606a"/>
+<rect x="678" y="755" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="678" y1="764" x2="701" y2="764" stroke="#57606a"/>
+<rect x="42" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="42" y1="774" x2="65" y2="774" stroke="#57606a"/>
+<rect x="66" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="66" y1="774" x2="89" y2="774" stroke="#57606a"/>
+<rect x="90" y="765" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="90" y1="774" x2="113" y2="774" stroke="#57606a"/>
+<rect x="114" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="114" y1="774" x2="137" y2="774" stroke="#57606a"/>
+<rect x="138" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="138" y1="774" x2="161" y2="774" stroke="#57606a"/>
+<rect x="162" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="162" y1="774" x2="185" y2="774" stroke="#57606a"/>
+<rect x="186" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="186" y1="774" x2="209" y2="774" stroke="#57606a"/>
+<rect x="210" y="765" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="210" y1="774" x2="233" y2="774" stroke="#57606a"/>
+<rect x="234" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="234" y1="774" x2="257" y2="774" stroke="#57606a"/>
+<rect x="258" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="258" y1="774" x2="281" y2="774" stroke="#57606a"/>
+<rect x="282" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="282" y1="774" x2="305" y2="774" stroke="#57606a"/>
+<rect x="306" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="306" y1="774" x2="329" y2="774" stroke="#57606a"/>
+<rect x="330" y="765" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="330" y1="774" x2="353" y2="774" stroke="#57606a"/>
+<rect x="354" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="354" y1="774" x2="377" y2="774" stroke="#57606a"/>
+<rect x="378" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="378" y1="774" x2="401" y2="774" stroke="#57606a"/>
+<rect x="402" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="402" y1="774" x2="425" y2="774" stroke="#57606a"/>
+<rect x="426" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="426" y1="774" x2="449" y2="774" stroke="#57606a"/>
+<rect x="450" y="765" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="450" y1="774" x2="473" y2="774" stroke="#57606a"/>
+<rect x="474" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="474" y1="774" x2="497" y2="774" stroke="#57606a"/>
+<rect x="498" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="498" y1="774" x2="521" y2="774" stroke="#57606a"/>
+<rect x="522" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="522" y1="774" x2="545" y2="774" stroke="#57606a"/>
+<rect x="546" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="546" y1="774" x2="569" y2="774" stroke="#57606a"/>
+<rect x="570" y="765" width="23" height="9" rx="0" fill="#57606a"/>
+<line x1="570" y1="774" x2="593" y2="774" stroke="#57606a"/>
+<rect x="594" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="594" y1="774" x2="617" y2="774" stroke="#57606a"/>
+<rect x="618" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="618" y1="774" x2="641" y2="774" stroke="#57606a"/>
+<rect x="642" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="642" y1="774" x2="665" y2="774" stroke="#57606a"/>
+<rect x="666" y="765" width="23" height="9" rx="0" fill="#6e7681"/>
+<line x1="666" y1="774" x2="689" y2="774" stroke="#57606a"/>
+<rect x="690" y="765" width="20" height="9" rx="0" fill="#57606a"/>
+<line x1="690" y1="774" x2="710" y2="774" stroke="#57606a"/>
+<rect x="30" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="38" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="78" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="86" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="126" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="134" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="174" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="182" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="222" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="230" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="270" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="278" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="318" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="326" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="366" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="374" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="414" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="422" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="462" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="470" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="510" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="518" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="558" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="566" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="606" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="614" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="654" y="740" width="24" height="3" rx="0" fill="#6fa83e"/>
+<rect x="662" y="743" width="5" height="3" rx="0" fill="#5b8c32"/>
+<rect x="114" y="763" width="5" height="4" rx="0" fill="#0284c7"/>
+<rect x="119" y="760" width="3" height="3" rx="0" fill="#7dd3fc"/>
+<rect x="306" y="763" width="5" height="4" rx="0" fill="#0284c7"/>
+<rect x="311" y="760" width="3" height="3" rx="0" fill="#7dd3fc"/>
+<rect x="546" y="763" width="5" height="4" rx="0" fill="#0284c7"/>
+<rect x="551" y="760" width="3" height="3" rx="0" fill="#7dd3fc"/>
+<rect x="32" y="726.066667" width="8" height="13.933333" fill="#0ea5e9"/>
+<path d="M 32 726.066667 L 35 723.566667 L 43 723.566667 L 40 726.066667 Z" fill="#7dd3fc"/>
+<path d="M 40 740 L 40 726.066667 L 43 723.566667 L 43 737.5 Z" fill="#0284c7"/>
+<rect x="43" y="736.2" width="8" height="3.8" fill="#94a3b8"/>
+<path d="M 43 736.2 L 46 733.7 L 54 733.7 L 51 736.2 Z" fill="#cbd5e1"/>
+<path d="M 51 740 L 51 736.2 L 54 733.7 L 54 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="41" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-10">10</text>
+<rect x="56" y="728.6" width="8" height="11.4" fill="#0ea5e9"/>
+<path d="M 56 728.6 L 59 726.1 L 67 726.1 L 64 728.6 Z" fill="#7dd3fc"/>
+<path d="M 64 740 L 64 728.6 L 67 726.1 L 67 737.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="65" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-11">11</text>
+<rect x="80" y="737.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 80 737.466667 L 83 734.966667 L 91 734.966667 L 88 737.466667 Z" fill="#7dd3fc"/>
+<path d="M 88 740 L 88 737.466667 L 91 734.966667 L 91 737.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="89" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-12">12</text>
+<rect x="104" y="737.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 104 737.466667 L 107 734.966667 L 115 734.966667 L 112 737.466667 Z" fill="#7dd3fc"/>
+<path d="M 112 740 L 112 737.466667 L 115 734.966667 L 115 737.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="113" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-13">13</text>
+<rect x="128" y="723.533333" width="8" height="16.466667" fill="#0ea5e9"/>
+<path d="M 128 723.533333 L 131 721.033333 L 139 721.033333 L 136 723.533333 Z" fill="#7dd3fc"/>
+<path d="M 136 740 L 136 723.533333 L 139 721.033333 L 139 737.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="137" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-14">14</text>
+<rect x="152" y="737.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 152 737.466667 L 155 734.966667 L 163 734.966667 L 160 737.466667 Z" fill="#7dd3fc"/>
+<path d="M 160 740 L 160 737.466667 L 163 734.966667 L 163 737.5 Z" fill="#0284c7"/>
+<text class="voxel-date" x="161" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-15">15</text>
+<rect x="176" y="739" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="185" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-16">16</text>
+<rect x="211" y="738.733333" width="8" height="1.266667" fill="#94a3b8"/>
+<path d="M 211 738.733333 L 214 736.233333 L 222 736.233333 L 219 738.733333 Z" fill="#cbd5e1"/>
+<path d="M 219 740 L 219 738.733333 L 222 736.233333 L 222 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="209" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-17">17</text>
+<rect x="235" y="738.733333" width="8" height="1.266667" fill="#94a3b8"/>
+<path d="M 235 738.733333 L 238 736.233333 L 246 736.233333 L 243 738.733333 Z" fill="#cbd5e1"/>
+<path d="M 243 740 L 243 738.733333 L 246 736.233333 L 246 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="233" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-18">18</text>
+<rect x="248" y="734.933333" width="8" height="5.066667" fill="#0ea5e9"/>
+<path d="M 248 734.933333 L 251 732.433333 L 259 732.433333 L 256 734.933333 Z" fill="#7dd3fc"/>
+<path d="M 256 740 L 256 734.933333 L 259 732.433333 L 259 737.5 Z" fill="#0284c7"/>
+<rect x="259" y="738.733333" width="8" height="1.266667" fill="#94a3b8"/>
+<path d="M 259 738.733333 L 262 736.233333 L 270 736.233333 L 267 738.733333 Z" fill="#cbd5e1"/>
+<path d="M 267 740 L 267 738.733333 L 270 736.233333 L 270 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="257" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-19">19</text>
+<rect x="272" y="739" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="281" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-20">20</text>
+<rect x="307" y="738.733333" width="8" height="1.266667" fill="#94a3b8"/>
+<path d="M 307 738.733333 L 310 736.233333 L 318 736.233333 L 315 738.733333 Z" fill="#cbd5e1"/>
+<path d="M 315 740 L 315 738.733333 L 318 736.233333 L 318 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="305" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-21">21</text>
+<rect x="320" y="739" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="329" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-22">22</text>
+<rect x="344" y="712.133333" width="8" height="27.866667" fill="#0ea5e9"/>
+<path d="M 344 712.133333 L 347 709.633333 L 355 709.633333 L 352 712.133333 Z" fill="#7dd3fc"/>
+<path d="M 352 740 L 352 712.133333 L 355 709.633333 L 355 737.5 Z" fill="#0284c7"/>
+<rect x="355" y="726.066667" width="8" height="13.933333" fill="#94a3b8"/>
+<path d="M 355 726.066667 L 358 723.566667 L 366 723.566667 L 363 726.066667 Z" fill="#cbd5e1"/>
+<path d="M 363 740 L 363 726.066667 L 366 723.566667 L 366 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="353" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-23">23</text>
+<rect x="368" y="739" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="377" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-24">24</text>
+<rect x="392" y="739" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="401" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-25">25</text>
+<rect x="416" y="737.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 416 737.466667 L 419 734.966667 L 427 734.966667 L 424 737.466667 Z" fill="#7dd3fc"/>
+<path d="M 424 740 L 424 737.466667 L 427 734.966667 L 427 737.5 Z" fill="#0284c7"/>
+<rect x="427" y="737.466667" width="8" height="2.533333" fill="#94a3b8"/>
+<path d="M 427 737.466667 L 430 734.966667 L 438 734.966667 L 435 737.466667 Z" fill="#cbd5e1"/>
+<path d="M 435 740 L 435 737.466667 L 438 734.966667 L 438 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="425" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-26">26</text>
+<rect x="440" y="738.733333" width="8" height="1.266667" fill="#0ea5e9"/>
+<path d="M 440 738.733333 L 443 736.233333 L 451 736.233333 L 448 738.733333 Z" fill="#7dd3fc"/>
+<path d="M 448 740 L 448 738.733333 L 451 736.233333 L 451 737.5 Z" fill="#0284c7"/>
+<rect x="451" y="717.2" width="8" height="22.8" fill="#94a3b8"/>
+<path d="M 451 717.2 L 454 714.7 L 462 714.7 L 459 717.2 Z" fill="#cbd5e1"/>
+<path d="M 459 740 L 459 717.2 L 462 714.7 L 462 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="449" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-27">27</text>
+<rect x="475" y="724.8" width="8" height="15.2" fill="#94a3b8"/>
+<path d="M 475 724.8 L 478 722.3 L 486 722.3 L 483 724.8 Z" fill="#cbd5e1"/>
+<path d="M 483 740 L 483 724.8 L 486 722.3 L 486 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="473" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-28">28</text>
+<rect x="499" y="670.333333" width="8" height="69.666667" fill="#94a3b8"/>
+<path d="M 499 670.333333 L 502 667.833333 L 510 667.833333 L 507 670.333333 Z" fill="#cbd5e1"/>
+<path d="M 507 740 L 507 670.333333 L 510 667.833333 L 510 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="497" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-29">29</text>
+<rect x="523" y="724.8" width="8" height="15.2" fill="#94a3b8"/>
+<path d="M 523 724.8 L 526 722.3 L 534 722.3 L 531 724.8 Z" fill="#cbd5e1"/>
+<path d="M 531 740 L 531 724.8 L 534 722.3 L 534 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="521" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-30">30</text>
+<rect x="547" y="691.866667" width="8" height="48.133333" fill="#94a3b8"/>
+<path d="M 547 691.866667 L 550 689.366667 L 558 689.366667 L 555 691.866667 Z" fill="#cbd5e1"/>
+<path d="M 555 740 L 555 691.866667 L 558 689.366667 L 558 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="545" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-08-31">31</text>
+<rect x="571" y="738.733333" width="8" height="1.266667" fill="#94a3b8"/>
+<path d="M 571 738.733333 L 574 736.233333 L 582 736.233333 L 579 738.733333 Z" fill="#cbd5e1"/>
+<path d="M 579 740 L 579 738.733333 L 582 736.233333 L 582 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="569" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-09-01">01</text>
+<rect x="584" y="739" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="593" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-09-02">02</text>
+<rect x="619" y="737.466667" width="8" height="2.533333" fill="#94a3b8"/>
+<path d="M 619 737.466667 L 622 734.966667 L 630 734.966667 L 627 737.466667 Z" fill="#cbd5e1"/>
+<path d="M 627 740 L 627 737.466667 L 630 734.966667 L 630 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="617" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-09-03">03</text>
+<rect x="643" y="731.133333" width="8" height="8.866667" fill="#94a3b8"/>
+<path d="M 643 731.133333 L 646 728.633333 L 654 728.633333 L 651 731.133333 Z" fill="#cbd5e1"/>
+<path d="M 651 740 L 651 731.133333 L 654 728.633333 L 654 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="641" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-09-04">04</text>
+<rect x="656" y="739" width="19" height="1" rx="0" fill="#c2d3e5"/>
+<text class="voxel-date" x="665" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-09-05">05</text>
+<rect x="680" y="737.466667" width="8" height="2.533333" fill="#0ea5e9"/>
+<path d="M 680 737.466667 L 683 734.966667 L 691 734.966667 L 688 737.466667 Z" fill="#7dd3fc"/>
+<path d="M 688 740 L 688 737.466667 L 691 734.966667 L 691 737.5 Z" fill="#0284c7"/>
+<rect x="691" y="738.733333" width="8" height="1.266667" fill="#94a3b8"/>
+<path d="M 691 738.733333 L 694 736.233333 L 702 736.233333 L 699 738.733333 Z" fill="#cbd5e1"/>
+<path d="M 699 740 L 699 738.733333 L 702 736.233333 L 702 737.5 Z" fill="#64748b"/>
+<text class="voxel-date" x="689" y="799" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" text-anchor="middle" fill="#52647a" aria-label="2026-09-06">06</text>
+<rect x="734" y="309" width="4" height="467" rx="0" fill="#765036"/>
+<rect x="738" y="309" width="2" height="467" rx="0" fill="#a47d4d"/>
+<rect x="799" y="309" width="4" height="467" rx="0" fill="#765036"/>
+<rect x="803" y="309" width="2" height="467" rx="0" fill="#a47d4d"/>
+<path d="M 734 364 l 6 -4 h 66 l -6 4 Z" fill="#c09b61"/>
+<rect x="734" y="364" width="66" height="6" rx="0" fill="#765036"/>
+<path d="M 740 370 l 54 28 M 794 370 l -54 28" stroke="#a47d4d" stroke-width="2"/>
+<path d="M 734 552 l 6 -4 h 66 l -6 4 Z" fill="#c09b61"/>
+<rect x="734" y="552" width="66" height="6" rx="0" fill="#765036"/>
+<path d="M 740 558 l 54 28 M 794 558 l -54 28" stroke="#a47d4d" stroke-width="2"/>
+<path d="M 734 740 l 6 -4 h 66 l -6 4 Z" fill="#c09b61"/>
+<rect x="734" y="740" width="66" height="6" rx="0" fill="#765036"/>
+<path d="M 740 746 l 54 28 M 794 746 l -54 28" stroke="#a47d4d" stroke-width="2"/>
+<rect x="737" y="324" width="2" height="452" rx="0" fill="#c09b61"/>
+<rect x="749" y="324" width="2" height="452" rx="0" fill="#c09b61"/>
+<rect x="737" y="328" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="337" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="346" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="355" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="364" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="373" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="382" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="391" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="400" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="409" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="418" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="427" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="436" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="445" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="454" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="463" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="472" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="481" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="490" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="499" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="508" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="517" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="526" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="535" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="544" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="553" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="562" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="571" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="580" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="589" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="598" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="607" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="616" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="625" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="634" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="643" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="652" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="661" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="670" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="679" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="688" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="697" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="706" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="715" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="724" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="733" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="742" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="751" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="760" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="737" y="769" width="14" height="2" rx="0" fill="#a47d4d"/>
+<rect x="777" y="717" width="18" height="23" rx="0" fill="#6e7681"/>
+<path d="M 777 717 l 5 -4 h 18 l -5 4 Z" fill="#cbd5e1"/>
+<path d="M 795 717 l 5 -4 v 23 l -5 4 Z" fill="#57606a"/>
+<rect x="780" y="723" width="5" height="5" rx="0" fill="#0ea5e9"/>
+<rect x="787" y="729" width="4" height="6" rx="0" fill="#7dd3fc"/>
+<g transform="translate(753, 322)"><g class="zombie zombie-actor"><path d="M 7 19 l 4 -3 v 15 l -4 3 Z" fill="#59452f"/><rect x="1" y="19" width="6" height="15" fill="#8b693e"/><path d="M 1 19 l 4 -3 h 6 l -4 3 Z" fill="#baa06a"/>
+<g class="zombie-leg-l"><path d="M 13 33 l 4 -3 v 9 l -4 3 Z" fill="#233143"/><rect x="7" y="33" width="6" height="9" fill="#384b62"/><path d="M 7 33 l 4 -3 h 6 l -4 3 Z" fill="#5a6a7d"/></g>
+<path d="M 22 33 l 4 -3 v 9 l -4 3 Z" fill="#233143"/><rect x="16" y="33" width="6" height="9" fill="#384b62"/><path d="M 16 33 l 4 -3 h 6 l -4 3 Z" fill="#5a6a7d"/>
+<path d="M 22 18 l 4 -3 v 15 l -4 3 Z" fill="#3d5244"/><rect x="7" y="18" width="15" height="15" fill="#627c65"/><path d="M 7 18 l 4 -3 h 15 l -4 3 Z" fill="#8ba183"/>
+<path d="M 22 30 l 4 -3 v 3 l -4 3 Z" fill="#4d382a"/><rect x="7" y="30" width="15" height="3" fill="#785439"/><path d="M 7 30 l 4 -3 h 15 l -4 3 Z" fill="#ae8751"/>
+<path d="M 22 5 l 4 -3 v 13 l -4 3 Z" fill="#496b3a"/><rect x="6" y="5" width="16" height="13" fill="#7ba55a"/><path d="M 6 5 l 4 -3 h 16 l -4 3 Z" fill="#a0c278"/>
+<rect x="10" y="10" width="3" height="3" fill="#24352f"/>
+<rect x="18" y="10" width="2" height="3" fill="#24352f"/>
+<rect x="14" y="15" width="5" height="1" fill="#6f6147"/>
+<path d="M 26 20 l 4 -3 v 10 l -4 3 Z" fill="#496b3a"/><rect x="21" y="20" width="5" height="10" fill="#7ba55a"/><path d="M 21 20 l 4 -3 h 5 l -4 3 Z" fill="#a0c278"/>
+<path d="M 7 5 h 5 v 3 H 9 v 2 H 6 V 5 Z" fill="#3d653c"/>
+<rect x="16" y="4" width="5" height="3" fill="#4d733e"/>
+<rect x="2" y="24" width="5" height="2" fill="#c7b06d"/></g></g>
+<g transform="translate(736, 698)"><g class="miner miner-actor"><path d="M 7 19 l 4 -3 v 15 l -4 3 Z" fill="#59452f"/><rect x="1" y="19" width="6" height="15" fill="#8b693e"/><path d="M 1 19 l 4 -3 h 6 l -4 3 Z" fill="#baa06a"/>
+<g class="miner-leg-l"><path d="M 13 33 l 4 -3 v 9 l -4 3 Z" fill="#233143"/><rect x="7" y="33" width="6" height="9" fill="#384b62"/><path d="M 7 33 l 4 -3 h 6 l -4 3 Z" fill="#5a6a7d"/></g>
+<path d="M 22 33 l 4 -3 v 9 l -4 3 Z" fill="#233143"/><rect x="16" y="33" width="6" height="9" fill="#384b62"/><path d="M 16 33 l 4 -3 h 6 l -4 3 Z" fill="#5a6a7d"/>
+<path d="M 22 18 l 4 -3 v 15 l -4 3 Z" fill="#1d5265"/><rect x="7" y="18" width="15" height="15" fill="#297b96"/><path d="M 7 18 l 4 -3 h 15 l -4 3 Z" fill="#62a7b3"/>
+<path d="M 22 30 l 4 -3 v 3 l -4 3 Z" fill="#4d382a"/><rect x="7" y="30" width="15" height="3" fill="#785439"/><path d="M 7 30 l 4 -3 h 15 l -4 3 Z" fill="#ae8751"/>
+<path d="M 22 5 l 4 -3 v 13 l -4 3 Z" fill="#b98157"/><rect x="6" y="5" width="16" height="13" fill="#eac194"/><path d="M 6 5 l 4 -3 h 16 l -4 3 Z" fill="#ffe1b9"/>
+<rect x="10" y="10" width="3" height="3" fill="#24352f"/>
+<rect x="18" y="10" width="2" height="3" fill="#24352f"/>
+<rect x="14" y="15" width="5" height="1" fill="#6f6147"/>
+<path d="M 23 4 l 4 -3 v 4 l -4 3 Z" fill="#9c691f"/><rect x="5" y="4" width="18" height="4" fill="#d4972d"/><path d="M 5 4 l 4 -3 h 18 l -4 3 Z" fill="#f1ca68"/>
+<path d="M 24 7 l 4 -3 v 2 l -4 3 Z" fill="#795017"/><rect x="4" y="7" width="20" height="2" fill="#b88024"/><path d="M 4 7 l 4 -3 h 20 l -4 3 Z" fill="#e9b647"/>
+<path d="M 23 4 l 4 -3 v 5 l -4 3 Z" fill="#c89639"/><rect x="18" y="4" width="5" height="5" fill="#ffe5a0"/><path d="M 18 4 l 4 -3 h 5 l -4 3 Z" fill="#fff0c7"/>
+<g class="pickaxe-arm">
+<path d="M 25 19 l 4 -3 v 8 l -4 3 Z" fill="#1d5265"/><rect x="20" y="19" width="5" height="8" fill="#297b96"/><path d="M 20 19 l 4 -3 h 5 l -4 3 Z" fill="#62a7b3"/>
+<path d="M 23 23 L 34 12" stroke="#8e683e" stroke-width="3"/>
+<path d="M 29 11 L 35 9 L 40 14 L 39 18 L 34 13 L 28 14 Z" fill="#9facb5"/>
+<path d="M 29 11 L 35 9 L 39 12 L 35 11 Z" fill="#d7e1e3"/>
+</g></g></g>
+<rect x="24" y="830" width="2" height="12" rx="1" fill="#c2d3e5"/>
+<line x1="26" y1="834" x2="38" y2="834" stroke="#c2d3e5" stroke-opacity="0.65"/>
+<text x="46" y="840" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Attributed commits by provider</text>
+<text x="806" y="840" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="end">% of 1299 AI-attributed commits</text>
+<rect x="22" y="860" width="3" height="22" rx="0" fill="#78350f"/>
+<rect x="20" y="880" width="7" height="3" rx="0" fill="#6e7681"/>
+<rect x="24" y="860" width="20" height="20" rx="2" fill="#F6E5DF"/>
+<path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z" fill="#B74C2A" transform="translate(27,863) scale(0.583333)"/>
+<path d="M 42 865 L 46 869 M 44 864 L 47 867" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="52" y="876" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">Claude</text>
+<rect x="184" y="864" width="480" height="7" rx="1" fill="#e2e8f0" stroke="#c2d3e5" stroke-width="1"/>
+<path d="M 184 864 L 186 862 L 638.2863741339493 862 L 636.2863741339493 864 Z" fill="#7dd3fc"/>
+<rect class="provider-quantity" x="184" y="864" width="452.286374" height="7" fill="#B74C2A"/>
+<path d="M 636.2863741339493 864 L 638.2863741339493 862 L 638.2863741339493 869 L 636.2863741339493 871 Z" fill="#0284c7"/>
+<text x="748" y="876" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">1224</tspan></text>
+<text x="806" y="876" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 94%</tspan></text>
+<line x1="24" y1="884" x2="806" y2="884" stroke="#c2d3e5"/>
+<rect x="22" y="888" width="3" height="22" rx="0" fill="#78350f"/>
+<rect x="20" y="908" width="7" height="3" rx="0" fill="#6e7681"/>
+<rect x="24" y="888" width="20" height="20" rx="2" fill="#EBEBEB"/>
+<path d="M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 00-.856 0l-5.97 3.473zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 01.476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33L12 15.128zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303l-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 014.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 01-.476 0zm-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523zm5.899 2.83a5.947 5.947 0 005.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0010.205 0a5.947 5.947 0 00-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 004.162 1.713z" fill="#000000" transform="translate(27,891) scale(0.583333)"/>
+<path d="M 42 893 L 46 897 M 44 892 L 47 895" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="52" y="904" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">OpenAI</text>
+<rect x="184" y="892" width="480" height="7" rx="1" fill="#e2e8f0" stroke="#c2d3e5" stroke-width="1"/>
+<path d="M 184 892 L 186 890 L 229.97228637413394 890 L 227.97228637413394 892 Z" fill="#7dd3fc"/>
+<rect class="provider-quantity" x="184" y="892" width="43.972286" height="7" fill="#000000"/>
+<path d="M 227.97228637413394 892 L 229.97228637413394 890 L 229.97228637413394 897 L 227.97228637413394 899 Z" fill="#0284c7"/>
+<text x="748" y="904" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">119</tspan></text>
+<text x="806" y="904" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · 9%</tspan></text>
+<line x1="24" y1="912" x2="806" y2="912" stroke="#c2d3e5"/>
+<rect x="22" y="916" width="3" height="22" rx="0" fill="#78350f"/>
+<rect x="20" y="936" width="7" height="3" rx="0" fill="#6e7681"/>
+<rect x="24" y="916" width="20" height="20" rx="2" fill="#EEEFF1"/>
+<path d="M23.922 16.997C23.061 18.492 18.063 22.02 12 22.02 5.937 22.02.939 18.492.078 16.997A.641.641 0 0 1 0 16.741v-2.869a.883.883 0 0 1 .053-.22c.372-.935 1.347-2.292 2.605-2.656.167-.429.414-1.055.644-1.517a10.098 10.098 0 0 1-.052-1.086c0-1.331.282-2.499 1.132-3.368.397-.406.89-.717 1.474-.952C7.255 2.937 9.248 1.98 11.978 1.98c2.731 0 4.767.957 6.166 2.093.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086.23.462.477 1.088.644 1.517 1.258.364 2.233 1.721 2.605 2.656a.841.841 0 0 1 .053.22v2.869a.641.641 0 0 1-.078.256Zm-11.75-5.992h-.344a4.359 4.359 0 0 1-.355.508c-.77.947-1.918 1.492-3.508 1.492-1.725 0-2.989-.359-3.782-1.259a2.137 2.137 0 0 1-.085-.104L4 11.746v6.585c1.435.779 4.514 2.179 8 2.179 3.486 0 6.565-1.4 8-2.179v-6.585l-.098-.104s-.033.045-.085.104c-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.545-3.508-1.492a4.359 4.359 0 0 1-.355-.508Zm2.328 3.25c.549 0 1 .451 1 1v2c0 .549-.451 1-1 1-.549 0-1-.451-1-1v-2c0-.549.451-1 1-1Zm-5 0c.549 0 1 .451 1 1v2c0 .549-.451 1-1 1-.549 0-1-.451-1-1v-2c0-.549.451-1 1-1Zm3.313-6.185c.136 1.057.403 1.913.878 2.497.442.544 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.15.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.319-.862-2.824-1.025-1.487-.161-2.192.138-2.533.529-.269.307-.437.808-.438 1.578v.021c0 .265.021.562.063.893Zm-1.626 0c.042-.331.063-.628.063-.894v-.02c-.001-.77-.169-1.271-.438-1.578-.341-.391-1.046-.69-2.533-.529-1.505.163-2.347.537-2.824 1.025-.462.472-.705 1.179-.705 2.319 0 1.211.175 1.926.558 2.361.365.414 1.084.751 2.657.751 1.21 0 1.902-.394 2.344-.938.475-.584.742-1.44.878-2.497Z" fill="#1B1F24" transform="translate(27,919) scale(0.583333)"/>
+<path d="M 42 921 L 46 925 M 44 920 L 47 923" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="52" y="932" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#172033" text-anchor="start">Copilot</text>
+<rect x="184" y="920" width="480" height="7" rx="1" fill="#e2e8f0" stroke="#c2d3e5" stroke-width="1"/>
+<path d="M 184 920 L 186 918 L 187.10854503464202 918 L 185.10854503464202 920 Z" fill="#7dd3fc"/>
+<rect class="provider-quantity" x="184" y="920" width="1.108545" height="7" fill="#1B1F24"/>
+<path d="M 185.10854503464202 920 L 187.10854503464202 918 L 187.10854503464202 925 L 185.10854503464202 927 Z" fill="#0284c7"/>
+<text x="748" y="932" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#172033" font-weight="600">3</tspan></text>
+<text x="806" y="932" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" text-anchor="end"><tspan fill="#52647a" font-weight="400"> · &lt;1%</tspan></text>
+<text x="24" y="954" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Provider totals are not mutually exclusive - one commit can involve several providers.</text>
+<rect x="24" y="982" width="10" height="10" fill="#f59e0b" rx="2"/>
+<rect x="27" y="985" width="4" height="4" fill="#fef08a"/>
+<rect x="40" y="980" width="171" height="22" rx="2" fill="#fff0bd"/>
+<text x="48" y="996" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="600" fill="#52647a" text-anchor="start" letter-spacing="0.2">Evidence (all records: 2027)</text>
+<rect x="24" y="1024" width="782" height="4" fill="#6e7681" opacity="0.75"/>
+<path d="M 24 1016 L 26 1014 L 544 1014 L 542 1016 Z" fill="#0550ae" opacity="0.6"/>
+<rect x="24" y="1016" width="518" height="8" rx="2" fill="#0550ae"/>
+<path d="M 544 1016 L 546 1014 L 808 1014 L 806 1016 Z" fill="#6e7781" opacity="0.6"/>
+<rect x="544" y="1016" width="262" height="8" rx="2" fill="#6e7781"/>
+<path d="M 806 1016 L 808 1014 L 808 1022 L 806 1024 Z" fill="#6e7781" opacity="0.4"/>
+<rect x="24" y="1037" width="8" height="8" rx="1" fill="#0550ae"/>
+<text x="36" y="1044" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">declared 1346</text>
+<rect x="130" y="1037" width="8" height="8" rx="1" fill="#6e7781"/>
+<text x="142" y="1044" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#172033" text-anchor="start">unknown 681</text>
+<rect x="24" y="1061" width="8" height="8" rx="1" fill="#52647a"/>
+<text x="36" y="1068" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">All activity explicitly publishable</text>
+<line x1="24" y1="1100" x2="806" y2="1100" stroke="#c2d3e5"/>
+<text x="24" y="1124" font-family="'IBM Plex Mono', 'Cascadia Mono', 'SFMono-Regular', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">Generated 2026-09-06 · aiprofile</text>
+<text x="24" y="1140" font-family="'IBM Plex Sans', 'Aptos', 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#52647a" text-anchor="start">One commit may include several AI actor presences (one per provider/tool).</text>
 </svg>
