@@ -69,12 +69,12 @@ I’m a PhD researcher in Civil and Environmental Engineering at Lehigh Universi
 
 <img src="https://img.shields.io/badge/AI%20COLLABORATION-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI Collaboration"/>
 
-Verified by `ai-profile` · refreshed daily by GitHub Actions from public Git evidence · Unknown stays Unknown.
+An animated collaboration mine, built from explicit Git evidence. Daily snapshots via GitHub Actions.
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI collaboration summary card: active AI days, provider contribution, evidence totals, and unattributed commits kept as unknown." width="100%"/>
+    <img src="./dist/summary-light.svg" alt="AI Collaboration Mine: 84 days of blue AI-attributed and stone Other commit columns on a shared linear scale, provider workstations and evidence totals. Unknown is not Human." width="100%"/>
   </picture>
 </a>
 

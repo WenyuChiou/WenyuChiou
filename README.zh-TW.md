@@ -70,12 +70,12 @@
 
 <img src="https://img.shields.io/badge/AI%20%E5%8D%94%E4%BD%9C-f59e0b?style=for-the-badge&labelColor=0d1117" alt="AI 協作"/>
 
-由 `ai-profile` 驗證 · GitHub Actions 每日從公開 Git 證據更新 · Unknown 維持 Unknown。
+從明確 Git 證據生成的動態協作礦場。由 GitHub Actions 每日更新 snapshot。
 
 <a href="https://wenyuchiou.github.io/WenyuChiou/dist/dashboard.html">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./dist/summary-dark.svg"/>
-    <img src="./dist/summary-light.svg" alt="AI 協作摘要卡片：AI 活躍日、provider 貢獻、證據總數，以及維持 unknown 的無法歸因 commit。" width="100%"/>
+    <img src="./dist/summary-light.svg" alt="AI 協作礦場：84 天的藍色 AI-attributed 與石色其他 commit 雙柱，共用線性刻度，另含 provider 工作站與證據總數。Unknown 不等於 Human。" width="100%"/>
   </picture>
 </a>
 
