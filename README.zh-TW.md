@@ -10,10 +10,10 @@
 <div align="center">
   <a href="https://wenyuchiou.github.io/zh/#decision-provenance">
     <picture>
-      <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/research-loop-zh-TW-dark-static.svg"/>
-      <source media="(prefers-reduced-motion: reduce)" srcset="assets/research-loop-zh-TW-static.svg"/>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/research-loop-zh-TW-dark.svg"/>
-      <img src="assets/research-loop-zh-TW.svg" alt="邱文昱 Wenyu Chiou：LLM 評估、代理治理與行為模擬。人類與代理選擇對照、工作記憶、獨立驗證與稽核紀錄，串起決策與人類—環境回饋。" width="100%"/>
+      <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/research-loop-zh-TW-dark-static.svg?v=loop-1"/>
+      <source media="(prefers-reduced-motion: reduce)" srcset="assets/research-loop-zh-TW-static.svg?v=loop-1"/>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/research-loop-zh-TW-dark.svg?v=loop-1"/>
+      <img src="assets/research-loop-zh-TW.svg?v=loop-1" alt="邱文昱 Wenyu Chiou：LLM 評估、代理治理與行為模擬。人類與代理選擇對照、工作記憶、獨立驗證與稽核紀錄，串起決策與人類—環境回饋。" width="100%"/>
     </picture>
   </a>
 </div>

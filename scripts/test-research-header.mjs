@@ -12,7 +12,9 @@ const source = name => readFileSync(resolve(directory, name), 'utf8').replace(/\
 for (const file of files) {
   const svg = source(file);
   assert(Buffer.byteLength(svg) < 96 * 1024, `${file}: bounded vector asset`);
-  assert(!/<(?:script|image|foreignObject)\b|@import|animation-iteration-count:\s*infinite/i.test(svg), `${file}: native finite SVG`);
+  assert(!/<(?:script|image|foreignObject)\b|@import/i.test(svg), `${file}: self-contained SVG`);
+  assert.deepEqual([...svg.matchAll(/animation-iteration-count:([^;}]+)/g)].map(match => match[1]), ['infinite'], `${file}: every moving element inherits continuous playback`);
+  assert(svg.includes('@media(prefers-reduced-motion:reduce){.motion{animation:none!important}}'));
   assert(svg.includes('<title id="title">') && svg.includes('<desc id="description">'));
   const ids = structuralIds(svg);
   assert.equal(new Set(ids).size, ids.length, `${file}: unique IDs`);

@@ -71,7 +71,7 @@
 text{font-family:"Atkinson Hyperlegible Next","Segoe UI","Chiron Hei HK","Microsoft JhengHei",sans-serif;letter-spacing:0}
 .heading{font-family:Literata,Georgia,"Chiron Sung HK","Microsoft JhengHei",serif;font-weight:500}
 .paper-ink{fill:#273638}.eye-stroke{stroke:#95dbca}
-.motion{animation-duration:4.8s;animation-timing-function:cubic-bezier(.22,1,.36,1);animation-iteration-count:1;animation-fill-mode:both}
+.motion{animation-duration:4.8s;animation-timing-function:cubic-bezier(.22,1,.36,1);animation-iteration-count:infinite;animation-fill-mode:both}
 .evidence-sheet{animation-name:evidence}.context-scan{animation-name:context}
 .robot-head{animation-name:think;transform-box:fill-box;transform-origin:50% 95%}
 .robot-arm{animation-name:offer;transform-box:fill-box;transform-origin:0 60%}
@@ -85,38 +85,38 @@ text{font-family:"Atkinson Hyperlegible Next","Segoe UI","Chiron Hei HK","Micros
 .lease-paper{animation-name:lease-paper}.owner-window,.renter-window{animation-name:window-light}
 .memory-sheet{animation-name:memory-sheet}.proposal-clipboard{animation-name:clipboard}
 .validation-needle{animation-name:needle}.validation-slider{animation-name:slider}
-.river-current{animation-name:river-current;animation-duration:1.25s;animation-iteration-count:3;animation-timing-function:linear}
+.river-current{animation-name:river-current;animation-duration:1.25s;animation-timing-function:linear}
 .flow-1{animation-delay:.35s}.flow-2{animation-delay:.7s}
-.rain-streaks{animation-name:rainfall;animation-duration:1s;animation-iteration-count:4;animation-timing-function:linear}.rain-second{animation-delay:.25s}
+.rain-streaks{animation-name:rainfall;animation-duration:1s;animation-timing-function:linear}.rain-second{animation-delay:.25s}
 .flood-water{animation-name:flood;transform-box:fill-box;transform-origin:center}.water-level{animation-name:water-level}
-@keyframes decision-match{0%,7%{transform:translateX(28px)}19%,100%{transform:translateX(0)}}
+@keyframes decision-match{0%,7%,100%{transform:translateX(28px)}19%,88%{transform:translateX(0)}}
 @keyframes ownership-key{0%,6%,35%,100%{transform:translate(71px,111px) rotate(0deg)}15%,23%{transform:translate(71px,108px) rotate(-12deg)}}
 @keyframes lease-paper{0%,8%,36%,100%{transform:translate(-13px,84px)}17%,25%{transform:translate(-13px,77px)}}
-@keyframes window-light{0%,8%{opacity:.1}20%,28%{opacity:.9}44%,100%{opacity:.35}}
+@keyframes window-light{0%,8%,100%{opacity:.1}20%,28%{opacity:.9}44%,88%{opacity:.35}}
 @keyframes memory-sheet{0%,15%,44%,100%{transform:translate(0,0)}26%,34%{transform:translate(-3px,-7px)}}
 @keyframes clipboard{0%,25%,58%,100%{transform:translate(0,0)}36%,47%,69%,76%{transform:translate(2px,-5px)}}
-@keyframes needle{0%,16%{transform:rotate(-55deg)}34%,42%{transform:rotate(20deg)}56%{transform:rotate(-30deg)}78%,100%{transform:rotate(0deg)}}
-@keyframes slider{0%,28%{transform:translateX(0)}46%{transform:translateX(26px)}57%{transform:translateX(8px)}80%,100%{transform:translateX(36px)}}
+@keyframes needle{0%,16%,100%{transform:rotate(-55deg)}34%,42%{transform:rotate(20deg)}56%{transform:rotate(-30deg)}78%,88%{transform:rotate(0deg)}}
+@keyframes slider{0%,28%,100%{transform:translateX(0)}46%{transform:translateX(26px)}57%{transform:translateX(8px)}80%,88%{transform:translateX(36px)}}
 @keyframes river-current{0.00%{transform:translate(116px,33px) rotate(-9.5deg);opacity:0}7.69%{transform:translate(118px,45px) rotate(14.0deg);opacity:1}15.38%{transform:translate(110px,57px) rotate(39.8deg);opacity:1}23.08%{transform:translate(98px,69px) rotate(35.3deg);opacity:1}30.77%{transform:translate(93px,81px) rotate(4.6deg);opacity:1}38.46%{transform:translate(96px,94px) rotate(-35.3deg);opacity:1}46.15%{transform:translate(110px,105px) rotate(-50.8deg);opacity:1}53.85%{transform:translate(123px,116px) rotate(-40.8deg);opacity:1}61.54%{transform:translate(129px,127px) rotate(0.0deg);opacity:1}69.23%{transform:translate(123px,141px) rotate(34.6deg);opacity:1}76.92%{transform:translate(109px,156px) rotate(38.0deg);opacity:1}84.62%{transform:translate(98px,173px) rotate(23.8deg);opacity:1}92.31%{transform:translate(94px,190px) rotate(7.9deg);opacity:1}100.00%{transform:translate(93px,209px) rotate(3.0deg);opacity:0}}
 @keyframes rainfall{0%{opacity:0;transform:translate(5px,-8px)}10%,78%{opacity:.9}100%{opacity:0;transform:translate(-14px,52px)}}
-@keyframes flood{0%,12%{opacity:0;transform:scaleX(.45)}42%,68%{opacity:.45;transform:scaleX(1)}92%,100%{opacity:.18;transform:scaleX(.75)}}
-@keyframes water-level{0%,12%{transform:translateY(3px)}42%,68%{transform:translateY(-12px)}92%,100%{transform:translateY(0)}}
-@keyframes choice-match{0%,26%{opacity:.25}35%,100%{opacity:1}}
-@keyframes audit-record{0%,76%{opacity:0;transform:translateY(-6px)}84%,100%{opacity:1;transform:translateY(0)}}
-@keyframes evidence{0%{transform:translateY(7px)}12%,100%{transform:translateY(0)}}
-@keyframes context{0%,8%{opacity:.45}20%,100%{opacity:1}}
+@keyframes flood{0%,12%,100%{opacity:0;transform:scaleX(.45)}42%,68%{opacity:.45;transform:scaleX(1)}88%{opacity:.18;transform:scaleX(.75)}}
+@keyframes water-level{0%,12%,100%{transform:translateY(3px)}42%,68%{transform:translateY(-12px)}88%{transform:translateY(0)}}
+@keyframes choice-match{0%,26%,100%{opacity:.25}35%,88%{opacity:1}}
+@keyframes audit-record{0%,76%,100%{opacity:0;transform:translateY(-6px)}84%,92%{opacity:1;transform:translateY(0)}}
+@keyframes evidence{0%,100%{transform:translateY(7px)}12%,88%{transform:translateY(0)}}
+@keyframes context{0%,8%,100%{opacity:.45}20%,88%{opacity:1}}
 @keyframes think{0%,16%,100%{transform:rotate(0deg)}30%,53%{transform:rotate(-5deg)}68%{transform:rotate(3deg)}82%{transform:rotate(0deg)}}
 @keyframes offer{0%,16%,50%,100%{transform:rotate(0deg)}28%,40%,67%,76%{transform:rotate(-8deg)}}
 @keyframes blink{0%,37%,43%,100%{transform:scaleY(1)}39%,41%{transform:scaleY(.15)}}
-@keyframes schema{0%,27%{opacity:.2}35%,100%{opacity:1}}
-@keyframes permission{0%,66%{opacity:0}73%,100%{opacity:1}}
-@keyframes budget{0%,72%{opacity:.2}80%,100%{opacity:1}}
+@keyframes schema{0%,27%,100%{opacity:.2}35%,88%{opacity:1}}
+@keyframes permission{0%,66%,100%{opacity:0}73%,88%{opacity:1}}
+@keyframes budget{0%,72%,100%{opacity:.2}80%,88%{opacity:1}}
 @keyframes reject{0%,34%{opacity:0}39%,48%{opacity:1}54%,100%{opacity:0}}
-@keyframes adapt{0%,80%{opacity:0;transform:translateY(5px)}90%,100%{opacity:1;transform:translateY(0)}}
+@keyframes adapt{0%,80%,100%{opacity:0;transform:translateY(5px)}90%,94%{opacity:1;transform:translateY(0)}}
 @keyframes flight{0%,18%,41%,56%,80%,100%{opacity:0;transform:translate(0,0)}21%,59%{opacity:1;transform:translate(0,0)}35%,73%{opacity:1;transform:translate(42px,0px)}}
 @keyframes return-paper{0%,40%,61%,100%{opacity:0;transform:translate(0,0)}43%{opacity:1;transform:translate(0,0)}47%{opacity:1;transform:translate(0px,26px)}54%{opacity:1;transform:translate(-254px,26px)}58%{opacity:1;transform:translate(-254px,0px)}}
-@keyframes accept{0%,76%{opacity:.25}83%,100%{opacity:1}}
-@keyframes feedback{0%,86%{opacity:.3}96%,100%{opacity:1}}
+@keyframes accept{0%,76%,100%{opacity:.25}83%,90%{opacity:1}}
+@keyframes feedback{0%,78%,100%{opacity:.3}88%,94%{opacity:1}}
 @media(prefers-reduced-motion:reduce){.motion{animation:none!important}}
 </style>
 <marker id="arrow-human" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m1 1 7 4-7 4" fill="none" stroke="#176e67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
