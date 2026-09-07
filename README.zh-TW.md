@@ -185,7 +185,7 @@
 
 <img src="https://img.shields.io/badge/%E8%81%AF%E7%B5%A1%E6%96%B9%E5%BC%8F-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="聯絡方式"/>
 
-正在尋求 **2027 年夏季全職實習**（約 5 月下旬至 8 月中旬），方向包括 LLM 評估、代理系統、行為模擬與 AI for Science。F-1 學生身分，具備 CPT 資格。聯絡信箱：[wec324@lehigh.edu](mailto:wec324@lehigh.edu)
+正在尋求 **2027 年夏季全職實習**（約 5 月下旬至 8 月中旬），方向包括 LLM 評估、代理系統、行為模擬與 AI for Science。F-1 學生身分。聯絡信箱：[wec324@lehigh.edu](mailto:wec324@lehigh.edu)
 
 <div align="center">
 
