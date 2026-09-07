@@ -184,7 +184,7 @@ Selected merged pull requests:
 
 <img src="https://img.shields.io/badge/CONTACT-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Contact"/>
 
-Open to **full-time Summer 2027 internships** (approximately late May through mid-August) in LLM evaluation, agent systems, behavioral simulation, and AI for science. F-1 student; CPT eligible. Contact: [wec324@lehigh.edu](mailto:wec324@lehigh.edu)
+Open to **full-time Summer 2027 internships** (approximately late May through mid-August) in LLM evaluation, agent systems, behavioral simulation, and AI for science. F-1 student; Contact: [wec324@lehigh.edu](mailto:wec324@lehigh.edu)
 
 <div align="center">
 
