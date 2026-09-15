@@ -11,6 +11,7 @@ const escape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').r
 export const links = [
   { id: 'hire', labels: ['Recruiter brief', '招聘摘要'], color: 'teal', icon: '<path d="M12 12h.01M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/>' },
   { id: 'resume', labels: ['Resume', '英文履歷'], color: 'ochre', icon: '<path d="M14 2v4a2 2 0 0 0 2 2h4M15 18a3 3 0 1 0-6 0M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><circle cx="12" cy="13" r="2"/>' },
+  { id: 'academic', labels: ['Academic CV', '學術 CV'], color: 'blue', icon: '<path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V5a2 2 0 0 1 2-2h5a3 3 0 0 1 3 3v15a3 3 0 0 0-3-3Z"/><path d="M21 18a1 1 0 0 0 1-1V5a2 2 0 0 0-2-2h-5a3 3 0 0 0-3 3v15a3 3 0 0 1 3-3Z"/>' },
   { id: 'email', labels: ['Email', '電子郵件'], color: 'coral', icon: '<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>' },
   { id: 'linkedin', labels: ['LinkedIn', 'LinkedIn'], color: 'blue', icon: '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>' },
   { id: 'portfolio', labels: ['Portfolio', '個人網站'], color: 'teal', icon: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/>' },
@@ -55,5 +56,5 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
       if (readFileSync(path, 'utf8').replaceAll('\r\n', '\n') !== svg) throw new Error(`Stale link asset: ${path}`);
     } else writeFileSync(path, svg);
   }
-  console.log(`${check ? 'Verified' : 'Generated'} 42 profile link assets`);
+  console.log(`${check ? 'Verified' : 'Generated'} ${links.length * 6} profile link assets`);
 }
