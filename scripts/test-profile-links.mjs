@@ -9,8 +9,8 @@ import { links, renderLink } from './build-profile-links.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const read = path => readFileSync(resolve(root, path), 'utf8').replaceAll('\r\n', '\n');
 const directory = 'assets/profile-links';
-assert.equal(readdirSync(resolve(root, directory)).filter(file => file.endsWith('.svg')).length, 42);
-const external = ['https://wenyuchiou.github.io/assets/Wenyu_Chiou_Industry_Resume_EN.pdf', 'mailto:wec324@lehigh.edu', 'https://www.linkedin.com/in/wenyu-chiou', 'https://www.threads.com/@wenyu_chiou'];
+assert.equal(readdirSync(resolve(root, directory)).filter(file => file.endsWith('.svg')).length, 48);
+const external = ['https://wenyuchiou.github.io/assets/Wenyu_Chiou_AI_Research_Resume.pdf', 'https://wenyuchiou.github.io/assets/Wenyu_Chiou_Academic_CV.pdf', 'mailto:wec324@lehigh.edu', 'https://www.linkedin.com/in/wenyu-chiou', 'https://www.threads.com/@wenyu_chiou'];
 // GitHub's themed-picture rewrites theme media to all/none, including compound queries.
 function sourceAfterGitHubTheme(anchor, width, theme) {
   for (const [, media, src] of anchor.matchAll(/<source media="([^"]+)" srcset="([^"]+)"/g)) {
@@ -28,11 +28,11 @@ for (const locale of ['en', 'zh-TW']) {
   assert(!/shields\.io|typing-svg|<script|\bstyle=/.test(block), 'native GitHub layout, no badge wall or scripts');
   assert(block.includes('<table width="100%">'), 'directory occupies the available desktop width');
   assert(!/typing-svg/.test(text), 'no repeated animated tagline');
-  assert.equal([...block.matchAll(/<a href=/g)].length, 7, 'seven individually clickable destinations');
+  assert.equal([...block.matchAll(/<a href=/g)].length, 8, 'eight individually clickable destinations');
   assert(!block.includes('align="center"'), 'category navigation shares a left edge');
   const expectedGroups = locale === 'en'
-    ? [['Hiring &amp; resume', ['hire', 'resume']], ['Research &amp; work', ['portfolio', 'scholar']], ['Contact &amp; social', ['email', 'linkedin', 'threads']]]
-    : [['招聘履歷', ['hire', 'resume']], ['研究作品', ['portfolio', 'scholar']], ['聯絡社群', ['email', 'linkedin', 'threads']]];
+    ? [['Hiring &amp; resume', ['hire', 'resume', 'academic']], ['Research &amp; work', ['portfolio', 'scholar']], ['Contact &amp; social', ['email', 'linkedin', 'threads']]]
+    : [['招聘履歷', ['hire', 'resume', 'academic']], ['研究作品', ['portfolio', 'scholar']], ['聯絡社群', ['email', 'linkedin', 'threads']]];
   const headings = [...block.matchAll(/<th width="280" align="left" scope="col">([^<]+)<\/th>/g)].map(match => match[1]);
   const groups = [...block.matchAll(/<td width="280" align="left" valign="top">([\s\S]*?)<\/td>/g)];
   assert.equal(groups.length, 3, 'three equal, top-aligned category columns');
@@ -93,4 +93,4 @@ try {
   assert.ifError(result.error);
   assert.equal(result.status, 0, `Fresh CRLF checkout remains reproducible: ${result.stderr}`);
 } finally { rmSync(temporary, { recursive: true, force: true }); }
-console.log('PASS: 42 reproducible SVGs including CRLF checkout, 14 independently linked entries, mobile/desktop and locale/theme parity, live stars retained.');
+console.log('PASS: 48 reproducible SVGs including CRLF checkout, 16 independently linked entries, mobile/desktop and locale/theme parity, live stars retained.');
