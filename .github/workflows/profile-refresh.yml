@@ -18,8 +18,8 @@ jobs:
   refresh-profile:
     permissions:
       contents: write
-    # Reviewed immutable workflow installs ai-profile-cli==0.9.0.
-    uses: WenyuChiou/ai-profile/.github/workflows/profile-refresh.yml@8b145e49e2805030c0e4473c1d2c821e1397389a
+    # Reviewed immutable workflow installs ai-profile-cli==0.10.0.
+    uses: WenyuChiou/ai-profile/.github/workflows/profile-refresh.yml@62284cc9ffb6b1a05af677e8f20c73d33e4bc4c6
     with:
       repositories: |
         WenyuChiou/academic-writing-skills
@@ -34,6 +34,7 @@ jobs:
         WenyuChiou/wenyuchiou.github.io
     secrets:
       identities: ${{ secrets.AIPROFILE_IDENTITIES }}
+      attestations: ${{ secrets.AIPROFILE_ATTESTATIONS }}
 
   deploy-pages:
     needs: refresh-profile
