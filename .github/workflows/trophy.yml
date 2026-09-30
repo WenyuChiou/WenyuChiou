@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Generate trophy.svg
-        uses: soulteary/github-profile-trophy-action@cabefc1ce203b1ce4c03dae3335aa794aefbbb80 # v1.0.0
+        uses: soulteary/github-profile-trophy-action@75b2f7c6a6754a6d4cbfc0b179c97f124a540dcb # v1.2.1
         with:
           # Solid light card background (no `no-bg`) so the label text stays readable on GitHub's dark theme too.
           options: 'username=${{ github.repository_owner }}&theme=flat&column=8&margin-w=10&margin-h=10'
