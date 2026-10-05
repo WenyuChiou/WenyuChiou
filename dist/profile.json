@@ -1584,23 +1584,34 @@
       "counts": [],
       "date": "2026-10-03",
       "total_commits": 4
+    },
+    {
+      "ai_commits": 1,
+      "counts": [
+        {
+          "attributed_commits": 1,
+          "provider": "github"
+        }
+      ],
+      "date": "2026-10-04",
+      "total_commits": 3
     }
   ],
   "evidence_records": {
-    "declared": 1355,
+    "declared": 1356,
     "imported": 0,
     "inferred": 0,
-    "total_records": 2124,
-    "unknown": 769,
+    "total_records": 2127,
+    "unknown": 771,
     "verified": 0
   },
-  "generated_on": "2026-10-04",
+  "generated_on": "2026-10-05",
   "model_count": 2,
   "models": [
     {
-      "active_days": 113,
-      "actor_presences": 1217,
-      "attributed_commits": 1202,
+      "active_days": 114,
+      "actor_presences": 1218,
+      "attributed_commits": 1203,
       "category": "unknown",
       "display_name": "Unknown"
     },
@@ -1626,7 +1637,7 @@
   },
   "privacy": {
     "anonymous_aggregate_commits": 0,
-    "explicitly_publishable_commits": 2077,
+    "explicitly_publishable_commits": 2080,
     "includes_anonymous_aggregate": false
   },
   "provider_count": 3,
@@ -1646,20 +1657,20 @@
       "provider": "openai"
     },
     {
-      "active_days": 4,
-      "actor_presences": 4,
-      "attributed_commits": 4,
+      "active_days": 5,
+      "actor_presences": 5,
+      "attributed_commits": 5,
       "display_name": "Copilot",
       "provider": "github"
     }
   ],
   "schema_version": "0.4.0",
   "totals": {
-    "active_ai_days": 119,
-    "ai_actor_presences": 1355,
-    "ai_attributed_commits": 1308,
-    "commits_scanned": 2077,
+    "active_ai_days": 120,
+    "ai_actor_presences": 1356,
+    "ai_attributed_commits": 1309,
+    "commits_scanned": 2080,
     "human_declared_commits": 0,
-    "unknown_commits": 769
+    "unknown_commits": 771
   }
 }
