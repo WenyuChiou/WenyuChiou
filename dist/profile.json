@@ -1659,23 +1659,45 @@
       "counts": [],
       "date": "2026-10-15",
       "total_commits": 26
+    },
+    {
+      "ai_commits": 1,
+      "counts": [
+        {
+          "attributed_commits": 1,
+          "provider": "anthropic"
+        }
+      ],
+      "date": "2026-10-16",
+      "total_commits": 5
+    },
+    {
+      "ai_commits": 2,
+      "counts": [
+        {
+          "attributed_commits": 2,
+          "provider": "anthropic"
+        }
+      ],
+      "date": "2026-10-17",
+      "total_commits": 2
     }
   ],
   "evidence_records": {
-    "declared": 1358,
+    "declared": 1361,
     "imported": 0,
     "inferred": 0,
-    "total_records": 2226,
-    "unknown": 868,
+    "total_records": 2233,
+    "unknown": 872,
     "verified": 0
   },
-  "generated_on": "2026-10-16",
+  "generated_on": "2026-10-17",
   "model_count": 2,
   "models": [
     {
-      "active_days": 116,
-      "actor_presences": 1220,
-      "attributed_commits": 1205,
+      "active_days": 118,
+      "actor_presences": 1223,
+      "attributed_commits": 1208,
       "category": "unknown",
       "display_name": "Unknown"
     },
@@ -1701,15 +1723,15 @@
   },
   "privacy": {
     "anonymous_aggregate_commits": 0,
-    "explicitly_publishable_commits": 2179,
+    "explicitly_publishable_commits": 2186,
     "includes_anonymous_aggregate": false
   },
   "provider_count": 3,
   "providers": [
     {
-      "active_days": 114,
-      "actor_presences": 1226,
-      "attributed_commits": 1226,
+      "active_days": 116,
+      "actor_presences": 1229,
+      "attributed_commits": 1229,
       "display_name": "Claude",
       "provider": "anthropic"
     },
@@ -1730,11 +1752,11 @@
   ],
   "schema_version": "0.4.0",
   "totals": {
-    "active_ai_days": 122,
-    "ai_actor_presences": 1358,
-    "ai_attributed_commits": 1311,
-    "commits_scanned": 2179,
+    "active_ai_days": 124,
+    "ai_actor_presences": 1361,
+    "ai_attributed_commits": 1314,
+    "commits_scanned": 2186,
     "human_declared_commits": 0,
-    "unknown_commits": 868
+    "unknown_commits": 872
   }
 }
