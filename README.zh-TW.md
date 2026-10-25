@@ -108,7 +108,7 @@
 
 <img src="https://img.shields.io/badge/AI%20%E5%B7%A5%E5%85%B7-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="AI 工具"/>
 
-| | |
+| 專案 | 能幫上什麼忙 |
 |---|---|
 | [**ai-research-skills**](https://github.com/WenyuChiou/ai-research-skills) | 5 個 plugin · 14 個研究 skill · 一行指令安裝 |
 | [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | 多代理協作編排——任務拆分、輸出整合、辯論、共享記憶、驗收關卡 |
@@ -116,7 +116,7 @@
 | [**research-hub**](https://github.com/WenyuChiou/research-hub) | 可被 AI 操作的研究工作區，串接 Zotero、Obsidian、NotebookLM——CLI、MCP、REST、儀表板 |
 | [**academic-writing-skills**](https://github.com/WenyuChiou/academic-writing-skills) | 嚴謹的學術論文撰寫、修訂與投稿——領域無關，依各論文／期刊覆寫規則 |
 | [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | 上述 marketplace 使用的單代理委派 skill |
-| [**ai-profile**](https://github.com/WenyuChiou/ai-profile) | Local-first AI 協作分析——以明示 Git provenance 產生隱私安全卡片與可依 provider 切換的互動 dashboard |
+| [**Agent Board**](https://github.com/WenyuChiou/agent-board) | 一眼查看各個 AI 程式代理在做什麼，優先看到等待你處理的事項。 |
 <!-- TOOLING:START — 在此行上方新增工具表格列 -->
 <!-- TOOLING:END -->
 
@@ -124,12 +124,18 @@
 
 精選已合併的 pull request：
 
-| | |
-|---|---|
-| [**ZhuLinsen/daily_stock_analysis**](https://github.com/ZhuLinsen/daily_stock_analysis) | 新增台股支援——市場偵測與路由、三大法人資料抓取，以及 TWD 幣別／股利修正 · [已合併 PR](https://github.com/ZhuLinsen/daily_stock_analysis/pulls?q=is%3Apr+author%3AWenyuChiou+is%3Amerged) |
-| [**langchain-ai/openwiki**](https://github.com/langchain-ai/openwiki) | 在 `chmod` 無作用的 Windows 上，收緊 `~/.openwiki` 的檔案權限 · [#367](https://github.com/langchain-ai/openwiki/pull/367) |
-| [**BuilderIO/agent-native**](https://github.com/BuilderIO/agent-native) | 讓 CLI 在 `codex-cli` engine 下改走 Codex runner，而非直接崩潰 · [#1362](https://github.com/BuilderIO/agent-native/pull/1362) |
-| [**Nanako0129/coralline**](https://github.com/Nanako0129/coralline) | 修正 auto-layout 過度換行——以顯示欄寬（而非位元組）計算 · [#10](https://github.com/Nanako0129/coralline/pull/10) |
+| 專案／貢獻 | 改善了什麼 | 證據與狀態 |
+|---|---|---|
+| [**REA**](https://github.com/morluto/rea) | 程式改變變數指向後，避免把一般物件誤判成 Electron 視窗。 | [#7053](https://github.com/morluto/rea/pull/7053) · 已合併 |
+| [**REA**](https://github.com/morluto/rea) | 分析摘要顯示這次的檔案路徑，而不是舊紀錄的路徑。 | [#7039](https://github.com/morluto/rea/pull/7039) · 已合併 |
+| [**REA**](https://github.com/morluto/rea) | 多筆紀錄都符合時，不任選一筆作為舊結果的證據來源。 | [#7037](https://github.com/morluto/rea/pull/7037) · 已合併 |
+| [**REA**](https://github.com/morluto/rea) | 辨識特定 Electron 視窗或頁框的訊息處理器，不猜測誰能呼叫它。 | [#7031](https://github.com/morluto/rea/pull/7031) · 已合併 |
+| [**REA**](https://github.com/morluto/rea) | 讓整合分析結果能追溯到實際使用的原始觀察。 | [#7028](https://github.com/morluto/rea/pull/7028) · 已合併 |
+| [**REA**](https://github.com/morluto/rea) | 清理失敗時，仍保留已完成的除錯結果。 | [#7023](https://github.com/morluto/rea/pull/7023) · 已合併 |
+| [**ZhuLinsen/daily_stock_analysis**](https://github.com/ZhuLinsen/daily_stock_analysis) | 新增台股支援——市場偵測與路由、三大法人資料抓取，以及 TWD 幣別／股利修正 | [已合併 PR](https://github.com/ZhuLinsen/daily_stock_analysis/pulls?q=is%3Apr+author%3AWenyuChiou+is%3Amerged) · 已合併 |
+| [**langchain-ai/openwiki**](https://github.com/langchain-ai/openwiki) | 在 `chmod` 無作用的 Windows 上，收緊 `~/.openwiki` 的檔案權限 | [#367](https://github.com/langchain-ai/openwiki/pull/367) · 已合併 |
+| [**BuilderIO/agent-native**](https://github.com/BuilderIO/agent-native) | 讓 CLI 在 `codex-cli` engine 下改走 Codex runner，而非直接崩潰 | [#1362](https://github.com/BuilderIO/agent-native/pull/1362) · 已合併 |
+| [**Nanako0129/coralline**](https://github.com/Nanako0129/coralline) | 修正 auto-layout 過度換行——以顯示欄寬（而非位元組）計算 | [#10](https://github.com/Nanako0129/coralline/pull/10) · 已合併 |
 <!-- OSS:START — 每列對應一個已合併（GitHub 顯示紫色 Merged 標記）的 PR；只用事實動詞，不放星數 -->
 <!-- OSS:END -->
 
