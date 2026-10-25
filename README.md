@@ -18,6 +18,11 @@
   </a>
 </div>
 
+<p align="center">
+  <a href="https://buymeacoffee.com/wenyuchiou"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-f59e0b?style=for-the-badge&amp;logo=buymeacoffee&amp;logoColor=white&amp;labelColor=0d1117" alt="Buy me a coffee"/></a><br/>
+  <sub>Support my open-source work</sub>
+</p>
+
 <!-- HIGHLIGHTS:START -->
 <p>
   <strong>Open to Summer 2027 AI internships</strong><br/>
@@ -107,20 +112,20 @@ An animated collaboration mine, built from explicit Git evidence. Daily snapshot
 
 <img src="https://img.shields.io/badge/AI%20TOOLS%20%26%20LEARNING-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="AI tools and learning resources"/>
 
+<sub>Ordered by GitHub stars checked on 2026-10-25, highest first. Badges update; row order does not update automatically.</sub>
+
 | Project | What it helps with | GitHub stars |
 |---|---|---|
+| [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | Learn to use and build AI agents through guided paths, hands-on exercises, and curated resources. | [![awesome-agentic-ai-zh stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/awesome-agentic-ai-zh) |
 | [**ai-research-skills**](https://github.com/WenyuChiou/ai-research-skills) | Guide AI-assisted research from literature search to manuscript preparation. | [![ai-research-skills stars](https://img.shields.io/github/stars/WenyuChiou/ai-research-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/ai-research-skills) |
-| [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | Split work among AI agents, keep checkpoints, and review combined results. | [![agent-collab-skills stars](https://img.shields.io/github/stars/WenyuChiou/agent-collab-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/agent-collab-skills) |
-| [**zotero-skills**](https://github.com/WenyuChiou/zotero-skills) | Let AI assistants search, add, annotate, and organize Zotero references. | [![zotero-skills stars](https://img.shields.io/github/stars/WenyuChiou/zotero-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/zotero-skills) |
-| [**research-hub**](https://github.com/WenyuChiou/research-hub) | Keep literature, evidence, analyses, and manuscripts connected in a local research workspace. | [![research-hub stars](https://img.shields.io/github/stars/WenyuChiou/research-hub?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/research-hub) |
 | [**academic-writing-skills**](https://github.com/WenyuChiou/academic-writing-skills) | Plan, draft, review, and revise academic papers with checks on evidence and consistency. | [![academic-writing-skills stars](https://img.shields.io/github/stars/WenyuChiou/academic-writing-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/academic-writing-skills) |
+| [**research-hub**](https://github.com/WenyuChiou/research-hub) | Keep literature, evidence, analyses, and manuscripts connected in a local research workspace. | [![research-hub stars](https://img.shields.io/github/stars/WenyuChiou/research-hub?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/research-hub) |
+| [**zotero-skills**](https://github.com/WenyuChiou/zotero-skills) | Let AI assistants search, add, annotate, and organize Zotero references. | [![zotero-skills stars](https://img.shields.io/github/stars/WenyuChiou/zotero-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/zotero-skills) |
 | [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | Delegate coding work from Claude to Codex CLI, with Claude reviewing the result. | [![codex-delegate stars](https://img.shields.io/github/stars/WenyuChiou/codex-delegate?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/codex-delegate) |
 | [**Agent Board**](https://github.com/WenyuChiou/agent-board) | See what each AI coding agent is doing, with items waiting on you at the top. | [![agent-board stars](https://img.shields.io/github/stars/WenyuChiou/agent-board?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/agent-board) |
-| [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | Learn to use and build AI agents through guided paths, hands-on exercises, and curated resources. | [![awesome-agentic-ai-zh stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/awesome-agentic-ai-zh) |
+| [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | Split work among AI agents, keep checkpoints, and review combined results. | [![agent-collab-skills stars](https://img.shields.io/github/stars/WenyuChiou/agent-collab-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/agent-collab-skills) |
 <!-- TOOLING:START — add tools or learning resources as table rows above this line -->
 <!-- TOOLING:END -->
-
-[![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-f59e0b?style=flat-square&logo=buymeacoffee&logoColor=white&labelColor=0d1117)](https://buymeacoffee.com/wenyuchiou)
 
 &nbsp;
 
