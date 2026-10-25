@@ -106,19 +106,24 @@
 
 &nbsp;
 
-<img src="https://img.shields.io/badge/AI%20%E5%B7%A5%E5%85%B7-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="AI 工具"/>
+<img src="https://img.shields.io/badge/AI%20%E5%B7%A5%E5%85%B7%E8%88%87%E5%AD%B8%E7%BF%92%E8%B3%87%E6%BA%90-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="AI 工具與學習資源"/>
 
-| 專案 | 能幫上什麼忙 |
-|---|---|
-| [**ai-research-skills**](https://github.com/WenyuChiou/ai-research-skills) | 5 個 plugin · 14 個研究 skill · 一行指令安裝 |
-| [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | 多代理協作編排——任務拆分、輸出整合、辯論、共享記憶、驗收關卡 |
-| [**zotero-skills**](https://github.com/WenyuChiou/zotero-skills) | 程式化操作 Zotero——搜尋、新增、分類、註解、整理文獻 |
-| [**research-hub**](https://github.com/WenyuChiou/research-hub) | 可被 AI 操作的研究工作區，串接 Zotero、Obsidian、NotebookLM——CLI、MCP、REST、儀表板 |
-| [**academic-writing-skills**](https://github.com/WenyuChiou/academic-writing-skills) | 嚴謹的學術論文撰寫、修訂與投稿——領域無關，依各論文／期刊覆寫規則 |
-| [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | 上述 marketplace 使用的單代理委派 skill |
-| [**Agent Board**](https://github.com/WenyuChiou/agent-board) | 一眼查看各個 AI 程式代理在做什麼，優先看到等待你處理的事項。 |
-<!-- TOOLING:START — 在此行上方新增工具表格列 -->
+| 專案 | 能幫上什麼忙 | GitHub 星數 |
+|---|---|---|
+| [**ai-research-skills**](https://github.com/WenyuChiou/ai-research-skills) | 引導 AI 協助研究，從文獻搜尋到論文準備。 | [![ai-research-skills stars](https://img.shields.io/github/stars/WenyuChiou/ai-research-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/ai-research-skills) |
+| [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | 讓多個 AI 代理分工、保存進度檢查點，並審查整合結果。 | [![agent-collab-skills stars](https://img.shields.io/github/stars/WenyuChiou/agent-collab-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/agent-collab-skills) |
+| [**zotero-skills**](https://github.com/WenyuChiou/zotero-skills) | 讓 AI 助理搜尋、新增、註解並整理 Zotero 文獻。 | [![zotero-skills stars](https://img.shields.io/github/stars/WenyuChiou/zotero-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/zotero-skills) |
+| [**research-hub**](https://github.com/WenyuChiou/research-hub) | 在本機研究工作區串聯文獻、證據、分析與論文。 | [![research-hub stars](https://img.shields.io/github/stars/WenyuChiou/research-hub?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/research-hub) |
+| [**academic-writing-skills**](https://github.com/WenyuChiou/academic-writing-skills) | 規劃、撰寫、審查與修訂學術論文，並檢查證據與前後一致性。 | [![academic-writing-skills stars](https://img.shields.io/github/stars/WenyuChiou/academic-writing-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/academic-writing-skills) |
+| [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | 由 Claude 將程式實作委派給 Codex CLI，再由 Claude 審查結果。 | [![codex-delegate stars](https://img.shields.io/github/stars/WenyuChiou/codex-delegate?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/codex-delegate) |
+| [**Agent Board**](https://github.com/WenyuChiou/agent-board) | 一眼查看各個 AI 程式代理在做什麼，優先看到等待你處理的事項。 | [![agent-board stars](https://img.shields.io/github/stars/WenyuChiou/agent-board?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/agent-board) |
+| [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | 透過學習路線、動手練習與精選資源，學會使用及打造 AI 代理。 | [![awesome-agentic-ai-zh stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/awesome-agentic-ai-zh) |
+<!-- TOOLING:START — 在此行上方新增工具或學習資源表格列 -->
 <!-- TOOLING:END -->
+
+[![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-f59e0b?style=flat-square&logo=buymeacoffee&logoColor=white&labelColor=0d1117)](https://buymeacoffee.com/wenyuchiou)
+
+&nbsp;
 
 <img src="https://img.shields.io/badge/%E9%96%8B%E6%BA%90%E8%B2%A2%E7%8D%BB-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="開源貢獻"/>
 
@@ -133,16 +138,6 @@
 | [**Nanako0129/coralline**](https://github.com/Nanako0129/coralline) | 修正 auto-layout 過度換行——以顯示欄寬（而非位元組）計算 | [#10](https://github.com/Nanako0129/coralline/pull/10) · 已合併 |
 <!-- OSS:START — 每列對應一個專案／已合併貢獻群組；只用事實動詞，不放星數 -->
 <!-- OSS:END -->
-
-&nbsp;
-
-<img src="https://img.shields.io/badge/%E5%AD%B8%E7%BF%92%E8%B3%87%E6%BA%90-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="學習資源"/>
-
-<a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
-
-| | |
-|---|---|
-| [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | [![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-f59e0b?style=flat-square&logo=buymeacoffee&logoColor=white&labelColor=0d1117)](https://buymeacoffee.com/wenyuchiou) 7 階段 agentic-AI 學習地圖 · 三語（繁中為主 / 简中 / EN）· 240+ 精選資源，從 LLM 基礎到多代理 production |
 
 &nbsp;
 

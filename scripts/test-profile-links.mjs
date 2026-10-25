@@ -46,8 +46,35 @@ for (const locale of ['en', 'zh-TW']) {
   assert(block.includes(`href="${base}hire/"`) && block.includes(`href="${base}"`));
   assert(block.includes(`user=vSQ3zT4AAAAJ&amp;hl=${locale}`));
   assert(block.includes('2027') && block.includes('Lehigh University') && block.includes('Bethlehem'));
-  assert.equal([...text.matchAll(/img\.shields\.io\/github\/stars\//g)].length, 1, 'retain one live star counter');
-  assert(text.indexOf('img.shields.io/github/stars/') > text.indexOf('<!-- OSS:END -->'), 'stars beside the learning project');
+  const projects = ['ai-research-skills', 'agent-collab-skills', 'zotero-skills', 'research-hub', 'academic-writing-skills', 'codex-delegate', 'agent-board', 'awesome-agentic-ai-zh'];
+  const tableHeader = locale === 'en'
+    ? '| Project | What it helps with | GitHub stars |'
+    : '| 專案 | 能幫上什麼忙 | GitHub 星數 |';
+  const tableStart = text.indexOf(tableHeader);
+  const tableEnd = text.indexOf('<!-- TOOLING:START', tableStart);
+  assert(tableStart >= 0 && tableEnd > tableStart, `${locale}: unified tools and learning table`);
+  assert(tableEnd < text.indexOf('<!-- OSS:END -->'), 'own projects stay together before merged contributions');
+  const projectRows = text.slice(tableStart, tableEnd).trim().split('\n');
+  assert.equal(projectRows[1], '|---|---|---|', 'project, plain-language use, and stars columns');
+  assert.equal(projectRows.length, projects.length + 2, 'eight project rows in one table');
+  assert.equal([...text.matchAll(/img\.shields\.io\/github\/stars\//g)].length, projects.length, 'one live star counter per project, with none scattered elsewhere');
+  projects.forEach((project, index) => {
+    const row = projectRows[index + 2];
+    const cells = row.split('|').slice(1, -1).map(cell => cell.trim());
+    const repository = `https://github.com/WenyuChiou/${project}`;
+    assert.equal(cells.length, 3, `${project}: three table cells`);
+    assert.equal(cells[0], `[**${project === 'agent-board' ? 'Agent Board' : project}**](${repository})`, 'project link and order');
+    assert(cells[1].length > 0, `${project}: plain-language use is present`);
+    const badge = cells[2].match(/^\[!\[([^\]]+)\]\((https:\/\/[^)]+)\)\]\((https:\/\/[^)]+)\)$/);
+    assert(badge, `${project}: linked star badge`);
+    assert.equal(badge[1], `${project} stars`, 'badge has a meaningful accessible name');
+    assert.equal(badge[3], repository, 'badge links to its own project');
+    const source = new URL(badge[2]);
+    assert.equal(source.origin, 'https://img.shields.io');
+    assert.equal(source.pathname, `/github/stars/WenyuChiou/${project}`, 'live star source matches the project');
+    assert.deepEqual(Object.fromEntries(source.searchParams), { style: 'flat-square', logo: 'github', label: 'stars', labelColor: '0d1117', color: 'f59e0b' }, 'dynamic badge styling, not a hard-coded count');
+    assert.equal(text.split('\n').filter(line => line.startsWith('| [**') && line.includes(`](${repository})`)).length, 1, `${project}: no duplicate project row elsewhere`);
+  });
   for (const link of links) {
     const anchor = [...block.matchAll(/<a\b[^>]*>[\s\S]*?<\/a>/g)].find(match => match[0].includes(`/${link.id}-${locale}-light.svg`))?.[0];
     assert(anchor, `${locale}/${link.id}: independent anchor`);
@@ -93,4 +120,4 @@ try {
   assert.ifError(result.error);
   assert.equal(result.status, 0, `Fresh CRLF checkout remains reproducible: ${result.stderr}`);
 } finally { rmSync(temporary, { recursive: true, force: true }); }
-console.log('PASS: 48 reproducible SVGs including CRLF checkout, 16 independently linked entries, mobile/desktop and locale/theme parity, live stars retained.');
+console.log('PASS: 48 reproducible SVGs including CRLF checkout, 16 independently linked entries, mobile/desktop and locale/theme parity, eight matched live star badges per locale in one tools/learning table.');
