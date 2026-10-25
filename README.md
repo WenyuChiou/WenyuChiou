@@ -107,7 +107,7 @@ An animated collaboration mine, built from explicit Git evidence. Daily snapshot
 
 <img src="https://img.shields.io/badge/AI%20TOOLING-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="AI Tooling — open-source Claude Code skills and plugins"/>
 
-| | |
+| Project | What it helps with |
 |---|---|
 | [**ai-research-skills**](https://github.com/WenyuChiou/ai-research-skills) | 5 plugins · 14 research skills · install in one command |
 | [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | Multi-agent orchestration — task splitter, output reconciler, debate, shared memory, acceptance gate |
@@ -115,7 +115,7 @@ An animated collaboration mine, built from explicit Git evidence. Daily snapshot
 | [**research-hub**](https://github.com/WenyuChiou/research-hub) | AI-operable research workspace for Zotero, Obsidian, and NotebookLM — CLI, MCP, REST, dashboard |
 | [**academic-writing-skills**](https://github.com/WenyuChiou/academic-writing-skills) | Rigorous academic paper writing, revision, and submission — field-agnostic with per-paper journal overrides |
 | [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | Single-agent delegation skill used by the marketplaces above |
-| [**ai-profile**](https://github.com/WenyuChiou/ai-profile) | Local-first AI collaboration analytics — explicit Git provenance in, privacy-safe cards and an interactive provider dashboard out |
+| [**Agent Board**](https://github.com/WenyuChiou/agent-board) | See what each AI coding agent is doing, with items waiting on you at the top. |
 <!-- TOOLING:START — add new tools as table rows above this line -->
 <!-- TOOLING:END -->
 
@@ -123,13 +123,14 @@ An animated collaboration mine, built from explicit Git evidence. Daily snapshot
 
 Selected merged pull requests:
 
-| | |
-|---|---|
-| [**ZhuLinsen/daily_stock_analysis**](https://github.com/ZhuLinsen/daily_stock_analysis) | Added Taiwan (台股) market support — market detection & routing, an institutional-flow (三大法人) data fetcher, and TWD currency / dividend fixes · [merged PRs](https://github.com/ZhuLinsen/daily_stock_analysis/pulls?q=is%3Apr+author%3AWenyuChiou+is%3Amerged) |
-| [**langchain-ai/openwiki**](https://github.com/langchain-ai/openwiki) | Restricted `~/.openwiki` permissions on Windows, where `chmod` is a no-op · [#367](https://github.com/langchain-ai/openwiki/pull/367) |
-| [**BuilderIO/agent-native**](https://github.com/BuilderIO/agent-native) | Routed `AGENT_ENGINE=codex-cli` to the Codex runner instead of crashing · [#1362](https://github.com/BuilderIO/agent-native/pull/1362) |
-| [**Nanako0129/coralline**](https://github.com/Nanako0129/coralline) | Fixed auto-layout over-wrapping — measure display columns, not bytes · [#10](https://github.com/Nanako0129/coralline/pull/10) |
-<!-- OSS:START — one row per MERGED PR (GitHub stamps the purple "Merged" badge); factual verbs only, no star counts -->
+| Project / contribution | What changed | Evidence / status |
+|---|---|---|
+| [**REA**](https://github.com/morluto/rea) | Corrected Electron analysis errors, linked results to their source observations, and kept file paths current. Preserved completed debugger results when cleanup fails, making findings more reliable and easier to trace. | [Merged PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3AWenyuChiou+is%3Amerged) |
+| [**ZhuLinsen/daily_stock_analysis**](https://github.com/ZhuLinsen/daily_stock_analysis) | Added Taiwan (台股) market support — market detection & routing, an institutional-flow (三大法人) data fetcher, and TWD currency / dividend fixes | [merged PRs](https://github.com/ZhuLinsen/daily_stock_analysis/pulls?q=is%3Apr+author%3AWenyuChiou+is%3Amerged) · Merged |
+| [**langchain-ai/openwiki**](https://github.com/langchain-ai/openwiki) | Restricted `~/.openwiki` permissions on Windows, where `chmod` is a no-op | [#367](https://github.com/langchain-ai/openwiki/pull/367) · Merged |
+| [**BuilderIO/agent-native**](https://github.com/BuilderIO/agent-native) | Routed `AGENT_ENGINE=codex-cli` to the Codex runner instead of crashing | [#1362](https://github.com/BuilderIO/agent-native/pull/1362) · Merged |
+| [**Nanako0129/coralline**](https://github.com/Nanako0129/coralline) | Fixed auto-layout over-wrapping — measure display columns, not bytes | [#10](https://github.com/Nanako0129/coralline/pull/10) · Merged |
+<!-- OSS:START — one row per project / merged contribution group; factual verbs only, no star counts -->
 <!-- OSS:END -->
 
 &nbsp;
