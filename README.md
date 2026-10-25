@@ -125,17 +125,12 @@ Selected merged pull requests:
 
 | Project / contribution | What changed | Evidence / status |
 |---|---|---|
-| [**REA**](https://github.com/morluto/rea) | Prevent incorrect Electron window findings when code changes which object a variable points to. | [#7053](https://github.com/morluto/rea/pull/7053) · Merged |
-| [**REA**](https://github.com/morluto/rea) | Show the current file path in analysis summaries instead of an older record’s path. | [#7039](https://github.com/morluto/rea/pull/7039) · Merged |
-| [**REA**](https://github.com/morluto/rea) | Avoid replaying a saved result with the wrong evidence when several records match. | [#7037](https://github.com/morluto/rea/pull/7037) · Merged |
-| [**REA**](https://github.com/morluto/rea) | Recognize Electron message handlers tied to a specific window or frame, without assuming who can reach them. | [#7031](https://github.com/morluto/rea/pull/7031) · Merged |
-| [**REA**](https://github.com/morluto/rea) | Link combined analysis results back to the observations they used. | [#7028](https://github.com/morluto/rea/pull/7028) · Merged |
-| [**REA**](https://github.com/morluto/rea) | Keep completed debugger results when cleanup fails. | [#7023](https://github.com/morluto/rea/pull/7023) · Merged |
+| [**REA**](https://github.com/morluto/rea) | Corrected Electron analysis errors, linked results to their source observations, and kept file paths current. Preserved completed debugger results when cleanup fails, making findings more reliable and easier to trace. | [Merged PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3AWenyuChiou+is%3Amerged) |
 | [**ZhuLinsen/daily_stock_analysis**](https://github.com/ZhuLinsen/daily_stock_analysis) | Added Taiwan (台股) market support — market detection & routing, an institutional-flow (三大法人) data fetcher, and TWD currency / dividend fixes | [merged PRs](https://github.com/ZhuLinsen/daily_stock_analysis/pulls?q=is%3Apr+author%3AWenyuChiou+is%3Amerged) · Merged |
 | [**langchain-ai/openwiki**](https://github.com/langchain-ai/openwiki) | Restricted `~/.openwiki` permissions on Windows, where `chmod` is a no-op | [#367](https://github.com/langchain-ai/openwiki/pull/367) · Merged |
 | [**BuilderIO/agent-native**](https://github.com/BuilderIO/agent-native) | Routed `AGENT_ENGINE=codex-cli` to the Codex runner instead of crashing | [#1362](https://github.com/BuilderIO/agent-native/pull/1362) · Merged |
 | [**Nanako0129/coralline**](https://github.com/Nanako0129/coralline) | Fixed auto-layout over-wrapping — measure display columns, not bytes | [#10](https://github.com/Nanako0129/coralline/pull/10) · Merged |
-<!-- OSS:START — one row per MERGED PR (GitHub stamps the purple "Merged" badge); factual verbs only, no star counts -->
+<!-- OSS:START — one row per project / merged contribution group; factual verbs only, no star counts -->
 <!-- OSS:END -->
 
 &nbsp;
