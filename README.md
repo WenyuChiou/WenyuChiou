@@ -105,19 +105,24 @@ An animated collaboration mine, built from explicit Git evidence. Daily snapshot
 
 &nbsp;
 
-<img src="https://img.shields.io/badge/AI%20TOOLING-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="AI Tooling — open-source Claude Code skills and plugins"/>
+<img src="https://img.shields.io/badge/AI%20TOOLS%20%26%20LEARNING-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="AI tools and learning resources"/>
 
-| Project | What it helps with |
-|---|---|
-| [**ai-research-skills**](https://github.com/WenyuChiou/ai-research-skills) | 5 plugins · 14 research skills · install in one command |
-| [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | Multi-agent orchestration — task splitter, output reconciler, debate, shared memory, acceptance gate |
-| [**zotero-skills**](https://github.com/WenyuChiou/zotero-skills) | Programmatic Zotero CRUD — search, add, classify, annotate, organize literature |
-| [**research-hub**](https://github.com/WenyuChiou/research-hub) | AI-operable research workspace for Zotero, Obsidian, and NotebookLM — CLI, MCP, REST, dashboard |
-| [**academic-writing-skills**](https://github.com/WenyuChiou/academic-writing-skills) | Rigorous academic paper writing, revision, and submission — field-agnostic with per-paper journal overrides |
-| [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | Single-agent delegation skill used by the marketplaces above |
-| [**Agent Board**](https://github.com/WenyuChiou/agent-board) | See what each AI coding agent is doing, with items waiting on you at the top. |
-<!-- TOOLING:START — add new tools as table rows above this line -->
+| Project | What it helps with | GitHub stars |
+|---|---|---|
+| [**ai-research-skills**](https://github.com/WenyuChiou/ai-research-skills) | Guide AI-assisted research from literature search to manuscript preparation. | [![ai-research-skills stars](https://img.shields.io/github/stars/WenyuChiou/ai-research-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/ai-research-skills) |
+| [**agent-collab-skills**](https://github.com/WenyuChiou/agent-collab-skills) | Split work among AI agents, keep checkpoints, and review combined results. | [![agent-collab-skills stars](https://img.shields.io/github/stars/WenyuChiou/agent-collab-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/agent-collab-skills) |
+| [**zotero-skills**](https://github.com/WenyuChiou/zotero-skills) | Let AI assistants search, add, annotate, and organize Zotero references. | [![zotero-skills stars](https://img.shields.io/github/stars/WenyuChiou/zotero-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/zotero-skills) |
+| [**research-hub**](https://github.com/WenyuChiou/research-hub) | Keep literature, evidence, analyses, and manuscripts connected in a local research workspace. | [![research-hub stars](https://img.shields.io/github/stars/WenyuChiou/research-hub?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/research-hub) |
+| [**academic-writing-skills**](https://github.com/WenyuChiou/academic-writing-skills) | Plan, draft, review, and revise academic papers with checks on evidence and consistency. | [![academic-writing-skills stars](https://img.shields.io/github/stars/WenyuChiou/academic-writing-skills?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/academic-writing-skills) |
+| [**codex-delegate**](https://github.com/WenyuChiou/codex-delegate) | Delegate coding work from Claude to Codex CLI, with Claude reviewing the result. | [![codex-delegate stars](https://img.shields.io/github/stars/WenyuChiou/codex-delegate?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/codex-delegate) |
+| [**Agent Board**](https://github.com/WenyuChiou/agent-board) | See what each AI coding agent is doing, with items waiting on you at the top. | [![agent-board stars](https://img.shields.io/github/stars/WenyuChiou/agent-board?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/agent-board) |
+| [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | Learn to use and build AI agents through guided paths, hands-on exercises, and curated resources. | [![awesome-agentic-ai-zh stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=stars&labelColor=0d1117&color=f59e0b)](https://github.com/WenyuChiou/awesome-agentic-ai-zh) |
+<!-- TOOLING:START — add tools or learning resources as table rows above this line -->
 <!-- TOOLING:END -->
+
+[![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-f59e0b?style=flat-square&logo=buymeacoffee&logoColor=white&labelColor=0d1117)](https://buymeacoffee.com/wenyuchiou)
+
+&nbsp;
 
 <img src="https://img.shields.io/badge/OPEN%20SOURCE-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Open-source contributions — merged pull requests to projects I use"/>
 
@@ -132,16 +137,6 @@ Selected merged pull requests:
 | [**Nanako0129/coralline**](https://github.com/Nanako0129/coralline) | Fixed auto-layout over-wrapping — measure display columns, not bytes | [#10](https://github.com/Nanako0129/coralline/pull/10) · Merged |
 <!-- OSS:START — one row per project / merged contribution group; factual verbs only, no star counts -->
 <!-- OSS:END -->
-
-&nbsp;
-
-<img src="https://img.shields.io/badge/LEARNING-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Learning materials"/>
-
-<a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat-square&logo=github&label=awesome-agentic-ai-zh&labelColor=0d1117&color=f59e0b" alt="awesome-agentic-ai-zh stars"/></a>
-
-| | |
-|---|---|
-| [**awesome-agentic-ai-zh**](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | [![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-f59e0b?style=flat-square&logo=buymeacoffee&logoColor=white&labelColor=0d1117)](https://buymeacoffee.com/wenyuchiou) 7-stage agentic-AI roadmap · trilingual (繁中 canonical / 简中 / EN) · 240+ curated resources, from LLM basics to multi-agent production |
 
 &nbsp;
 
