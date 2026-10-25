@@ -46,7 +46,20 @@ for (const locale of ['en', 'zh-TW']) {
   assert(block.includes(`href="${base}hire/"`) && block.includes(`href="${base}"`));
   assert(block.includes(`user=vSQ3zT4AAAAJ&amp;hl=${locale}`));
   assert(block.includes('2027') && block.includes('Lehigh University') && block.includes('Bethlehem'));
-  const projects = ['ai-research-skills', 'agent-collab-skills', 'zotero-skills', 'research-hub', 'academic-writing-skills', 'codex-delegate', 'agent-board', 'awesome-agentic-ai-zh'];
+  const coffeeDestination = 'https://buymeacoffee.com/wenyuchiou';
+  assert.equal(text.split(coffeeDestination).length - 1, 1, 'one support link, same recipient');
+  const coffeeButton = text.match(/<a href="https:\/\/buymeacoffee\.com\/wenyuchiou"><img src="([^"]+)" alt="Buy me a coffee"\/><\/a>/);
+  assert(coffeeButton, `${locale}: visible support button`);
+  const coffeeSource = new URL(coffeeButton[1].replaceAll('&amp;', '&'));
+  assert.equal(coffeeSource.origin, 'https://img.shields.io');
+  assert.equal(coffeeSource.pathname, '/badge/Buy%20me%20a%20coffee-f59e0b');
+  assert.equal(coffeeSource.searchParams.get('style'), 'for-the-badge', 'prominent button size');
+  assert.equal(coffeeSource.searchParams.get('logo'), 'buymeacoffee', 'recognizable support button');
+  assert(text.indexOf(coffeeButton[0]) < text.indexOf('<!-- HIGHLIGHTS:START -->'), 'support button appears near the top, before intro links');
+  assert(text.includes(locale === 'en' ? 'Support my open-source work' : '支持我的開源專案'), 'visible localized support label');
+  assert(text.includes(locale === 'en' ? 'Badges update; row order does not update automatically.' : '星數徽章會更新，列序不會自動調整。'), 'snapshot ordering is disclosed');
+  // Descending stars at the 2026-10-25 check; repository name breaks ties.
+  const projects = ['awesome-agentic-ai-zh', 'ai-research-skills', 'academic-writing-skills', 'research-hub', 'zotero-skills', 'codex-delegate', 'agent-board', 'agent-collab-skills'];
   const tableHeader = locale === 'en'
     ? '| Project | What it helps with | GitHub stars |'
     : '| 專案 | 能幫上什麼忙 | GitHub 星數 |';
