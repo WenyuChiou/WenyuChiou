@@ -6,7 +6,7 @@
     "agent-collab-skills": 34,
     "codex-delegate": 62,
     "research-hub": 67,
-    "ai-research-skills": 651,
+    "ai-research-skills": 652,
     "academic-writing-skills": 423,
     "zotero-skills": 78
   },
@@ -22,19 +22,19 @@
   },
   "upstream": {
     "morluto/rea": {
-      "stars": 454882,
+      "stars": 455111,
       "mergedPrs": 16
     },
     "ZhuLinsen/daily_stock_analysis": {
-      "stars": 71057,
+      "stars": 71069,
       "mergedPrs": 10
     },
     "BuilderIO/agent-native": {
-      "stars": 7685,
+      "stars": 7687,
       "mergedPrs": 4
     },
     "langchain-ai/openwiki": {
-      "stars": 17918,
+      "stars": 17919,
       "mergedPrs": 2
     },
     "Nanako0129/coralline": {
@@ -42,11 +42,11 @@
       "mergedPrs": 1
     },
     "NVIDIA/skills": {
-      "stars": 3949,
+      "stars": 3951,
       "mergedPrs": 1
     },
     "punkpeye/awesome-mcp-servers": {
-      "stars": 97655,
+      "stars": 97656,
       "mergedPrs": 1
     }
   }
