@@ -1,0 +1,47 @@
+name: Refresh profile tiles
+
+on:
+  schedule:
+    - cron: "52 9 * * *"    # daily, staggered from the other profile jobs to avoid a push race
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-tiles
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+      - name: Fetch numbers and rebuild the tiles
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/build-profile.mjs --refresh
+      - name: Test the generated files
+        run: node scripts/test-profile.mjs
+      - name: Commit and push
+        env:
+          GH_PUSH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md README.zh-TW.md assets/profile scripts/profile-data.json
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git commit -m "chore: refresh profile tiles"
+          PUSH_URL="https://x-access-token:${GH_PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          # Rebase and retry a few times so a concurrent push does not fail the job; fail loudly if it persists.
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push "$PUSH_URL" "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
+            echo "push attempt $attempt failed; retrying in $((attempt * 5))s"; sleep $((attempt * 5))
+          done
+          echo "ERROR: failed to push after 3 attempts"; exit 1

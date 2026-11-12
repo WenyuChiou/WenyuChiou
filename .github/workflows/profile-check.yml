@@ -1,0 +1,30 @@
+name: Check profile files
+
+# Runs the offline test on every pull request and on pushes to main, so a hand-edited README, a missing image
+# or a broken generator is caught before it is merged. The daily job (profile-tiles.yml) runs the same test,
+# but only after it has rebuilt the files, so it cannot catch a hand edit.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+      - name: The committed README and tiles match what the generator makes
+        run: node scripts/test-profile.mjs
