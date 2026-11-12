@@ -22,19 +22,19 @@
   },
   "upstream": {
     "morluto/rea": {
-      "stars": 454824,
+      "stars": 454882,
       "mergedPrs": 16
     },
     "ZhuLinsen/daily_stock_analysis": {
-      "stars": 71056,
+      "stars": 71057,
       "mergedPrs": 10
     },
     "BuilderIO/agent-native": {
-      "stars": 7684,
+      "stars": 7685,
       "mergedPrs": 4
     },
     "langchain-ai/openwiki": {
-      "stars": 17917,
+      "stars": 17918,
       "mergedPrs": 2
     },
     "Nanako0129/coralline": {
@@ -46,7 +46,7 @@
       "mergedPrs": 1
     },
     "punkpeye/awesome-mcp-servers": {
-      "stars": 97654,
+      "stars": 97655,
       "mergedPrs": 1
     }
   }
