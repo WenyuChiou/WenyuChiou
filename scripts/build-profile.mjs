@@ -7,6 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import defaultContent from "./profile-content.mjs";
+import { bannerSvg, topicTiles, even } from "./profile-figures.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -95,45 +96,6 @@ const BRP = {
 const bi = (k, z) => `<svg class="ic" viewBox="0 0 24 24" width="${z}" height="${z}" style="fill:currentColor;stroke:none" aria-hidden="true"><path d="${BRP[k]}"/></svg>`;
 const nest = (k, x, y, z, col) => bi(k, z).replace("<svg ", `<svg x="${x}" y="${y}" color="${col}" `).replace('class="ic"', "").replace(/style="[^"]*"/, `fill="${col}"`);
 const gi = (k, x, y, s, col) => `<g transform="translate(${x} ${y}) scale(${s / 48})" style="color:${col}" fill="none" stroke="${col}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${IC[k]}</g>`;
-
-/* ---------- the valley figure of the banner ---------- */
-const GP = [[0, 296], [70, 298], [170, 304], [280, 318], [380, 338], [470, 366], [545, 406], [585, 432], [640, 436]];
-const seg = (a, b) => `C${(a[0] + b[0]) / 2} ${a[1]} ${(a[0] + b[0]) / 2} ${b[1]} ${b[0]} ${b[1]}`;
-const gTop = GP.map((p, i) => (i ? seg(GP[i - 1], p) : `M${p[0]} ${p[1]}`)).join("");
-const gBack = GP.slice().reverse().map((p, i, a) => (i ? seg(a[i - 1], p) : "")).join("");
-const HS = [[70, 298, "wait"], [170, 304, "wait"], [280, 318, "wait"], [380, 338, "ins"], [470, 366, "up"]];
-const GL = {
-  ask: `<rect x="-5" y="-6" width="10" height="12" rx="2"/><path d="M-2 -2h4M-2 2h4"/>`,
-  up: `<path d="M0 6V-6M-5 -1l5-5 5 5"/>`,
-  ins: `<path d="M0 -7l6 2v4c0 4-3 6-6 8-3-2-6-4-6-8v-4z"/>`,
-  wait: `<path d="M-4 0h8"/>`,
-};
-let wv = "M-160 0q20 -7 40 0"; for (let i = 1; i < 24; i++) wv += "t40 0"; wv += "V220H-160Z";
-const water = (cls) => `<g class="wtr ${cls}"><g transform="translate(0 440)"><path class="wave" d="${wv}"/></g></g>`;
-const house = ([x, gy, k], i) => `<g class="hs ${k}" data-g="${gy}" transform="translate(${x} ${gy})"><path class="stilt" d="M-12 0V-62M12 0V-62"/><g class="bd"><rect class="wall" x="-17" y="-26" width="34" height="26" rx="3"/><path class="roof" d="M-23 -24L0 -45 23 -24Z"/><rect class="door" x="-4" y="-13" width="8" height="13" rx="1.5"/><g transform="translate(0 -66)"><g class="bg ask" style="--d:${i}"><circle r="12"/>${GL.ask}</g><g class="bg dec ${k}" style="--d:${i}"><circle r="12"/>${GL[k]}</g></g></g></g>`;
-const rain = Array.from({ length: 18 }, (_, i) => { const x = 24 + i * 36, y = 40 + ((i * 53) % 150); return `<line x1="${x}" y1="${y}" x2="${x - 6}" y2="${y + 16}" style="animation-delay:${((i * 0.137) % 0.7).toFixed(2)}s"/>`; }).join("");
-const rings = (cx, cy) => Array.from({ length: 6 }, (_, j) => `<ellipse class="cn" cx="${cx}" cy="${cy}" rx="${60 + j * 44}" ry="${34 + j * 26}" transform="rotate(-14 ${cx} ${cy})"/>`).join("");
-const VALLEY_CSS = `.valley .hill{fill:#fff;opacity:.04}.valley .cn{fill:none;stroke:#fff;opacity:.06}
-.valley .gr{stroke:#8de4e6;stroke-opacity:.55;stroke-width:1.5}
-.valley .wave{fill:#35b6c4;animation:wave 7s linear infinite}.valley .wtr.fr .wave{fill:#8de4e6;opacity:.34}
-.valley .stilt{fill:none;stroke:#cfe9e8;stroke-width:2.5;stroke-linecap:round}
-.valley .wall{fill:#eef6f4}.valley .roof{fill:#8de4e6}.valley .door{fill:#0c2228}
-.valley .bg circle{fill:#0c2228;stroke:#8de4e6;stroke-width:1.5}
-.valley .bg path,.valley .bg rect{fill:none;stroke:#ecf4f2;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.valley .bg.ins circle{stroke:#f7d67f}.valley .bg.up circle{stroke:#aee6c2}
-.valley .hs.wet .wall{fill:#f4a285}.valley .hs.wet.cov .wall{fill:#f7d67f}
-.valley .rain line{stroke:#8de4e6;stroke-width:1.4;stroke-linecap:round;animation:fall .7s linear infinite}
-@keyframes wave{to{transform:translateX(-160px)}}
-@keyframes fall{from{transform:translate(8px,-24px);opacity:0}30%{opacity:.8}to{transform:translate(-10px,44px);opacity:0}}`;
-const VALLEY_SOLO = `${VALLEY_CSS}
-.valley .wtr{animation:tide 9s ease-in-out infinite alternate}@keyframes tide{from{transform:translateY(-100px)}to{transform:translateY(-124px)}}
-.valley .hs.up .bd{transform:translateY(-62px)}.valley .bg.ask,.valley .hs:not(.up) .stilt{display:none}.valley .hs.ins .wall{fill:#f7d67f}
-@media (prefers-reduced-motion:reduce){.valley *{animation:none!important}.valley .wtr{transform:translateY(-112px)}}`;
-const valley = (id = "v") => `<defs><linearGradient id="${id}g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11363d"/><stop offset="1" stop-color="#071417"/></linearGradient><clipPath id="${id}c"><path d="M0 0H640V436${gBack}Z"/></clipPath></defs>
-<g class="valley-in">${rings(470, 150)}<path class="hill" d="M0 262C90 210 170 236 250 216S410 150 510 200 600 186 640 174V460H0Z"/><path class="hill" d="M0 284C120 262 200 286 320 262S520 250 640 236V460H0Z"/>
-${water("bk")}<path class="gr" d="${gTop}V460H0Z" fill="url(#${id}g)"/>
-${HS.map(house).join("")}
-<g clip-path="url(#${id}c)">${water("fr")}</g><g class="rain">${rain}</g></g>`;
 
 /* ---------- SVG frame ---------- */
 const PAL = { ink: ["#10242a", "#ecf4f2", "#a3b8b7", "#8de4e6"], deep: ["url(#dg)", "#ecf4f2", "#b9cfce", "#8de4e6"], aqua: ["#8de4e6", "#06282c", "#2a5b60", "#06282c"], sand: ["#f3ead6", "#1b2527", "#5c635f", "#1b2527"], iris: ["#d3d0fb", "#1b1a3c", "#4f4d7c", "#1b1a3c"], sun: ["#f7d67f", "#2a2106", "#6b5a26", "#2a2106"], moss: ["#aee6c2", "#0c2a1a", "#3d6650", "#0c2a1a"] };
@@ -228,15 +190,7 @@ const prTiles = (svg, L, groups) => {
   });
 };
 
-/* ---------- banner, buttons, research tiles ---------- */
-const scene = (id, W, H, tx, ty, sc, left) => `<defs><clipPath id="${id}r"><rect width="${W}" height="${H}" rx="28"/></clipPath><linearGradient id="${id}f" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".3" stop-color="#fff"/></linearGradient><mask id="${id}m"><rect width="640" height="470" fill="url(#${id}f)"/></mask>
-<pattern id="${id}d" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="14" cy="14" r="1" fill="#ecf4f2" opacity=".09"/></pattern><radialGradient id="${id}h" cx=".85" cy="0" r="1"><stop offset="0" stop-color="#14434c"/><stop offset=".7" stop-color="#081316"/></radialGradient></defs>
-<g clip-path="url(#${id}r)"><rect width="${W}" height="${H}" fill="url(#${id}h)"/><rect width="${W}" height="${H}" fill="url(#${id}d)"/><g transform="translate(${tx} ${ty}) scale(${sc})"><g class="valley" mask="url(#${id}m)">${valley(id)}</g></g>${left}</g>`;
-
-const bannerSvg = (svg, L) => svg(1280, 420, scene("b", 1280, 420, 700, -4, 0.925,
-  `<text x="64" y="176" font-size="96" font-weight="600" letter-spacing="-3.4" fill="#ecf4f2">${ex(L.nameHead)}${L.nameTail ? `<tspan fill="#8de4e6">${ex(L.nameTail)}</tspan>` : ""}</text>
-${lines(L.lead, 64, 240, 40, 'font-size="30" font-weight="500" letter-spacing="-.6" fill="#ecf4f2"')}
-<circle cx="72" cy="345" r="6" fill="#aee6c2"/><text x="90" y="352" class="m" font-size="21" fill="#b9cfce">${ex(L.open)} · wenyuchiou.github.io</text>`), L.bannerAlt, VALLEY_SOLO);
+/* ---------- buttons, research tiles (the banner and the research-direction tiles are in profile-figures.mjs) ---------- */
 
 const pill = (svg, k, label, pal) => {
   const [bg, fg] = PAL[pal], W = Math.round(62 + tw(label, 9.6, 16.5));
@@ -244,17 +198,12 @@ const pill = (svg, k, label, pal) => {
   return svg(W, 46, `<rect width="${W}" height="46" rx="23" fill="${bg}"/>${icon}<text x="48" y="29" font-size="16" font-weight="600" fill="${fg}">${ex(label)}</text>`, label);
 };
 
-/* W is the card's width in drawing units; the text wraps to it, so a narrower card gets taller.
-   draw(H, gap) leaves `gap` empty units on the right, which is the space to the next card in the row. */
-const rcard = (svg, L, pal, ic, r, cta, W = 620) => {
-  const [bg, fg, mu] = PAL[pal]; let y = 34, b = "";
-  const cl = wrapW(r.chip, Math.floor((W - 94) / 10.5)), chH = 38 + (cl.length - 1) * 24;
-  b += `<rect x="32" y="${y}" width="${30 + Math.max(...cl.map((s) => tw(s, 10.5, 17.5)))}" height="${chH}" rx="19" fill="none" stroke="${fg}" stroke-opacity=".28"/>` + lines(cl, 47, y + 25, 24, `class="m" font-size="17.5" fill="${fg}"`); y += chH + 46;
-  const ql = wrapW(r.q, Math.floor((W - 64) / 18.5)); b += lines(ql, 32, y, 37, `font-size="31" font-weight="600" letter-spacing="-1" fill="${fg}"`); y += ql.length * 37 + 4;
-  const wl = wrapW(r.what, Math.floor((W - 64) / 10.6)); b += lines(wl, 32, y, 28, `font-size="20" fill="${fg}"`); y += wl.length * 28 + 22;
-  b += `<text x="32" y="${y}" class="m" font-size="17" letter-spacing="1.6" fill="${mu}">${ex(L.myPart)}</text>`; y += 32;
-  r.mine.forEach((p) => { const pl = wrapW(p, Math.floor((W - 88) / 10.6)); b += `<circle cx="39" cy="${y - 7}" r="4" fill="none" stroke="${fg}" stroke-width="2.2"/>` + lines(pl, 56, y, 27, `font-size="19.5" fill="${fg}"`); y += pl.length * 27 + 8; });
-  return { h: y + 52, draw: (H, gap = 0) => svg(W + gap, H, `<rect width="${W}" height="${H}" rx="28" fill="${bg}"/><g opacity=".1">${gi(ic, W - 220, H - 210, 230, fg)}</g>${b}<text x="${W - 32}" y="${H - 28}" text-anchor="end" font-size="20" font-weight="600" fill="${fg}">${ex(cta)} ↗</text>`, r.alt) };
+/* A slim paper card: where the work stands and its question, nothing else (the full record is on Google Scholar).
+   W is the card's width in drawing units; draw(H, gap) leaves `gap` empty units on the right, the space to the next card. */
+const rcard = (svg, pal, ic, r, W) => {
+  const [bg, fg] = PAL[pal], ql = r.qLines || even(wrapW, r.q, Math.floor((W - 56) / 13.2));
+  const b = `${gi(ic, 26, 22, 26, fg)}<text x="62" y="41" class="m" font-size="16.5" fill="${fg}">${ex(r.chip)}</text>` + lines(ql, 28, 86, 30, `font-size="22" font-weight="600" letter-spacing="-.5" fill="${fg}"`);
+  return { h: 86 + (ql.length - 1) * 30 + 30, draw: (H, gap = 0) => svg(W + gap, H, `<rect width="${W}" height="${H}" rx="22" fill="${bg}"/>${b}<text x="${W - 28}" y="42" text-anchor="end" font-size="22" font-weight="600" fill="${fg}">↗</text>`, r.alt) };
 };
 
 /* a row of tiles as README html: no whitespace between images, widths add up to at most 100% */
@@ -263,19 +212,19 @@ const rowHtml = (rows, p, href) => rows.map((row) => { const ws = pct(row); retu
 /* ---------- one locale ---------- */
 function buildLocale(data, content, L) {
   const svg = makeSvg(L), files = new Map(), prefix = `assets/profile/${L.dir}/`, GHU = content.github;
-  files.set("banner.svg", bannerSvg(svg, L));
+  const kit = { ex, tw, wrapW, lines, PAL, gi };
+  files.set("banner.svg", bannerSvg(svg, L, kit));
+  const topicRow = topicTiles(svg, L, content.topics, kit);
+  topicRow.forEach((t) => files.set(t.file, t.svg));
   const scholar = `https://scholar.google.com/citations?user=${content.scholarUser}&hl=${L.scholarHl}`;
   const pills = [["website", "aqua", L.home], ["scholar", "sand", scholar], ["linkedin", "iris", content.linkedin], ["mail", "sun", content.mail], ["cv", "moss", L.cv], ["coffee", "deep", content.coffee]];
   const pillOut = pills.map(([k, pal, href]) => { files.set(`btn-${k}.svg`, pill(svg, k, L.buttons[k], pal)); return [k, L.buttons[k], href]; });
 
-  /* the two research cards share one row: the split between them is the one where both need about the same height,
-     so the card with less text does not end up half empty */
-  const RW = 1240, RG = 12, cards = (W1) => [rcard(svg, L, content.research.wrr.pal, content.research.wrr.icon, L.wrr, L.readPaper, W1), rcard(svg, L, content.research.abm.pal, content.research.abm.icon, L.abm, L.readCase, RW - RG - W1)];
-  let pick = null;
-  for (let W1 = 400; W1 <= 820; W1 += 4) { const [a, b] = cards(W1); const d = Math.abs(a.h - b.h); if (!pick || d < pick.d || (d === pick.d && Math.abs(W1 - 620) < Math.abs(pick.W1 - 620))) pick = { W1, d, a, b }; }
-  if (!pick) throw new Error("profile: the research cards do not fit side by side");
-  const H = Math.max(pick.a.h, pick.b.h), rw = [pick.W1 + RG, RW - RG - pick.W1].map((w) => Math.floor(w / RW * 10000) / 100);
-  files.set("research-wrr.svg", pick.a.draw(H, RG)); files.set("research-floodabm.svg", pick.b.draw(H));
+  /* the two papers share one slim row, half each */
+  const RW = 1240, RG = 12, W1 = (RW - RG) / 2;
+  const cards = [rcard(svg, content.research.wrr.pal, content.research.wrr.icon, L.wrr, W1), rcard(svg, content.research.abm.pal, content.research.abm.icon, L.abm, W1)];
+  const H = Math.max(...cards.map((c) => c.h)), rw = [W1 + RG, W1].map((w) => Math.floor(w / RW * 10000) / 100);
+  files.set("research-wrr.svg", cards[0].draw(H, RG)); files.set("research-floodabm.svg", cards[1].draw(H));
 
   const zh = L.dir !== "en";
   const repoRows = repoTiles(svg, L, content.own.map((r) => ({ r: r.name, ic: r.icon, d: zh ? r.zh : r.en, big: zh ? r.bigZh : r.bigEn, v: data.own[r.name] })), (name) => data.ownForks[name]);
@@ -295,8 +244,13 @@ ${switchLine}
 ${pillOut.map(([k, label, href]) => `<a href="${exAttr(href)}"><img src="${p}btn-${k}.svg" height="40" alt="${exAttr(label)}"></a>`).join("\n")}
 </p>
 
+<p>${ex(L.bio)}</p>
+
 <h3>${ex(L.h.research)}</h3>
 <p><b>${ex(L.question)}</b></p>
+<p>
+${topicRow.map((t) => `<a href="${exAttr(`${L.research}#observatory-stage-${t.stage}`)}"><img src="${p}${t.file}" width="${Math.floor(t.share * 10000) / 100}%" alt="${exAttr(t.alt)}"></a>`).join("")}
+</p>
 <p>
 <a href="${exAttr(content.research.wrr.href)}"><img src="${p}research-wrr.svg" width="${rw[0]}%" alt="${exAttr(L.wrr.alt)}"></a><a href="${exAttr(L.floodabm)}"><img src="${p}research-floodabm.svg" width="${rw[1]}%" alt="${exAttr(L.abm.alt)}"></a>
 </p>

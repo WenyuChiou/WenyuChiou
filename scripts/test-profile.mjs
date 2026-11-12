@@ -50,7 +50,7 @@ for (const L of locales) {
     }
     assert.equal(acc, 0, `${L.readme}: a tile row sums to only ${acc}`);
   }
-  assert.ok(rows === 7, `${L.readme}: only ${rows} tile rows`);
+  assert.ok(rows === 8, `${L.readme}: ${rows} tile rows, expected 8`);
 }
 ok("each tile row's widths sum to at most 100 and more than 98");
 
@@ -75,10 +75,10 @@ ok("SVGs have a title, no script, no foreignObject, no external reference");
 {
   const [en, zh] = locales.map((L) => read(L.readme)), base = (s) => s.split("/").pop();
   assert.deepEqual(imgs(en).map((i) => base(i.src)), imgs(zh).map((i) => base(i.src)));
-  /* the two research cards split their row by how much text each language has, so only their widths may differ between locales */
-  const research = (i) => /\/research-(wrr|floodabm)\.svg$/.test(i.src), sizes = (md) => imgs(md).filter((i) => !research(i)).map((i) => i.width || i.height);
+  /* every image has the same size in both languages; the two paper cards take half the row each */
+  const research = (i) => /\/research-(wrr|floodabm)\.svg$/.test(i.src), sizes = (md) => imgs(md).map((i) => i.width || i.height);
   assert.deepEqual(sizes(en), sizes(zh));
-  for (const md of [en, zh]) { const rw = imgs(md).filter(research).map((i) => parseFloat(i.width)); assert.equal(rw.length, 2); assert.ok(Math.min(...rw) >= 30, `a research card is narrower than 30%: ${rw}`); }
+  for (const md of [en, zh]) { const rw = imgs(md).filter(research).map((i) => parseFloat(i.width)); assert.equal(rw.length, 2); assert.ok(Math.min(...rw) >= 49 && rw[0] + rw[1] <= 100, `the paper cards do not split the row in half: ${rw}`); }
   assert.equal(links(en).length, links(zh).length);
   assert.ok(en.includes('<a href="README.zh-TW.md">繁體中文</a>') && zh.includes('<a href="README.md">English</a>'));
   assert.ok(links(zh).includes("https://wenyuchiou.github.io/zh/work/floodabm/") && links(zh).includes("https://wenyuchiou.github.io/assets/Wenyu_Chiou_Academic_CV_zh-TW.pdf"));
@@ -103,6 +103,48 @@ for (const L of locales) {
   }
 }
 ok("star and PR numbers in the alt text equal the data");
+
+for (const L of locales) {
+  const squash = (s) => s.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/\s+/g, "");
+  const textOf = (rel) => squash([...rendered.get(rel).matchAll(/<text[^>]*>([^<]*)<\/text>/g)].map((m) => m[1]).join(""));
+  const md = read(L.readme), dir = `assets/profile/${L.dir}/`;
+  /* the background paragraph is plain text in the README, right before the research heading */
+  assert.ok(md.includes(`<p>${L.bio.replace(/&/g, "&amp;")}</p>\n\n<h3>`), `${L.readme}: background paragraph missing`);
+  /* three research directions, in order, each linking to its stage on the Research page and drawing its whole text */
+  const row = imgs(md).filter((i) => /\/topic-/.test(i.src));
+  assert.deepEqual(row.map((i) => i.src), content.topics.map((t) => `${dir}topic-${t.key}.svg`));
+  content.topics.forEach((t, i) => {
+    assert.ok(links(md).includes(`${L.research}#observatory-stage-${t.stage}`), `${L.readme}: no link to stage ${t.stage}`);
+    const tx = textOf(`${dir}topic-${t.key}.svg`), loc = L.topics[i];
+    for (const part of [loc.title, loc.q, loc.how]) assert.ok(tx.includes(squash(part)), `${L.dir} topic ${t.key}: "${part}" not drawn`);
+    assert.equal(unesc(row[i].alt), loc.alt);
+  });
+  /* the two paper cards are slim: where the work stands, its question and an arrow, and no other text */
+  for (const [file, r] of [["research-wrr.svg", L.wrr], ["research-floodabm.svg", L.abm]]) {
+    assert.equal(textOf(`${dir}${file}`), squash(r.chip + r.q + "↗"), `${L.dir} ${file}: the card draws something other than its status and question`);
+    assert.equal(unesc(imgs(md).find((i) => i.src.endsWith("/" + file)).alt), r.alt);
+    assert.ok(r.alt.includes(r.chip) && r.alt.includes(r.q), `${L.dir} ${file}: the alt text misses the status or the question`);
+    const height = +rendered.get(`${dir}${file}`).match(/viewBox="0 0 [\d.]+ ([\d.]+)"/)[1];
+    assert.ok(height <= 180, `${L.dir} ${file}: the card is ${height} units tall, more than a slim card`);
+  }
+  /* the banner plays the loop: every step, caption and legend label is drawn, and motion is limited to people who allow it */
+  const banner = rendered.get(`${dir}banner.svg`), bx = textOf(`${dir}banner.svg`);
+  for (const part of [...L.loop.steps.map((x, i) => `${i + 1} ${x}`), ...L.loop.caps, ...Object.values(L.loop.legend), L.loop.note, L.loop.head, L.loop.year(1), L.loop.year(2), L.open, ...L.lead]) assert.ok(bx.includes(squash(part)), `${L.dir} banner: "${part}" not drawn`);
+  for (const k of ["tide", "p1", "p2", "p3", "p4", "y1", "y2"]) assert.ok(banner.includes(`@keyframes ${k}{`), `${L.dir} banner: no ${k} keyframes`);
+  /* no timeline steps backwards: a step out of order would silently replay an earlier state */
+  const timelines = [...banner.matchAll(/@keyframes (\w+)\{((?:[^{}]*\{[^{}]*\})+)\}/g)];
+  assert.ok(timelines.length >= 20, `${L.dir} banner: only ${timelines.length} timelines`);
+  for (const [, name, body] of timelines) {
+    const at = [...body.matchAll(/([\w.%,\s]+)\{/g)].flatMap((m) => m[1].split(",").map((x) => ({ from: 0, to: 100 })[x.trim()] ?? parseFloat(x)));
+    assert.ok(at.every((v, i) => Number.isFinite(v) && v <= 100 && (!i || v >= at[i - 1])), `${L.dir} banner: timeline ${name} is out of order (${at.join(" ")})`);
+  }
+  for (const rel of [`${dir}banner.svg`, ...content.topics.map((t) => `${dir}topic-${t.key}.svg`)]) {
+    const svg = rendered.get(rel), media = /@media \(prefers-reduced-motion:no-preference\)\{[\s\S]*?\}\}\n/;
+    assert.ok(media.test(svg) && /animation:/.test(svg.match(media)[0]), `${rel}: no animation inside the motion query`);
+    assert.ok(!/animation(-name|-duration)?:/.test(svg.replace(media, "")), `${rel}: an animation runs for people who turned motion off`);
+  }
+}
+ok("the background paragraph, the three research directions and the banner's loop are all there");
 
 for (const L of locales) {
   const zh = L.dir !== "en", squash = (s) => s.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/\s+/g, "");
@@ -160,7 +202,7 @@ ok("the CLI exits 1 and writes no file when the refresh fails");
 {
   const writes = new Map();
   const code = await main(["--refresh"], { fetchImpl: goodFetch, token: "t", write: (r, t) => writes.set(r, t), log: () => {}, err: () => {} }, content);
-  assert.equal(code, 0); assert.ok(writes.has("scripts/profile-data.json") && writes.has("README.md") && writes.has("README.zh-TW.md")); assert.ok(writes.size >= 51);
+  assert.equal(code, 0); assert.ok(writes.has("scripts/profile-data.json") && writes.has("README.md") && writes.has("README.zh-TW.md")); assert.ok(writes.size >= 57);
 }
 ok("the CLI writes the data and every output after a good refresh");
 
