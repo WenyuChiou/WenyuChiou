@@ -19,7 +19,7 @@ jobs:
     permissions:
       contents: write
     # Reviewed immutable workflow installs ai-profile-cli==0.10.0.
-    uses: WenyuChiou/ai-profile/.github/workflows/profile-refresh.yml@62284cc9ffb6b1a05af677e8f20c73d33e4bc4c6
+    uses: WenyuChiou/ai-profile/.github/workflows/profile-refresh.yml@985f7332a9d5f794b3d328410880f99d64bfe8f8
     with:
       repositories: |
         WenyuChiou/academic-writing-skills
@@ -106,4 +106,4 @@ jobs:
           path: _site
       - name: Deploy GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346
