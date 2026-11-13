@@ -25,8 +25,8 @@
 
 <h3>專案</h3>
 <p>
-<a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="assets/profile/zh-TW/repo-awesome-agentic-ai-zh.svg" width="100%" alt="awesome-agentic-ai-zh：我自己寫、自己維護的 AI agent 學習地圖，三種語言。星數 8,753。"></a>
-<a href="https://github.com/WenyuChiou/ai-research-skills"><img src="assets/profile/zh-TW/repo-ai-research-skills.svg" width="55.38%" alt="ai-research-skills：研究流程用的技能目錄。星數 652。"></a><a href="https://github.com/WenyuChiou/academic-writing-skills"><img src="assets/profile/zh-TW/repo-academic-writing-skills.svg" width="44.61%" alt="academic-writing-skills：論文寫作與修訂，主張都對得上證據。星數 423。"></a>
+<a href="https://github.com/WenyuChiou/awesome-agentic-ai-zh"><img src="assets/profile/zh-TW/repo-awesome-agentic-ai-zh.svg" width="100%" alt="awesome-agentic-ai-zh：我自己寫、自己維護的 AI agent 學習地圖，三種語言。星數 8,762。"></a>
+<a href="https://github.com/WenyuChiou/ai-research-skills"><img src="assets/profile/zh-TW/repo-ai-research-skills.svg" width="55.34%" alt="ai-research-skills：研究流程用的技能目錄。星數 653。"></a><a href="https://github.com/WenyuChiou/academic-writing-skills"><img src="assets/profile/zh-TW/repo-academic-writing-skills.svg" width="44.65%" alt="academic-writing-skills：論文寫作與修訂，主張都對得上證據。星數 425。"></a>
 <a href="https://github.com/WenyuChiou/zotero-skills"><img src="assets/profile/zh-TW/repo-zotero-skills.svg" width="23.03%" alt="zotero-skills：用程式管理 Zotero 文獻。星數 78。"></a><a href="https://github.com/WenyuChiou/research-hub"><img src="assets/profile/zh-TW/repo-research-hub.svg" width="21.35%" alt="research-hub：把 Zotero、Obsidian、NotebookLM 接成一個工作區。星數 67。"></a><a href="https://github.com/WenyuChiou/codex-delegate"><img src="assets/profile/zh-TW/repo-codex-delegate.svg" width="20.53%" alt="codex-delegate：把程式工作交給 Codex CLI，拿回可檢查的結果。星數 62。"></a><a href="https://github.com/WenyuChiou/agent-board"><img src="assets/profile/zh-TW/repo-agent-board.svg" width="19.86%" alt="agent-board：一個看板，看到每個代理正在做什麼。星數 58。"></a><a href="https://github.com/WenyuChiou/agent-collab-skills"><img src="assets/profile/zh-TW/repo-agent-collab-skills.svg" width="15.2%" alt="agent-collab-skills：多代理工作的拆分、整合與驗收。星數 34。"></a>
 </p>
 
@@ -41,4 +41,4 @@
 <a href="https://wenyuchiou.github.io/zh/#act5"><img src="https://raw.githubusercontent.com/WenyuChiou/wenyuchiou.github.io/standalone-portfolio/assets/commit-maps/activity-dam.svg" width="100%" alt="過去一年的 commit 畫成雨水，逐月注入水壩後方的水庫。"></a>
 <a href="https://wenyuchiou.github.io/zh/#act5"><img src="https://raw.githubusercontent.com/WenyuChiou/wenyuchiou.github.io/standalone-portfolio/assets/commit-maps/activity-snake.svg" width="100%" alt="過去一年的 commit 排成每日一格，貪吃蛇從最少的那天吃到最多的那天。"></a>
 
-<sub>只算公開專案 · 2026-11-12 的數字，每天更新 · <a href="https://www.threads.com/@wenyu_chiou">Threads</a></sub>
+<sub>只算公開專案 · 2026-11-13 的數字，每天更新 · <a href="https://www.threads.com/@wenyu_chiou">Threads</a></sub>
