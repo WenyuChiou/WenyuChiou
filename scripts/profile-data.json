@@ -1,17 +1,17 @@
 {
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-25",
   "own": {
-    "awesome-agentic-ai-zh": 8861,
+    "awesome-agentic-ai-zh": 8877,
     "agent-board": 62,
     "agent-collab-skills": 34,
     "codex-delegate": 63,
     "research-hub": 71,
-    "ai-research-skills": 691,
-    "academic-writing-skills": 486,
-    "zotero-skills": 82
+    "ai-research-skills": 694,
+    "academic-writing-skills": 489,
+    "zotero-skills": 83
   },
   "ownForks": {
-    "awesome-agentic-ai-zh": 1094,
+    "awesome-agentic-ai-zh": 1095,
     "agent-board": 7,
     "agent-collab-skills": 7,
     "codex-delegate": 7,
@@ -22,31 +22,31 @@
   },
   "upstream": {
     "morluto/rea": {
-      "stars": 476241,
+      "stars": 477723,
       "mergedPrs": 16
     },
     "ZhuLinsen/daily_stock_analysis": {
-      "stars": 74164,
+      "stars": 74476,
       "mergedPrs": 10
     },
     "BuilderIO/agent-native": {
-      "stars": 7755,
+      "stars": 7777,
       "mergedPrs": 4
     },
     "langchain-ai/openwiki": {
-      "stars": 18102,
+      "stars": 18113,
       "mergedPrs": 2
     },
     "Nanako0129/coralline": {
-      "stars": 558,
+      "stars": 557,
       "mergedPrs": 1
     },
     "NVIDIA/skills": {
-      "stars": 4131,
+      "stars": 4144,
       "mergedPrs": 1
     },
     "punkpeye/awesome-mcp-servers": {
-      "stars": 98451,
+      "stars": 98482,
       "mergedPrs": 1
     }
   }
