@@ -1963,24 +1963,30 @@
       "ai_commits": 0,
       "counts": [],
       "date": "2026-11-26",
-      "total_commits": 14
+      "total_commits": 23
     },
     {
       "ai_commits": 0,
       "counts": [],
       "date": "2026-11-27",
-      "total_commits": 6
+      "total_commits": 19
+    },
+    {
+      "ai_commits": 0,
+      "counts": [],
+      "date": "2026-11-28",
+      "total_commits": 7
     }
   ],
   "evidence_records": {
     "declared": 1442,
     "imported": 0,
     "inferred": 0,
-    "total_records": 2877,
-    "unknown": 1435,
+    "total_records": 2906,
+    "unknown": 1464,
     "verified": 0
   },
-  "generated_on": "2026-11-27",
+  "generated_on": "2026-11-28",
   "model_count": 2,
   "models": [
     {
@@ -2012,7 +2018,7 @@
   },
   "privacy": {
     "anonymous_aggregate_commits": 0,
-    "explicitly_publishable_commits": 2829,
+    "explicitly_publishable_commits": 2858,
     "includes_anonymous_aggregate": false
   },
   "provider_count": 3,
@@ -2044,8 +2050,8 @@
     "active_ai_days": 127,
     "ai_actor_presences": 1442,
     "ai_attributed_commits": 1394,
-    "commits_scanned": 2829,
+    "commits_scanned": 2858,
     "human_declared_commits": 0,
-    "unknown_commits": 1435
+    "unknown_commits": 1464
   }
 }
